@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleHeader","sourcePath":"components/content/ArticleHeader/ArticleHeader.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"ArticleToc","sourcePath":"components/content/ArticleToc/ArticleToc.jsx"},{"name":"ChallengeBlock","sourcePath":"components/content/ChallengeBlock/ChallengeBlock.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"PullQuote","sourcePath":"components/content/PullQuote/PullQuote.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"689ffca15512","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleHeader/ArticleHeader.jsx":"99ba36457b22","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"8d4dd2f9fa03","components/content/ArticleToc/ArticleToc.jsx":"2a3b50feaf7d","components/content/ChallengeBlock/ChallengeBlock.jsx":"5b7cce543d6a","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"7b600462d885","components/content/PullQuote/PullQuote.jsx":"85e6b3c6de24","components/content/TimelineItem/TimelineItem.jsx":"f8e1bd503d70","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"68d39142e3a1","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"ce72289c1e4a","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"fd9875f8705a","components/layout/Header/Header.jsx":"61650e789e5c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"ab020fe4592c","ui_kits/website/CaseStudyScreen.jsx":"8db12ee18e9a","ui_kits/website/ContactScreen.jsx":"b4a22b24d2a9","ui_kits/website/HomeScreen.jsx":"ab744288e976","ui_kits/website/ServiceScreen.jsx":"119fd6f2b6dd","ui_kits/website/data.js":"d40d4f947579"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleHeader","sourcePath":"components/content/ArticleHeader/ArticleHeader.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"ArticleToc","sourcePath":"components/content/ArticleToc/ArticleToc.jsx"},{"name":"ChallengeBlock","sourcePath":"components/content/ChallengeBlock/ChallengeBlock.jsx"},{"name":"Faq","sourcePath":"components/content/Faq/Faq.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"PullQuote","sourcePath":"components/content/PullQuote/PullQuote.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"689ffca15512","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"aea63aaf1f01","components/content/ArticleHeader/ArticleHeader.jsx":"99ba36457b22","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"8d4dd2f9fa03","components/content/ArticleToc/ArticleToc.jsx":"2a3b50feaf7d","components/content/ChallengeBlock/ChallengeBlock.jsx":"5b7cce543d6a","components/content/Faq/Faq.jsx":"2f15dd3c3148","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"7b600462d885","components/content/PullQuote/PullQuote.jsx":"85e6b3c6de24","components/content/TimelineItem/TimelineItem.jsx":"1dc826ee1b5a","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"7f4f1b74b502","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"ce72289c1e4a","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"fd9875f8705a","components/layout/Header/Header.jsx":"61650e789e5c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"ab020fe4592c","ui_kits/website/CaseStudyScreen.jsx":"8db12ee18e9a","ui_kits/website/ContactScreen.jsx":"b4a22b24d2a9","ui_kits/website/HomeScreen.jsx":"deabe98411c9","ui_kits/website/ServiceScreen.jsx":"76ec2714e9e2","ui_kits/website/data.js":"d40d4f947579"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -194,6 +194,26 @@ function ChallengeBlock({
 Object.assign(__ds_scope, { ChallengeBlock });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/ChallengeBlock/ChallengeBlock.jsx", error: String((e && e.message) || e) }); }
 
+// components/content/Faq/Faq.jsx
+try { (() => {
+// Native <details>: works without JS, keyboard and screen-reader friendly, several answers can stay open.
+function Faq({
+  items = []
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    className: "bn-faq"
+  }, items.map(it => /*#__PURE__*/React.createElement("details", {
+    key: it.q,
+    className: "item"
+  }, /*#__PURE__*/React.createElement("summary", {
+    className: "q"
+  }, it.q), /*#__PURE__*/React.createElement("div", {
+    className: "a"
+  }, /*#__PURE__*/React.createElement("p", null, it.a)))));
+}
+Object.assign(__ds_scope, { Faq });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/Faq/Faq.jsx", error: String((e && e.message) || e) }); }
+
 // components/content/Pagination/Pagination.jsx
 try { (() => {
 function Pagination({
@@ -352,10 +372,11 @@ function ServiceCard({
   points = [],
   cta,
   link = '#',
-  onClick
+  onClick,
+  plain = false
 }) {
   return /*#__PURE__*/React.createElement("article", {
-    className: "bn-service-card"
+    className: 'bn-service-card' + (plain ? ' bn-service-card--plain' : '')
   }, /*#__PURE__*/React.createElement("div", {
     className: "head"
   }, number != null ? /*#__PURE__*/React.createElement("span", {
@@ -638,7 +659,7 @@ function TimelineItem({
 }) {
   const lbl = label || (step != null ? stepPrefix + ' ' + String(step).padStart(2, '0') : '');
   return /*#__PURE__*/React.createElement("li", {
-    className: "bn-timeline-item"
+    className: 'bn-timeline-item' + (current ? ' current' : '')
   }, /*#__PURE__*/React.createElement("div", {
     className: "label"
   }, lbl), /*#__PURE__*/React.createElement("div", {
@@ -656,9 +677,9 @@ function TimelineItem({
     }
   }, items.map((it, i) => /*#__PURE__*/React.createElement("li", {
     key: i
-  }, it)))), /*#__PURE__*/React.createElement("div", {
+  }, it)))), status && /*#__PURE__*/React.createElement("div", {
     className: "status"
-  }, status && /*#__PURE__*/React.createElement("span", {
+  }, /*#__PURE__*/React.createElement("span", {
     className: 'bn-tag' + (current ? ' now' : '')
   }, status)));
 }
@@ -682,6 +703,7 @@ function PageHeader({
   subtitle,
   eyebrow,
   tags,
+  actions,
   dark = true,
   size = 'lg'
 }) {
@@ -695,7 +717,9 @@ function PageHeader({
     className: "page-subtitle"
   }, subtitle), tags && tags.length > 0 && /*#__PURE__*/React.createElement(__ds_scope.TagList, {
     items: tags
-  })));
+  }), actions && /*#__PURE__*/React.createElement("div", {
+    className: "actions"
+  }, actions)));
 }
 Object.assign(__ds_scope, { PageHeader });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/core/PageHeader/PageHeader.jsx", error: String((e && e.message) || e) }); }
@@ -2750,7 +2774,7 @@ function HomeScreen({
     className: "container"
   }, /*#__PURE__*/React.createElement(SectionHeader, {
     eyebrow: "Proces",
-    eyebrowPrefix: "01 \u2014",
+    eyebrowPrefix: "01 /",
     title: "Cztery kroki.",
     titleMuted: "Od diagnozy do procesu, kt\xF3ry dzia\u0142a beze mnie."
   }), /*#__PURE__*/React.createElement("ol", {
@@ -2778,7 +2802,7 @@ function HomeScreen({
     className: "container"
   }, /*#__PURE__*/React.createElement(SectionHeader, {
     eyebrow: "Wsp\xF3\u0142praca",
-    eyebrowPrefix: "02 \u2014",
+    eyebrowPrefix: "02 /",
     title: "Trzy formaty."
   }), /*#__PURE__*/React.createElement("div", {
     className: "bn-cols bn-cols--3",
@@ -2809,24 +2833,24 @@ function HomeScreen({
     className: "container"
   }, /*#__PURE__*/React.createElement(SectionHeader, {
     eyebrow: "Do\u015Bwiadczenie",
-    eyebrowPrefix: "03 \u2014",
+    eyebrowPrefix: "03 /",
     title: "20 lat w software.",
     titleMuted: "Od kodu do architektury procesu."
   }), /*#__PURE__*/React.createElement(Timeline, null, /*#__PURE__*/React.createElement(TimelineItem, {
-    label: "2024 \u2014 teraz",
+    label: "2024\u2013teraz",
     title: "Architekt / konsultant AI w SDLC",
     meta: "Niezale\u017Cnie",
     description: 'Wdrożenia AI w procesie wytwarzania dla zespołów 10–\u206080 osób.',
     status: "Teraz",
     current: true
   }), /*#__PURE__*/React.createElement(TimelineItem, {
-    label: "2016 \u2014 2024",
+    label: "2016\u20132024",
     title: "CTO / Head of Engineering",
     meta: "TSL \xB7 e-commerce",
     description: "Transformacja cyfrowa, platforma CI/CD, skalowanie zespo\u0142u z 6 do 40 os\xF3b.",
     status: "8 lat"
   }), /*#__PURE__*/React.createElement(TimelineItem, {
-    label: "2006 \u2014 2016",
+    label: "2006\u20132016",
     title: "Software Architect",
     meta: "Software house",
     description: "Architektura system\xF3w integracyjnych, Kafka, Kubernetes.",
@@ -2839,7 +2863,7 @@ function HomeScreen({
     className: "bn-section-row"
   }, /*#__PURE__*/React.createElement(SectionHeader, {
     eyebrow: "Case studies",
-    eyebrowPrefix: "04 \u2014",
+    eyebrowPrefix: "04 /",
     title: "Wyniki, nie slajdy."
   }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Button, {
     variant: "secondary",
@@ -2858,7 +2882,7 @@ function HomeScreen({
     onClick: click(() => go('case', c.slug))
   }))))), /*#__PURE__*/React.createElement(FinalCTA, {
     intro: "Opowiedz, jak dzi\u015B wygl\u0105da Wasz proces. Wska\u017C\u0119 2\u20133 miejsca, gdzie AI da najwi\u0119cej.",
-    points: ['Mapa Waszego SDLC w 30 minut', 'Szybkie zwycięstwa na najbliższy sprint', 'Czy pilotaż ma sens — szczerze'],
+    points: ['Mapa Waszego SDLC w 30 minut', 'Szybkie zwycięstwa na najbliższy sprint', 'Czy pilotaż ma sens - szczerze'],
     avatar: d.img + 'profile.png',
     onCta: click(() => go('contact'))
   }));
@@ -2880,6 +2904,9 @@ function ServiceScreen({
     Timeline,
     TimelineItem,
     Stat,
+    Faq,
+    Eyebrow,
+    Button,
     FinalCTA
   } = window.BroniszewskiDesignSystem_db82bc;
   const d = window.BN_DATA;
@@ -2887,11 +2914,33 @@ function ServiceScreen({
     e.preventDefault();
     go('contact');
   };
+  const fits = ['Zespół 10–80 osób już używa narzędzi AI, ale każdy po swojemu.', 'Macie CI/CD i zgodę na zebranie podstawowych metryk.', 'Lider zespołu znajdzie 2–3 godziny tygodniowo na pilotaż.'];
+  const misfits = ['Szukacie jednorazowego szkolenia z promptowania.', 'Firma nie dopuszcza jeszcze AI do pracy z kodem.', 'Zespół jest w trakcie dużej reorganizacji.'];
+  const faq = [{
+    q: 'Ile kosztuje pilotaż?',
+    a: 'Stała cena za cały pilotaż, ustalana po pierwszej rozmowie. Zależy od wielkości zespołu i czasu trwania, nie od liczby godzin.'
+  }, {
+    q: 'Ile czasu zabiera to zespołowi?',
+    a: 'Pół dnia warsztatu na start, potem około godziny tygodniowo na przegląd efektów. Reszta dzieje się w codziennej pracy.'
+  }, {
+    q: 'Jakich narzędzi używamy?',
+    a: 'Tych, które już macie albo na które firma się zgodzi. Pilotaż dotyczy procesu, nie konkretnego dostawcy.'
+  }, {
+    q: 'Co z bezpieczeństwem kodu?',
+    a: 'Zasady ustalamy w pierwszym tygodniu: jakie dane mogą trafić do modeli, gdzie potrzebny jest self-hosting i co zawsze wymaga review człowieka.'
+  }, {
+    q: 'Co po pilotażu?',
+    a: 'Zespół zostaje z playbookiem i metrykami. Jeśli wyniki są dobre, pomagam przenieść proces na kolejne zespoły.'
+  }];
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(PageHeader, {
     eyebrow: "Us\u0142uga",
     title: "Pilota\u017C AI w SDLC.",
     subtitle: "6\u201310 tygodni na jednym zespole. Od eksperyment\xF3w z narz\u0119dziami do wsp\xF3lnego procesu z mierzalnym efektem.",
-    tags: ['6–10 tygodni', '1 zespół', 'Metryki przed / po']
+    actions: /*#__PURE__*/React.createElement(Button, {
+      href: "#/contact",
+      onClick: toContact,
+      arrow: true
+    }, "Um\xF3w rozmow\u0119")
   }), /*#__PURE__*/React.createElement("section", {
     className: "section"
   }, /*#__PURE__*/React.createElement("div", {
@@ -2908,77 +2957,66 @@ function ServiceScreen({
   }, /*#__PURE__*/React.createElement("div", {
     className: "container"
   }, /*#__PURE__*/React.createElement(SectionHeader, {
-    eyebrowPrefix: "01 \u2014",
     eyebrow: "Co dostajesz",
     title: "Trzy rezultaty.",
-    titleMuted: "Zostaj\u0105 w zespole po moim wyj\u015Bciu."
+    subtitle: "Zostaj\u0105 w zespole po moim wyj\u015Bciu."
   }), /*#__PURE__*/React.createElement("div", {
-    className: "bn-cols bn-cols--3",
-    style: {
-      '--cols-gap': '16px'
-    }
+    className: "bn-cols bn-cols--3 bn-cols--fixed"
   }, /*#__PURE__*/React.createElement(ServiceCard, {
+    plain: true,
     number: 1,
-    icon: "fa-map",
     title: "Mapa procesu",
     description: "Droga od ticketu do produkcji z zaznaczonymi miejscami, gdzie praca czeka.",
     points: ['Warsztat z zespołem', 'Baseline metryk', 'Priorytety zmian']
   }), /*#__PURE__*/React.createElement(ServiceCard, {
+    plain: true,
     number: 2,
-    icon: "fa-book",
     title: "Playbook zespo\u0142u",
     description: "Wsp\xF3lne zasady pracy z AI: kiedy agent, kiedy asystent, kiedy cz\u0142owiek.",
     points: ['Guardraile i bezpieczeństwo', 'Prompty i szablony', 'Definicja review']
   }), /*#__PURE__*/React.createElement(ServiceCard, {
+    plain: true,
     number: 3,
-    icon: "fa-chart-line",
     title: "Metryki przed / po",
-    description: "Dow\xF3d, co si\u0119 zmieni\u0142o, zanim skalujesz na kolejne zespo\u0142y.",
+    description: "Dow\xF3d, co si\u0119 zmieni\u0142o, zanim przeniesiecie proces na kolejne zespo\u0142y.",
     points: ['Lead time', 'Czas review', 'Jakość wydań']
   })))), /*#__PURE__*/React.createElement("section", {
     className: "section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "container"
   }, /*#__PURE__*/React.createElement(SectionHeader, {
-    eyebrowPrefix: "02 \u2014",
     eyebrow: "Przebieg",
     title: "Tydzie\u0144 po tygodniu."
   }), /*#__PURE__*/React.createElement(Timeline, null, /*#__PURE__*/React.createElement(TimelineItem, {
     label: "Tydzie\u0144 1\u20132",
     title: "Diagnoza",
     meta: "Warsztat \xB7 pomiary",
-    description: "Przechodz\u0119 z zespo\u0142em ca\u0142\u0105 drog\u0119 zmiany i mierz\u0119, gdzie praca stoi.",
-    status: "2 tyg."
+    description: "Przechodz\u0119 z zespo\u0142em ca\u0142\u0105 drog\u0119 zmiany i mierz\u0119, gdzie praca stoi."
   }), /*#__PURE__*/React.createElement(TimelineItem, {
     label: "Tydzie\u0144 3",
     title: "Architektura",
     meta: "Zasady \xB7 narz\u0119dzia",
-    description: "Projektuj\u0119 rol\u0119 AI w procesie i ustalam, co mierzymy.",
-    status: "1 tydz."
+    description: "Projektuj\u0119 rol\u0119 AI w procesie i ustalam, co mierzymy."
   }), /*#__PURE__*/React.createElement(TimelineItem, {
     label: "Tydzie\u0144 4\u20138",
     title: "Wdro\u017Cenie AI",
     meta: "Coaching w pracy",
     description: "Zesp\xF3\u0142 pracuje nowym procesem, a ja co tydzie\u0144 przegl\u0105dam efekty.",
-    status: "Pilota\u017C",
     current: true
   }), /*#__PURE__*/React.createElement(TimelineItem, {
     label: "Tydzie\u0144 9\u201310",
     title: "Utrwalenie",
     meta: "Playbook \xB7 liderzy",
-    description: "Przekazuj\u0119 proces liderom, \u017Ceby dzia\u0142a\u0142 beze mnie.",
-    status: "2 tyg."
+    description: "Przekazuj\u0119 proces liderom, \u017Ceby dzia\u0142a\u0142 beze mnie."
   })))), /*#__PURE__*/React.createElement("section", {
     className: "section section--subtle bn-grid bn-grid--fade"
   }, /*#__PURE__*/React.createElement("div", {
     className: "container"
   }, /*#__PURE__*/React.createElement(SectionHeader, {
-    eyebrowPrefix: "03 \u2014",
     eyebrow: "Efekt",
-    title: "Co mierz\u0119.",
-    titleMuted: "Przyk\u0142ad z pilota\u017Cu w zespole 12 os\xF3b."
+    title: "Co mierz\u0119."
   }), /*#__PURE__*/React.createElement("div", {
-    className: "bn-cols bn-cols--3"
+    className: "bn-cols bn-cols--3 bn-cols--fixed"
   }, /*#__PURE__*/React.createElement(Stat, {
     value: "\u221235%",
     label: "Lead time",
@@ -2991,9 +3029,41 @@ function ServiceScreen({
     value: "0",
     label: "Regresji z kodu AI",
     note: "W ci\u0105gu 8 tygodni"
-  })))), /*#__PURE__*/React.createElement(FinalCTA, {
+  })), /*#__PURE__*/React.createElement("p", {
+    className: "bn-footnote"
+  }, "Przyk\u0142ad z pilota\u017Cu w zespole 12 os\xF3b."))), /*#__PURE__*/React.createElement("section", {
+    className: "section"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement(SectionHeader, {
+    eyebrow: "Dla kogo",
+    title: "Kiedy warto zacz\u0105\u0107."
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "bn-cols bn-cols--2"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Eyebrow, null, "Ma sens, gdy"), /*#__PURE__*/React.createElement("ul", {
+    className: "bn-fit-list"
+  }, fits.map(t => /*#__PURE__*/React.createElement(ProblemListItem, {
+    key: t,
+    marker: "+",
+    text: t
+  })))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Eyebrow, null, "Nie ma sensu, gdy"), /*#__PURE__*/React.createElement("ul", {
+    className: "bn-fit-list"
+  }, misfits.map(t => /*#__PURE__*/React.createElement(ProblemListItem, {
+    key: t,
+    marker: "\u2212",
+    text: t
+  }))))))), /*#__PURE__*/React.createElement("section", {
+    className: "section section--subtle"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container bn-cols bn-cols--split"
+  }, /*#__PURE__*/React.createElement(SectionHeader, {
+    eyebrow: "FAQ",
+    title: "Zanim zapytasz."
+  }), /*#__PURE__*/React.createElement(Faq, {
+    items: faq
+  }))), /*#__PURE__*/React.createElement(FinalCTA, {
     title: "Sprawd\u017Amy, czy pilota\u017C ma sens.",
-    intro: "W 30 minut ocenimy, czy Tw\xF3j zesp\xF3\u0142 jest gotowy i od czego zacz\u0105\u0107.",
+    intro: "W 30 minut ocenimy, czy Wasz zesp\xF3\u0142 jest gotowy i od czego zacz\u0105\u0107.",
     points: ['Stan obecnego procesu', 'Zespół, od którego warto zacząć', 'Realny zakres i czas'],
     avatar: d.img + 'profile.png',
     onCta: toContact
@@ -3284,6 +3354,8 @@ __ds_ns.ArticleLayout = __ds_scope.ArticleLayout;
 __ds_ns.ArticleToc = __ds_scope.ArticleToc;
 
 __ds_ns.ChallengeBlock = __ds_scope.ChallengeBlock;
+
+__ds_ns.Faq = __ds_scope.Faq;
 
 __ds_ns.Pagination = __ds_scope.Pagination;
 

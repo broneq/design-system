@@ -7,4 +7,4 @@ Readable timeline row for experience or process phases - wrap rows in `<Timeline
 </Timeline>
 ```
 
-`current` inverts the status chip (ink fill) - use it on one row at most. Keep the chip short (a duration or state), it has a fixed 120px column on desktop.
+`current` marks one row at most: a short accent segment over the label, an accent label and an inverted status chip. Keep the chip short (a duration or state), it has a fixed 120px column on desktop. Skip `status` when it would only repeat the label ("Tydzień 1-2" + "2 tyg."): with no chips the timeline drops that column.

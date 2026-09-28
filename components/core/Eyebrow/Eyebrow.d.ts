@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
  */
 export interface EyebrowProps {
   children?: ReactNode;
-  /** Prefix glyph, default "//". Use "01 —" style numbers for numbered sections, or null for none. */
+  /** Prefix glyph, default "//". Use "01 /" style numbers for numbered sections, or null for none. */
   prefix?: string | null;
   /** muted = grey text (default); accent = blue text */
   tone?: 'muted' | 'accent';

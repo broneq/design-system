@@ -53,12 +53,16 @@
 .bn-page-header .inner{display:flex;flex-direction:column;align-items:flex-start;gap:24px}
 .bn-page-header .page-title{font-family:var(--font-display);font-weight:800;font-size:var(--fs-h1);line-height:var(--lh-heading);letter-spacing:var(--ls-heading);color:var(--fg-default);max-width:1000px;margin-left:var(--display-inset)}
 .bn-page-header--md .page-title{font-size:var(--fs-h2);max-width:900px}
+.bn-page-header .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+@media (max-width:768px){.bn-page-header .actions{align-self:stretch;flex-direction:column}}
 .bn-page-header .page-subtitle{font-size:var(--fs-lead);line-height:1.55;color:var(--fg-body);max-width:640px}
 /* Stat - proof metric */
 .bn-stat{display:flex;flex-direction:column;gap:10px;padding-top:20px;border-top:2px solid var(--line-strong);min-width:0}
 .bn-stat .value{font-family:var(--font-display);font-weight:800;font-size:clamp(40px,4.4vw,64px);line-height:.95;letter-spacing:var(--ls-heading);color:var(--fg-default)}
 .bn-stat .label{font-family:var(--font-mono);font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
 .bn-stat .note{font-size:var(--fs-small);color:var(--fg-body)}
+/* Source line under a stats row or chart */
+.bn-footnote{margin-top:var(--space-8);font-size:var(--fs-small);color:var(--fg-muted)}
 /* Case study card */
 .bn-case-card{display:flex;flex-direction:column;gap:20px;color:inherit;text-decoration:none;cursor:pointer;min-width:0}
 .bn-case-card:hover{color:inherit}
@@ -98,6 +102,9 @@
 .bn-step{display:flex;flex-direction:column}
 .bn-step .bn-segments .bar{border-radius:var(--radius-sm) var(--radius-sm) 0 0}
 .bn-step > .bn-service-card{flex:1;border-top:0;border-radius:0 0 var(--radius-sm) var(--radius-sm)}
+/* Plain: no box, a 2px top rule like Stat */
+.bn-service-card--plain{padding:24px 0 0;border:0;border-top:2px solid var(--line-strong);border-radius:0;background:none}
+.bn-service-card--plain:hover{border-color:var(--line-strong)}
 .bn-service-card .head{display:flex;justify-content:space-between;align-items:flex-start}
 .bn-service-card .num{font-family:var(--font-mono);font-size:14px;color:var(--accent-text)}
 .bn-icon-box{width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--line-default);border-radius:var(--radius-xs);color:var(--accent-text);font-size:17px;flex-shrink:0}
@@ -123,12 +130,32 @@
 .bn-timeline-item .meta{font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-muted);margin-top:8px}
 .bn-timeline-item .desc{grid-area:desc;color:var(--fg-body);font-size:16px;text-wrap:pretty}
 .bn-timeline-item .status{grid-area:status;justify-self:end}
+/* Current row: a short accent segment over the label, on top of the row divider */
+.bn-timeline-item.current{position:relative}
+.bn-timeline-item.current::before{content:'';position:absolute;left:0;top:-1px;width:48px;height:2px;background:var(--accent)}
+.bn-timeline-item.current:first-child::before{top:-2px}
+.bn-timeline-item.current .label{color:var(--accent-text)}
+/* No status chips at all: drop the status column */
+.bn-timeline:not(:has(.status)) .bn-timeline-item{grid-template-columns:180px minmax(0,1fr) minmax(0,1.5fr);grid-template-areas:"label head desc"}
 .bn-timeline-item .bn-tag.now{background:var(--fg-default);color:var(--bg-page);border-color:var(--fg-default)}
 /* Stacked: the status chip sits on the period line instead of trailing the description */
 @media (max-width:1024px){.bn-timeline-item{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"label status" "head head" "desc desc";gap:12px 16px;align-items:center}.bn-timeline-item .head{margin-bottom:4px}}
+@media (max-width:1024px){.bn-timeline:not(:has(.status)) .bn-timeline-item{grid-template-columns:minmax(0,1fr);grid-template-areas:"label" "head" "desc"}}
+/* FAQ - native details; the plus turns into a cross when open */
+.bn-faq{border-top:2px solid var(--line-strong)}
+.bn-faq .item{border-bottom:1px solid var(--line-default)}
+.bn-faq .q{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:44px;padding:24px 0;list-style:none;cursor:pointer;font-family:var(--font-display);font-weight:700;font-size:clamp(20px,.5vw + 17px,24px);line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default);text-wrap:balance}
+.bn-faq .q::-webkit-details-marker{display:none}
+.bn-faq .q::after{content:'+';flex-shrink:0;width:24px;text-align:center;font-family:var(--font-mono);font-weight:400;font-size:24px;line-height:1;color:var(--accent-text);transition:transform var(--dur-fast) var(--ease-out)}
+.bn-faq .item[open] .q::after{transform:rotate(45deg)}
+@media (hover:hover){.bn-faq .q:hover{color:var(--accent-text)}}
+.bn-faq .a{padding:0 48px 28px 0;color:var(--fg-body);max-width:720px}
+@media (max-width:768px){.bn-faq .a{padding-right:0}}
 /* Problem list item */
 .bn-problem-item{list-style:none;display:flex;gap:14px;align-items:baseline;padding:20px 0;border-top:1px solid var(--line-default);font-size:20px;font-weight:500;line-height:1.45;color:var(--fg-default)}
 .bn-problem-item:last-child{border-bottom:1px solid var(--line-default)}
+/* A list under its own Eyebrow (e.g. "Ma sens, gdy") */
+.bn-eyebrow + .bn-fit-list{margin-top:16px}
 .bn-problem-item .txt{text-wrap:pretty}
 .bn-problem-item .mk{min-width:1.4em;font-size:.9em;font-weight:400;font-variant-numeric:tabular-nums;color:var(--accent-text);flex-shrink:0}
 .bn-text-separator{margin-top:var(--section-head-gap);font-family:var(--font-display);font-weight:800;font-size:clamp(24px,1.5vw + 14px,32px);line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default);text-wrap:balance;max-width:720px}

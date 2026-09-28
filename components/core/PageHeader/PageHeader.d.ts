@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 /**
  * Subpage banner on the technical grid (dark by default): eyebrow, Archivo H1, lead, mono tags. Left-aligned. A title ending in "." gets the blue period.
  */
@@ -6,6 +7,8 @@ export interface PageHeaderProps {
   subtitle?: string;
   eyebrow?: string;
   tags?: string[];
+  /** Buttons under the lead, e.g. the page's primary CTA. Wraps; full width on mobile. */
+  actions?: ReactNode;
   /** Dark grid (default) or light grid */
   dark?: boolean;
   /** "lg" (default, H1 scale) for short titles of 2–5 words; "md" (H2 scale) for long article / case study titles */

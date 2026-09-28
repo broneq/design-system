@@ -13,5 +13,7 @@ export interface ServiceCardProps {
   cta?: string;
   link?: string;
   onClick?: MouseEventHandler;
+  /** No box: 2px line-strong top rule on the page background, like Stat. Use for deliverables listed next to hairline sections. */
+  plain?: boolean;
 }
 export declare function ServiceCard(props: ServiceCardProps): JSX.Element;

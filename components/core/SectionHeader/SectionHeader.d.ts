@@ -4,7 +4,7 @@
 export interface SectionHeaderProps {
   /** Mono label above, e.g. "Proces" */
   eyebrow?: string;
-  /** Default "//"; use "01 —" for numbered sections */
+  /** Default "//"; use "01 /" for numbered sections */
   eyebrowPrefix?: string | null;
   title: string;
   /** Second line in muted grey */
