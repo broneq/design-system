@@ -16,8 +16,11 @@ const { Header, Footer } = window.BroniszewskiDesignSystem_db82bc;
 const HREF = { '/': 'home', '/uslugi': 'service', '/case-studies': 'cases', '/kontakt': 'contact' };
 const LINKS = [{ href: '/', label: 'Start' }, { href: '/uslugi', label: 'Usługi' }, { href: '/case-studies', label: 'Case studies' }, { href: '/kontakt', label: 'Kontakt' }];
 function App() {
-  const [r, setR] = React.useState(() => { try { return JSON.parse(localStorage.getItem('bn-route')) || { page: 'home' }; } catch { return { page: 'home' }; } });
-  const go = (page, slug) => { const n = { page, slug }; setR(n); localStorage.setItem('bn-route', JSON.stringify(n)); window.scrollTo(0, 0); };
+  // Hash routing (#/case/<slug>) - deep links and the back button work
+  const parse = () => { const [page, slug] = location.hash.replace(/^#\/?/, '').split('/'); return { page: page || 'home', slug }; };
+  const [r, setR] = React.useState(parse);
+  React.useEffect(() => { const onHash = () => { setR(parse()); window.scrollTo(0, 0); }; window.addEventListener('hashchange', onHash); return () => window.removeEventListener('hashchange', onHash); }, []);
+  const go = (page, slug) => { location.hash = '#/' + page + (slug ? '/' + slug : ''); };
   const current = { home: '/', service: '/uslugi', cases: '/case-studies', case: '/case-studies', contact: '/kontakt' }[r.page];
   const Screen = { home: HomeScreen, cases: CaseStudiesScreen, case: CaseStudyScreen, contact: ContactScreen, service: ServiceScreen }[r.page] || HomeScreen;
   const nav = (href) => go(HREF[href] || 'home');

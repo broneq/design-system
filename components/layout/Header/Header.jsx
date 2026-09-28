@@ -11,9 +11,11 @@ export function Header({ links = DEFAULT_LINKS, current, onNavigate, ctaLabel = 
   React.useEffect(() => {
     if (!open) return undefined;
     closeRef.current.focus();
+    const root = document.documentElement;
+    root.style.overflow = 'hidden';
     const onKey = (e) => { if (e.key === 'Escape') setOpen(false); };
     document.addEventListener('keydown', onKey);
-    return () => { document.removeEventListener('keydown', onKey); if (toggleRef.current) toggleRef.current.focus(); };
+    return () => { document.removeEventListener('keydown', onKey); root.style.overflow = ''; if (toggleRef.current) toggleRef.current.focus(); };
   }, [open]);
   const nav = (href) => (e) => { if (onNavigate) { e.preventDefault(); onNavigate(href); } setOpen(false); };
   return (
@@ -28,6 +30,7 @@ export function Header({ links = DEFAULT_LINKS, current, onNavigate, ctaLabel = 
           <button ref={toggleRef} className="hamburger" aria-label="Otwórz menu" aria-expanded={open} aria-controls="bn-mobile-menu" onClick={() => setOpen(true)}><i className="fa fa-bars" aria-hidden="true"></i></button>
         </div>
       </div>
+      {open && <div className="bn-scrim" aria-hidden="true" onClick={() => setOpen(false)} />}
       <div id="bn-mobile-menu" className={'bn-mobile-menu' + (open ? ' open' : '')} role="dialog" aria-label="Menu mobilne">
         <button ref={closeRef} className="close" aria-label="Zamknij menu" onClick={() => setOpen(false)}>&times;</button>
         <ul>{links.map((l) => <li key={l.href}><a href={l.href} aria-current={current === l.href ? 'page' : undefined} onClick={nav(l.href)}>{l.label}</a></li>)}</ul>

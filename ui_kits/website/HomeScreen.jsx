@@ -44,7 +44,7 @@ function HomeScreen({ go }) {
       </Timeline>
     </div></section>
     <section className="section"><div className="container">
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 24, flexWrap: 'wrap' }}><SectionHeader eyebrow="Case studies" eyebrowPrefix="04 —" title="Wyniki, nie slajdy." /><div style={{ marginBottom: 64 }}><Button variant="secondary" href="#" onClick={click(() => go('cases'))} arrow>Wszystkie</Button></div></div>
+      <div className="bn-section-row"><SectionHeader eyebrow="Case studies" eyebrowPrefix="04 —" title="Wyniki, nie slajdy." /><div><Button variant="secondary" href="#" onClick={click(() => go('cases'))} arrow>Wszystkie</Button></div></div>
       <div className="bn-cols bn-cols--3">{d.cases.map((c) => <CaseStudyCard key={c.slug} title={c.title} excerpt={c.excerpt} image={d.img + c.image} tags={c.tags.slice(0, 2)} href="#" onClick={click(() => go('case', c.slug))} />)}</div>
     </div></section>
     <FinalCTA intro="Opowiedz, jak dziś wygląda Wasz proces. Wskażę 2–3 miejsca, gdzie AI da najwięcej." points={['Mapa Waszego SDLC w 30 minut', 'Szybkie zwycięstwa na najbliższy sprint', 'Czy pilotaż ma sens — szczerze']} avatar={d.img + 'profile.png'} onCta={click(() => go('contact'))} />
