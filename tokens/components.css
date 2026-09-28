@@ -69,6 +69,8 @@
 .bn-case-card:hover .title{color:var(--accent-text)}
 .bn-case-card .excerpt{color:var(--fg-body);font-size:16px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
 .bn-case-card .read-more{font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)}
+/* A lone last card spanning the full row (.bn-cols--3 at 769-1024px) lays out horizontally, media keeping one column width */
+@media (min-width:769px) and (max-width:1024px){.bn-cols--3>.bn-case-card:last-child:nth-child(odd){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--cols-gap,var(--space-8));row-gap:20px;align-content:start}.bn-cols--3>.bn-case-card:last-child:nth-child(odd)>*{grid-column:2}.bn-cols--3>.bn-case-card:last-child:nth-child(odd)>.media{grid-column:1;grid-row:1/span 4;align-self:start}}
 /* Service card */
 .bn-service-card{display:flex;flex-direction:column;gap:24px;padding:clamp(24px,2.5vw,32px);min-width:0;border:1px solid var(--line-default);border-radius:var(--radius-sm);background:var(--bg-raised);height:100%;transition:border-color var(--dur-fast) var(--ease-out)}
 .bn-service-card:hover{border-color:var(--line-strong)}
