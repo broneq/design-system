@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"3b7afc222669","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"77d78fbc1040","components/content/Pagination/Pagination.jsx":"0aee360411e8","components/content/ProblemListItem/ProblemListItem.jsx":"ecd349d05fe8","components/content/TimelineItem/TimelineItem.jsx":"fb837410efc9","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"7c48c15a9752","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"731f4d2ab810","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"8f4ea5228d69","components/layout/Header/Header.jsx":"8a2eaf212f45","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"d2b3bf8ec323","ui_kits/website/CaseStudyScreen.jsx":"509f58efa91d","ui_kits/website/ContactScreen.jsx":"aa740d7874c9","ui_kits/website/HomeScreen.jsx":"9ee2a871a160","ui_kits/website/ServiceScreen.jsx":"496702df8a2e","ui_kits/website/data.js":"4543f5913a38"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"3b7afc222669","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"77d78fbc1040","components/content/Pagination/Pagination.jsx":"0aee360411e8","components/content/ProblemListItem/ProblemListItem.jsx":"ecd349d05fe8","components/content/TimelineItem/TimelineItem.jsx":"fb837410efc9","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"7c48c15a9752","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"731f4d2ab810","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"8f4ea5228d69","components/layout/Header/Header.jsx":"5c23f6cf1a4c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"e42666de438e","ui_kits/website/CaseStudyScreen.jsx":"5b4e440196e4","ui_kits/website/ContactScreen.jsx":"6f90777bbe00","ui_kits/website/HomeScreen.jsx":"a84dacec1d7c","ui_kits/website/ServiceScreen.jsx":"b21be86ca076","ui_kits/website/data.js":"4543f5913a38"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -716,9 +716,24 @@ function Header({
   ctaLabel = 'Porozmawiajmy',
   ctaHref = '/kontakt',
   dark = false,
-  extra
+  extra,
+  skipTo = '#main'
 }) {
   const [open, setOpen] = React.useState(false);
+  const toggleRef = React.useRef(null);
+  const closeRef = React.useRef(null);
+  React.useEffect(() => {
+    if (!open) return undefined;
+    closeRef.current.focus();
+    const onKey = e => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      if (toggleRef.current) toggleRef.current.focus();
+    };
+  }, [open]);
   const nav = href => e => {
     if (onNavigate) {
       e.preventDefault();
@@ -728,7 +743,10 @@ function Header({
   };
   return /*#__PURE__*/React.createElement("header", {
     className: 'bn-header' + (dark ? ' bn-dark' : '')
-  }, /*#__PURE__*/React.createElement("div", {
+  }, skipTo && /*#__PURE__*/React.createElement("a", {
+    className: "bn-skip-link",
+    href: skipTo
+  }, "Przejd\u017A do tre\u015Bci"), /*#__PURE__*/React.createElement("div", {
     className: "container inner"
   }, /*#__PURE__*/React.createElement(Logo, {
     onClick: nav('/')
@@ -739,6 +757,7 @@ function Header({
   }, /*#__PURE__*/React.createElement("a", {
     href: l.href,
     className: current === l.href ? 'current' : '',
+    "aria-current": current === l.href ? 'page' : undefined,
     onClick: nav(l.href)
   }, l.label))))), /*#__PURE__*/React.createElement("div", {
     className: "right"
@@ -749,16 +768,22 @@ function Header({
     href: ctaHref,
     onClick: nav(ctaHref)
   }, ctaLabel), /*#__PURE__*/React.createElement("button", {
+    ref: toggleRef,
     className: "hamburger",
     "aria-label": "Otw\xF3rz menu",
+    "aria-expanded": open,
+    "aria-controls": "bn-mobile-menu",
     onClick: () => setOpen(true)
   }, /*#__PURE__*/React.createElement("i", {
     className: "fa fa-bars",
     "aria-hidden": "true"
   })))), /*#__PURE__*/React.createElement("div", {
+    id: "bn-mobile-menu",
     className: 'bn-mobile-menu' + (open ? ' open' : ''),
+    role: "dialog",
     "aria-label": "Menu mobilne"
   }, /*#__PURE__*/React.createElement("button", {
+    ref: closeRef,
     className: "close",
     "aria-label": "Zamknij menu",
     onClick: () => setOpen(false)
@@ -766,6 +791,7 @@ function Header({
     key: l.href
   }, /*#__PURE__*/React.createElement("a", {
     href: l.href,
+    "aria-current": current === l.href ? 'page' : undefined,
     onClick: nav(l.href)
   }, l.label)))), /*#__PURE__*/React.createElement(__ds_scope.Button, {
     block: true,
@@ -2137,11 +2163,9 @@ function CaseStudiesScreen({
   }), /*#__PURE__*/React.createElement("section", {
     className: "container"
   }, /*#__PURE__*/React.createElement("div", {
+    className: "bn-cols bn-cols--3",
     style: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(3, 1fr)',
-      gap: '2rem',
-      marginTop: '2rem'
+      marginTop: 'var(--space-8)'
     }
   }, d.cases.map(c => /*#__PURE__*/React.createElement(CaseStudyCard, _extends({
     key: c.slug
@@ -2195,8 +2219,8 @@ function CaseStudyScreen({
     style: {
       width: '100%',
       height: 'auto',
-      borderRadius: 8,
-      boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
+      borderRadius: 'var(--radius-sm)',
+      border: '1px solid var(--line-default)',
       display: 'block'
     }
   }))), /*#__PURE__*/React.createElement(ArticleLayout, null, k8s ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("p", null, "By\u0142a 2:30 w nocy, gdy telefon zadzwoni\u0142 po raz trzeci w tym tygodniu. Kolejny deployment si\u0119 wysypa\u0142, klient krzyczy, a jedyna osoba w zespole, kt\xF3ra wie jak to naprawi\u0107, w\u0142a\u015Bnie wr\xF3ci\u0142a z urlopu. Brzmi znajomo?"), /*#__PURE__*/React.createElement("h2", null, "Punkt wyj\u015Bcia - Architektura B\xF3lu"), /*#__PURE__*/React.createElement("p", null, "Czy znacie to uczucie, gdy telefon dzwoni o 2 w nocy i wiecie, \u017Ce to nie mo\u017Ce by\u0107 nic dobrego? Tak wygl\u0105da\u0142o nasze \u017Cycie jeszcze 4 lata temu. Ka\u017Cdy deployment by\u0142 loteri\u0105 - albo wszystko dzia\u0142a\u0142o, albo kto\u015B z zespo\u0142u musia\u0142 wsta\u0107 i naprawia\u0107 system do rana."), /*#__PURE__*/React.createElement("h2", null, "Moment Prawdy - Kiedy Skala Zabija"), /*#__PURE__*/React.createElement("p", null, "Prze\u0142omowy moment przyszed\u0142 w momencie, gdy biznes przesta\u0142 tolerowa\u0107 przestoje. Klienci zacz\u0119li wymaga\u0107, \u017Ceby systemy dzia\u0142a\u0142y bez przerwy. Zero downtime sta\u0142o si\u0119 standardem, nie luksusem."), /*#__PURE__*/React.createElement("h2", null, "Rezultaty - Liczby Nie K\u0142ami\u0105"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Oszcz\u0119dno\u015B\u0107: 95% czasu")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Wzrost: 1000%")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Poprawa: 100%")))) : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h2", null, "Wyzwanie Biznesowe"), /*#__PURE__*/React.createElement("blockquote", null, /*#__PURE__*/React.createElement("p", null, "\u201EPotrzebowali\u015Bmy systemu, kt\xF3ry da nam kontrol\u0119 nad operacj\u0105. Nie chcieli\u015Bmy kolejnego narz\u0119dzia - chcieli\u015Bmy rozwi\u0105zanie, kt\xF3re zmieni spos\xF3b, w jaki pracujemy.\u201D - Dyrektor Operacyjny")), /*#__PURE__*/React.createElement("h2", null, "Architektura Rozwi\u0105zania"), /*#__PURE__*/React.createElement(ArticleImage, {
@@ -2205,26 +2229,21 @@ function CaseStudyScreen({
     caption: "Architektura rozwi\u0105zania"
   }), /*#__PURE__*/React.createElement("p", {
     style: {
-      color: 'var(--bn-gray)',
+      color: 'var(--fg-muted)',
       fontStyle: 'italic'
     }
   }, "[Tre\u015B\u0107 skr\xF3cona w UI kit \u2014 pe\u0142ny tekst w repozytorium: src/content/case-studies/", post.slug, ".mdx]"))), /*#__PURE__*/React.createElement("section", {
     style: {
-      backgroundColor: 'var(--bn-light)',
+      backgroundColor: 'var(--bg-subtle)',
       padding: '60px 0'
     }
   }, /*#__PURE__*/React.createElement("div", {
-    className: "container",
-    style: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(2, 1fr)',
-      gap: '2rem'
-    }
+    className: "container bn-cols bn-cols--2"
   }, /*#__PURE__*/React.createElement("div", {
     style: {
-      background: '#fff',
-      border: '1px solid var(--bn-border)',
-      borderRadius: 8,
+      background: 'var(--bg-raised)',
+      border: '1px solid var(--line-default)',
+      borderRadius: 'var(--radius-sm)',
       padding: '1.5rem'
     }
   }, /*#__PURE__*/React.createElement("h3", null, "Kluczowy rezultat"), /*#__PURE__*/React.createElement("p", null, post.result)), /*#__PURE__*/React.createElement("div", {
@@ -2251,12 +2270,14 @@ function CaseStudyScreen({
       display: 'flex',
       justifyContent: 'space-between',
       padding: '2rem 20px',
-      borderTop: '1px solid var(--bn-border)',
+      borderTop: '1px solid var(--line-default)',
       fontWeight: 600
     }
   }, /*#__PURE__*/React.createElement("div", null, prev && /*#__PURE__*/React.createElement("a", {
     href: "#",
     style: {
+      display: 'inline-block',
+      padding: '12px 0',
       textDecoration: 'none'
     },
     onClick: e => {
@@ -2266,6 +2287,8 @@ function CaseStudyScreen({
   }, "\u2190 Poprzedni Projekt")), /*#__PURE__*/React.createElement("div", null, next && /*#__PURE__*/React.createElement("a", {
     href: "#",
     style: {
+      display: 'inline-block',
+      padding: '12px 0',
       textDecoration: 'none'
     },
     onClick: e => {
@@ -2290,14 +2313,9 @@ function ContactScreen() {
     title: "Zacznijmy Rozmow\u0119 o Twoim Biznesie",
     subtitle: "Wype\u0142nienie poni\u017Cszego formularza zajmie Ci nie wi\u0119cej ni\u017C 2 minuty. To wystarczy, abym m\xF3g\u0142 przygotowa\u0107 si\u0119 do naszej bezp\u0142atnej konsultacji i zaproponowa\u0107 konkretne rozwi\u0105zania."
   }), /*#__PURE__*/React.createElement("div", {
-    className: "container",
+    className: "container bn-cols bn-cols--2",
     style: {
-      maxWidth: 1100,
-      margin: '0 auto',
-      display: 'grid',
-      gridTemplateColumns: 'repeat(2, 1fr)',
-      gap: '2rem',
-      padding: '2rem 20px'
+      paddingBlock: 'var(--space-8)'
     }
   }, /*#__PURE__*/React.createElement("div", {
     style: {
@@ -2319,7 +2337,7 @@ function ContactScreen() {
     style: {
       position: 'absolute',
       inset: 0,
-      background: 'rgba(10, 25, 47, 0.5)'
+      background: 'rgba(10, 12, 16, 0.72)'
     }
   }), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -2337,7 +2355,7 @@ function ContactScreen() {
       color: '#fff'
     }
   }, "Masz pytania? Wype\u0142nij formularz, a w ci\u0105gu 24h odezw\u0119 si\u0119, by um\xF3wi\u0107 60-minutow\u0105, bezp\u0142atn\u0105 konsultacj\u0119 strategiczn\u0105. Je\u015Bli wolisz mniej formalny kontakt, znajdziesz mnie r\xF3wnie\u017C na LinkedIn."), /*#__PURE__*/React.createElement(Button, {
-    variant: "white-outline",
+    variant: "inverse",
     href: "https://www.linkedin.com/in/przemys%C5%82aw-broniszewski/",
     target: "_blank"
   }, "Zobacz profil na LinkedIn"))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(ContactForm, null))));
@@ -2366,6 +2384,8 @@ function HomeScreen({
   } = window.BroniszewskiDesignSystem_db82bc;
   const d = window.BN_DATA;
   const [step, setStep] = React.useState(2);
+  // Dimming inactive steps only makes sense where hover can re-highlight them
+  const canHover = window.matchMedia('(hover: hover)').matches;
   const click = fn => e => {
     e.preventDefault();
     fn();
@@ -2407,11 +2427,9 @@ function HomeScreen({
   }), /*#__PURE__*/React.createElement("section", {
     className: "section"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "container",
+    className: "container bn-cols bn-cols--split",
     style: {
-      display: 'grid',
-      gridTemplateColumns: 'minmax(0,5fr) minmax(0,7fr)',
-      gap: 64
+      '--cols-gap': '64px'
     }
   }, /*#__PURE__*/React.createElement(SectionHeader, {
     eyebrow: "Rozpoznajesz to?",
@@ -2433,17 +2451,19 @@ function HomeScreen({
       display: 'grid',
       gridTemplateColumns: 'repeat(4,minmax(0,1fr))',
       gap: 8,
-      marginBottom: 40
+      marginBottom: 28
     }
   }, steps.map((s, i) => /*#__PURE__*/React.createElement("button", {
     key: s.t,
     onClick: () => setStep(i),
+    "aria-pressed": i === step,
     style: {
       background: 'none',
       border: 0,
       textAlign: 'left',
       cursor: 'pointer',
-      padding: 0
+      padding: '12px 0',
+      minWidth: 0
     }
   }, /*#__PURE__*/React.createElement(Segments, {
     count: 1,
@@ -2451,15 +2471,14 @@ function HomeScreen({
     done: i < step ? 1 : 0,
     labels: [String(i + 1).padStart(2, '0') + ' · ' + s.t]
   })))), /*#__PURE__*/React.createElement("div", {
+    className: "bn-cols bn-cols--4",
     style: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(4,minmax(0,1fr))',
-      gap: 16
+      '--cols-gap': '16px'
     }
   }, steps.map((s, i) => /*#__PURE__*/React.createElement("div", {
     key: s.t,
     style: {
-      opacity: i === step ? 1 : 0.55,
+      opacity: !canHover || i === step ? 1 : 0.55,
       transition: 'opacity .25s'
     },
     onMouseEnter: () => setStep(i)
@@ -2477,10 +2496,9 @@ function HomeScreen({
     eyebrowPrefix: "02 \u2014",
     title: "Trzy formaty."
   }), /*#__PURE__*/React.createElement("div", {
+    className: "bn-cols bn-cols--3",
     style: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(3,minmax(0,1fr))',
-      gap: 16
+      '--cols-gap': '16px'
     }
   }, /*#__PURE__*/React.createElement(CooperationCard, {
     icon: "fa-magnifying-glass-chart",
@@ -2557,11 +2575,7 @@ function HomeScreen({
     onClick: click(() => go('cases')),
     arrow: true
   }, "Wszystkie"))), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(3,minmax(0,1fr))',
-      gap: 32
-    }
+    className: "bn-cols bn-cols--3"
   }, d.cases.map(c => /*#__PURE__*/React.createElement(CaseStudyCard, {
     key: c.slug,
     title: c.title,
@@ -2595,7 +2609,7 @@ function ServiceScreen({
   }, /*#__PURE__*/React.createElement("i", {
     className: "fa-solid fa-circle-check",
     style: {
-      color: 'var(--bn-primary)',
+      color: 'var(--accent)',
       marginRight: '0.5rem'
     }
   }), /*#__PURE__*/React.createElement("strong", null, b), " ", t);
@@ -2617,7 +2631,7 @@ function ServiceScreen({
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("section", {
     style: {
       padding: '80px 0',
-      backgroundColor: 'var(--bn-light)',
+      backgroundColor: 'var(--bg-subtle)',
       textAlign: 'center'
     }
   }, /*#__PURE__*/React.createElement("div", {
@@ -2629,7 +2643,7 @@ function ServiceScreen({
   }, "Twoja konkurencja wdra\u017Ca zmiany 10 razy dziennie. Ile razy Ty?"), /*#__PURE__*/React.createElement("p", {
     style: {
       marginTop: '0.5rem',
-      color: 'var(--bn-gray)'
+      color: 'var(--fg-muted)'
     }
   }, "DevOps i automatyzacja"), /*#__PURE__*/React.createElement("p", {
     style: {
@@ -2654,7 +2668,7 @@ function ServiceScreen({
     style: ul
   }, li('Automatyzacja Wdrożeń (CI/CD):', 'Stworzymy potok, który sam testuje, integruje i wdraża kod na serwery.'), li('Infrastruktura jako Kod (IaC):', 'Przekształcimy konfigurację Twoich serwerów w cyfrowy plan architektoniczny.'), li('Inteligentny Monitoring i Alerty:', 'Wdrożymy systemy wczesnego ostrzegania, które pozwolą reagować, zanim klienci zauważą problem.')))), /*#__PURE__*/React.createElement("section", {
     style: {
-      backgroundColor: 'var(--bn-light)',
+      backgroundColor: 'var(--bg-subtle)',
       textAlign: 'center',
       padding: '3rem 0'
     }

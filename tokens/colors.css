@@ -1,20 +1,22 @@
 :root{
 /* Ink — neutral scale (cool, slightly blue) */
---bn-ink-950:#0A0C10;--bn-ink-900:#0F1115;--bn-ink-850:#15181D;--bn-ink-800:#1C2027;--bn-ink-700:#2A2F38;--bn-ink-600:#4B515B;--bn-ink-500:#6B717C;--bn-ink-400:#8B919C;--bn-ink-300:#AEB3BD;--bn-ink-200:#C9CDD4;--bn-ink-100:#E4E6EA;--bn-ink-50:#F3F4F6;--bn-white:#FFFFFF;
+--bn-ink-950:#0A0C10;--bn-ink-900:#0F1115;--bn-ink-850:#15181D;--bn-ink-800:#1C2027;--bn-ink-700:#2A2F38;--bn-ink-600:#4B515B;--bn-ink-500:#676D78;--bn-ink-400:#8B919C;--bn-ink-300:#AEB3BD;--bn-ink-200:#C9CDD4;--bn-ink-100:#E4E6EA;--bn-ink-50:#F3F4F6;--bn-white:#FFFFFF;
 /* Blue — brand accent */
---bn-blue-700:#1A41DD;--bn-blue-600:#2D5BFF;--bn-blue-500:#3D6BFF;--bn-blue-400:#6A8DFF;--bn-blue-100:#E3E9FF;
+--bn-blue-800:#1535B5;--bn-blue-700:#1A41DD;--bn-blue-600:#2D5BFF;--bn-blue-500:#3D6BFF;--bn-blue-400:#6A8DFF;--bn-blue-100:#E3E9FF;
 --bn-blue-a16:rgba(61,107,255,0.16);
 /* Signal — orange, used ONLY as a marker (live dot, current step, AI step, highlight) */
---bn-signal-600:#D9491C;--bn-signal-500:#FF6B3D;--bn-signal-100:#FFF0EB;
+--bn-signal-600:#C4441A;--bn-signal-500:#FF6B3D;--bn-signal-100:#FFF0EB;
 --bn-signal-a22:rgba(255,107,61,0.22);
-/* Status */
---bn-success:#1FA971;--bn-danger:#E5484D;
-/* Semantic — light theme (default) */
+/* Status - base hue for borders/icons; -600 for text on light, -300 for text on dark */
+--bn-success:#1FA971;--bn-success-600:#147A52;--bn-success-300:#3DD39A;--bn-danger:#E5484D;--bn-danger-600:#C62F35;--bn-danger-300:#FF7A7E;
+/* Semantic — light theme (default). --accent is the brand blue for marks (dot, bars, bullets); --accent-fill carries text (buttons, CTA band) and meets 4.5:1 with white */
 --bg-page:var(--bn-white);--bg-subtle:var(--bn-ink-50);--bg-raised:var(--bn-white);--bg-inverse:var(--bn-ink-900);
 --fg-default:var(--bn-ink-900);--fg-body:var(--bn-ink-600);--fg-muted:var(--bn-ink-500);--fg-on-accent:var(--bn-white);
---line-default:var(--bn-ink-100);--line-strong:var(--bn-ink-900);--grid-line:rgba(15,17,21,0.06);
---accent:var(--bn-blue-500);--accent-hover:var(--bn-blue-600);--accent-press:var(--bn-blue-700);--accent-text:var(--bn-blue-600);
+--line-default:var(--bn-ink-100);--line-strong:var(--bn-ink-900);--line-input:var(--bn-ink-400);--grid-line:rgba(15,17,21,0.06);
+--accent:var(--bn-blue-500);--accent-fill:var(--bn-blue-600);--accent-hover:var(--bn-blue-700);--accent-press:var(--bn-blue-800);--accent-text:var(--bn-blue-600);
+--focus-color:var(--bn-blue-500);
 --signal:var(--bn-signal-500);--signal-text:var(--bn-signal-600);
+--danger-text:var(--bn-danger-600);--success-text:var(--bn-success-600);
 /* Legacy aliases (v1) */
 --bn-primary:var(--bn-blue-500);--bn-primary-dark:var(--bn-blue-700);--bn-dark:var(--bn-ink-900);--bn-gray:var(--bn-ink-500);--bn-light:var(--bn-ink-50);--bn-border:var(--bn-ink-100);
 }
@@ -22,6 +24,7 @@
 .bn-dark,[data-theme="dark"]{
 --bg-page:var(--bn-ink-900);--bg-subtle:var(--bn-ink-850);--bg-raised:var(--bn-ink-800);--bg-inverse:var(--bn-white);
 --fg-default:#F2F3F5;--fg-body:var(--bn-ink-300);--fg-muted:var(--bn-ink-400);
---line-default:rgba(255,255,255,0.10);--line-strong:rgba(255,255,255,0.32);--grid-line:rgba(255,255,255,0.045);
---accent-text:var(--bn-blue-400);--signal-text:var(--bn-signal-500);
+--line-default:rgba(255,255,255,0.10);--line-strong:rgba(255,255,255,0.32);--line-input:var(--bn-ink-500);--grid-line:rgba(255,255,255,0.045);
+--accent-text:var(--bn-blue-400);--signal-text:var(--bn-signal-500);--focus-color:var(--bn-blue-400);
+--danger-text:var(--bn-danger-300);--success-text:var(--bn-success-300);
 }

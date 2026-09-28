@@ -21,7 +21,7 @@ function App() {
   const current = { home: '/', service: '/uslugi', cases: '/case-studies', case: '/case-studies', contact: '/kontakt' }[r.page];
   const Screen = { home: HomeScreen, cases: CaseStudiesScreen, case: CaseStudyScreen, contact: ContactScreen, service: ServiceScreen }[r.page] || HomeScreen;
   const nav = (href) => go(HREF[href] || 'home');
-  return <><Header dark links={LINKS} current={current} onNavigate={nav} extra="PL / EN" /><main><Screen go={go} slug={r.slug} /></main><Footer links={LINKS} onNavigate={nav} status="Wolne terminy od listopada" email="kontakt@broniszewski.net" /></>;
+  return <><Header dark links={LINKS} current={current} onNavigate={nav} extra="PL / EN" /><main id="main"><Screen go={go} slug={r.slug} /></main><Footer links={LINKS} onNavigate={nav} status="Wolne terminy od listopada" email="kontakt@broniszewski.net" /></>;
 }
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 </script></body></html>

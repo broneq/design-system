@@ -1,13 +1,13 @@
 function ServiceScreen({ go }) {
   const { Button } = window.BroniszewskiDesignSystem_db82bc;
-  const li = (b, t) => <li style={{ marginBottom: '0.75rem' }}><i className="fa-solid fa-circle-check" style={{ color: 'var(--bn-primary)', marginRight: '0.5rem' }}></i><strong>{b}</strong> {t}</li>;
+  const li = (b, t) => <li style={{ marginBottom: '0.75rem' }}><i className="fa-solid fa-circle-check" style={{ color: 'var(--accent)', marginRight: '0.5rem' }}></i><strong>{b}</strong> {t}</li>;
   const h2 = { fontWeight: 700, lineHeight: 1.3, marginTop: '2.5rem', marginBottom: '1.25rem' };
   const p = { lineHeight: 1.8, marginBottom: '1.5rem' };
   const ul = { listStyle: 'none', paddingLeft: 0, marginBottom: '1.5rem' };
   return (<>
-    <section style={{ padding: '80px 0', backgroundColor: 'var(--bn-light)', textAlign: 'center' }}><div className="container">
+    <section style={{ padding: '80px 0', backgroundColor: 'var(--bg-subtle)', textAlign: 'center' }}><div className="container">
       <h1 style={{ marginBottom: '0.5rem' }}>Twoja konkurencja wdraża zmiany 10 razy dziennie. Ile razy Ty?</h1>
-      <p style={{ marginTop: '0.5rem', color: 'var(--bn-gray)' }}>DevOps i automatyzacja</p>
+      <p style={{ marginTop: '0.5rem', color: 'var(--fg-muted)' }}>DevOps i automatyzacja</p>
       <p style={{ marginTop: '1rem', fontWeight: 500 }}>Zmienimy wdrożenia z pełnego napięcia wydarzenia w przewidywalny, zautomatyzowany proces.</p>
     </div></section>
     <section className="section"><div className="container">
@@ -26,7 +26,7 @@ function ServiceScreen({ go }) {
         {li('Inteligentny Monitoring i Alerty:', 'Wdrożymy systemy wczesnego ostrzegania, które pozwolą reagować, zanim klienci zauważą problem.')}
       </ul>
     </div></section>
-    <section style={{ backgroundColor: 'var(--bn-light)', textAlign: 'center', padding: '3rem 0' }}><div className="container">
+    <section style={{ backgroundColor: 'var(--bg-subtle)', textAlign: 'center', padding: '3rem 0' }}><div className="container">
       <h2>Chcesz, by Twój zespół wdrażał zmiany 10 razy dziennie?</h2>
       <p style={{ marginBottom: '1rem' }}>Porozmawiajmy o Twoich wyzwaniach podczas bezpłatnej konsultacji.</p>
       <Button href="#" onClick={(e) => { e.preventDefault(); go('contact'); }}>Umów bezpłatną konsultację</Button>

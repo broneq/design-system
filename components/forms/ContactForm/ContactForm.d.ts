@@ -1,5 +1,5 @@
 /**
- * Lead form: name, company, email, phone, team size, challenge. Mono labels, 52px hairline inputs with blue focus ring, orange required marks.
+ * Lead form: name, company, email, phone, team size, challenge. Mono labels, 52px inputs (3:1 border) with solid blue focus outline, blue required marks.
  */
 export interface ContactFormProps {
   onSubmit?: (values: { name: string; company: string; email: string; phone: string; team: string; description: string }) => void;

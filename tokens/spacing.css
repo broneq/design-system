@@ -3,6 +3,7 @@
 --section-y:120px;--section-y-tight:72px;
 --container-max:1312px;--container-pad:clamp(20px,4.4vw,64px);--content-narrow:720px;
 --header-h:88px;
+/* Breakpoints - CSS vars cannot be used in @media; use these literal values (max-width:1024px / 768px) only */
 --bp-lg:1024px; /* @kind other */
 --bp-md:768px; /* @kind other */
 --radius-none:0;--radius-xs:2px;--radius-sm:4px;--radius-md:8px;--radius-frame:12px;--radius-pill:999px;

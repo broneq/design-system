@@ -14,7 +14,7 @@
 --fs-h3:clamp(24px,2.2vw,30px); /* @kind font */
 --fs-h4:22px;
 --fs-lead:clamp(18px,1.5vw,21px); /* @kind font */
---fs-body:17px;--fs-small:15px;--fs-label:13px;--fs-micro:11px;
+--fs-body:17px;--fs-small:15px;--fs-label:13px;--fs-micro:12px;
 --lh-display:0.92; /* @kind font */
 --lh-heading:1; /* @kind font */
 --lh-title:1.15; /* @kind font */

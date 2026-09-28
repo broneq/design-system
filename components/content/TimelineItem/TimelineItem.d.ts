@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 /**
- * One readable timeline row: mono period | Archivo title + mono org | description or list | status chip. Stacks under 900px. Use for experience and process steps.
+ * One readable timeline row: mono period | Archivo title + mono org | description or list | status chip. Stacks at ≤1024px. Use for experience and process steps.
  */
 export interface TimelineItemProps {
   /** Period or step label, e.g. "2019 — 2024" */

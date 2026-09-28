@@ -1,5 +1,5 @@
 /**
- * Sticky 88px translucent header (blur): Archivo wordmark with blue period, Geist 15px links (current = orange dot), small mono CTA. Light or dark; drawer ≤860px.
+ * Sticky 88px solid header: skip link, Archivo wordmark with blue period, Geist 15px links (current = blue dot + aria-current), small mono CTA. Light or dark; drawer ≤1024px (Escape closes, focus returns to toggle).
  */
 export interface HeaderProps {
   links?: { href: string; label: string }[];
@@ -11,6 +11,8 @@ export interface HeaderProps {
   dark?: boolean;
   /** Small mono text left of CTA, e.g. "PL / EN" */
   extra?: string;
+  /** Target of the "Przejdź do treści" skip link; the page's <main> needs this id. Pass null to omit. Default "#main" */
+  skipTo?: string | null;
 }
 export declare function Header(props: HeaderProps): JSX.Element;
 /** Wordmark "Broniszewski" + blue period (Archivo 800). */
