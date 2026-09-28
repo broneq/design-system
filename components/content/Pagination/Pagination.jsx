@@ -1,5 +1,6 @@
 import React from 'react';
 export function Pagination({ current = 1, total = 1, onChange, prevLabel = '← Poprzednia', nextLabel = 'Następna →' }) {
+  if (total <= 1) return null;
   const go = (n) => onChange && onChange(n);
   return (
     <nav className="bn-pagination" aria-label="Paginacja">

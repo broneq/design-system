@@ -1,10 +1,8 @@
 function HomeScreen({ go }) {
   const { Hero, SectionHeader, ProblemListItem, TextSeparator, ServiceCard, Segments, Timeline, TimelineItem, CaseStudyCard, CooperationCard, FinalCTA, Button } = window.BroniszewskiDesignSystem_db82bc;
   const d = window.BN_DATA;
-  const [step, setStep] = React.useState(2);
-  // Dimming inactive steps only makes sense where hover can re-highlight them
-  const canHover = window.matchMedia('(hover: hover)').matches;
   const click = (fn) => (e) => { e.preventDefault(); fn(); };
+  const AI_STEP = 2;
   const steps = [
     { t: 'Diagnoza', d: 'Przechodzę z zespołem drogę od ticketu do produkcji i mierzę, gdzie praca naprawdę czeka.', p: ['Warsztat z zespołem', 'Mapa SDLC', 'Baseline metryk'] },
     { t: 'Architektura', d: 'Projektuję rolę AI w procesie: gdzie agent, gdzie asystent, gdzie człowiek.', p: ['Zasady i guardraile', 'Dobór narzędzi', 'Plan pilotażu'] },
@@ -23,13 +21,11 @@ function HomeScreen({ go }) {
       <TextSeparator>Problemem nie jest narzędzie. Jest nim proces.</TextSeparator></div>
     </div></section>
     <section className="section bn-dark bn-grid"><div className="container">
-      <SectionHeader eyebrow="Proces" eyebrowPrefix="01 —" title="Cztery kroki." titleMuted="Od pilota do nowego procesu." />
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,minmax(0,1fr))', gap: 8, marginBottom: 28 }}>
-        {steps.map((s, i) => <button key={s.t} onClick={() => setStep(i)} aria-pressed={i === step} style={{ background: 'none', border: 0, textAlign: 'left', cursor: 'pointer', padding: '12px 0', minWidth: 0 }}><Segments count={1} current={i === step ? 0 : -1} done={i < step ? 1 : 0} labels={[String(i + 1).padStart(2, '0') + ' · ' + s.t]} /></button>)}
-      </div>
-      <div className="bn-cols bn-cols--4" style={{ '--cols-gap': '16px' }}>
-        {steps.map((s, i) => <div key={s.t} style={{ opacity: !canHover || i === step ? 1 : 0.55, transition: 'opacity .25s' }} onMouseEnter={() => setStep(i)}><ServiceCard number={i + 1} title={s.t} description={s.d} points={s.p} /></div>)}
-      </div>
+      <SectionHeader eyebrow="Proces" eyebrowPrefix="01 —" title="Cztery kroki." titleMuted="Od diagnozy do procesu, który działa beze mnie." />
+      {/* Static process: each card carries its own bar; the AI step is the one signal-orange segment */}
+      <ol className="bn-cols bn-cols--4" style={{ '--cols-gap': '16px', listStyle: 'none' }}>
+        {steps.map((s, i) => <li key={s.t} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}><div aria-hidden="true"><Segments count={1} current={i === AI_STEP ? 0 : -1} done={i < AI_STEP ? 1 : 0} /></div><ServiceCard number={i + 1} title={s.t} description={s.d} points={s.p} /></li>)}
+      </ol>
     </div></section>
     <section className="section"><div className="container">
       <SectionHeader eyebrow="Współpraca" eyebrowPrefix="02 —" title="Trzy formaty." />
@@ -39,7 +35,7 @@ function HomeScreen({ go }) {
         <CooperationCard icon="fa-people-group" title="Warsztaty dla zespołu" subtitle="1–2 dni" ideal="Chcesz, żeby zespół pracował z AI świadomie i według wspólnych zasad." scope="Code review z AI, Testy, Praca z agentami" />
       </div>
     </div></section>
-    <section className="section" style={{ background: 'var(--bg-subtle)' }}><div className="container">
+    <section className="section section--subtle bn-grid bn-grid--fade"><div className="container">
       <SectionHeader eyebrow="Doświadczenie" eyebrowPrefix="03 —" title="20 lat w software." titleMuted="Od kodu do architektury procesu." />
       <Timeline>
         <TimelineItem label="2024 — teraz" title="Architekt / konsultant AI w SDLC" meta="Niezależnie" description="Wdrożenia AI w procesie wytwarzania dla zespołów 10–80 osób." status="Teraz" current />

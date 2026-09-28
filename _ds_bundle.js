@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"3b7afc222669","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"77d78fbc1040","components/content/Pagination/Pagination.jsx":"0aee360411e8","components/content/ProblemListItem/ProblemListItem.jsx":"ecd349d05fe8","components/content/TimelineItem/TimelineItem.jsx":"fb837410efc9","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"7c48c15a9752","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"731f4d2ab810","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"8f4ea5228d69","components/layout/Header/Header.jsx":"5c23f6cf1a4c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"e42666de438e","ui_kits/website/CaseStudyScreen.jsx":"5b4e440196e4","ui_kits/website/ContactScreen.jsx":"6f90777bbe00","ui_kits/website/HomeScreen.jsx":"a84dacec1d7c","ui_kits/website/ServiceScreen.jsx":"b21be86ca076","ui_kits/website/data.js":"4543f5913a38"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"3b7afc222669","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"77d78fbc1040","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"ecd349d05fe8","components/content/TimelineItem/TimelineItem.jsx":"fb837410efc9","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"68d39142e3a1","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"731f4d2ab810","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"8f4ea5228d69","components/layout/Header/Header.jsx":"5c23f6cf1a4c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"111ed102bb0e","ui_kits/website/CaseStudyScreen.jsx":"095fcc12f6b4","ui_kits/website/ContactScreen.jsx":"13bed26a7265","ui_kits/website/HomeScreen.jsx":"86225f500ed1","ui_kits/website/ServiceScreen.jsx":"a1e3d6f68c8d","ui_kits/website/data.js":"4b9337711e14"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -47,6 +47,7 @@ function Pagination({
   prevLabel = '← Poprzednia',
   nextLabel = 'Następna →'
 }) {
+  if (total <= 1) return null;
   const go = n => onChange && onChange(n);
   return /*#__PURE__*/React.createElement("nav", {
     className: "bn-pagination",
@@ -311,6 +312,26 @@ function Counter({
 Object.assign(__ds_scope, { Segments, Counter });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/core/Segments/Segments.jsx", error: String((e && e.message) || e) }); }
 
+// components/core/Stat/Stat.jsx
+try { (() => {
+function Stat({
+  value,
+  label,
+  note
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    className: "bn-stat"
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "value"
+  }, value), /*#__PURE__*/React.createElement("p", {
+    className: "label"
+  }, label), note && /*#__PURE__*/React.createElement("p", {
+    className: "note"
+  }, note));
+}
+Object.assign(__ds_scope, { Stat });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/core/Stat/Stat.jsx", error: String((e && e.message) || e) }); }
+
 // components/core/Tag/Tag.jsx
 try { (() => {
 function Tag({
@@ -471,10 +492,11 @@ function PageHeader({
   subtitle,
   eyebrow,
   tags,
-  dark = true
+  dark = true,
+  size = 'lg'
 }) {
   return /*#__PURE__*/React.createElement("header", {
-    className: 'bn-page-header bn-grid' + (dark ? ' bn-dark' : '')
+    className: 'bn-page-header bn-grid' + (size === 'md' ? ' bn-page-header--md' : '') + (dark ? ' bn-dark' : '')
   }, /*#__PURE__*/React.createElement("div", {
     className: "container inner"
   }, eyebrow && /*#__PURE__*/React.createElement(__ds_scope.Eyebrow, null, eyebrow), /*#__PURE__*/React.createElement("h1", {
@@ -2146,7 +2168,6 @@ try { (() => {
 
 // ui_kits/website/CaseStudiesScreen.jsx
 try { (() => {
-function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function CaseStudiesScreen({
   go
 }) {
@@ -2158,144 +2179,115 @@ function CaseStudiesScreen({
   const d = window.BN_DATA;
   const [page, setPage] = React.useState(1);
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(PageHeader, {
-    title: "Studia Przypadk\xF3w: Realne Problemy, Mierzalne Rezultaty",
-    subtitle: "Poni\u017Cej znajdziesz zbi\xF3r historii transformacji cyfrowych, kt\xF3re przeprowadzi\u0142em. Ka\u017Cdy projekt to dow\xF3d na to, \u017Ce dobrze zaplanowana technologia jest kluczem do przewagi konkurencyjnej."
+    eyebrow: "Case studies",
+    title: "Wyniki, nie slajdy.",
+    subtitle: "Projekty, w kt\xF3rych zmiana procesu i architektury da\u0142a mierzalny efekt."
   }), /*#__PURE__*/React.createElement("section", {
+    className: "section"
+  }, /*#__PURE__*/React.createElement("div", {
     className: "container"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "bn-cols bn-cols--3",
-    style: {
-      marginTop: 'var(--space-8)'
-    }
-  }, d.cases.map(c => /*#__PURE__*/React.createElement(CaseStudyCard, _extends({
-    key: c.slug
-  }, c, {
+    className: "bn-cols bn-cols--3"
+  }, d.cases.map(c => /*#__PURE__*/React.createElement(CaseStudyCard, {
+    key: c.slug,
+    title: c.title,
+    excerpt: c.excerpt,
+    tags: c.tags,
     image: d.img + c.image,
     href: "#",
     onClick: e => {
       e.preventDefault();
       go('case', c.slug);
     }
-  }))))), /*#__PURE__*/React.createElement(Pagination, {
+  }))), /*#__PURE__*/React.createElement(Pagination, {
     current: page,
     total: 1,
     onChange: setPage
-  }));
+  }))));
 }
 window.CaseStudiesScreen = CaseStudiesScreen;
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/website/CaseStudiesScreen.jsx", error: String((e && e.message) || e) }); }
 
 // ui_kits/website/CaseStudyScreen.jsx
 try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function CaseStudyScreen({
   go,
   slug
 }) {
   const {
     PageHeader,
+    Stat,
     ArticleLayout,
-    ArticleImage,
-    Button
+    Button,
+    FinalCTA
   } = window.BroniszewskiDesignSystem_db82bc;
   const d = window.BN_DATA;
   const i = Math.max(0, d.cases.findIndex(c => c.slug === slug));
   const post = d.cases[i],
     prev = d.cases[i - 1],
     next = d.cases[i + 1];
-  const k8s = post.slug === 'transformacja-kubernetes-cicd';
+  const open = c => e => {
+    e.preventDefault();
+    go('case', c.slug);
+  };
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(PageHeader, {
+    size: post.title.split(' ').length > 6 ? 'md' : 'lg',
+    eyebrow: 'Case study · ' + post.sector,
     title: post.title,
     subtitle: post.excerpt,
     tags: post.tags
   }), /*#__PURE__*/React.createElement("section", {
-    style: {
-      margin: '40px 0'
-    }
+    className: "section--tight"
   }, /*#__PURE__*/React.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/React.createElement("img", {
-    src: d.img + post.image,
-    alt: post.title,
-    style: {
-      width: '100%',
-      height: 'auto',
-      borderRadius: 'var(--radius-sm)',
-      border: '1px solid var(--line-default)',
-      display: 'block'
-    }
-  }))), /*#__PURE__*/React.createElement(ArticleLayout, null, k8s ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("p", null, "By\u0142a 2:30 w nocy, gdy telefon zadzwoni\u0142 po raz trzeci w tym tygodniu. Kolejny deployment si\u0119 wysypa\u0142, klient krzyczy, a jedyna osoba w zespole, kt\xF3ra wie jak to naprawi\u0107, w\u0142a\u015Bnie wr\xF3ci\u0142a z urlopu. Brzmi znajomo?"), /*#__PURE__*/React.createElement("h2", null, "Punkt wyj\u015Bcia - Architektura B\xF3lu"), /*#__PURE__*/React.createElement("p", null, "Czy znacie to uczucie, gdy telefon dzwoni o 2 w nocy i wiecie, \u017Ce to nie mo\u017Ce by\u0107 nic dobrego? Tak wygl\u0105da\u0142o nasze \u017Cycie jeszcze 4 lata temu. Ka\u017Cdy deployment by\u0142 loteri\u0105 - albo wszystko dzia\u0142a\u0142o, albo kto\u015B z zespo\u0142u musia\u0142 wsta\u0107 i naprawia\u0107 system do rana."), /*#__PURE__*/React.createElement("h2", null, "Moment Prawdy - Kiedy Skala Zabija"), /*#__PURE__*/React.createElement("p", null, "Prze\u0142omowy moment przyszed\u0142 w momencie, gdy biznes przesta\u0142 tolerowa\u0107 przestoje. Klienci zacz\u0119li wymaga\u0107, \u017Ceby systemy dzia\u0142a\u0142y bez przerwy. Zero downtime sta\u0142o si\u0119 standardem, nie luksusem."), /*#__PURE__*/React.createElement("h2", null, "Rezultaty - Liczby Nie K\u0142ami\u0105"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Oszcz\u0119dno\u015B\u0107: 95% czasu")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Wzrost: 1000%")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("strong", null, "Poprawa: 100%")))) : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h2", null, "Wyzwanie Biznesowe"), /*#__PURE__*/React.createElement("blockquote", null, /*#__PURE__*/React.createElement("p", null, "\u201EPotrzebowali\u015Bmy systemu, kt\xF3ry da nam kontrol\u0119 nad operacj\u0105. Nie chcieli\u015Bmy kolejnego narz\u0119dzia - chcieli\u015Bmy rozwi\u0105zanie, kt\xF3re zmieni spos\xF3b, w jaki pracujemy.\u201D - Dyrektor Operacyjny")), /*#__PURE__*/React.createElement("h2", null, "Architektura Rozwi\u0105zania"), /*#__PURE__*/React.createElement(ArticleImage, {
-    src: d.img + 'architektura-rozwiazania.png',
-    alt: "Architektura rozwi\u0105zania",
-    caption: "Architektura rozwi\u0105zania"
-  }), /*#__PURE__*/React.createElement("p", {
-    style: {
-      color: 'var(--fg-muted)',
-      fontStyle: 'italic'
-    }
-  }, "[Tre\u015B\u0107 skr\xF3cona w UI kit \u2014 pe\u0142ny tekst w repozytorium: src/content/case-studies/", post.slug, ".mdx]"))), /*#__PURE__*/React.createElement("section", {
-    style: {
-      backgroundColor: 'var(--bg-subtle)',
-      padding: '60px 0'
-    }
   }, /*#__PURE__*/React.createElement("div", {
-    className: "container bn-cols bn-cols--2"
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      background: 'var(--bg-raised)',
-      border: '1px solid var(--line-default)',
-      borderRadius: 'var(--radius-sm)',
-      padding: '1.5rem'
-    }
-  }, /*#__PURE__*/React.createElement("h3", null, "Kluczowy rezultat"), /*#__PURE__*/React.createElement("p", null, post.result)), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      gap: '1rem',
-      alignItems: 'flex-start'
-    }
-  }, /*#__PURE__*/React.createElement("h3", {
+    className: "bn-cols bn-cols--3"
+  }, post.stats.map(s => /*#__PURE__*/React.createElement(Stat, _extends({
+    key: s.label
+  }, s)))))), /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("figure", {
+    className: "bn-article-image",
     style: {
       margin: 0
     }
-  }, "Masz podobne wyzwanie?"), /*#__PURE__*/React.createElement("p", null, "Porozmawiajmy o tym, jak mog\u0119 pom\xF3c Twojej firmie."), /*#__PURE__*/React.createElement(Button, {
-    href: "#",
-    onClick: e => {
-      e.preventDefault();
-      go('contact');
-    }
-  }, "Um\xF3w bezp\u0142atn\u0105 konsultacj\u0119")))), /*#__PURE__*/React.createElement("nav", {
+  }, /*#__PURE__*/React.createElement("img", {
+    src: d.img + post.image,
+    alt: ""
+  }))), /*#__PURE__*/React.createElement("section", {
+    className: "section"
+  }, /*#__PURE__*/React.createElement(ArticleLayout, null, /*#__PURE__*/React.createElement("h2", null, "Kontekst"), /*#__PURE__*/React.createElement("p", null, post.context), /*#__PURE__*/React.createElement("h2", null, "Problem"), /*#__PURE__*/React.createElement("p", null, post.problem), /*#__PURE__*/React.createElement("blockquote", null, /*#__PURE__*/React.createElement("p", null, "\u201E", post.quote, "\u201D"), /*#__PURE__*/React.createElement("footer", null, post.quoteAuthor)), /*#__PURE__*/React.createElement("h2", null, "Co zrobi\u0142em"), /*#__PURE__*/React.createElement("ol", null, post.approach.map(a => /*#__PURE__*/React.createElement("li", {
+    key: a
+  }, a))))), /*#__PURE__*/React.createElement("nav", {
     className: "container",
+    "aria-label": "Inne case studies",
     style: {
       display: 'flex',
       justifyContent: 'space-between',
-      padding: '2rem 20px',
-      borderTop: '1px solid var(--line-default)',
-      fontWeight: 600
+      gap: 24,
+      paddingBlock: 32,
+      borderTop: '1px solid var(--line-default)'
     }
-  }, /*#__PURE__*/React.createElement("div", null, prev && /*#__PURE__*/React.createElement("a", {
+  }, /*#__PURE__*/React.createElement("div", null, prev && /*#__PURE__*/React.createElement(Button, {
+    variant: "link",
     href: "#",
-    style: {
-      display: 'inline-block',
-      padding: '12px 0',
-      textDecoration: 'none'
-    },
-    onClick: e => {
-      e.preventDefault();
-      go('case', prev.slug);
-    }
-  }, "\u2190 Poprzedni Projekt")), /*#__PURE__*/React.createElement("div", null, next && /*#__PURE__*/React.createElement("a", {
+    onClick: open(prev)
+  }, "\u2190 ", prev.title)), /*#__PURE__*/React.createElement("div", null, next && /*#__PURE__*/React.createElement(Button, {
+    variant: "link",
     href: "#",
-    style: {
-      display: 'inline-block',
-      padding: '12px 0',
-      textDecoration: 'none'
-    },
-    onClick: e => {
+    onClick: open(next),
+    arrow: true
+  }, next.title))), /*#__PURE__*/React.createElement(FinalCTA, {
+    title: "Masz podobny problem?",
+    intro: "Opowiedz, jak dzi\u015B wygl\u0105da Wasz proces. Po 30 minutach b\u0119dziesz wiedzie\u0107, od czego zacz\u0105\u0107.",
+    points: ['Gdzie praca naprawdę czeka', 'Co da się zmienić w jednym sprincie', 'Czy warto iść dalej - szczerze'],
+    avatar: d.img + 'profile.png',
+    onCta: e => {
       e.preventDefault();
-      go('case', next.slug);
+      go('contact');
     }
-  }, "Nast\u0119pny Projekt \u2192"))));
+  }));
 }
 window.CaseStudyScreen = CaseStudyScreen;
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/website/CaseStudyScreen.jsx", error: String((e && e.message) || e) }); }
@@ -2305,60 +2297,62 @@ try { (() => {
 function ContactScreen() {
   const {
     PageHeader,
+    SectionHeader,
+    ProblemListItem,
     ContactForm,
-    Button
+    LiveBadge,
+    Eyebrow
   } = window.BroniszewskiDesignSystem_db82bc;
-  const d = window.BN_DATA;
+  const next = ['Odpisuję w ciągu 24 godzin z propozycją terminu.', 'Rozmawiamy 30 minut o Waszym procesie i celach.', 'Dostajesz notatkę z 2–3 miejscami, gdzie AI da najwięcej.'];
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(PageHeader, {
-    title: "Zacznijmy Rozmow\u0119 o Twoim Biznesie",
-    subtitle: "Wype\u0142nienie poni\u017Cszego formularza zajmie Ci nie wi\u0119cej ni\u017C 2 minuty. To wystarczy, abym m\xF3g\u0142 przygotowa\u0107 si\u0119 do naszej bezp\u0142atnej konsultacji i zaproponowa\u0107 konkretne rozwi\u0105zania."
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "container bn-cols bn-cols--2",
-    style: {
-      paddingBlock: 'var(--space-8)'
-    }
+    eyebrow: "Kontakt",
+    title: "Porozmawiajmy.",
+    subtitle: "30 minut o tym, jak dzi\u015B wygl\u0105da Wasz proces. Bez prezentacji sprzeda\u017Cowej."
+  }), /*#__PURE__*/React.createElement("section", {
+    className: "section"
   }, /*#__PURE__*/React.createElement("div", {
+    className: "container bn-cols bn-cols--split",
     style: {
-      position: 'relative',
-      color: '#fff',
-      overflow: 'hidden'
+      '--cols-gap': '64px'
     }
-  }, /*#__PURE__*/React.createElement("img", {
-    src: d.img + 'desk.png',
-    alt: "Biurko",
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(SectionHeader, {
+    eyebrow: "Co dalej",
+    title: "Trzy kroki."
+  }), /*#__PURE__*/React.createElement("ul", null, next.map((t, i) => /*#__PURE__*/React.createElement(ProblemListItem, {
+    key: t,
+    marker: String(i + 1).padStart(2, '0'),
+    text: t
+  }))), /*#__PURE__*/React.createElement("div", {
     style: {
-      position: 'absolute',
-      inset: 0,
-      width: '100%',
-      height: '100%',
-      objectFit: 'cover'
+      marginTop: 48,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 4,
+      alignItems: 'flex-start'
     }
-  }), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement(Eyebrow, null, "Bezpo\u015Brednio"), /*#__PURE__*/React.createElement("a", {
+    href: "mailto:kontakt@broniszewski.net",
     style: {
-      position: 'absolute',
-      inset: 0,
-      background: 'rgba(10, 12, 16, 0.72)'
+      display: 'inline-block',
+      paddingBlock: 6,
+      fontSize: 20,
+      fontWeight: 500
     }
-  }), /*#__PURE__*/React.createElement("div", {
-    style: {
-      position: 'relative',
-      zIndex: 1,
-      padding: '2rem'
-    }
-  }, /*#__PURE__*/React.createElement("h2", {
-    style: {
-      color: '#fff'
-    }
-  }, "Przemys\u0142aw Broniszewski"), /*#__PURE__*/React.createElement("p", {
-    style: {
-      marginBottom: '1.5rem',
-      color: '#fff'
-    }
-  }, "Masz pytania? Wype\u0142nij formularz, a w ci\u0105gu 24h odezw\u0119 si\u0119, by um\xF3wi\u0107 60-minutow\u0105, bezp\u0142atn\u0105 konsultacj\u0119 strategiczn\u0105. Je\u015Bli wolisz mniej formalny kontakt, znajdziesz mnie r\xF3wnie\u017C na LinkedIn."), /*#__PURE__*/React.createElement(Button, {
-    variant: "inverse",
+  }, "kontakt@broniszewski.net"), /*#__PURE__*/React.createElement("a", {
     href: "https://www.linkedin.com/in/przemys%C5%82aw-broniszewski/",
-    target: "_blank"
-  }, "Zobacz profil na LinkedIn"))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(ContactForm, null))));
+    target: "_blank",
+    rel: "noopener noreferrer",
+    style: {
+      display: 'inline-block',
+      paddingBlock: 6,
+      fontSize: 20,
+      fontWeight: 500
+    }
+  }, "LinkedIn \u2197"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 16
+    }
+  }, /*#__PURE__*/React.createElement(LiveBadge, null, "Wolne terminy od listopada")))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(ContactForm, null)))));
 }
 window.ContactScreen = ContactScreen;
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/website/ContactScreen.jsx", error: String((e && e.message) || e) }); }
@@ -2383,13 +2377,11 @@ function HomeScreen({
     Button
   } = window.BroniszewskiDesignSystem_db82bc;
   const d = window.BN_DATA;
-  const [step, setStep] = React.useState(2);
-  // Dimming inactive steps only makes sense where hover can re-highlight them
-  const canHover = window.matchMedia('(hover: hover)').matches;
   const click = fn => e => {
     e.preventDefault();
     fn();
   };
+  const AI_STEP = 2;
   const steps = [{
     t: 'Diagnoza',
     d: 'Przechodzę z zespołem drogę od ticketu do produkcji i mierzę, gdzie praca naprawdę czeka.',
@@ -2445,44 +2437,27 @@ function HomeScreen({
     eyebrow: "Proces",
     eyebrowPrefix: "01 \u2014",
     title: "Cztery kroki.",
-    titleMuted: "Od pilota do nowego procesu."
-  }), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(4,minmax(0,1fr))',
-      gap: 8,
-      marginBottom: 28
-    }
-  }, steps.map((s, i) => /*#__PURE__*/React.createElement("button", {
-    key: s.t,
-    onClick: () => setStep(i),
-    "aria-pressed": i === step,
-    style: {
-      background: 'none',
-      border: 0,
-      textAlign: 'left',
-      cursor: 'pointer',
-      padding: '12px 0',
-      minWidth: 0
-    }
-  }, /*#__PURE__*/React.createElement(Segments, {
-    count: 1,
-    current: i === step ? 0 : -1,
-    done: i < step ? 1 : 0,
-    labels: [String(i + 1).padStart(2, '0') + ' · ' + s.t]
-  })))), /*#__PURE__*/React.createElement("div", {
+    titleMuted: "Od diagnozy do procesu, kt\xF3ry dzia\u0142a beze mnie."
+  }), /*#__PURE__*/React.createElement("ol", {
     className: "bn-cols bn-cols--4",
     style: {
-      '--cols-gap': '16px'
+      '--cols-gap': '16px',
+      listStyle: 'none'
     }
-  }, steps.map((s, i) => /*#__PURE__*/React.createElement("div", {
+  }, steps.map((s, i) => /*#__PURE__*/React.createElement("li", {
     key: s.t,
     style: {
-      opacity: !canHover || i === step ? 1 : 0.55,
-      transition: 'opacity .25s'
-    },
-    onMouseEnter: () => setStep(i)
-  }, /*#__PURE__*/React.createElement(ServiceCard, {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 16
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(Segments, {
+    count: 1,
+    current: i === AI_STEP ? 0 : -1,
+    done: i < AI_STEP ? 1 : 0
+  })), /*#__PURE__*/React.createElement(ServiceCard, {
     number: i + 1,
     title: s.t,
     description: s.d,
@@ -2519,10 +2494,7 @@ function HomeScreen({
     ideal: "Chcesz, \u017Ceby zesp\xF3\u0142 pracowa\u0142 z AI \u015Bwiadomie i wed\u0142ug wsp\xF3lnych zasad.",
     scope: "Code review z AI, Testy, Praca z agentami"
   })))), /*#__PURE__*/React.createElement("section", {
-    className: "section",
-    style: {
-      background: 'var(--bg-subtle)'
-    }
+    className: "section section--subtle bn-grid bn-grid--fade"
   }, /*#__PURE__*/React.createElement("div", {
     className: "container"
   }, /*#__PURE__*/React.createElement(SectionHeader, {
@@ -2600,217 +2572,211 @@ function ServiceScreen({
   go
 }) {
   const {
-    Button
+    PageHeader,
+    SectionHeader,
+    ProblemListItem,
+    TextSeparator,
+    ServiceCard,
+    Timeline,
+    TimelineItem,
+    Stat,
+    FinalCTA
   } = window.BroniszewskiDesignSystem_db82bc;
-  const li = (b, t) => /*#__PURE__*/React.createElement("li", {
-    style: {
-      marginBottom: '0.75rem'
-    }
-  }, /*#__PURE__*/React.createElement("i", {
-    className: "fa-solid fa-circle-check",
-    style: {
-      color: 'var(--accent)',
-      marginRight: '0.5rem'
-    }
-  }), /*#__PURE__*/React.createElement("strong", null, b), " ", t);
-  const h2 = {
-    fontWeight: 700,
-    lineHeight: 1.3,
-    marginTop: '2.5rem',
-    marginBottom: '1.25rem'
+  const d = window.BN_DATA;
+  const toContact = e => {
+    e.preventDefault();
+    go('contact');
   };
-  const p = {
-    lineHeight: 1.8,
-    marginBottom: '1.5rem'
-  };
-  const ul = {
-    listStyle: 'none',
-    paddingLeft: 0,
-    marginBottom: '1.5rem'
-  };
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("section", {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(PageHeader, {
+    eyebrow: "Us\u0142uga",
+    title: "Pilota\u017C AI w SDLC.",
+    subtitle: "6\u201310 tygodni na jednym zespole. Od eksperyment\xF3w z narz\u0119dziami do wsp\xF3lnego procesu z mierzalnym efektem.",
+    tags: ['6–10 tygodni', '1 zespół', 'Metryki przed / po']
+  }), /*#__PURE__*/React.createElement("section", {
+    className: "section"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container bn-cols bn-cols--split",
     style: {
-      padding: '80px 0',
-      backgroundColor: 'var(--bg-subtle)',
-      textAlign: 'center'
+      '--cols-gap': '64px'
     }
+  }, /*#__PURE__*/React.createElement(SectionHeader, {
+    eyebrow: "Punkt wyj\u015Bcia",
+    title: "Narz\u0119dzia s\u0105. Procesu nie ma."
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("ul", null, ['Każdy programista używa AI po swojemu.', 'Pull requesty rosną szybciej niż przepustowość review.', 'Nikt nie wie, czy AI skraca lead time, czy tylko przesuwa pracę.', 'Zasady bezpieczeństwa kończą się na „nie wklejaj kodu klienta”.'].map(p => /*#__PURE__*/React.createElement(ProblemListItem, {
+    key: p,
+    text: p
+  }))), /*#__PURE__*/React.createElement(TextSeparator, null, "Pilota\u017C zamienia eksperymenty w proces.")))), /*#__PURE__*/React.createElement("section", {
+    className: "section section--subtle bn-grid bn-grid--fade"
   }, /*#__PURE__*/React.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/React.createElement("h1", {
+  }, /*#__PURE__*/React.createElement(SectionHeader, {
+    eyebrowPrefix: "01 \u2014",
+    eyebrow: "Co dostajesz",
+    title: "Trzy rezultaty.",
+    titleMuted: "Zostaj\u0105 w zespole po moim wyj\u015Bciu."
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "bn-cols bn-cols--3",
     style: {
-      marginBottom: '0.5rem'
+      '--cols-gap': '16px'
     }
-  }, "Twoja konkurencja wdra\u017Ca zmiany 10 razy dziennie. Ile razy Ty?"), /*#__PURE__*/React.createElement("p", {
-    style: {
-      marginTop: '0.5rem',
-      color: 'var(--fg-muted)'
-    }
-  }, "DevOps i automatyzacja"), /*#__PURE__*/React.createElement("p", {
-    style: {
-      marginTop: '1rem',
-      fontWeight: 500
-    }
-  }, "Zmienimy wdro\u017Cenia z pe\u0142nego napi\u0119cia wydarzenia w przewidywalny, zautomatyzowany proces."))), /*#__PURE__*/React.createElement("section", {
+  }, /*#__PURE__*/React.createElement(ServiceCard, {
+    number: 1,
+    icon: "fa-map",
+    title: "Mapa procesu",
+    description: "Droga od ticketu do produkcji z zaznaczonymi miejscami, gdzie praca czeka.",
+    points: ['Warsztat z zespołem', 'Baseline metryk', 'Priorytety zmian']
+  }), /*#__PURE__*/React.createElement(ServiceCard, {
+    number: 2,
+    icon: "fa-book",
+    title: "Playbook zespo\u0142u",
+    description: "Wsp\xF3lne zasady pracy z AI: kiedy agent, kiedy asystent, kiedy cz\u0142owiek.",
+    points: ['Guardraile i bezpieczeństwo', 'Prompty i szablony', 'Definicja review']
+  }), /*#__PURE__*/React.createElement(ServiceCard, {
+    number: 3,
+    icon: "fa-chart-line",
+    title: "Metryki przed / po",
+    description: "Dow\xF3d, co si\u0119 zmieni\u0142o, zanim skalujesz na kolejne zespo\u0142y.",
+    points: ['Lead time', 'Czas review', 'Jakość wydań']
+  })))), /*#__PURE__*/React.createElement("section", {
     className: "section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/React.createElement("h2", {
-    style: h2
-  }, "Koniec z teatrem pt. \"Dzie\u0144 Wdro\u017Cenia\""), /*#__PURE__*/React.createElement("p", {
-    style: p
-  }, "Je\u015Bli ten scenariusz brzmi znajomo, to znaczy, \u017Ce tracisz czas i pieni\u0105dze. Zbli\u017Ca si\u0119 wdro\u017Cenie. Zesp\xF3\u0142 jest w pe\u0142nej gotowo\u015Bci. Napi\u0119cie ro\u015Bnie. Co\u015B idzie nie tak i zaczyna si\u0119 nerwowe szukanie przyczyny."), /*#__PURE__*/React.createElement("ul", {
-    style: ul
-  }, li('Długie cykle wdrożeniowe:', 'Od pomysłu do działającej funkcji mijają tygodnie lub miesiące, a Ty tracisz przewagę rynkową.'), li('"Wszystkie ręce na pokład":', 'Kluczowi specjaliści zamiast tworzyć innowacje, spędzają godziny na ręcznym procesie wdrożenia.'), li('Ciągłe "gaszenie pożarów":', 'Zespół jest w permanentnym trybie reaktywnym, naprawiając skutki niestabilnych wdrożeń.')), /*#__PURE__*/React.createElement("h2", {
-    style: h2
-  }, "Rozwi\u0105zanie: Budujemy lini\u0119 produkcyjn\u0105 dla Twojego oprogramowania"), /*#__PURE__*/React.createElement("p", {
-    style: p
-  }, "DevOps to nie zestaw narz\u0119dzi, to budowa zautomatyzowanej linii monta\u017Cowej dla Twojego kodu."), /*#__PURE__*/React.createElement("ul", {
-    style: ul
-  }, li('Automatyzacja Wdrożeń (CI/CD):', 'Stworzymy potok, który sam testuje, integruje i wdraża kod na serwery.'), li('Infrastruktura jako Kod (IaC):', 'Przekształcimy konfigurację Twoich serwerów w cyfrowy plan architektoniczny.'), li('Inteligentny Monitoring i Alerty:', 'Wdrożymy systemy wczesnego ostrzegania, które pozwolą reagować, zanim klienci zauważą problem.')))), /*#__PURE__*/React.createElement("section", {
-    style: {
-      backgroundColor: 'var(--bg-subtle)',
-      textAlign: 'center',
-      padding: '3rem 0'
-    }
+  }, /*#__PURE__*/React.createElement(SectionHeader, {
+    eyebrowPrefix: "02 \u2014",
+    eyebrow: "Przebieg",
+    title: "Tydzie\u0144 po tygodniu."
+  }), /*#__PURE__*/React.createElement(Timeline, null, /*#__PURE__*/React.createElement(TimelineItem, {
+    label: "Tydzie\u0144 1\u20132",
+    title: "Diagnoza",
+    meta: "Warsztat \xB7 pomiary",
+    description: "Przechodz\u0119 z zespo\u0142em ca\u0142\u0105 drog\u0119 zmiany i mierz\u0119, gdzie praca stoi.",
+    status: "2 tyg."
+  }), /*#__PURE__*/React.createElement(TimelineItem, {
+    label: "Tydzie\u0144 3",
+    title: "Architektura",
+    meta: "Zasady \xB7 narz\u0119dzia",
+    description: "Projektuj\u0119 rol\u0119 AI w procesie i ustalam, co mierzymy.",
+    status: "1 tydz."
+  }), /*#__PURE__*/React.createElement(TimelineItem, {
+    label: "Tydzie\u0144 4\u20138",
+    title: "Wdro\u017Cenie AI",
+    meta: "Coaching w pracy",
+    description: "Zesp\xF3\u0142 pracuje nowym procesem, a ja co tydzie\u0144 przegl\u0105dam efekty.",
+    status: "Pilota\u017C",
+    current: true
+  }), /*#__PURE__*/React.createElement(TimelineItem, {
+    label: "Tydzie\u0144 9\u201310",
+    title: "Utrwalenie",
+    meta: "Playbook \xB7 liderzy",
+    description: "Przekazuj\u0119 proces liderom, \u017Ceby dzia\u0142a\u0142 beze mnie.",
+    status: "2 tyg."
+  })))), /*#__PURE__*/React.createElement("section", {
+    className: "section section--subtle bn-grid bn-grid--fade"
   }, /*#__PURE__*/React.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/React.createElement("h2", null, "Chcesz, by Tw\xF3j zesp\xF3\u0142 wdra\u017Ca\u0142 zmiany 10 razy dziennie?"), /*#__PURE__*/React.createElement("p", {
-    style: {
-      marginBottom: '1rem'
-    }
-  }, "Porozmawiajmy o Twoich wyzwaniach podczas bezp\u0142atnej konsultacji."), /*#__PURE__*/React.createElement(Button, {
-    href: "#",
-    onClick: e => {
-      e.preventDefault();
-      go('contact');
-    }
-  }, "Um\xF3w bezp\u0142atn\u0105 konsultacj\u0119"))));
+  }, /*#__PURE__*/React.createElement(SectionHeader, {
+    eyebrowPrefix: "03 \u2014",
+    eyebrow: "Efekt",
+    title: "Co mierz\u0119.",
+    titleMuted: "Przyk\u0142ad z pilota\u017Cu w zespole 12 os\xF3b."
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "bn-cols bn-cols--3"
+  }, /*#__PURE__*/React.createElement(Stat, {
+    value: "\u221235%",
+    label: "Lead time",
+    note: "Od ticketu do produkcji"
+  }), /*#__PURE__*/React.createElement(Stat, {
+    value: "\u221250%",
+    label: "Czas review",
+    note: "Mediana dla pull request\xF3w"
+  }), /*#__PURE__*/React.createElement(Stat, {
+    value: "0",
+    label: "Regresji z kodu AI",
+    note: "W ci\u0105gu 8 tygodni"
+  })))), /*#__PURE__*/React.createElement(FinalCTA, {
+    title: "Sprawd\u017Amy, czy pilota\u017C ma sens.",
+    intro: "W 30 minut ocenimy, czy Tw\xF3j zesp\xF3\u0142 jest gotowy i od czego zacz\u0105\u0107.",
+    points: ['Stan obecnego procesu', 'Zespół, od którego warto zacząć', 'Realny zakres i czas'],
+    avatar: d.img + 'profile.png',
+    onCta: toContact
+  }));
 }
 window.ServiceScreen = ServiceScreen;
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/website/ServiceScreen.jsx", error: String((e && e.message) || e) }); }
 
 // ui_kits/website/data.js
 try { (() => {
+// Placeholder content for the UI kit - copy is not final.
 window.BN_DATA = {
   img: '../../assets/images/',
   cases: [{
-    slug: 'od-arkuszy-do-automatyzacji',
-    title: 'Od arkuszy do automatyzacji: system TMS, który zwiększył wydajność o 300%',
-    excerpt: 'Historia stworzenia kompleksowego systemu TMS od podstaw – case study z 8-letniej transformacji cyfrowej w branży TSL.',
+    slug: 'od-arkuszy-do-tms',
+    sector: 'Logistyka · TSL',
     image: 'tms.png',
+    title: 'Od arkuszy do systemu TMS.',
+    excerpt: 'Osiem lat budowy systemu transportowego: od pierwszego arkusza do platformy, na której pracuje cała firma.',
     tags: ['TMS', 'Automatyzacja', 'Logistyka'],
-    result: '+300% Wydajności Transportu'
+    stats: [{
+      value: '3×',
+      label: 'Wydajność planowania',
+      note: 'Po 18 miesiącach od startu'
+    }, {
+      value: '8 lat',
+      label: 'Czas współpracy'
+    }, {
+      value: '6 → 40',
+      label: 'Zespół'
+    }],
+    context: 'Firma transportowa planowała kilkaset kursów dziennie w arkuszach. Każdy planista miał własną wersję prawdy, a wiedza o klientach siedziała w głowach dwóch osób.',
+    problem: 'Wzrost zamówień oznaczał zatrudnianie kolejnych planistów. Błędy w arkuszach kosztowały puste przebiegi i kary umowne.',
+    approach: ['Zmapowałem proces planowania z zespołem operacyjnym, zanim powstała pierwsza linia kodu.', 'Zaprojektowałem system modułowo: najpierw zlecenia, potem planowanie, na końcu rozliczenia.', 'Wdrażałem co dwa tygodnie, zawsze na jednym oddziale przed resztą firmy.'],
+    quote: 'Nie chcieliśmy kolejnego narzędzia. Chcieliśmy zmienić sposób, w jaki pracujemy.',
+    quoteAuthor: 'Dyrektor operacyjny'
   }, {
-    slug: 'integracja-danych-kafka',
-    title: 'Jak zsynchronizowaliśmy 480GB danych z opóźnieniem poniżej 50ms',
-    excerpt: 'Wyobraź sobie synchronizację 480GB danych między dwoma centrami danych w czasie rzeczywistym, obsługując 4 niezależne systemy naraz. Brzmi jak koszmar? Zbudowaliśmy system, który robi to z opóźnieniem poniżej 50ms.',
+    slug: 'synchronizacja-kafka',
+    sector: 'Integracja danych',
     image: 'kafka.png',
-    tags: ['Integracja Danych', 'Apache Kafka', 'CDC'],
-    result: '<50ms Opóźnienia Synchronizacji Danych'
+    title: '480 GB w czasie rzeczywistym.',
+    excerpt: 'Synchronizacja dwóch centrów danych i czterech systemów z opóźnieniem poniżej 50 ms.',
+    tags: ['Apache Kafka', 'CDC', 'Integracja'],
+    stats: [{
+      value: '<50 ms',
+      label: 'Opóźnienie synchronizacji'
+    }, {
+      value: '480 GB',
+      label: 'Wolumen danych'
+    }, {
+      value: '4',
+      label: 'Zintegrowane systemy'
+    }],
+    context: 'Dwa centra danych, cztery systemy i nocne eksporty CSV. Dane rozjeżdżały się w ciągu dnia, a raporty pokazywały stan sprzed doby.',
+    problem: 'Każda nowa integracja była osobnym projektem, a awaria jednego eksportu blokowała pozostałe.',
+    approach: ['Zastąpiłem eksporty strumieniem zmian (CDC) na Apache Kafka.', 'Ustaliłem z zespołami jeden kontrakt zdarzeń zamiast czterech formatów.', 'Dodałem monitoring opóźnień widoczny dla biznesu, nie tylko dla IT.'],
+    quote: 'Pierwszy raz raport o 9:00 pokazuje to, co dzieje się o 9:00.',
+    quoteAuthor: 'Kierownik controllingu'
   }, {
-    slug: 'transformacja-kubernetes-cicd',
-    title: 'Od chaosu do kontroli: jak Kubernetes uratował nasz zespół przed nocnymi deploymentami',
-    excerpt: 'Telefon o 2:30 w nocy, bo kolejny deployment się wysypał? Tak wyglądały nasze wdrożenia. Dziś ten sam proces trwa 30 minut, działa w pełni automatycznie i nie wymaga nocnych interwencji. Zobacz, jak to zrobiliśmy.',
+    slug: 'wdrozenia-kubernetes',
+    sector: 'DevOps · Platforma',
     image: 'kubernetes.png',
+    title: 'Wdrożenie bez nocnych telefonów.',
+    excerpt: 'Migracja na Kubernetes i CI/CD: wdrożenie przestało być wydarzeniem i stało się 30-minutową rutyną.',
     tags: ['Kubernetes', 'CI/CD', 'DevOps'],
-    result: 'Z 8h do 30 Minut Czasu Deploymentu'
-  }],
-  problems: ['Zespół IT mówi językiem niezrozumiałym dla biznesu.', 'Projekty technologiczne trwają dłużej i kosztują więcej niż planowano.', 'Kluczowe procesy w firmie zależą od jednej osoby w dziale IT.', 'Inwestujesz w technologie, nie mając pewności co do ich zwrotu.', 'Masz wrażenie, że technologia hamuje rozwój firmy zamiast go wspierać.'],
-  serviceGroups: [{
-    name: 'FUNDAMENTY I STRATEGIA',
-    services: [{
-      icon: 'fa-magnifying-glass-chart',
-      title: 'Audyt technologiczny i strategia IT',
-      points: ['Jak inwestować w IT, by zapewnić realny zwrot (ROI)?', 'Jak uporządkować pracę i procesy w rosnącym zespole?', 'Jak przełamać technologiczny paraliż i przyspieszyć rozwój?'],
-      cta: 'Zaplanuj strategię IT'
+    stats: [{
+      value: '30 min',
+      label: 'Czas wdrożenia',
+      note: 'Wcześniej cała noc'
     }, {
-      icon: 'fa-gears',
-      title: 'Projektowanie i wdrażanie procesów IT',
-      points: ['Jak skalować zespół techniczny bez utraty wydajności?', 'Jak sprawić, by sukcesy projektowe stały się powtarzalne?', 'Jak uwolnić się od ciągłego "gaszenia pożarów"?'],
-      cta: 'Uporządkuj procesy w firmie'
+      value: 'Codziennie',
+      label: 'Częstotliwość wdrożeń'
     }, {
-      icon: 'fa-user-tie',
-      title: 'Doradztwo technologiczne',
-      points: ['Jak mieć pewność, że technologia wspiera strategię firmy?', 'Jak skutecznie zarządzać zespołem IT, nie będąc ekspertem?', 'Jak zyskać wiedzę CTO, płacąc tylko za realne wsparcie?'],
-      cta: 'Zyskaj wsparcie strategiczne'
-    }]
-  }, {
-    name: 'ROZWÓJ I WDROŻENIA',
-    services: [{
-      icon: 'fa-arrows-rotate',
-      title: 'DevOps i automatyzacja',
-      points: ['Jak skrócić czas wprowadzania zmian z tygodni do godzin?', 'Jak zminimalizować ryzyko awarii przy każdym wdrożeniu?', 'Jak uwolnić zespół od powtarzalnych, ręcznych zadań?'],
-      cta: 'Wdrażaj szybciej i bezpieczniej',
-      page: 'service'
-    }, {
-      icon: 'fa-clipboard-list',
-      title: 'Kierowanie projektami IT',
-      points: ['Jak odzyskać kontrolę nad harmonogramem i budżetem?', 'Jak skutecznie zarządzać ryzykiem w złożonym projekcie?', 'Jak mieć pewność, że projekt dostarczy obiecaną wartość?'],
-      cta: 'Zrealizuj projekt z sukcesem'
-    }, {
-      icon: 'fa-cloud-arrow-up',
-      title: 'Modernizacja i migracja do chmury',
-      points: ['Jak przestać płacić za serwery, których nie używasz?', 'Jak zapewnić gotowość firmy na nagły wzrost ruchu?', 'Jak uwolnić się od problemów ze starym sprzętem?'],
-      cta: 'Przejdź na nowoczesną chmurę'
-    }]
-  }, {
-    name: 'OPTYMALIZACJA I BEZPIECZEŃSTWO',
-    services: [{
-      icon: 'fa-shield-halved',
-      title: 'Bezpieczeństwo IT i infrastruktura sieciowa',
-      points: ['Jak spać spokojnie, wiedząc, że dane są bezpieczne (RODO)?', 'Jak ochronić reputację firmy przed jednym cyberatakiem?', 'Jak zapewnić bezpieczną i wydajną pracę zdalną?'],
-      cta: 'Zabezpiecz swoją firmę'
-    }, {
-      icon: 'fa-users',
-      title: 'Audyt działu IT',
-      points: ['Jak mieć pewność, że budżet IT przynosi realny zwrot?', 'Dlaczego w zespole technicznym panuje chaos i rotacja?', 'Jak sprawić, by IT zaczęło wreszcie rozumieć biznes?'],
-      cta: 'Zbuduj wydajny dział IT'
-    }, {
-      icon: 'fa-diagram-project',
-      title: 'Integracja systemów i synchronizacja danych',
-      points: ['Jak wyeliminować kosztowne błędy z ręcznego wprowadzania danych?', 'Jak zapewnić, by wszyscy w firmie pracowali na tych samych danych?', 'Jak odzyskać czas, który zespół marnuje na powtarzalne zadania?'],
-      cta: 'Połącz swoje systemy'
-    }]
-  }],
-  steps: [{
-    title: 'Bezpłatna konsultacja (60 min)',
-    items: ['analiza obecnej sytuacji technologicznej', 'identyfikacja głównych wyzwań', 'wstępne rekomendacje']
-  }, {
-    title: 'Propozycja rozwiązania',
-    items: ['szczegółowy plan działania', 'harmonogram i kamienie milowe', 'przejrzysta wycena']
-  }, {
-    title: 'Realizacja',
-    items: ['regularne spotkania kontrolne i raportowanie', 'ścisła współpraca z zespołem', 'dokumentacja wszystkich zmian']
-  }, {
-    title: 'Transfer wiedzy',
-    items: ['szkolenia dla zespołu', 'dokumentacja procesów', 'zapewnienie autonomii']
-  }],
-  formats: [{
-    icon: 'fa-box-open',
-    title: 'Projekt jednorazowy',
-    subtitle: '1-6 miesięcy',
-    ideal: 'Dla konkretnych wyzwań technologicznych z jasno określonym celem.',
-    scope: 'od audytu i analizy po pełną implementację',
-    examples: 'migracja do chmury, wdrożenie CI/CD, integracja systemów'
-  }, {
-    icon: 'fa-handshake-angle',
-    title: 'Współpraca długoterminowa',
-    subtitle: 'abonament',
-    ideal: 'Dla firm potrzebujących stałego wsparcia strategicznego i bieżącego doradztwa.',
-    scope: 'regularne konsultacje, wsparcie w decyzjach, monitoring postępów',
-    examples: 'rola zewnętrznego CTO, doradztwo przy rozwoju produktu'
-  }, {
-    icon: 'fa-bolt',
-    title: 'Konsulting doraźny',
-    ideal: 'W przypadku pilnych problemów lub jednokrotnych konsultacji.',
-    scope: 'szybka diagnoza, emergency support, ekspertyza w konkretnej kwestii',
-    examples: 'analiza awarii, second opinion, przegląd architektury'
-  }, {
-    icon: 'fa-diagram-project',
-    title: 'Zarządzanie projektami IT',
-    ideal: 'Dla firm bez doświadczonych project managerów lub przy krytycznych projektach.',
-    scope: 'pełne zarządzanie projektem od planowania po wdrożenie',
-    examples: 'nowy system IT, modernizacja infrastruktury, integracje'
+      value: '0',
+      label: 'Nocnych incydentów w kwartale'
+    }],
+    context: 'Wdrożenia odbywały się raz w miesiącu, w nocy, z udziałem całego zespołu. Tylko jedna osoba wiedziała, jak odtworzyć środowisko.',
+    problem: 'Rzadkie wdrożenia oznaczały duże zmiany, a duże zmiany oznaczały awarie. Koło się zamykało.',
+    approach: ['Opisałem infrastrukturę jako kod, żeby każde środowisko dało się odtworzyć w minutach.', 'Zbudowałem potok CI/CD z testami, który wdraża małe zmiany bez udziału człowieka.', 'Przeszkoliłem zespół, żeby platforma nie zależała ode mnie.'],
+    quote: 'Wdrożenie w piątek po południu przestało być żartem.',
+    quoteAuthor: 'Tech lead'
   }]
 };
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/website/data.js", error: String((e && e.message) || e) }); }
@@ -2850,6 +2816,8 @@ __ds_ns.SectionHeader = __ds_scope.SectionHeader;
 __ds_ns.Segments = __ds_scope.Segments;
 
 __ds_ns.Counter = __ds_scope.Counter;
+
+__ds_ns.Stat = __ds_scope.Stat;
 
 __ds_ns.Tag = __ds_scope.Tag;
 

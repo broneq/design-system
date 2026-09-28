@@ -34,6 +34,9 @@ a{color:var(--accent-text);text-decoration:none;transition:color var(--dur-fast)
 .bn-dot{color:var(--accent)}
 .bn-grid{background-image:linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line) 1px,transparent 1px);background-size:var(--grid-size) var(--grid-size)}
 .bn-grid--sm{background-size:var(--grid-size-sm) var(--grid-size-sm)}
+/* Grid that fades out from the top-right corner - texture for light sections. Set --grid-fade-to when the section background is not --bg-page */
+.bn-grid--fade{background-image:radial-gradient(130% 110% at 100% 0%,transparent 0%,var(--grid-fade-to,var(--bg-page)) 72%),linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line) 1px,transparent 1px);background-size:100% 100%,var(--grid-size) var(--grid-size),var(--grid-size) var(--grid-size)}
+.section--subtle{background-color:var(--bg-subtle);--grid-fade-to:var(--bg-subtle)}
 .list-check{list-style:none;display:flex;flex-direction:column;gap:10px}
 .list-check li{display:flex;gap:12px;align-items:flex-start;color:var(--fg-body)}
 .list-check li::before{content:'';width:6px;height:6px;background:var(--accent);margin-top:.62em;flex-shrink:0}

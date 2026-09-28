@@ -1,20 +1,21 @@
 function ContactScreen() {
-  const { PageHeader, ContactForm, Button } = window.BroniszewskiDesignSystem_db82bc;
-  const d = window.BN_DATA;
+  const { PageHeader, SectionHeader, ProblemListItem, ContactForm, LiveBadge, Eyebrow } = window.BroniszewskiDesignSystem_db82bc;
+  const next = ['Odpisuję w ciągu 24 godzin z propozycją terminu.', 'Rozmawiamy 30 minut o Waszym procesie i celach.', 'Dostajesz notatkę z 2–3 miejscami, gdzie AI da najwięcej.'];
   return (<>
-    <PageHeader title="Zacznijmy Rozmowę o Twoim Biznesie" subtitle="Wypełnienie poniższego formularza zajmie Ci nie więcej niż 2 minuty. To wystarczy, abym mógł przygotować się do naszej bezpłatnej konsultacji i zaproponować konkretne rozwiązania." />
-    <div className="container bn-cols bn-cols--2" style={{ paddingBlock: 'var(--space-8)' }}>
-      <div style={{ position: 'relative', color: '#fff', overflow: 'hidden' }}>
-        <img src={d.img + 'desk.png'} alt="Biurko" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(10, 12, 16, 0.72)' }}></div>
-        <div style={{ position: 'relative', zIndex: 1, padding: '2rem' }}>
-          <h2 style={{ color: '#fff' }}>Przemysław Broniszewski</h2>
-          <p style={{ marginBottom: '1.5rem', color: '#fff' }}>Masz pytania? Wypełnij formularz, a w ciągu 24h odezwę się, by umówić 60-minutową, bezpłatną konsultację strategiczną. Jeśli wolisz mniej formalny kontakt, znajdziesz mnie również na LinkedIn.</p>
-          <Button variant="inverse" href="https://www.linkedin.com/in/przemys%C5%82aw-broniszewski/" target="_blank">Zobacz profil na LinkedIn</Button>
+    <PageHeader eyebrow="Kontakt" title="Porozmawiajmy." subtitle="30 minut o tym, jak dziś wygląda Wasz proces. Bez prezentacji sprzedażowej." />
+    <section className="section"><div className="container bn-cols bn-cols--split" style={{ '--cols-gap': '64px' }}>
+      <div>
+        <SectionHeader eyebrow="Co dalej" title="Trzy kroki." />
+        <ul>{next.map((t, i) => <ProblemListItem key={t} marker={String(i + 1).padStart(2, '0')} text={t} />)}</ul>
+        <div style={{ marginTop: 48, display: 'flex', flexDirection: 'column', gap: 4, alignItems: 'flex-start' }}>
+          <Eyebrow>Bezpośrednio</Eyebrow>
+          <a href="mailto:kontakt@broniszewski.net" style={{ display: 'inline-block', paddingBlock: 6, fontSize: 20, fontWeight: 500 }}>kontakt@broniszewski.net</a>
+          <a href="https://www.linkedin.com/in/przemys%C5%82aw-broniszewski/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', paddingBlock: 6, fontSize: 20, fontWeight: 500 }}>LinkedIn ↗</a>
+          <div style={{ marginTop: 16 }}><LiveBadge>Wolne terminy od listopada</LiveBadge></div>
         </div>
       </div>
       <div><ContactForm /></div>
-    </div>
+    </div></section>
   </>);
 }
 window.ContactScreen = ContactScreen;

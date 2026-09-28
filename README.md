@@ -19,7 +19,7 @@ Dark ink surfaces on an 80px technical grid, a heavy tight **Archivo 800** headl
 - **Themes:** light (default) and `.bn-dark` — same semantic tokens flip. Hero, page headers, footer, slides and banner are dark; content sections are light; one blue band (FinalCTA) per page.
 - **Color:** `--accent` (#3D6BFF) for marks - period, bars, bullets, current nav dot; `--accent-fill` (#2D5BFF) for surfaces that carry text - primary buttons, FinalCTA band; `--accent-text` for links. `--signal` orange is a marker with exactly two uses: the LiveBadge dot and the current Segment - never list markers, nav, or form marks. Ink scale 950→50 for everything else. No gradients except the portrait fade.
 - **Type:** Archivo 800 display/H1/H2 (−0.045 to −0.055em, line-height .88–.95); Archivo 700 H3/H4; Geist 17/1.6 body, 18–21 lead; JetBrains Mono 13px/0.14em labels, 13px/0.12em CTAs.
-- **Motifs:** (1) technical grid (`.bn-grid`, 80px / 40px `--sm`), (2) `//` eyebrow, (3) blue period, (4) LiveBadge orange dot, (5) Segments progress bars + 01/06 Counter — used on slides, carousels, process steps.
+- **Motifs:** (1) technical grid (`.bn-grid`, 80px / 40px `--sm`; `.bn-grid--fade` on light `.section--subtle` sections so they carry the same texture as the dark ones), (2) `//` eyebrow, (3) blue period, (4) LiveBadge orange dot, (5) Segments progress bars + 01/06 Counter — used on slides, carousels, process steps.
 - **Layout:** 1312px container, 20–64px fluid side padding, 120px section rhythm, left-aligned. Multi-column content uses `.bn-cols` (`--2`/`--3`/`--4`/`--split`, gap via `--cols-gap`): max 2 columns ≤1024px, 1 column ≤768px - never hand-written `grid-template-columns`. Breakpoints are only 1024px and 768px. Grids use hairlines (1px `--line-default`, 2px `--line-strong` for table tops) rather than shadows.
 - **Radii:** 2px buttons/tags/inputs, 4px cards/images, 12px frames for slides & social. Pills only for dots.
 - **Shadows:** none on screen UI; `--shadow-doc` for paper previews, `--shadow-pop` for popovers.
@@ -35,7 +35,7 @@ Dark ink surfaces on an 80px technical grid, a heavy tight **Archivo 800** headl
 - `prefers-reduced-motion` disables animation, transitions and smooth scroll.
 
 ## Components
-Core: Button, Eyebrow, Tag, TagList, LiveBadge, Segments, Counter, SectionHeader, PageHeader, CheckList.
+Core: Button, Eyebrow, Tag, TagList, LiveBadge, Segments, Counter, Stat, SectionHeader, PageHeader (`size` lg / md), CheckList.
 Cards: CaseStudyCard, ServiceCard, CooperationCard.
 Content: Timeline, TimelineItem, ProblemListItem, TextSeparator, ArticleLayout, ArticleImage, Pagination.
 Forms: ContactForm.
