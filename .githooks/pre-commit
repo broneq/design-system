@@ -1,0 +1,3 @@
+#!/bin/sh
+# Block commits where _ds_bundle.js does not match the component sources.
+exec npm run -s check
