@@ -7,7 +7,7 @@ export function CaseStudyCard({ title, href = '#', excerpt, image, tags, readMor
       {tags && tags.length > 0 && <TagList items={tags} />}
       <h3 className="title">{title}</h3>
       {excerpt && <p className="excerpt">{excerpt}</p>}
-      <span className="read-more">{readMore} ↗</span>
+      <span className="read-more">{readMore} <span className="arrow" aria-hidden="true">→</span></span>
     </a>
   );
 }

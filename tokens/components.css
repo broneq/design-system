@@ -60,17 +60,19 @@
 .bn-stat .label{font-family:var(--font-mono);font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
 .bn-stat .note{font-size:var(--fs-small);color:var(--fg-body)}
 /* Case study card */
-.bn-case-card{display:flex;flex-direction:column;gap:20px;color:inherit;text-decoration:none;cursor:pointer;min-width:0;container-type:inline-size}
+.bn-case-card{display:flex;flex-direction:column;gap:20px;color:inherit;text-decoration:none;cursor:pointer;min-width:0}
 .bn-case-card:hover{color:inherit}
 .bn-case-card .media{aspect-ratio:16/10;overflow:hidden;border-radius:var(--radius-sm);background:var(--bg-subtle);border:1px solid var(--line-default)}
 .bn-case-card .media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform var(--dur-base) var(--ease-out)}
-.bn-case-card:hover .media img{transform:scale(1.03)}
-.bn-case-card .title{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,2vw,26px);line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default);transition:color var(--dur-fast) var(--ease-out)}
-.bn-case-card:hover .title{color:var(--accent-text)}
-.bn-case-card .excerpt{color:var(--fg-body);font-size:16px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
-.bn-case-card .read-more{font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)}
+.bn-case-card .title{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,2vw,26px);line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default);text-wrap:balance;transition:color var(--dur-fast) var(--ease-out)}
+.bn-case-card .excerpt{color:var(--fg-body);font-size:16px;text-wrap:pretty;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
+.bn-case-card .read-more{justify-self:start;font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)}
+.bn-case-card .read-more .arrow{display:inline-block;transition:transform var(--dur-fast) var(--ease-out)}
+@media (hover:hover){.bn-case-card:hover .media img{transform:scale(1.03)}.bn-case-card:hover .title{color:var(--accent-text)}.bn-case-card:hover .read-more .arrow{transform:translateX(4px)}}
+/* In a grid, cards share rows (media, tags, title, excerpt, link) so titles and links line up across a row */
+.bn-cols > .bn-case-card{display:grid;grid-template-rows:subgrid;grid-row:span 5;row-gap:20px;align-content:start}
 /* A lone last card spanning the full row (.bn-cols--3 at 769-1024px) lays out horizontally, media keeping one column width */
-@media (min-width:769px) and (max-width:1024px){.bn-cols--3>.bn-case-card:last-child:nth-child(odd){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--cols-gap,var(--space-8));row-gap:20px;align-content:start}.bn-cols--3>.bn-case-card:last-child:nth-child(odd)>*{grid-column:2}.bn-cols--3>.bn-case-card:last-child:nth-child(odd)>.media{grid-column:1;grid-row:1/span 4;align-self:start}}
+@media (min-width:769px) and (max-width:1024px){.bn-cols--3>.bn-case-card:last-child:nth-child(odd){grid-row:auto;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:repeat(4,auto) 1fr;column-gap:var(--cols-gap,var(--space-8))}.bn-cols--3>.bn-case-card:last-child:nth-child(odd)>*{grid-column:2}.bn-cols--3>.bn-case-card:last-child:nth-child(odd)>.media{grid-column:1;grid-row:1/-1;align-self:start}}
 /* Service card */
 .bn-service-card{display:flex;flex-direction:column;gap:24px;padding:clamp(24px,2.5vw,32px);min-width:0;border:1px solid var(--line-default);border-radius:var(--radius-sm);background:var(--bg-raised);height:100%;transition:border-color var(--dur-fast) var(--ease-out)}
 .bn-service-card:hover{border-color:var(--line-strong)}
