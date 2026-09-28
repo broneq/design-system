@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"3b7afc222669","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"77d78fbc1040","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"ecd349d05fe8","components/content/TimelineItem/TimelineItem.jsx":"fb837410efc9","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"68d39142e3a1","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"731f4d2ab810","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"8f4ea5228d69","components/layout/Header/Header.jsx":"f6556e54c242","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"111ed102bb0e","ui_kits/website/CaseStudyScreen.jsx":"dc664d595596","ui_kits/website/ContactScreen.jsx":"13bed26a7265","ui_kits/website/HomeScreen.jsx":"80ab1cbd83d7","ui_kits/website/ServiceScreen.jsx":"a1e3d6f68c8d","ui_kits/website/data.js":"4b9337711e14"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"3b7afc222669","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"77d78fbc1040","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"ecd349d05fe8","components/content/TimelineItem/TimelineItem.jsx":"fb837410efc9","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"68d39142e3a1","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"731f4d2ab810","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"8f4ea5228d69","components/layout/Header/Header.jsx":"61650e789e5c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"111ed102bb0e","ui_kits/website/CaseStudyScreen.jsx":"dc664d595596","ui_kits/website/ContactScreen.jsx":"13bed26a7265","ui_kits/website/HomeScreen.jsx":"80ab1cbd83d7","ui_kits/website/ServiceScreen.jsx":"a1e3d6f68c8d","ui_kits/website/data.js":"4b9337711e14"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -720,6 +720,7 @@ const DEFAULT_LINKS = [{
   href: '/wiedza',
   label: 'Wiedza'
 }];
+const FOCUSABLE = 'a[href], button:not([disabled])';
 function Logo({
   onClick
 }) {
@@ -739,18 +740,37 @@ function Header({
   ctaHref = '/kontakt',
   dark = false,
   extra,
-  skipTo = '#main'
+  skipTo = '#main',
+  status,
+  email,
+  linkedin
 }) {
   const [open, setOpen] = React.useState(false);
   const toggleRef = React.useRef(null);
   const closeRef = React.useRef(null);
+  const menuRef = React.useRef(null);
   React.useEffect(() => {
     if (!open) return undefined;
-    closeRef.current.focus();
     const root = document.documentElement;
     root.style.overflow = 'hidden';
+    closeRef.current.focus();
     const onKey = e => {
-      if (e.key === 'Escape') setOpen(false);
+      if (e.key === 'Escape') {
+        setOpen(false);
+        return;
+      }
+      if (e.key !== 'Tab') return;
+      // Keep focus inside the open menu (aria-modal)
+      const items = menuRef.current.querySelectorAll(FOCUSABLE);
+      const first = items[0],
+        last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     };
     document.addEventListener('keydown', onKey);
     return () => {
@@ -766,6 +786,8 @@ function Header({
     }
     setOpen(false);
   };
+  // The CTA already leads to ctaHref, so the menu list skips that link
+  const menuLinks = links.filter(l => l.href !== ctaHref);
   return /*#__PURE__*/React.createElement("header", {
     className: 'bn-header' + (dark ? ' bn-dark' : '')
   }, skipTo && /*#__PURE__*/React.createElement("a", {
@@ -802,31 +824,60 @@ function Header({
   }, /*#__PURE__*/React.createElement("i", {
     className: "fa fa-bars",
     "aria-hidden": "true"
-  })))), open && /*#__PURE__*/React.createElement("div", {
-    className: "bn-scrim",
-    "aria-hidden": "true",
-    onClick: () => setOpen(false)
-  }), /*#__PURE__*/React.createElement("div", {
+  })))), /*#__PURE__*/React.createElement("div", {
+    ref: menuRef,
     id: "bn-mobile-menu",
-    className: 'bn-mobile-menu' + (open ? ' open' : ''),
+    className: 'bn-mobile-menu bn-dark bn-grid' + (open ? ' open' : ''),
     role: "dialog",
-    "aria-label": "Menu mobilne"
-  }, /*#__PURE__*/React.createElement("button", {
+    "aria-modal": "true",
+    "aria-label": "Menu"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container inner"
+  }, /*#__PURE__*/React.createElement(Logo, {
+    onClick: nav('/')
+  }), /*#__PURE__*/React.createElement("button", {
     ref: closeRef,
     className: "close",
     "aria-label": "Zamknij menu",
     onClick: () => setOpen(false)
-  }, "\xD7"), /*#__PURE__*/React.createElement("ul", null, links.map(l => /*#__PURE__*/React.createElement("li", {
-    key: l.href
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fa fa-xmark",
+    "aria-hidden": "true"
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "container body"
+  }, /*#__PURE__*/React.createElement("nav", {
+    "aria-label": "Menu mobilne"
+  }, /*#__PURE__*/React.createElement("ol", null, menuLinks.map((l, i) => /*#__PURE__*/React.createElement("li", {
+    key: l.href,
+    style: {
+      '--i': i
+    }
   }, /*#__PURE__*/React.createElement("a", {
     href: l.href,
     "aria-current": current === l.href ? 'page' : undefined,
     onClick: nav(l.href)
-  }, l.label)))), /*#__PURE__*/React.createElement(__ds_scope.Button, {
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "num",
+    "aria-hidden": "true"
+  }, String(i + 1).padStart(2, '0')), l.label))))), /*#__PURE__*/React.createElement("div", {
+    className: "foot"
+  }, status && /*#__PURE__*/React.createElement(__ds_scope.LiveBadge, null, status), /*#__PURE__*/React.createElement(__ds_scope.Button, {
     block: true,
     href: ctaHref,
-    onClick: nav(ctaHref)
-  }, ctaLabel)));
+    onClick: nav(ctaHref),
+    arrow: true
+  }, ctaLabel), (email || linkedin) && /*#__PURE__*/React.createElement("ul", {
+    className: "contact"
+  }, email && /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+    href: 'mailto:' + email
+  }, email)), linkedin && /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+    href: linkedin,
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fab fa-linkedin",
+    "aria-hidden": "true"
+  }), "LinkedIn")))))));
 }
 Object.assign(__ds_scope, { Logo, Header });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/layout/Header/Header.jsx", error: String((e && e.message) || e) }); }
