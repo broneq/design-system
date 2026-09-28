@@ -1,6 +1,6 @@
 :root{
 --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;--space-8:32px;--space-10:40px;--space-12:48px;--space-16:64px;--space-20:80px;--space-24:96px;--space-30:120px;
---section-y:120px;--section-y-tight:72px;
+--section-y:clamp(72px,6vw + 48px,120px);--section-y-tight:clamp(48px,3vw + 36px,72px);--section-head-gap:clamp(40px,3vw + 28px,64px); /* fluid: 390px = 72/48/40, ≥1200px = 120/72/64 */
 --container-max:1312px;--container-pad:clamp(20px,4.4vw,64px);--content-narrow:720px;
 --header-h:88px;
 /* Breakpoints - CSS vars cannot be used in @media; use these literal values (max-width:1024px / 768px) only */
