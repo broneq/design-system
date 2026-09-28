@@ -1,0 +1,1 @@
+Segments — progress through steps (process, slide deck, carousel). current = orange. Counter — "07 / 24" for slides and sections.

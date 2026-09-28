@@ -1,0 +1,47 @@
+# Broniszewski. — design system v2
+
+Personal brand system for **Przemysław Broniszewski** — architect helping software teams redesign their process and bring AI into the SDLC. Used for the website, slide decks / workshops, PDF offers and LinkedIn (single posts, carousels, banner).
+
+v2 (2026) replaces the v1 system extracted from `broneq/personal-website`. The blue stays; everything around it is modernised: dark-first, technical, editorial type.
+
+## Brand in one paragraph
+Dark ink surfaces on an 80px technical grid, a heavy tight **Archivo 800** headline that always ends with a **blue period**, Geist for reading, **JetBrains Mono** uppercase labels prefixed with `//`. Blue (#3D6BFF) carries every action. Orange (#FF6B3D) is a *signal* — a pulsing live dot, the current segment, the AI step — at most once per view. Corners are nearly square (2–4px). Imagery is a single avatar/portrait that fades into the dark page.
+
+## Content fundamentals
+- **Language:** Polish by default. First person singular ("Pomagam", "Projektuję"), address the reader as "Ty/Wasz zespół". Never "we".
+- **Tone:** direct, concrete, engineering-literate. Short declarative headlines with a period. No hype words, no exclamation marks, no emoji.
+- **Casing:** sentence case for headlines and body; mono labels & CTAs are uppercase via CSS — write them in sentence case in source.
+- **Headlines:** 2–5 words per line, max 2–3 lines. Optional grey second line (`titleMuted`) for the "so what".
+- **CTAs:** verb-first, 1–3 words: "Umów rozmowę", "Case studies", "Zobacz program".
+- **Numbers:** only when they carry proof (weeks, team size). Numbered sections use "01 —".
+
+## Visual foundations
+- **Themes:** light (default) and `.bn-dark` — same semantic tokens flip. Hero, page headers, footer, slides and banner are dark; content sections are light; one blue band (FinalCTA) per page.
+- **Color:** `--accent` blue for buttons/links/period; `--signal` orange only as marker; ink scale 950→50 for everything else. No gradients except the portrait fade.
+- **Type:** Archivo 800 display/H1/H2 (−0.045 to −0.055em, line-height .88–.95); Archivo 700 H3/H4; Geist 17/1.6 body, 18–21 lead; JetBrains Mono 13px/0.14em labels, 13px/0.12em CTAs.
+- **Motifs:** (1) technical grid (`.bn-grid`, 80px / 40px `--sm`), (2) `//` eyebrow, (3) blue period, (4) LiveBadge orange dot, (5) Segments progress bars + 01/06 Counter — used on slides, carousels, process steps.
+- **Layout:** 1312px container, 20–64px fluid side padding, 120px section rhythm, left-aligned. Grids use hairlines (1px `--line-default`, 2px `--line-strong` for table tops) rather than shadows.
+- **Radii:** 2px buttons/tags/inputs, 4px cards/images, 12px frames for slides & social. Pills only for dots.
+- **Shadows:** none on screen UI; `--shadow-doc` for paper previews, `--shadow-pop` for popovers.
+- **Motion:** 150–250ms ease-out; fade-in-up 16px on enter; LiveBadge pulses. Respect reduced motion.
+- **Imagery:** one avatar (illustrated or dark-lit portrait) per surface, right-aligned, fading into the page. Project images in hairline 4px frames.
+- **Icons:** Font Awesome 6.4 solid in a 44px hairline `.bn-icon-box`; functional only.
+
+## Components
+Core: Button, Eyebrow, Tag, TagList, LiveBadge, Segments, Counter, SectionHeader, PageHeader, CheckList.
+Cards: CaseStudyCard, ServiceCard, CooperationCard.
+Content: Timeline, TimelineItem, ProblemListItem, TextSeparator, ArticleLayout, ArticleImage, Pagination.
+Forms: ContactForm.
+Layout: Header, Logo, Hero, FinalCTA, Footer.
+
+## Files
+- `styles.css` → `tokens/` (fonts, colors, typography, spacing, effects, base, components)
+- `components/<group>/<Name>/` — one folder per component: `.jsx`, `.d.ts`, `.prompt.md`, `.card.html` (groups: core, cards, content, forms, layout)
+- `guidelines/` — foundation cards (colors, type, spacing, brand)
+- `templates/` — slides, LinkedIn post/carousel/banner, PDF offer
+- `ui_kits/website/` — website screens
+- `explorations/` — archive of redesign direction boards (v1, v2); not part of the system
+
+## Caveats
+- Fonts load from Google Fonts (Archivo, Geist, JetBrains Mono); self-host for production.
+- Avatar artwork is not included — slots are left for it.

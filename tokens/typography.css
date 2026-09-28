@@ -1,0 +1,26 @@
+:root{
+--font-display:'Archivo','Geist',system-ui,sans-serif;
+--font-sans:'Geist',system-ui,-apple-system,'Segoe UI',sans-serif;
+--font-mono:'JetBrains Mono',ui-monospace,'SFMono-Regular',Menlo,monospace;
+--fw-regular:400; /* @kind font */
+--fw-medium:500; /* @kind font */
+--fw-semibold:600; /* @kind font */
+--fw-bold:700; /* @kind font */
+--fw-black:800; /* @kind font */
+/* Scale — fluid for display/headings */
+--fs-display:clamp(64px,10vw,150px); /* @kind font */
+--fs-h1:clamp(48px,7vw,104px); /* @kind font */
+--fs-h2:clamp(40px,5.2vw,76px); /* @kind font */
+--fs-h3:clamp(24px,2.2vw,30px); /* @kind font */
+--fs-h4:22px;
+--fs-lead:clamp(18px,1.5vw,21px); /* @kind font */
+--fs-body:17px;--fs-small:15px;--fs-label:13px;--fs-micro:11px;
+--lh-display:0.92; /* @kind font */
+--lh-heading:1; /* @kind font */
+--lh-title:1.15; /* @kind font */
+--lh-body:1.6; /* @kind font */
+--ls-display:-0.055em; /* @kind font */
+--ls-heading:-0.045em; /* @kind font */
+--ls-title:-0.02em; /* @kind font */
+--ls-label:0.14em; /* @kind font */
+}

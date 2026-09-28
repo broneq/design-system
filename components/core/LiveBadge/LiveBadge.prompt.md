@@ -1,0 +1,1 @@
+LiveBadge — availability / status / "now". One per view. Orange is a signal, never decoration.

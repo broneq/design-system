@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    
+    <circle cx="128" cy="128" r="128" fill="#2D5BFF"></circle>
+
+    
+    <text x="128" y="128" font-family="Arial, sans-serif" font-size="96" font-weight="bold" fill="white" text-anchor="middle">
+        <tspan dy="0.35em">PB</tspan>
+    </text>
+</svg>

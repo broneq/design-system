@@ -1,0 +1,1 @@
+Eyebrow — the "// LABEL" line above headings. Use exactly one per heading block. Numbered sections: prefix="01 —". Keep text short (2–5 words), Polish, uppercase is automatic.

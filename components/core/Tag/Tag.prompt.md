@@ -1,0 +1,1 @@
+Tag / TagList — topic, stack or format chips. Max ~5 in a row. Use accent only for one highlighted tag.

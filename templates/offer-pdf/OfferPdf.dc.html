@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Oferta PDF (A4)" description="Dwustronicowa oferta A4: okładka z zakresem etapów, inwestycja i kolejne kroki" -->
+<helmet><script src="./ds-base.js"></script><script src="./doc-page.js"></script><style>doc-page:not(:defined){visibility:hidden}</style></helmet>
+<doc-page size="a4">
+<section class="page" data-screen-label="Strona 1" style="position:relative;background:#fff;color:#0F1115;font-family:'Geist',sans-serif">
+<div style="position:absolute;inset:0;padding:56px 60px;display:flex;flex-direction:column">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Archivo';font-weight:800;font-size:22px;letter-spacing:-.02em">Broniszewski<span style="color:#3D6BFF">.</span></span><span style="font-family:'JetBrains Mono';font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#6B717C">Oferta · 2026/11 · <b style="color:#0F1115;font-weight:500">01</b> / 02</span></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:18px"><i style="height:3px;border-radius:2px;background:#0F1115"></i><i style="height:3px;border-radius:2px;background:#E4E6EA"></i></div>
+<p style="font-family:'JetBrains Mono';font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#6B717C;margin-top:72px"><span style="color:#2D5BFF">//</span> Dla: Acme Software · zespół 32 osoby</p>
+<h1 style="font-family:'Archivo';font-weight:800;font-size:64px;line-height:.92;letter-spacing:-.05em;margin-top:20px">Transformacja SDLC z AI<span style="color:#3D6BFF">.</span></h1>
+<p style="font-size:18px;line-height:1.55;color:#4B515B;margin-top:22px;max-width:560px">Program, który przenosi AI z indywidualnych eksperymentów do wspólnego procesu zespołu — z mierzalnym efektem po 12 tygodniach.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px">
+<div style="border-top:1px solid #0F1115;padding-top:14px"><p style="font-family:'JetBrains Mono';font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6B717C">Punkt wyjścia</p><p style="font-size:16px;line-height:1.5;margin-top:8px">Licencje na asystentów AI są, ale czas od ticketu do produkcji się nie zmienił.</p></div>
+<div style="border-top:1px solid #0F1115;padding-top:14px"><p style="font-family:'JetBrains Mono';font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6B717C">Cel</p><p style="font-size:16px;line-height:1.5;margin-top:8px">Krótszy lead time i przewidywalne review, bez spadku jakości.</p></div>
+</div>
+<div style="margin-top:44px;border-top:2px solid #0F1115;background-image:linear-gradient(rgba(15,17,21,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(15,17,21,.05) 1px,transparent 1px);background-size:32px 32px">
+<div style="display:grid;grid-template-columns:52px 1fr 80px;align-items:baseline;padding:16px 0;border-bottom:1px solid #E4E6EA;background:#fff"><span style="font-family:'JetBrains Mono';font-size:14px;color:#2D5BFF">01</span><div><p style="font-family:'Archivo';font-weight:700;font-size:19px;letter-spacing:-.02em">Diagnoza procesu</p><p style="font-size:15px;color:#6B717C;margin-top:2px">Warsztaty, mapa SDLC, wąskie gardła</p></div><span style="font-family:'JetBrains Mono';font-size:13px;color:#6B717C;text-align:right">2 tyg.</span></div>
+<div style="display:grid;grid-template-columns:52px 1fr 80px;align-items:baseline;padding:16px 0;border-bottom:1px solid #E4E6EA;background:#fff"><span style="font-family:'JetBrains Mono';font-size:14px;color:#2D5BFF">02</span><div><p style="font-family:'Archivo';font-weight:700;font-size:19px;letter-spacing:-.02em">Projekt roli AI</p><p style="font-size:15px;color:#6B717C;margin-top:2px">Zasady, guardraile, narzędzia, metryki</p></div><span style="font-family:'JetBrains Mono';font-size:13px;color:#6B717C;text-align:right">2 tyg.</span></div>
+<div style="display:grid;grid-template-columns:52px 1fr 80px;align-items:baseline;padding:16px 0;border-bottom:1px solid #E4E6EA;background:#fff"><span style="font-family:'JetBrains Mono';font-size:14px;color:#D9491C">03</span><div><p style="font-family:'Archivo';font-weight:700;font-size:19px;letter-spacing:-.02em">Pilotaż na jednym zespole</p><p style="font-size:15px;color:#6B717C;margin-top:2px">Wdrożenie, coaching, cotygodniowe przeglądy</p></div><span style="font-family:'JetBrains Mono';font-size:13px;color:#6B717C;text-align:right">6 tyg.</span></div>
+<div style="display:grid;grid-template-columns:52px 1fr 80px;align-items:baseline;padding:16px 0;border-bottom:1px solid #E4E6EA;background:#fff"><span style="font-family:'JetBrains Mono';font-size:14px;color:#2D5BFF">04</span><div><p style="font-family:'Archivo';font-weight:700;font-size:19px;letter-spacing:-.02em">Playbook i przekazanie</p><p style="font-size:15px;color:#6B717C;margin-top:2px">Dokumentacja, szkolenie liderów, plan skalowania</p></div><span style="font-family:'JetBrains Mono';font-size:13px;color:#6B717C;text-align:right">2 tyg.</span></div>
+</div>
+<div style="margin-top:auto;display:flex;justify-content:space-between;font-family:'JetBrains Mono';font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#6B717C"><span>broniszewski.net</span><span>Przemysław Broniszewski</span></div>
+</div></section>
+<section class="page" data-screen-label="Strona 2" style="position:relative;background:#fff;color:#0F1115;font-family:'Geist',sans-serif">
+<div style="position:absolute;inset:0;padding:56px 60px;display:flex;flex-direction:column">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Archivo';font-weight:800;font-size:22px;letter-spacing:-.02em">Broniszewski<span style="color:#3D6BFF">.</span></span><span style="font-family:'JetBrains Mono';font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#6B717C">Oferta · 2026/11 · <b style="color:#0F1115;font-weight:500">02</b> / 02</span></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:18px"><i style="height:3px;border-radius:2px;background:#0F1115"></i><i style="height:3px;border-radius:2px;background:#0F1115"></i></div>
+<p style="font-family:'JetBrains Mono';font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#6B717C;margin-top:64px"><span style="color:#2D5BFF">//</span> Inwestycja</p>
+<h2 style="font-family:'Archivo';font-weight:800;font-size:44px;line-height:.95;letter-spacing:-.045em;margin-top:16px">Co dostajecie<span style="color:#3D6BFF">.</span></h2>
+<ul style="list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;margin-top:28px;font-size:16px;line-height:1.45;color:#4B515B">
+<li style="display:flex;gap:12px"><i style="width:6px;height:6px;background:#3D6BFF;margin-top:9px;flex:none"></i>Mapa SDLC z wąskimi gardłami</li>
+<li style="display:flex;gap:12px"><i style="width:6px;height:6px;background:#3D6BFF;margin-top:9px;flex:none"></i>Zasady pracy z AI dla zespołu</li>
+<li style="display:flex;gap:12px"><i style="width:6px;height:6px;background:#3D6BFF;margin-top:9px;flex:none"></i>6 tygodni pilotażu z coachingiem</li>
+<li style="display:flex;gap:12px"><i style="width:6px;height:6px;background:#3D6BFF;margin-top:9px;flex:none"></i>Dashboard metryk przed / po</li>
+<li style="display:flex;gap:12px"><i style="width:6px;height:6px;background:#3D6BFF;margin-top:9px;flex:none"></i>Playbook do skalowania</li>
+<li style="display:flex;gap:12px"><i style="width:6px;height:6px;background:#3D6BFF;margin-top:9px;flex:none"></i>Szkolenie liderów technicznych</li>
+</ul>
+<div style="margin-top:40px;background:#0F1115;color:#F2F3F5;border-radius:4px;padding:32px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end">
+<div><p style="font-family:'JetBrains Mono';font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8B919C">Program 12 tygodni · netto</p><p style="font-family:'Archivo';font-weight:800;font-size:52px;letter-spacing:-.045em;line-height:1;margin-top:12px">48 000 zł<span style="color:#3D6BFF">.</span></p><p style="font-size:15px;color:#AEB3BD;margin-top:10px">Płatne w 3 transzach po każdym etapie.</p></div>
+<p style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono';font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C9CDD4"><i style="width:8px;height:8px;border-radius:50%;background:#FF6B3D;box-shadow:0 0 0 4px rgba(255,107,61,.22)"></i>Start: 2 grudnia</p></div>
+<p style="font-family:'JetBrains Mono';font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#6B717C;margin-top:48px"><span style="color:#2D5BFF">//</span> Kolejne kroki</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:16px">
+<div style="border-top:2px solid #0F1115;padding-top:12px"><p style="font-family:'JetBrains Mono';font-size:12px;color:#2D5BFF">01</p><p style="font-size:16px;line-height:1.45;margin-top:6px">Akceptacja zakresu</p></div>
+<div style="border-top:2px solid #0F1115;padding-top:12px"><p style="font-family:'JetBrains Mono';font-size:12px;color:#2D5BFF">02</p><p style="font-size:16px;line-height:1.45;margin-top:6px">Kick-off z liderami</p></div>
+<div style="border-top:2px solid #E4E6EA;padding-top:12px"><p style="font-family:'JetBrains Mono';font-size:12px;color:#6B717C">03</p><p style="font-size:16px;line-height:1.45;margin-top:6px;color:#6B717C">Warsztat diagnozy</p></div>
+</div>
+<div style="margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid #E4E6EA;padding-top:20px">
+<div><p style="font-family:'Archivo';font-weight:700;font-size:18px;letter-spacing:-.02em">Przemysław Broniszewski</p><p style="font-family:'JetBrains Mono';font-size:12px;color:#6B717C;margin-top:6px">kontakt@broniszewski.net · broniszewski.net</p></div>
+<span style="font-family:'JetBrains Mono';font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#6B717C">Ważna do 30.11.2026</span></div>
+</div></section>
+</doc-page>
+</x-dc>
+</body>
+</html>

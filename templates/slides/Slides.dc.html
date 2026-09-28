@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Prezentacja / warsztat 16:9" description="Deck 1920×1080: tytuł, rozdział, treść (jasna), proces z paskami postępu, cytat, zamknięcie" -->
+<helmet><script src="./ds-base.js"></script></helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+<section data-label="01 Tytuł" data-screen-label="01 Tytuł" style="position:relative;width:1920px;height:1080px;background:#0F1115;color:#F2F3F5;font-family:'Geist',sans-serif;overflow:hidden">
+<sc-if value="{{ showGrid }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:80px 80px"></div></sc-if>
+<div style="position:absolute;top:64px;left:96px;right:96px;display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Archivo';font-weight:800;font-size:30px;letter-spacing:-.02em">Broniszewski<span style="color:#3D6BFF">.</span></span><span style="font-family:'JetBrains Mono';font-size:22px;color:#8B919C"><b style="color:#fff;font-weight:500">01</b> / 06</span></div>
+<div style="position:absolute;left:96px;right:96px;top:250px">
+<p style="font-family:'JetBrains Mono';font-size:24px;letter-spacing:.14em;text-transform:uppercase;color:#8B919C"><span style="color:#6A8DFF">//</span> Warsztat · Moduł 02</p>
+<h1 style="font-family:'Archivo';font-weight:800;font-size:210px;line-height:.86;letter-spacing:-.055em;margin:44px 0 48px;color:#F2F3F5">Code review<br>z agentami<span style="color:#3D6BFF">.</span></h1>
+<p style="font-size:36px;line-height:1.45;color:#AEB3BD;max-width:1100px">Jak włączyć AI w przegląd kodu, żeby skrócić czas do merge bez utraty jakości.</p></div>
+<sc-if value="{{ showSegments }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;left:96px;right:96px;bottom:64px;display:grid;grid-template-columns:repeat(6,1fr);gap:12px"><i style="height:4px;border-radius:2px;background:#FF6B3D"></i><i style="height:4px;border-radius:2px;background:rgba(255,255,255,.2)"></i><i style="height:4px;border-radius:2px;background:rgba(255,255,255,.2)"></i><i style="height:4px;border-radius:2px;background:rgba(255,255,255,.2)"></i><i style="height:4px;border-radius:2px;background:rgba(255,255,255,.2)"></i><i style="height:4px;border-radius:2px;background:rgba(255,255,255,.2)"></i></div></sc-if>
+</section>
+<section data-label="02 Rozdział" data-screen-label="02 Rozdział" style="position:relative;width:1920px;height:1080px;background:#3D6BFF;color:#fff;font-family:'Geist',sans-serif;overflow:hidden">
+<sc-if value="{{ showGrid }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.09) 1px,transparent 1px);background-size:80px 80px"></div></sc-if>
+<div style="position:absolute;top:64px;left:96px;right:96px;display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Archivo';font-weight:800;font-size:30px;letter-spacing:-.02em">Broniszewski<span style="color:#0F1115">.</span></span><span style="font-family:'JetBrains Mono';font-size:22px;color:#fff"><b style="font-weight:500">02</b> / 06</span></div>
+<div style="position:absolute;left:96px;right:96px;bottom:200px">
+<p style="font-family:'JetBrains Mono';font-size:28px;letter-spacing:.14em;text-transform:uppercase;color:#fff">Rozdział 01 —</p>
+<h2 style="font-family:'Archivo';font-weight:800;font-size:180px;line-height:.88;letter-spacing:-.055em;margin-top:36px;color:#fff">Gdzie zespół<br>traci czas<span style="color:#0F1115">.</span></h2></div>
+<sc-if value="{{ showSegments }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;left:96px;right:96px;bottom:64px;display:grid;grid-template-columns:repeat(6,1fr);gap:12px"><i style="height:4px;border-radius:2px;background:#fff"></i><i style="height:4px;border-radius:2px;background:#0F1115"></i><i style="height:4px;border-radius:2px;background:rgba(255,255,255,.3)"></i><i style="height:4px;border-radius:2px;background:rgba(255,255,255,.3)"></i><i style="height:4px;border-radius:2px;background:rgba(255,255,255,.3)"></i><i style="height:4px;border-radius:2px;background:rgba(255,255,255,.3)"></i></div></sc-if>
+</section>
+<section data-label="03 Treść" data-screen-label="03 Treść" style="position:relative;width:1920px;height:1080px;background:#fff;color:#0F1115;font-family:'Geist',sans-serif;overflow:hidden">
+<div style="position:absolute;top:64px;left:96px;right:96px;display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Archivo';font-weight:800;font-size:30px;letter-spacing:-.02em">Broniszewski<span style="color:#3D6BFF">.</span></span><span style="font-family:'JetBrains Mono';font-size:22px;color:#6B717C"><b style="color:#0F1115;font-weight:500">03</b> / 06</span></div>
+<div style="position:absolute;left:96px;right:96px;top:210px;display:grid;grid-template-columns:680px 1fr;gap:120px">
+<div><p style="font-family:'JetBrains Mono';font-size:24px;letter-spacing:.14em;text-transform:uppercase;color:#6B717C"><span style="color:#2D5BFF">//</span> Diagnoza</p>
+<h2 style="font-family:'Archivo';font-weight:800;font-size:104px;line-height:.98;letter-spacing:-.05em;margin-top:32px">Trzy wąskie gardła<span style="color:#3D6BFF">.</span></h2><p style="font-family:'Archivo';font-weight:800;font-size:56px;line-height:1.05;letter-spacing:-.04em;color:#8B919C;margin-top:28px">Żadne nie jest w edytorze.</p></div>
+<div style="border-top:3px solid #0F1115">
+<div style="display:grid;grid-template-columns:90px 1fr;padding:36px 0;border-bottom:1px solid #E4E6EA"><span style="font-family:'JetBrains Mono';font-size:26px;color:#2D5BFF;padding-top:6px">01</span><div><h3 style="font-family:'Archivo';font-weight:700;font-size:44px;letter-spacing:-.02em;line-height:1.1">Kolejka do review</h3><p style="font-size:28px;line-height:1.45;color:#4B515B;margin-top:10px">PR czeka średnio 2 dni na pierwszego recenzenta.</p></div></div>
+<div style="display:grid;grid-template-columns:90px 1fr;padding:36px 0;border-bottom:1px solid #E4E6EA"><span style="font-family:'JetBrains Mono';font-size:26px;color:#2D5BFF;padding-top:6px">02</span><div><h3 style="font-family:'Archivo';font-weight:700;font-size:44px;letter-spacing:-.02em;line-height:1.1">Niejasne wymagania</h3><p style="font-size:28px;line-height:1.45;color:#4B515B;margin-top:10px">Połowa poprawek wynika z tego, co nie trafiło do ticketu.</p></div></div>
+<div style="display:grid;grid-template-columns:90px 1fr;padding:36px 0;border-bottom:1px solid #E4E6EA"><span style="font-family:'JetBrains Mono';font-size:26px;color:#2D5BFF;padding-top:6px">03</span><div><h3 style="font-family:'Archivo';font-weight:700;font-size:44px;letter-spacing:-.02em;line-height:1.1">Ręczne testy regresji</h3><p style="font-size:28px;line-height:1.45;color:#4B515B;margin-top:10px">Release blokowany przez te same scenariusze co sprint.</p></div></div>
+</div></div>
+<sc-if value="{{ showSegments }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;left:96px;right:96px;bottom:64px;display:grid;grid-template-columns:repeat(6,1fr);gap:12px"><i style="height:4px;border-radius:2px;background:#0F1115"></i><i style="height:4px;border-radius:2px;background:#0F1115"></i><i style="height:4px;border-radius:2px;background:#FF6B3D"></i><i style="height:4px;border-radius:2px;background:#E4E6EA"></i><i style="height:4px;border-radius:2px;background:#E4E6EA"></i><i style="height:4px;border-radius:2px;background:#E4E6EA"></i></div></sc-if>
+</section>
+<section data-label="04 Proces" data-screen-label="04 Proces" style="position:relative;width:1920px;height:1080px;background:#0F1115;color:#F2F3F5;font-family:'Geist',sans-serif;overflow:hidden">
+<sc-if value="{{ showGrid }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:80px 80px"></div></sc-if>
+<div style="position:absolute;top:64px;left:96px;right:96px;display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Archivo';font-weight:800;font-size:30px;letter-spacing:-.02em">Broniszewski<span style="color:#3D6BFF">.</span></span><span style="font-family:'JetBrains Mono';font-size:22px;color:#8B919C"><b style="color:#fff;font-weight:500">04</b> / 06</span></div>
+<div style="position:absolute;left:96px;right:96px;top:210px">
+<p style="font-family:'JetBrains Mono';font-size:24px;letter-spacing:.14em;text-transform:uppercase;color:#8B919C"><span style="color:#6A8DFF">//</span> Proces</p>
+<h2 style="font-family:'Archivo';font-weight:800;font-size:120px;line-height:.9;letter-spacing:-.05em;margin-top:32px;color:#F2F3F5">Cztery kroki<span style="color:#3D6BFF">.</span></h2>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-top:120px">
+<div><i style="display:block;height:5px;border-radius:2px;background:#fff"></i><p style="font-family:'JetBrains Mono';font-size:22px;letter-spacing:.12em;text-transform:uppercase;color:#fff;margin-top:24px">01 · Diagnoza</p><p style="font-size:28px;line-height:1.4;color:#AEB3BD;margin-top:16px">Mapa drogi od ticketu do produkcji.</p></div>
+<div><i style="display:block;height:5px;border-radius:2px;background:#fff"></i><p style="font-family:'JetBrains Mono';font-size:22px;letter-spacing:.12em;text-transform:uppercase;color:#fff;margin-top:24px">02 · Architektura</p><p style="font-size:28px;line-height:1.4;color:#AEB3BD;margin-top:16px">Rola AI, guardraile, narzędzia.</p></div>
+<div><i style="display:block;height:5px;border-radius:2px;background:#FF6B3D"></i><p style="font-family:'JetBrains Mono';font-size:22px;letter-spacing:.12em;text-transform:uppercase;color:#FF6B3D;margin-top:24px">03 · Wdrożenie AI</p><p style="font-size:28px;line-height:1.4;color:#F2F3F5;margin-top:16px">Pilotaż na jednym zespole, 6 tygodni.</p></div>
+<div><i style="display:block;height:5px;border-radius:2px;background:rgba(255,255,255,.2)"></i><p style="font-family:'JetBrains Mono';font-size:22px;letter-spacing:.12em;text-transform:uppercase;color:#8B919C;margin-top:24px">04 · Utrwalenie</p><p style="font-size:28px;line-height:1.4;color:#8B919C;margin-top:16px">Playbook, metryki, ownership.</p></div>
+</div></div>
+<sc-if value="{{ showSegments }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;left:96px;right:96px;bottom:64px;display:grid;grid-template-columns:repeat(6,1fr);gap:12px"><i style="height:4px;border-radius:2px;background:#fff"></i><i style="height:4px;border-radius:2px;background:#fff"></i><i style="height:4px;border-radius:2px;background:#fff"></i><i style="height:4px;border-radius:2px;background:#FF6B3D"></i><i style="height:4px;border-radius:2px;background:rgba(255,255,255,.2)"></i><i style="height:4px;border-radius:2px;background:rgba(255,255,255,.2)"></i></div></sc-if>
+</section>
+<section data-label="05 Teza" data-screen-label="05 Teza" style="position:relative;width:1920px;height:1080px;background:#0F1115;color:#F2F3F5;font-family:'Geist',sans-serif;overflow:hidden">
+<div style="position:absolute;top:64px;left:96px;right:96px;display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Archivo';font-weight:800;font-size:30px;letter-spacing:-.02em">Broniszewski<span style="color:#3D6BFF">.</span></span><span style="font-family:'JetBrains Mono';font-size:22px;color:#8B919C"><b style="color:#fff;font-weight:500">05</b> / 06</span></div>
+<div style="position:absolute;left:96px;right:240px;top:260px">
+<p style="font-family:'JetBrains Mono';font-size:24px;letter-spacing:.14em;text-transform:uppercase;color:#8B919C"><span style="color:#6A8DFF">//</span> Teza</p>
+<p style="font-family:'Archivo';font-weight:800;font-size:128px;line-height:.95;letter-spacing:-.05em;margin-top:40px">AI nie przyspieszy zespołu, który nie wie, gdzie traci czas<span style="color:#3D6BFF">.</span></p>
+<p style="display:flex;gap:16px;align-items:center;font-family:'JetBrains Mono';font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:#AEB3BD;margin-top:56px"><i style="width:12px;height:12px;border-radius:50%;background:#FF6B3D;box-shadow:0 0 0 6px rgba(255,107,61,.22)"></i>Wniosek z 12 zespołów</p></div>
+<sc-if value="{{ showSegments }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;left:96px;right:96px;bottom:64px;display:grid;grid-template-columns:repeat(6,1fr);gap:12px"><i style="height:4px;border-radius:2px;background:#fff"></i><i style="height:4px;border-radius:2px;background:#fff"></i><i style="height:4px;border-radius:2px;background:#fff"></i><i style="height:4px;border-radius:2px;background:#fff"></i><i style="height:4px;border-radius:2px;background:#FF6B3D"></i><i style="height:4px;border-radius:2px;background:rgba(255,255,255,.2)"></i></div></sc-if>
+</section>
+<section data-label="06 Zamknięcie" data-screen-label="06 Zamknięcie" style="position:relative;width:1920px;height:1080px;background:#0F1115;color:#F2F3F5;font-family:'Geist',sans-serif;overflow:hidden">
+<sc-if value="{{ showGrid }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:80px 80px"></div></sc-if>
+<div style="position:absolute;top:64px;left:96px;right:96px;display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Archivo';font-weight:800;font-size:30px;letter-spacing:-.02em">Broniszewski<span style="color:#3D6BFF">.</span></span><span style="font-family:'JetBrains Mono';font-size:22px;color:#8B919C"><b style="color:#fff;font-weight:500">06</b> / 06</span></div>
+<div style="position:absolute;left:96px;right:96px;top:250px">
+<p style="font-family:'JetBrains Mono';font-size:24px;letter-spacing:.14em;text-transform:uppercase;color:#8B919C"><span style="color:#6A8DFF">//</span> Dziękuję</p>
+<h2 style="font-family:'Archivo';font-weight:800;font-size:190px;line-height:.9;letter-spacing:-.055em;margin-top:40px;color:#F2F3F5">Porozmawiajmy<span style="color:#3D6BFF">.</span></h2>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:48px;margin-top:96px;border-top:1px solid rgba(255,255,255,.14);padding-top:40px"><div style="display:flex;gap:56px;font-family:'JetBrains Mono';font-size:26px;color:#AEB3BD"><span>broniszewski.net</span><span>kontakt@broniszewski.net</span><span>in/przemyslaw-broniszewski</span></div><span style="flex:none;background:#3D6BFF;color:#fff;padding:22px 32px;font-family:'JetBrains Mono';font-size:22px;letter-spacing:.12em;text-transform:uppercase;border-radius:2px">Umów rozmowę →</span></div></div>
+<sc-if value="{{ showSegments }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;left:96px;right:96px;bottom:64px;display:grid;grid-template-columns:repeat(6,1fr);gap:12px"><i style="height:4px;border-radius:2px;background:#fff"></i><i style="height:4px;border-radius:2px;background:#fff"></i><i style="height:4px;border-radius:2px;background:#fff"></i><i style="height:4px;border-radius:2px;background:#fff"></i><i style="height:4px;border-radius:2px;background:#fff"></i><i style="height:4px;border-radius:2px;background:#FF6B3D"></i></div></sc-if>
+</section>
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showGrid&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motywy&quot;},&quot;showSegments&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motywy&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { showGrid: this.props.showGrid ?? true, showSegments: this.props.showSegments ?? true };
+  }
+}
+</script>
+</body>
+</html>

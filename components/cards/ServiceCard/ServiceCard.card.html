@@ -1,0 +1,12 @@
+<!-- @dsCard group="Components · Cards" viewport="560x560" name="ServiceCard" subtitle="Karta usługi / kroku procesu" -->
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><link rel="stylesheet" href="../../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../../_ds_bundle.js"></script>
+<style>body{padding:32px}.lbl{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--fg-muted);margin-bottom:12px}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:flex;flex-direction:column;gap:28px}.pad{padding:32px;margin:0 -32px}.flush{margin:-32px}</style>
+</head><body><div id="root"></div><script type="text/babel">
+const NS = window.BroniszewskiDesignSystem_db82bc;
+const { ServiceCard } = NS;
+ReactDOM.createRoot(document.getElementById('root')).render(<ServiceCard number={1} icon="fa-diagram-project" title="Diagnoza procesu" description="Mapuję drogę od ticketu do produkcji i wskazuję, gdzie AI da najwięcej." points={['Warsztat z zespołem','Mapa wąskich gardeł','Raport z rekomendacjami']} cta="Szczegóły" />);
+</script></body></html>
