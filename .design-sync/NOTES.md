@@ -8,7 +8,7 @@
 - Before syncing: `npm run check` must report the bundle up to date (`npm run build` otherwise).
 - Verify: serve with `npm run serve`, open every `components/**/*.card.html`, `guidelines/*.html`
   and `ui_kits/website/index.html`; `window.BroniszewskiDesignSystem_db82bc.__errors` must be empty
-  and no image broken. Check cards at their `@dsCard` viewport - ArticleToc's collapsible variant
+  and no image broken. Check cards at their `@dsCard` viewport (`chrome-devtools-axi emulate --viewport "WxHx1"`; `resize` does not change `innerWidth`) - ArticleToc's collapsible variant
   only shows at <=1024px.
 - Never upload local tooling: `package.json`, `package-lock.json`, `scripts/`, `.githooks/`,
   `.claude/`, `.design-sync/`, `DEVELOPMENT.md`, `.gitignore`, `node_modules/`.
@@ -19,4 +19,4 @@
 - No `_ds_sync.json` anchor: this layout has no converter hashes, so each sync re-diffs by git.
 - No `readmeHeader`/conventions.md: README.md is hand-authored and already carries the
   conventions the design agent reads.
-- Last sync: 2026-09-28 from commit c2e2fef (remote had import commit e97e370 state).
+- Last sync: 2026-09-28 from commit 49d353f.
