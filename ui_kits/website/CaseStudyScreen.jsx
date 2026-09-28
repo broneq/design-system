@@ -8,7 +8,6 @@ function CaseStudyScreen({ go, slug }) {
   const post = d.cases[i], prev = d.cases[i - 1], next = d.cases[i + 1];
   const open = (c) => (e) => { e.preventDefault(); go('case', c.slug); };
   const chapters = post.body.map((c) => ({ ...c, id: slugify(c.title) }));
-  const words = JSON.stringify(post.body).split(/\s+/).length;
   const block = (b, k) =>
     b.lead ? <p key={k} className="lead">{b.lead}</p>
     : b.p ? <p key={k}>{b.p}</p>
@@ -22,7 +21,7 @@ function CaseStudyScreen({ go, slug }) {
   return (<>
     <ArticleHeader back={{ label: 'Case studies', href: '#/cases', onClick: (e) => { e.preventDefault(); go('cases'); } }}
       eyebrow={'Case study · ' + post.sector} title={post.title} excerpt={post.excerpt}
-      meta={[post.period, post.role, Math.max(1, Math.round(words / 180)) + ' min czytania']} cover={d.img + post.image} />
+      meta={[post.period, post.role, d.readingTime(post)]} cover={d.img + post.image} />
     <div className="container bn-article-body">
       <ArticleLayout toc={chapters.map((c) => ({ id: c.id, label: c.title }))}>
         {chapters.map((c, ci) => [

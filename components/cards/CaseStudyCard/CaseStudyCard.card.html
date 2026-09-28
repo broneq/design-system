@@ -1,4 +1,4 @@
-<!-- @dsCard group="Components · Cards" viewport="560x620" name="CaseStudyCard" subtitle="Karta case study" -->
+<!-- @dsCard group="Components · Cards" viewport="1100x1080" name="CaseStudyCard" subtitle="Karta case study · wyróżniona / w siatce" -->
 <!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><link rel="stylesheet" href="../../../styles.css">
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
@@ -8,5 +8,5 @@
 </head><body><div id="root"></div><script type="text/babel">
 const NS = window.BroniszewskiDesignSystem_db82bc;
 const { CaseStudyCard } = NS;
-ReactDOM.createRoot(document.getElementById('root')).render(<CaseStudyCard title="Code review z agentami w zespole 40 osób" excerpt="Jak skróciliśmy czas od PR do merge o połowę, nie obniżając jakości." image="../../../assets/images/architektura-rozwiazania.png" tags={['AI w SDLC','Code review']} />);
+ReactDOM.createRoot(document.getElementById('root')).render(<div className="stack"><CaseStudyCard featured title="Od arkuszy do automatyzacji." excerpt="Osiem lat budowy systemu TMS od podstaw: od Excela i telefonów do kierowców do platformy, na której pracuje cała firma." image="../../../assets/images/tms.png" meta={['Logistyka', '5 min czytania']} /><div className="bn-cols bn-cols--2"><CaseStudyCard title="Code review z agentami w zespole 40 osób" excerpt="Jak skróciliśmy czas od PR do merge o połowę, nie obniżając jakości." image="../../../assets/images/architektura-rozwiazania.png" meta={['AI w SDLC', '6 min czytania']} /><CaseStudyCard title="480 GB w czasie rzeczywistym." excerpt="Synchronizacja dwóch centrów danych i czterech systemów z opóźnieniem poniżej 50 ms." image="../../../assets/images/kafka.png" meta={['Integracja danych', '2 min czytania']} /></div></div>);
 </script></body></html>

@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleHeader","sourcePath":"components/content/ArticleHeader/ArticleHeader.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"ArticleToc","sourcePath":"components/content/ArticleToc/ArticleToc.jsx"},{"name":"ChallengeBlock","sourcePath":"components/content/ChallengeBlock/ChallengeBlock.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"PullQuote","sourcePath":"components/content/PullQuote/PullQuote.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"9330f17c3c04","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleHeader/ArticleHeader.jsx":"99ba36457b22","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"8d4dd2f9fa03","components/content/ArticleToc/ArticleToc.jsx":"2a3b50feaf7d","components/content/ChallengeBlock/ChallengeBlock.jsx":"5b7cce543d6a","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"7b600462d885","components/content/PullQuote/PullQuote.jsx":"85e6b3c6de24","components/content/TimelineItem/TimelineItem.jsx":"f8e1bd503d70","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"68d39142e3a1","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"731f4d2ab810","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"fd9875f8705a","components/layout/Header/Header.jsx":"61650e789e5c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"111ed102bb0e","ui_kits/website/CaseStudyScreen.jsx":"ae842c3c1728","ui_kits/website/ContactScreen.jsx":"0d801427d9af","ui_kits/website/HomeScreen.jsx":"a8ff03e6f167","ui_kits/website/ServiceScreen.jsx":"119fd6f2b6dd","ui_kits/website/data.js":"8f52b154ef03"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleHeader","sourcePath":"components/content/ArticleHeader/ArticleHeader.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"ArticleToc","sourcePath":"components/content/ArticleToc/ArticleToc.jsx"},{"name":"ChallengeBlock","sourcePath":"components/content/ChallengeBlock/ChallengeBlock.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"PullQuote","sourcePath":"components/content/PullQuote/PullQuote.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"689ffca15512","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleHeader/ArticleHeader.jsx":"99ba36457b22","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"8d4dd2f9fa03","components/content/ArticleToc/ArticleToc.jsx":"2a3b50feaf7d","components/content/ChallengeBlock/ChallengeBlock.jsx":"5b7cce543d6a","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"7b600462d885","components/content/PullQuote/PullQuote.jsx":"85e6b3c6de24","components/content/TimelineItem/TimelineItem.jsx":"f8e1bd503d70","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"68d39142e3a1","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"731f4d2ab810","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"fd9875f8705a","components/layout/Header/Header.jsx":"61650e789e5c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"ab020fe4592c","ui_kits/website/CaseStudyScreen.jsx":"8db12ee18e9a","ui_kits/website/ContactScreen.jsx":"0d801427d9af","ui_kits/website/HomeScreen.jsx":"ab744288e976","ui_kits/website/ServiceScreen.jsx":"119fd6f2b6dd","ui_kits/website/data.js":"d40d4f947579"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -7,6 +7,46 @@ const __ds_ns = (window.BroniszewskiDesignSystem_db82bc = window.BroniszewskiDes
 const __ds_scope = {};
 
 (__ds_ns.__errors = __ds_ns.__errors || []);
+
+// components/cards/CaseStudyCard/CaseStudyCard.jsx
+try { (() => {
+function CaseStudyCard({
+  title,
+  href = '#',
+  excerpt,
+  image,
+  meta = [],
+  featured = false,
+  readMore = 'Zobacz case study',
+  onClick
+}) {
+  return /*#__PURE__*/React.createElement("a", {
+    href: href,
+    className: 'bn-case-card' + (featured ? ' bn-case-card--featured' : ''),
+    onClick: onClick
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "media"
+  }, image && /*#__PURE__*/React.createElement("img", {
+    src: image,
+    alt: "",
+    loading: featured ? undefined : 'lazy'
+  })), meta.length > 0 && /*#__PURE__*/React.createElement("ul", {
+    className: "meta"
+  }, meta.map(m => /*#__PURE__*/React.createElement("li", {
+    key: m
+  }, m))), /*#__PURE__*/React.createElement("h3", {
+    className: "title"
+  }, title), excerpt && /*#__PURE__*/React.createElement("p", {
+    className: "excerpt"
+  }, excerpt), /*#__PURE__*/React.createElement("span", {
+    className: "read-more"
+  }, readMore, " ", /*#__PURE__*/React.createElement("span", {
+    className: "arrow",
+    "aria-hidden": "true"
+  }, "\u2192")));
+}
+Object.assign(__ds_scope, { CaseStudyCard });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/cards/CaseStudyCard/CaseStudyCard.jsx", error: String((e && e.message) || e) }); }
 
 // components/content/ArticleImage/ArticleImage.jsx
 try { (() => {
@@ -544,43 +584,6 @@ function TagList({
 }
 Object.assign(__ds_scope, { Tag, TagList });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/core/Tag/Tag.jsx", error: String((e && e.message) || e) }); }
-
-// components/cards/CaseStudyCard/CaseStudyCard.jsx
-try { (() => {
-function CaseStudyCard({
-  title,
-  href = '#',
-  excerpt,
-  image,
-  tags,
-  readMore = 'Zobacz case study',
-  onClick
-}) {
-  return /*#__PURE__*/React.createElement("a", {
-    href: href,
-    className: "bn-case-card",
-    onClick: onClick
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "media"
-  }, image && /*#__PURE__*/React.createElement("img", {
-    src: image,
-    alt: title,
-    loading: "lazy"
-  })), tags && tags.length > 0 && /*#__PURE__*/React.createElement(__ds_scope.TagList, {
-    items: tags
-  }), /*#__PURE__*/React.createElement("h3", {
-    className: "title"
-  }, title), excerpt && /*#__PURE__*/React.createElement("p", {
-    className: "excerpt"
-  }, excerpt), /*#__PURE__*/React.createElement("span", {
-    className: "read-more"
-  }, readMore, " ", /*#__PURE__*/React.createElement("span", {
-    className: "arrow",
-    "aria-hidden": "true"
-  }, "\u2192")));
-}
-Object.assign(__ds_scope, { CaseStudyCard });
-})(); } catch (e) { __ds_ns.__errors.push({ path: "components/cards/CaseStudyCard/CaseStudyCard.jsx", error: String((e && e.message) || e) }); }
 
 // components/cards/CooperationCard/CooperationCard.jsx
 try { (() => {
@@ -2430,6 +2433,20 @@ function CaseStudiesScreen({
   } = window.BroniszewskiDesignSystem_db82bc;
   const d = window.BN_DATA;
   const [page, setPage] = React.useState(1);
+  const [latest, ...rest] = d.cases;
+  const card = (c, featured) => /*#__PURE__*/React.createElement(CaseStudyCard, {
+    key: c.slug,
+    featured: featured,
+    title: c.title,
+    excerpt: c.excerpt,
+    meta: [c.sector, d.readingTime(c)],
+    image: d.img + c.image,
+    href: '#/case/' + c.slug,
+    onClick: e => {
+      e.preventDefault();
+      go('case', c.slug);
+    }
+  });
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(PageHeader, {
     eyebrow: "Case studies",
     title: "Wyniki, nie slajdy.",
@@ -2438,20 +2455,9 @@ function CaseStudiesScreen({
     className: "section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, card(latest, true), rest.length > 0 && /*#__PURE__*/React.createElement("div", {
     className: "bn-cols bn-cols--3"
-  }, d.cases.map(c => /*#__PURE__*/React.createElement(CaseStudyCard, {
-    key: c.slug,
-    title: c.title,
-    excerpt: c.excerpt,
-    tags: c.tags,
-    image: d.img + c.image,
-    href: "#",
-    onClick: e => {
-      e.preventDefault();
-      go('case', c.slug);
-    }
-  }))), /*#__PURE__*/React.createElement(Pagination, {
+  }, rest.map(c => card(c, false))), /*#__PURE__*/React.createElement(Pagination, {
     current: page,
     total: 1,
     onChange: setPage
@@ -2491,7 +2497,6 @@ function CaseStudyScreen({
     ...c,
     id: slugify(c.title)
   }));
-  const words = JSON.stringify(post.body).split(/\s+/).length;
   const block = (b, k) => b.lead ? /*#__PURE__*/React.createElement("p", {
     key: k,
     className: "lead"
@@ -2534,7 +2539,7 @@ function CaseStudyScreen({
     eyebrow: 'Case study · ' + post.sector,
     title: post.title,
     excerpt: post.excerpt,
-    meta: [post.period, post.role, Math.max(1, Math.round(words / 180)) + ' min czytania'],
+    meta: [post.period, post.role, d.readingTime(post)],
     cover: d.img + post.image
   }), /*#__PURE__*/React.createElement("div", {
     className: "container bn-article-body"
@@ -2827,7 +2832,7 @@ function HomeScreen({
     title: c.title,
     excerpt: c.excerpt,
     image: d.img + c.image,
-    tags: c.tags.slice(0, 2),
+    meta: [c.sector, d.readingTime(c)],
     href: "#",
     onClick: click(() => go('case', c.slug))
   }))))), /*#__PURE__*/React.createElement(FinalCTA, {
@@ -2984,9 +2989,11 @@ try { (() => {
 //   | { pullQuote: true } (the post's `quote`, once) | { stats: true } (the post's `stats` as a row).
 window.BN_DATA = {
   img: '../../assets/images/',
+  // Reading time of a post body at ~180 words a minute, shared by the listing and the article
+  readingTime: post => Math.max(1, Math.round(JSON.stringify(post.body).split(/\s+/).length / 180)) + ' min czytania',
   cases: [{
     slug: 'od-arkuszy-do-tms',
-    sector: 'Logistyka · TSL',
+    sector: 'Logistyka',
     image: 'tms.png',
     period: '2015-2023',
     role: 'Architekt i lider projektu',
@@ -3191,7 +3198,7 @@ window.BN_DATA = {
     }]
   }, {
     slug: 'wdrozenia-kubernetes',
-    sector: 'DevOps · Platforma',
+    sector: 'DevOps',
     image: 'kubernetes.png',
     period: '2020, 6 miesięcy',
     role: 'Architekt platformy',

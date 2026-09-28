@@ -64,10 +64,25 @@
 .bn-case-card:hover{color:inherit}
 .bn-case-card .media{aspect-ratio:16/10;overflow:hidden;border-radius:var(--radius-sm);background:var(--bg-subtle);border:1px solid var(--line-default)}
 .bn-case-card .media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform var(--dur-base) var(--ease-out)}
+.bn-case-card .meta{display:flex;flex-wrap:wrap;margin:0;padding:0;list-style:none;font-family:var(--font-mono);font-size:var(--fs-label);line-height:1.3;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
+.bn-case-card .meta li + li::before{content:'·';margin:0 .9em;color:var(--line-strong)}
 .bn-case-card .title{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,2vw,26px);line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default);text-wrap:balance;transition:color var(--dur-fast) var(--ease-out)}
 .bn-case-card .excerpt{color:var(--fg-body);font-size:16px;text-wrap:pretty;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
 .bn-case-card .read-more{justify-self:start;font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)}
 .bn-case-card .read-more .arrow{display:inline-block;transition:transform var(--dur-fast) var(--ease-out)}
+/* Featured: newest post across the full row, image left and text centred beside it */
+.bn-case-card--featured{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);grid-template-rows:1fr repeat(4,auto) 1fr;column-gap:var(--space-12);row-gap:20px}
+.bn-case-card--featured > *{grid-column:2}
+.bn-case-card--featured .media{grid-column:1;grid-row:1/-1;align-self:center}
+.bn-case-card--featured .meta{grid-row:2}
+.bn-case-card--featured .title{grid-row:3}
+.bn-case-card--featured .excerpt{grid-row:4}
+.bn-case-card--featured .read-more{grid-row:5}
+.bn-case-card--featured .title{font-size:clamp(28px,1.5vw + 18px,40px);line-height:var(--lh-heading);letter-spacing:var(--ls-heading)}
+.bn-case-card--featured .excerpt{font-size:var(--fs-lead);-webkit-line-clamp:4;line-clamp:4}
+.bn-case-card--featured + .bn-cols{margin-top:var(--section-head-gap);padding-top:var(--section-head-gap);border-top:1px solid var(--line-default)}
+@media (max-width:1024px){.bn-case-card--featured{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--space-8)}}
+@media (max-width:768px){.bn-case-card--featured{display:flex}.bn-case-card--featured .title{font-size:clamp(20px,2vw,26px)}.bn-case-card--featured .excerpt{font-size:16px}}
 @media (hover:hover){.bn-case-card:hover .media img{transform:scale(1.03)}.bn-case-card:hover .title{color:var(--accent-text)}.bn-case-card:hover .read-more .arrow{transform:translateX(4px)}}
 /* In a grid, cards share rows (media, tags, title, excerpt, link) so titles and links line up across a row */
 .bn-cols > .bn-case-card{display:grid;grid-template-rows:subgrid;grid-row:span 5;row-gap:20px;align-content:start}

@@ -4,9 +4,11 @@
 //   | { pullQuote: true } (the post's `quote`, once) | { stats: true } (the post's `stats` as a row).
 window.BN_DATA = {
   img: '../../assets/images/',
+  // Reading time of a post body at ~180 words a minute, shared by the listing and the article
+  readingTime: (post) => Math.max(1, Math.round(JSON.stringify(post.body).split(/\s+/).length / 180)) + ' min czytania',
   cases: [
     {
-      slug: 'od-arkuszy-do-tms', sector: 'Logistyka · TSL', image: 'tms.png',
+      slug: 'od-arkuszy-do-tms', sector: 'Logistyka', image: 'tms.png',
       period: '2015-2023', role: 'Architekt i lider projektu',
       title: 'Od arkuszy do automatyzacji.',
       excerpt: 'Osiem lat budowy systemu TMS od podstaw: od Excela i telefonów do kierowców do platformy, na której pracuje cała firma.',
@@ -93,7 +95,7 @@ window.BN_DATA = {
       ],
     },
     {
-      slug: 'wdrozenia-kubernetes', sector: 'DevOps · Platforma', image: 'kubernetes.png',
+      slug: 'wdrozenia-kubernetes', sector: 'DevOps', image: 'kubernetes.png',
       period: '2020, 6 miesięcy', role: 'Architekt platformy',
       title: 'Wdrożenie bez nocnych telefonów.',
       excerpt: 'Migracja na Kubernetes i CI/CD: wdrożenie przestało być wydarzeniem i stało się 30-minutową rutyną.',
