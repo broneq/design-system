@@ -151,7 +151,7 @@
 .bn-pull-quote figcaption::before{content:'//';color:var(--accent-text)}
 .bn-pull-quote .author{color:var(--fg-default)}
 /* Challenge: problem / solution / result rows under a strong rule; consecutive blocks read as a list */
-.bn-challenge{margin:40px 0;padding-top:20px;border-top:2px solid var(--line-strong)}
+.bn-challenge{margin:40px 0;padding-top:20px;border-top:1px solid var(--line-strong)}
 .bn-challenge + .bn-challenge{margin-top:48px}
 .bn-challenge .label{margin:0 0 8px;font-family:var(--font-mono);font-size:var(--fs-label);line-height:1.3;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--accent-text)}
 .bn-challenge .title{margin:0 0 16px;font-family:var(--font-display);font-weight:700;font-size:22px;line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default)}
@@ -203,6 +203,16 @@
 .bn-toc a[aria-current="true"]{border-left-color:var(--accent);color:var(--fg-default)}
 .bn-toc a[aria-current="true"] .num{color:var(--accent-text)}
 @media (hover:hover){.bn-toc a:hover{color:var(--fg-default)}}
+/* Collapsible variant (≤1024px): a closed list above the article between hairlines */
+.bn-article-grid > .bn-toc--collapsible{display:none;grid-row:auto;position:static;max-height:none;overflow:visible;margin-bottom:var(--section-head-gap);border-block:1px solid var(--line-default)}
+.bn-toc--collapsible .head{display:flex;align-items:center;gap:12px;min-height:56px;margin:0;list-style:none;cursor:pointer}
+.bn-toc--collapsible summary::-webkit-details-marker{display:none}
+.bn-toc--collapsible summary::after{content:'';width:8px;height:8px;margin:-4px 4px 0 auto;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);transition:transform var(--dur-fast) var(--ease-out)}
+.bn-toc--collapsible details[open] summary::after{margin-top:4px;transform:rotate(-135deg)}
+.bn-toc--collapsible .count{color:var(--accent-text)}
+.bn-toc--collapsible ol{margin-bottom:16px}
+.bn-toc--collapsible a{min-height:44px;align-content:center;padding-block:8px;font-size:15px}
+@media (max-width:1024px){.bn-article-grid > .bn-toc--collapsible{display:block}}
 .bn-article pre{background:var(--bn-ink-900);color:var(--bn-ink-200);border-radius:var(--radius-sm);padding:24px;overflow-x:auto;margin-bottom:24px}
 .bn-article pre code{background:none;padding:0;color:inherit;font-size:14px}
 .bn-article-image{margin:40px 0}

@@ -6,6 +6,7 @@ export function ArticleLayout({ toc, tocTitle, children }) {
   return (
     <div className="bn-article-grid">
       <ArticleToc items={toc} title={tocTitle} />
+      <ArticleToc items={toc} title={tocTitle} collapsible />
       {article}
     </div>
   );

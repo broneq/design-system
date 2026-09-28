@@ -7,7 +7,7 @@ window.BN_DATA = {
   cases: [
     {
       slug: 'od-arkuszy-do-tms', sector: 'Logistyka · TSL', image: 'tms.png',
-      period: '2015-2023, 8 lat', role: 'Architekt i lider projektu',
+      period: '2015-2023', role: 'Architekt i lider projektu',
       title: 'Od arkuszy do automatyzacji.',
       excerpt: 'Osiem lat budowy systemu TMS od podstaw: od Excela i telefonów do kierowców do platformy, na której pracuje cała firma.',
       tags: ['TMS', 'PostgreSQL', 'Apache Kafka', 'Logistyka'],

@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleHeader","sourcePath":"components/content/ArticleHeader/ArticleHeader.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"ArticleToc","sourcePath":"components/content/ArticleToc/ArticleToc.jsx"},{"name":"ChallengeBlock","sourcePath":"components/content/ChallengeBlock/ChallengeBlock.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"PullQuote","sourcePath":"components/content/PullQuote/PullQuote.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"9330f17c3c04","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleHeader/ArticleHeader.jsx":"99ba36457b22","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"8eab0dd1f64b","components/content/ArticleToc/ArticleToc.jsx":"22b3e9924af8","components/content/ChallengeBlock/ChallengeBlock.jsx":"5b7cce543d6a","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"7b600462d885","components/content/PullQuote/PullQuote.jsx":"85e6b3c6de24","components/content/TimelineItem/TimelineItem.jsx":"f8e1bd503d70","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"68d39142e3a1","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"731f4d2ab810","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"fd9875f8705a","components/layout/Header/Header.jsx":"61650e789e5c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"111ed102bb0e","ui_kits/website/CaseStudyScreen.jsx":"ae842c3c1728","ui_kits/website/ContactScreen.jsx":"0d801427d9af","ui_kits/website/HomeScreen.jsx":"a8ff03e6f167","ui_kits/website/ServiceScreen.jsx":"119fd6f2b6dd","ui_kits/website/data.js":"790c4da6e1a0"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleHeader","sourcePath":"components/content/ArticleHeader/ArticleHeader.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"ArticleToc","sourcePath":"components/content/ArticleToc/ArticleToc.jsx"},{"name":"ChallengeBlock","sourcePath":"components/content/ChallengeBlock/ChallengeBlock.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"PullQuote","sourcePath":"components/content/PullQuote/PullQuote.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"9330f17c3c04","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleHeader/ArticleHeader.jsx":"99ba36457b22","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"8d4dd2f9fa03","components/content/ArticleToc/ArticleToc.jsx":"2a3b50feaf7d","components/content/ChallengeBlock/ChallengeBlock.jsx":"5b7cce543d6a","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"7b600462d885","components/content/PullQuote/PullQuote.jsx":"85e6b3c6de24","components/content/TimelineItem/TimelineItem.jsx":"f8e1bd503d70","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"68d39142e3a1","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"731f4d2ab810","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"fd9875f8705a","components/layout/Header/Header.jsx":"61650e789e5c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"111ed102bb0e","ui_kits/website/CaseStudyScreen.jsx":"ae842c3c1728","ui_kits/website/ContactScreen.jsx":"0d801427d9af","ui_kits/website/HomeScreen.jsx":"a8ff03e6f167","ui_kits/website/ServiceScreen.jsx":"119fd6f2b6dd","ui_kits/website/data.js":"8f52b154ef03"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -28,18 +28,19 @@ Object.assign(__ds_scope, { ArticleImage });
 
 // components/content/ArticleToc/ArticleToc.jsx
 try { (() => {
-// Marks the last chapter whose heading has scrolled past the sticky header.
+// Marks the last chapter whose heading has reached the upper third of the viewport,
+// so a chapter counts as current as soon as it is the one being read, not only once its heading hits the header.
 function useCurrent(ids) {
   const [current, setCurrent] = React.useState(ids[0]);
   React.useEffect(() => {
     let frame = 0;
     const update = () => {
       frame = 0;
-      const line = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+      const line = window.innerHeight / 3;
       let next = ids[0];
       for (const id of ids) {
         const el = document.getElementById(id);
-        if (el && el.getBoundingClientRect().top <= line + 1) next = id;
+        if (el && el.getBoundingClientRect().top <= line) next = id;
       }
       setCurrent(next);
     };
@@ -61,30 +62,45 @@ function useCurrent(ids) {
 }
 function ArticleToc({
   items = [],
-  title = 'Spis treści'
+  title = 'Spis treści',
+  collapsible = false
 }) {
   const current = useCurrent(items.map(it => it.id));
-  return /*#__PURE__*/React.createElement("nav", {
-    className: "bn-toc",
-    "aria-label": title
-  }, /*#__PURE__*/React.createElement("p", {
-    className: "head"
-  }, title), /*#__PURE__*/React.createElement("ol", null, items.map((it, i) => /*#__PURE__*/React.createElement("li", {
+  const details = React.useRef(null);
+  const list = /*#__PURE__*/React.createElement("ol", null, items.map((it, i) => /*#__PURE__*/React.createElement("li", {
     key: it.id
   }, /*#__PURE__*/React.createElement("a", {
     href: '#' + it.id,
     "aria-current": it.id === current ? 'true' : undefined,
     onClick: e => {
       const el = document.getElementById(it.id);
-      if (el) {
-        e.preventDefault();
-        el.scrollIntoView();
-      }
+      if (!el) return;
+      e.preventDefault();
+      if (details.current) details.current.open = false;
+      el.scrollIntoView();
     }
   }, /*#__PURE__*/React.createElement("span", {
     className: "num",
     "aria-hidden": "true"
-  }, String(i + 1).padStart(2, '0')), it.label)))));
+  }, String(i + 1).padStart(2, '0')), it.label))));
+  if (collapsible) {
+    return /*#__PURE__*/React.createElement("nav", {
+      className: "bn-toc bn-toc--collapsible",
+      "aria-label": title
+    }, /*#__PURE__*/React.createElement("details", {
+      ref: details
+    }, /*#__PURE__*/React.createElement("summary", {
+      className: "head"
+    }, title, /*#__PURE__*/React.createElement("span", {
+      className: "count"
+    }, String(items.length).padStart(2, '0'))), list));
+  }
+  return /*#__PURE__*/React.createElement("nav", {
+    className: "bn-toc",
+    "aria-label": title
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "head"
+  }, title), list);
 }
 Object.assign(__ds_scope, { ArticleToc });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/ArticleToc/ArticleToc.jsx", error: String((e && e.message) || e) }); }
@@ -105,6 +121,10 @@ function ArticleLayout({
   }, /*#__PURE__*/React.createElement(__ds_scope.ArticleToc, {
     items: toc,
     title: tocTitle
+  }), /*#__PURE__*/React.createElement(__ds_scope.ArticleToc, {
+    items: toc,
+    title: tocTitle,
+    collapsible: true
   }), article);
 }
 Object.assign(__ds_scope, { ArticleLayout });
@@ -2968,7 +2988,7 @@ window.BN_DATA = {
     slug: 'od-arkuszy-do-tms',
     sector: 'Logistyka · TSL',
     image: 'tms.png',
-    period: '2015-2023, 8 lat',
+    period: '2015-2023',
     role: 'Architekt i lider projektu',
     title: 'Od arkuszy do automatyzacji.',
     excerpt: 'Osiem lat budowy systemu TMS od podstaw: od Excela i telefonów do kierowców do platformy, na której pracuje cała firma.',
