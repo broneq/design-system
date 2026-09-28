@@ -4,6 +4,8 @@ window.BN_DATA = {
   cases: [
     {
       slug: 'od-arkuszy-do-tms', sector: 'Logistyka · TSL', image: 'tms.png',
+      client: 'Firma transportowa, 400 osób', period: '2016-2024', role: 'CTO, architekt systemu',
+      outcome: ['Planowanie, które wymagało sześciu osób z arkuszami, obsługuje dziś dwóch planistów w jednym systemie. Wiedza o klientach przestała siedzieć w głowach i trafiła do danych.', 'Firma podwoiła liczbę zleceń bez zatrudniania kolejnych planistów, a puste przebiegi przestały być tematem zarządu.'],
       title: 'Od arkuszy do systemu TMS.',
       excerpt: 'Osiem lat budowy systemu transportowego: od pierwszego arkusza do platformy, na której pracuje cała firma.',
       tags: ['TMS', 'Automatyzacja', 'Logistyka'],
@@ -16,6 +18,8 @@ window.BN_DATA = {
     },
     {
       slug: 'synchronizacja-kafka', sector: 'Integracja danych', image: 'kafka.png',
+      client: 'Grupa dystrybucyjna', period: '2021, 9 miesięcy', role: 'Architekt integracji',
+      outcome: ['Raporty pokazują stan z bieżącej minuty, a nie sprzed doby. Nowy system podłącza się do strumienia zdarzeń w dni, a nie w miesiące.', 'Awaria jednej integracji nie zatrzymuje już pozostałych, bo każda czyta strumień we własnym tempie.'],
       title: '480 GB w czasie rzeczywistym.',
       excerpt: 'Synchronizacja dwóch centrów danych i czterech systemów z opóźnieniem poniżej 50 ms.',
       tags: ['Apache Kafka', 'CDC', 'Integracja'],
@@ -28,6 +32,8 @@ window.BN_DATA = {
     },
     {
       slug: 'wdrozenia-kubernetes', sector: 'DevOps · Platforma', image: 'kubernetes.png',
+      client: 'Software house, 60 osób', period: '2020, 6 miesięcy', role: 'Architekt platformy',
+      outcome: ['Zespół wdraża codziennie, w godzinach pracy i bez nocnych dyżurów. Nowe środowisko powstaje w kilka minut, a nie w kilka dni.', 'Platforma działa bez mnie: zespół sam ją rozwija i szkoli kolejne osoby.'],
       title: 'Wdrożenie bez nocnych telefonów.',
       excerpt: 'Migracja na Kubernetes i CI/CD: wdrożenie przestało być wydarzeniem i stało się 30-minutową rutyną.',
       tags: ['Kubernetes', 'CI/CD', 'DevOps'],

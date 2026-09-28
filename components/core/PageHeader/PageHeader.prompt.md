@@ -6,3 +6,12 @@ PageHeader — top of every subpage (Usługi, Case studies, a case study, Kontak
 ```
 
 Use `size="md"` when the title runs past ~6 words (articles, case studies).
+
+A case study header adds a back link, a facts column and the results:
+
+```jsx
+<PageHeader size="md" back={{ label: 'Wszystkie case studies', href: '/case-studies' }} eyebrow="Case study · Logistyka" title="Od arkuszy do systemu TMS." subtitle="..."
+  aside={<CaseFacts items={[{ label: 'Klient', value: 'Firma transportowa' }, { label: 'Rola', value: 'CTO' }]} />}>
+  <div className="bn-cols bn-cols--3"><Stat value="3×" label="Wydajność planowania" /></div>
+</PageHeader>
+```

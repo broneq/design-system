@@ -50,7 +50,13 @@
 .bn-section-header .subtitle{font-size:var(--fs-lead);line-height:1.55;color:var(--fg-body);max-width:640px}
 /* Page header */
 .bn-page-header{padding:var(--section-y) 0 calc(var(--section-y) * .8);border-bottom:1px solid var(--line-default)}
-.bn-page-header .inner{display:flex;flex-direction:column;align-items:flex-start;gap:24px}
+.bn-page-header .main{display:flex;flex-direction:column;align-items:flex-start;gap:24px;min-width:0}
+.bn-page-header .back{display:inline-flex;align-items:center;gap:.8em;min-height:44px;margin:-10px 0 -4px;font-family:var(--font-mono);font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted);text-decoration:none;transition:color var(--dur-fast) var(--ease-out)}
+@media (hover:hover){.bn-page-header .back:hover{color:var(--fg-default)}}
+/* With an aside (case study facts) the title row splits 7/5, aside bottom-aligned with the lead */
+.bn-page-header--aside .inner{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--space-16);align-items:end}
+.bn-page-header .extra{margin-top:var(--section-head-gap)}
+@media (max-width:1024px){.bn-page-header--aside .inner{grid-template-columns:minmax(0,1fr);gap:var(--space-10)}}
 .bn-page-header .page-title{font-family:var(--font-display);font-weight:800;font-size:var(--fs-h1);line-height:var(--lh-heading);letter-spacing:var(--ls-heading);color:var(--fg-default);max-width:1000px;margin-left:var(--display-inset)}
 .bn-page-header--md .page-title{font-size:var(--fs-h2);max-width:900px}
 .bn-page-header .page-subtitle{font-size:var(--fs-lead);line-height:1.55;color:var(--fg-body);max-width:640px}
@@ -131,12 +137,38 @@
 .bn-article ol > li{counter-increment:bn-ol}
 .bn-article ol > li::before{content:counter(bn-ol,decimal-leading-zero);display:inline-block;width:calc(1.75em / .75);margin-left:calc(-1.75em / .75);font-family:var(--font-mono);font-size:.75em;letter-spacing:.04em;color:var(--accent-text)}
 .bn-article a{color:var(--accent-text);text-decoration:underline;text-underline-offset:3px}
+.bn-article p.lead{font-size:clamp(20px,.5vw + 17px,24px);line-height:1.5;color:var(--fg-default)}
 .bn-article strong{color:var(--fg-default);font-weight:600}
 .bn-article blockquote{margin:48px 0;padding:32px 0;border-top:1px solid var(--line-strong);border-bottom:1px solid var(--line-default);font-family:var(--font-display);font-weight:700;font-size:clamp(22px,.75vw + 17px,28px);line-height:1.2;letter-spacing:var(--ls-title);color:var(--fg-default);text-wrap:pretty}
 .bn-article blockquote footer{margin-top:16px;font-family:var(--font-mono);font-weight:400;font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
 .bn-article blockquote::before{content:'//';display:block;font-family:var(--font-mono);font-weight:400;font-size:13px;letter-spacing:var(--ls-label);color:var(--accent-text);margin-bottom:16px}
 .bn-article hr{border:0;border-top:1px solid var(--line-default);margin:var(--section-head-gap) 0}
 .bn-article code{font-family:var(--font-mono);font-size:.85em;background:var(--bg-subtle);padding:.15em .4em;border-radius:var(--radius-xs);color:var(--fg-default)}
+/* Case study: facts list, chapter rows, pull quote */
+.bn-facts{margin:0;border-top:2px solid var(--line-strong)}
+.bn-facts .row{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line-default)}
+.bn-facts dt{font-family:var(--font-mono);font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
+.bn-facts dd{margin:0;font-size:var(--fs-small);line-height:1.5;color:var(--fg-default)}
+.bn-facts dd .bn-tag-list{gap:6px}
+.bn-case-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:var(--space-16);padding-block:var(--section-head-gap);border-top:1px solid var(--line-default)}
+/* The first chapter after a band or image needs no rule of its own */
+.bn-case-section:first-child{border-top:0}
+.bn-case-section .head{display:flex;flex-direction:column;gap:12px;align-self:start;position:sticky;top:calc(var(--header-h) + var(--space-8))}
+.bn-case-section .num{font-family:var(--font-mono);font-size:var(--fs-label);line-height:1.3;letter-spacing:var(--ls-label);color:var(--accent-text)}
+.bn-case-section .title{margin:0;font-family:var(--font-display);font-weight:800;font-size:clamp(28px,1.5vw + 20px,40px);line-height:var(--lh-heading);letter-spacing:var(--ls-heading);color:var(--fg-default)}
+/* Prose starts level with the chapter title, below its number */
+.bn-case-section .body{margin:0;padding-top:calc(var(--fs-label) * 1.3 + 12px)}
+.bn-case-section .body > :last-child{margin-bottom:0}
+@media (max-width:768px){.bn-case-section{grid-template-columns:minmax(0,1fr);gap:20px}.bn-case-section .head{position:static}.bn-case-section .body{padding-top:0}}
+.bn-pull-quote{margin:0;max-width:1040px}
+.bn-pull-quote blockquote{margin:0}
+.bn-pull-quote p{margin:0 0 0 var(--display-inset);font-family:var(--font-display);font-weight:800;font-size:clamp(28px,2.6vw + 14px,56px);line-height:1.05;letter-spacing:var(--ls-heading);color:var(--fg-default);text-wrap:balance}
+.bn-pull-quote figcaption{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4em 1em;margin-top:32px;font-family:var(--font-mono);font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
+.bn-pull-quote figcaption::before{content:'//';color:var(--accent-text)}
+.bn-pull-quote .author{color:var(--fg-default)}
+.bn-case-cover{margin:0}
+.bn-case-cover img{display:block;width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:var(--radius-sm);border:1px solid var(--line-default)}
+@media (max-width:768px){.bn-case-cover img{aspect-ratio:16/10}}
 .bn-article pre{background:var(--bn-ink-900);color:var(--bn-ink-200);border-radius:var(--radius-sm);padding:24px;overflow-x:auto;margin-bottom:24px}
 .bn-article pre code{background:none;padding:0;color:inherit;font-size:14px}
 .bn-article-image{margin:40px 0}
