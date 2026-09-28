@@ -139,9 +139,11 @@
 .bn-article a{color:var(--accent-text);text-decoration:underline;text-underline-offset:3px}
 .bn-article p.lead{font-size:clamp(20px,.5vw + 17px,24px);line-height:1.5;color:var(--fg-default)}
 .bn-article strong{color:var(--fg-default);font-weight:600}
-.bn-article blockquote{margin:48px 0;padding:32px 0;border-top:1px solid var(--line-strong);border-bottom:1px solid var(--line-default);font-family:var(--font-display);font-weight:700;font-size:clamp(22px,.75vw + 17px,28px);line-height:1.2;letter-spacing:var(--ls-title);color:var(--fg-default);text-wrap:pretty}
-.bn-article blockquote footer{margin-top:16px;font-family:var(--font-mono);font-weight:400;font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
-.bn-article blockquote::before{content:'//';display:block;font-family:var(--font-mono);font-weight:400;font-size:13px;letter-spacing:var(--ls-label);color:var(--accent-text);margin-bottom:16px}
+/* In-text quotes stay quiet (accent rule, title size); the big client quote is PullQuote in its own band */
+.bn-article blockquote{margin:40px 0;padding:2px 0 2px 24px;border-left:2px solid var(--accent);font-family:var(--font-display);font-weight:700;font-size:clamp(20px,.4vw + 17px,22px);line-height:1.3;letter-spacing:var(--ls-title);color:var(--fg-default);text-wrap:pretty}
+.bn-article blockquote p{margin:0}
+.bn-article blockquote + blockquote{margin-top:-8px}
+.bn-article blockquote footer{margin-top:12px;font-family:var(--font-mono);font-weight:400;font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
 .bn-article hr{border:0;border-top:1px solid var(--line-default);margin:var(--section-head-gap) 0}
 .bn-article code{font-family:var(--font-mono);font-size:.85em;background:var(--bg-subtle);padding:.15em .4em;border-radius:var(--radius-xs);color:var(--fg-default)}
 /* Case study: facts list, chapter rows, pull quote */
@@ -166,6 +168,17 @@
 .bn-pull-quote figcaption{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4em 1em;margin-top:32px;font-family:var(--font-mono);font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
 .bn-pull-quote figcaption::before{content:'//';color:var(--accent-text)}
 .bn-pull-quote .author{color:var(--fg-default)}
+.bn-challenge{margin:40px 0;padding:28px 32px 16px;background:var(--bg-subtle);border-radius:var(--radius-sm)}
+/* Consecutive blocks: the negative margin collapses with the previous 40px to a 16px gap */
+.bn-challenge + .bn-challenge{margin-top:-24px}
+.bn-challenge .label{margin:0 0 8px;font-family:var(--font-mono);font-size:var(--fs-label);line-height:1.3;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--accent-text)}
+.bn-challenge .title{margin:0 0 16px;font-family:var(--font-display);font-weight:700;font-size:22px;line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default)}
+.bn-challenge dl{margin:0}
+.bn-challenge .row{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:baseline;padding:14px 0;border-top:1px solid var(--line-default)}
+.bn-challenge dt{font-family:var(--font-mono);font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
+.bn-challenge dd{margin:0;font-size:16px;line-height:1.6;color:var(--fg-body)}
+.bn-challenge .result dd{color:var(--fg-default);font-weight:500}
+@media (max-width:768px){.bn-challenge{padding:24px 20px 12px}.bn-challenge .row{grid-template-columns:minmax(0,1fr);gap:4px}}
 .bn-case-cover{margin:0}
 .bn-case-cover img{display:block;width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:var(--radius-sm);border:1px solid var(--line-default)}
 @media (max-width:768px){.bn-case-cover img{aspect-ratio:16/10}}
