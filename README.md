@@ -48,7 +48,6 @@ Layout: Header, Logo, Hero, FinalCTA, Footer.
 - `assets/favicon/` - favicon set ("B." on an ink tile): `favicon.svg` snapped to the 32 px grid (retina tabs, mark centred), `favicon.ico` snapped to the 16 px grid (1x), `apple-touch-icon.png`, maskable `icon-192/512.png`, `site.webmanifest`. Head tags on the Favicon card in `guidelines/`.
 - `templates/` — slides, LinkedIn post/carousel/banner, PDF offer
 - `ui_kits/website/` — website screens
-- `explorations/` — archive of redesign direction boards (v1, v2); not part of the system
 
 ## Caveats
 - Fonts load from Google Fonts (Archivo, Geist, JetBrains Mono); self-host for production.

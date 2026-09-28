@@ -1,7 +1,7 @@
 // Rebuilds _ds_bundle.js from sources, reproducing the Claude Design bundle format (v4):
 // - components/**/*.jsx are ES modules: imports resolve through a shared __ds_scope,
 //   exports are exposed on window[namespace]; emitted in dependency order.
-// - other .js/.jsx files (ui_kits, explorations) are plain scripts, emitted after components.
+// - other .js/.jsx files (ui_kits) are plain scripts, emitted after components.
 // Usage: node scripts/build-ds-bundle.mjs [--check]
 import { createHash } from 'node:crypto';
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
