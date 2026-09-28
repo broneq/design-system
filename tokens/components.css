@@ -250,10 +250,6 @@
 .bn-pagination .page-num:hover{border-color:var(--line-default);color:var(--fg-default)}
 .bn-pagination .page-num.active{background:var(--fg-default);color:var(--bg-page)}
 /* Form */
-.bn-alert{display:none;padding:14px 16px;border-radius:var(--radius-xs);font-family:var(--font-mono);font-size:13px;margin-bottom:24px}
-.bn-alert.visible{display:block}
-.bn-alert.error{background:rgba(229,72,77,.1);color:var(--danger-text)}
-.bn-alert.success{background:rgba(31,169,113,.12);color:var(--success-text)}
 .bn-form{display:flex;flex-direction:column;gap:20px}
 .bn-form .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 .bn-form .group{display:flex;flex-direction:column;gap:8px}
@@ -266,8 +262,20 @@ select.bn-input{appearance:none;-webkit-appearance:none;padding-right:48px;backg
 .bn-input:hover{border-color:var(--fg-body)}
 .bn-input:focus-visible{border-color:var(--focus-color);outline-offset:0}
 .bn-input.is-invalid{border-color:var(--bn-danger)}
-.bn-form .actions{margin-top:8px}
-@media (max-width:768px){.bn-form .grid{grid-template-columns:1fr}.bn-form .actions .bn-btn{width:100%}}
+.bn-form .error{margin:0;font-size:14px;line-height:1.4;color:var(--danger-text)}
+.bn-form .actions{display:flex;flex-direction:column;align-items:flex-start;gap:16px;margin-top:8px}
+.bn-form .note{margin:0;font-size:14px;line-height:1.5;color:var(--fg-muted)}
+.bn-form .note a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+@media (hover:hover){.bn-form .note a:hover{color:var(--fg-default)}}
+/* Sent state: replaces the form in place so the confirmation appears where the reader is looking */
+.bn-form-done{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:32px 0;border-top:2px solid var(--line-strong);outline:none}
+.bn-form-done .title{margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(22px,1vw + 16px,28px);line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default)}
+.bn-form-done .text{margin:0 0 8px;color:var(--fg-body)}
+/* Direct contact under the contact page steps: large links with 44px rows */
+.bn-contact-direct{display:flex;flex-direction:column;align-items:flex-start;gap:4px;margin-top:var(--space-12)}
+.bn-contact-direct > a{display:inline-flex;align-items:center;min-height:44px;font-size:20px;font-weight:500}
+.bn-contact-direct > .bn-live{margin-top:16px}
+@media (max-width:768px){.bn-form .grid{grid-template-columns:1fr}.bn-form .actions{align-items:stretch}}
 /* Header */
 .bn-header{position:sticky;top:0;z-index:50;background:var(--bg-page);border-bottom:1px solid var(--line-default)}
 .bn-header .inner{display:flex;align-items:center;justify-content:space-between;gap:24px;height:var(--header-h)}

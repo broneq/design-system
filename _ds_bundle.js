@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleHeader","sourcePath":"components/content/ArticleHeader/ArticleHeader.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"ArticleToc","sourcePath":"components/content/ArticleToc/ArticleToc.jsx"},{"name":"ChallengeBlock","sourcePath":"components/content/ChallengeBlock/ChallengeBlock.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"PullQuote","sourcePath":"components/content/PullQuote/PullQuote.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"689ffca15512","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleHeader/ArticleHeader.jsx":"99ba36457b22","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"8d4dd2f9fa03","components/content/ArticleToc/ArticleToc.jsx":"2a3b50feaf7d","components/content/ChallengeBlock/ChallengeBlock.jsx":"5b7cce543d6a","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"7b600462d885","components/content/PullQuote/PullQuote.jsx":"85e6b3c6de24","components/content/TimelineItem/TimelineItem.jsx":"f8e1bd503d70","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"68d39142e3a1","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"731f4d2ab810","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"fd9875f8705a","components/layout/Header/Header.jsx":"61650e789e5c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"ab020fe4592c","ui_kits/website/CaseStudyScreen.jsx":"8db12ee18e9a","ui_kits/website/ContactScreen.jsx":"0d801427d9af","ui_kits/website/HomeScreen.jsx":"ab744288e976","ui_kits/website/ServiceScreen.jsx":"119fd6f2b6dd","ui_kits/website/data.js":"d40d4f947579"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleHeader","sourcePath":"components/content/ArticleHeader/ArticleHeader.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"ArticleToc","sourcePath":"components/content/ArticleToc/ArticleToc.jsx"},{"name":"ChallengeBlock","sourcePath":"components/content/ChallengeBlock/ChallengeBlock.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"PullQuote","sourcePath":"components/content/PullQuote/PullQuote.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"689ffca15512","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleHeader/ArticleHeader.jsx":"99ba36457b22","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"8d4dd2f9fa03","components/content/ArticleToc/ArticleToc.jsx":"2a3b50feaf7d","components/content/ChallengeBlock/ChallengeBlock.jsx":"5b7cce543d6a","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"7b600462d885","components/content/PullQuote/PullQuote.jsx":"85e6b3c6de24","components/content/TimelineItem/TimelineItem.jsx":"f8e1bd503d70","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"68d39142e3a1","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"ce72289c1e4a","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"fd9875f8705a","components/layout/Header/Header.jsx":"61650e789e5c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"ab020fe4592c","ui_kits/website/CaseStudyScreen.jsx":"8db12ee18e9a","ui_kits/website/ContactScreen.jsx":"b4a22b24d2a9","ui_kits/website/HomeScreen.jsx":"ab744288e976","ui_kits/website/ServiceScreen.jsx":"119fd6f2b6dd","ui_kits/website/data.js":"d40d4f947579"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -702,141 +702,179 @@ Object.assign(__ds_scope, { PageHeader });
 
 // components/forms/ContactForm/ContactForm.jsx
 try { (() => {
-const REQUIRED = ['name', 'company', 'email', 'team', 'description'];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const FIELDS = [{
+  id: 'name',
+  label: 'Imię i nazwisko',
+  required: true,
+  autoComplete: 'name'
+}, {
+  id: 'company',
+  label: 'Nazwa firmy',
+  required: true,
+  autoComplete: 'organization'
+}, {
+  id: 'email',
+  label: 'Email',
+  required: true,
+  type: 'email',
+  autoComplete: 'email'
+}, {
+  id: 'phone',
+  label: 'Telefon',
+  type: 'tel',
+  autoComplete: 'tel'
+}, {
+  id: 'team',
+  label: 'Wielkość zespołu IT',
+  required: true,
+  full: true,
+  options: ['do 10 osób', '10–30 osób', '30–80 osób', 'ponad 80 osób']
+}, {
+  id: 'description',
+  label: 'Opis wyzwania',
+  required: true,
+  full: true,
+  multiline: true
+}];
+const EMPTY = Object.fromEntries(FIELDS.map(f => [f.id, '']));
+function validate(v) {
+  const errs = {};
+  FIELDS.forEach(f => {
+    if (f.required && !v[f.id].trim()) errs[f.id] = 'To pole jest wymagane.';
+  });
+  if (!errs.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email.trim())) errs.email = 'Wpisz adres w formacie nazwa@firma.pl.';
+  return errs;
+}
 function ContactForm({
   onSubmit,
-  submitLabel = 'Wyślij zapytanie'
+  submitLabel = 'Wyślij zapytanie',
+  privacyHref
 }) {
-  const [v, setV] = React.useState({
-    name: '',
-    company: '',
-    email: '',
-    phone: '',
-    team: '',
-    description: ''
-  });
-  const [invalid, setInvalid] = React.useState({});
-  const [alert, setAlert] = React.useState(null);
-  const set = k => e => setV({
-    ...v,
-    [k]: e.target.value
-  });
+  const [v, setV] = React.useState(EMPTY);
+  const [errs, setErrs] = React.useState({});
+  const [tried, setTried] = React.useState(false);
+  const [sent, setSent] = React.useState(false);
+  const form = React.useRef(null);
+  const done = React.useRef(null);
+  // After the first submit, errors follow the input so a fixed field clears at once.
+  const set = k => e => {
+    const next = {
+      ...v,
+      [k]: e.target.value
+    };
+    setV(next);
+    if (tried) setErrs(validate(next));
+  };
   const submit = e => {
     e.preventDefault();
-    const errs = {};
-    REQUIRED.forEach(f => {
-      if (!v[f].trim()) errs[f] = 'To pole jest wymagane';
-    });
-    if (v.email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email)) errs.email = 'Nieprawidłowy adres email';
-    setInvalid(errs);
-    if (Object.keys(errs).length) {
-      const only = errs.email === 'Nieprawidłowy adres email' && Object.keys(errs).length === 1;
-      setAlert({
-        type: 'error',
-        msg: only ? errs.email : 'Uzupełnij wymagane pola.'
+    const found = validate(v);
+    setTried(true);
+    setErrs(found);
+    const first = FIELDS.find(f => found[f.id]);
+    if (first) {
+      const el = form.current.querySelector('#cf-' + first.id);
+      el.focus({
+        preventScroll: true
+      });
+      el.scrollIntoView({
+        block: 'center'
       });
       return;
     }
-    setAlert({
-      type: 'success',
-      msg: 'Dzięki. Odezwę się w ciągu 1 dnia roboczego.'
-    });
     onSubmit && onSubmit(v);
-    setV({
-      name: '',
-      company: '',
-      email: '',
-      phone: '',
-      team: '',
-      description: ''
-    });
+    setSent(true);
   };
-  const cls = k => 'bn-input' + (invalid[k] ? ' is-invalid' : '');
-  const Req = () => /*#__PURE__*/React.createElement("span", {
-    className: "req"
-  }, "*");
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    className: 'bn-alert' + (alert ? ' visible ' + alert.type : ''),
-    role: "alert",
-    "aria-live": "polite"
-  }, alert && alert.msg), /*#__PURE__*/React.createElement("form", {
+  React.useEffect(() => {
+    if (sent && done.current) {
+      done.current.focus({
+        preventScroll: true
+      });
+      done.current.scrollIntoView({
+        block: 'center'
+      });
+    }
+  }, [sent]);
+  if (sent) {
+    return /*#__PURE__*/React.createElement("div", {
+      className: "bn-form-done",
+      ref: done,
+      tabIndex: -1,
+      role: "status"
+    }, /*#__PURE__*/React.createElement("p", {
+      className: "title"
+    }, "Dzi\u0119ki, wiadomo\u015B\u0107 dotar\u0142a."), /*#__PURE__*/React.createElement("p", {
+      className: "text"
+    }, "Odezw\u0119 si\u0119 w ci\u0105gu jednego dnia roboczego z propozycj\u0105 terminu rozmowy."), /*#__PURE__*/React.createElement(__ds_scope.Button, {
+      as: "button",
+      type: "button",
+      variant: "link",
+      onClick: () => {
+        setV(EMPTY);
+        setErrs({});
+        setTried(false);
+        setSent(false);
+      }
+    }, "Wy\u015Blij kolejne zapytanie"));
+  }
+  const count = Object.keys(errs).length;
+  const field = f => {
+    const id = 'cf-' + f.id,
+      err = errs[f.id];
+    const common = {
+      id,
+      className: 'bn-input' + (err ? ' is-invalid' : ''),
+      value: v[f.id],
+      onChange: set(f.id),
+      required: f.required,
+      'aria-invalid': err ? 'true' : undefined,
+      'aria-describedby': err ? id + '-err' : undefined
+    };
+    return /*#__PURE__*/React.createElement("div", {
+      key: f.id,
+      className: 'group' + (f.full ? ' full' : '')
+    }, /*#__PURE__*/React.createElement("label", {
+      htmlFor: id
+    }, f.label, f.required && /*#__PURE__*/React.createElement("span", {
+      className: "req",
+      "aria-hidden": "true"
+    }, " *")), f.options ? /*#__PURE__*/React.createElement("select", common, /*#__PURE__*/React.createElement("option", {
+      value: ""
+    }, "Wybierz\u2026"), f.options.map(o => /*#__PURE__*/React.createElement("option", {
+      key: o,
+      value: o
+    }, o))) : f.multiline ? /*#__PURE__*/React.createElement("textarea", _extends({}, common, {
+      rows: 8
+    })) : /*#__PURE__*/React.createElement("input", _extends({}, common, {
+      type: f.type || 'text',
+      autoComplete: f.autoComplete
+    })), err && /*#__PURE__*/React.createElement("p", {
+      className: "error",
+      id: id + '-err'
+    }, err));
+  };
+  return /*#__PURE__*/React.createElement("form", {
     className: "bn-form",
     noValidate: true,
-    onSubmit: submit
-  }, /*#__PURE__*/React.createElement("div", {
+    onSubmit: submit,
+    ref: form
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "bn-sr-only",
+    role: "status",
+    "aria-live": "polite"
+  }, count ? count === 1 ? 'Popraw jedno pole.' : 'Popraw ' + count + (count < 5 ? ' pola.' : ' pól.') : ''), /*#__PURE__*/React.createElement("div", {
     className: "grid"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "group"
-  }, /*#__PURE__*/React.createElement("label", {
-    htmlFor: "cf-name"
-  }, "Imi\u0119 i nazwisko ", /*#__PURE__*/React.createElement(Req, null)), /*#__PURE__*/React.createElement("input", {
-    id: "cf-name",
-    className: cls('name'),
-    value: v.name,
-    onChange: set('name')
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "group"
-  }, /*#__PURE__*/React.createElement("label", {
-    htmlFor: "cf-company"
-  }, "Nazwa firmy ", /*#__PURE__*/React.createElement(Req, null)), /*#__PURE__*/React.createElement("input", {
-    id: "cf-company",
-    className: cls('company'),
-    value: v.company,
-    onChange: set('company')
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "group"
-  }, /*#__PURE__*/React.createElement("label", {
-    htmlFor: "cf-email"
-  }, "Email ", /*#__PURE__*/React.createElement(Req, null)), /*#__PURE__*/React.createElement("input", {
-    id: "cf-email",
-    type: "email",
-    className: cls('email'),
-    value: v.email,
-    onChange: set('email')
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "group"
-  }, /*#__PURE__*/React.createElement("label", {
-    htmlFor: "cf-phone"
-  }, "Telefon"), /*#__PURE__*/React.createElement("input", {
-    id: "cf-phone",
-    type: "tel",
-    className: "bn-input",
-    value: v.phone,
-    onChange: set('phone')
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "group full"
-  }, /*#__PURE__*/React.createElement("label", {
-    htmlFor: "cf-team"
-  }, "Wielko\u015B\u0107 zespo\u0142u IT ", /*#__PURE__*/React.createElement(Req, null)), /*#__PURE__*/React.createElement("select", {
-    id: "cf-team",
-    className: cls('team'),
-    value: v.team,
-    onChange: set('team')
-  }, /*#__PURE__*/React.createElement("option", {
-    value: ""
-  }, "Wybierz..."), /*#__PURE__*/React.createElement("option", {
-    value: "1-5"
-  }, "1-5"), /*#__PURE__*/React.createElement("option", {
-    value: "6-15"
-  }, "6-15"), /*#__PURE__*/React.createElement("option", {
-    value: "16+"
-  }, "16+")))), /*#__PURE__*/React.createElement("div", {
-    className: "group full"
-  }, /*#__PURE__*/React.createElement("label", {
-    htmlFor: "cf-desc"
-  }, "Opis wyzwania ", /*#__PURE__*/React.createElement(Req, null)), /*#__PURE__*/React.createElement("textarea", {
-    id: "cf-desc",
-    rows: 8,
-    className: cls('description'),
-    value: v.description,
-    onChange: set('description')
-  })), /*#__PURE__*/React.createElement("div", {
+  }, FIELDS.filter(f => !f.multiline).map(field)), FIELDS.filter(f => f.multiline).map(field), /*#__PURE__*/React.createElement("div", {
     className: "actions"
   }, /*#__PURE__*/React.createElement(__ds_scope.Button, {
     as: "button",
     type: "submit",
     arrow: true
-  }, submitLabel))));
+  }, submitLabel), /*#__PURE__*/React.createElement("p", {
+    className: "note"
+  }, "Dane z formularza wykorzystam tylko do odpowiedzi na zapytanie.", privacyHref && /*#__PURE__*/React.createElement(React.Fragment, null, " ", /*#__PURE__*/React.createElement("a", {
+    href: privacyHref
+  }, "Polityka prywatno\u015Bci")))));
 }
 Object.assign(__ds_scope, { ContactForm });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/forms/ContactForm/ContactForm.jsx", error: String((e && e.message) || e) }); }
@@ -2602,7 +2640,7 @@ function ContactScreen() {
     LiveBadge,
     Eyebrow
   } = window.BroniszewskiDesignSystem_db82bc;
-  const next = ['Odpisuję w ciągu 24 godzin z propozycją terminu.', 'Rozmawiamy 30 minut o Waszym procesie i celach.', 'Dostajesz notatkę z 2–3 miejscami, gdzie AI da najwięcej.'];
+  const next = ['Odpisuję w ciągu jednego dnia roboczego z propozycją terminu.', 'Rozmawiamy 30 minut o Waszym procesie i celach.', 'Dostajesz notatkę z 2–3 miejscami, gdzie AI da najwięcej.'];
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(PageHeader, {
     eyebrow: "Kontakt",
     title: "Porozmawiajmy.",
@@ -2610,7 +2648,7 @@ function ContactScreen() {
   }), /*#__PURE__*/React.createElement("section", {
     className: "section"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "container bn-cols bn-cols--split"
+    className: "container bn-cols bn-cols--split bn-cols--mobile-reverse"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(SectionHeader, {
     eyebrow: "Co dalej",
     title: "Trzy kroki."
@@ -2619,36 +2657,19 @@ function ContactScreen() {
     marker: String(i + 1).padStart(2, '0'),
     text: t
   }))), /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginTop: 48,
-      display: 'flex',
-      flexDirection: 'column',
-      gap: 4,
-      alignItems: 'flex-start'
-    }
+    className: "bn-contact-direct"
   }, /*#__PURE__*/React.createElement(Eyebrow, null, "Bezpo\u015Brednio"), /*#__PURE__*/React.createElement("a", {
-    href: "mailto:kontakt@broniszewski.net",
-    style: {
-      display: 'inline-block',
-      paddingBlock: 6,
-      fontSize: 20,
-      fontWeight: 500
-    }
+    href: "mailto:kontakt@broniszewski.net"
   }, "kontakt@broniszewski.net"), /*#__PURE__*/React.createElement("a", {
     href: "https://www.linkedin.com/in/przemys%C5%82aw-broniszewski/",
     target: "_blank",
-    rel: "noopener noreferrer",
-    style: {
-      display: 'inline-block',
-      paddingBlock: 6,
-      fontSize: 20,
-      fontWeight: 500
-    }
-  }, "LinkedIn \u2197"), /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginTop: 16
-    }
-  }, /*#__PURE__*/React.createElement(LiveBadge, null, "Wolne terminy od listopada")))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(ContactForm, null)))));
+    rel: "noopener noreferrer"
+  }, "LinkedIn \u2197"), /*#__PURE__*/React.createElement(LiveBadge, null, "Wolne terminy od listopada"))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(SectionHeader, {
+    eyebrow: "Formularz",
+    title: "Opisz wyzwanie."
+  }), /*#__PURE__*/React.createElement(ContactForm, {
+    privacyHref: "#"
+  })))));
 }
 window.ContactScreen = ContactScreen;
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/website/ContactScreen.jsx", error: String((e && e.message) || e) }); }
