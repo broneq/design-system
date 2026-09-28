@@ -23,4 +23,5 @@
 --ls-heading:-0.045em; /* @kind font */
 --ls-title:-0.02em; /* @kind font */
 --ls-label:0.14em; /* @kind font */
+--display-inset:-0.045em; /* @kind font */ /* pulls Archivo 800 display titles left by the round-capital side bearing so the ink lines up with text below */
 }
