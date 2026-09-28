@@ -72,6 +72,10 @@
 /* Service card */
 .bn-service-card{display:flex;flex-direction:column;gap:24px;padding:clamp(24px,2.5vw,32px);min-width:0;border:1px solid var(--line-default);border-radius:var(--radius-sm);background:var(--bg-raised);height:100%;transition:border-color var(--dur-fast) var(--ease-out)}
 .bn-service-card:hover{border-color:var(--line-strong)}
+/* Process step: a one-segment Segments bar forms the card's top edge */
+.bn-step{display:flex;flex-direction:column}
+.bn-step .bn-segments .bar{border-radius:var(--radius-sm) var(--radius-sm) 0 0}
+.bn-step > .bn-service-card{flex:1;border-top:0;border-radius:0 0 var(--radius-sm) var(--radius-sm)}
 .bn-service-card .head{display:flex;justify-content:space-between;align-items:flex-start}
 .bn-service-card .num{font-family:var(--font-mono);font-size:14px;color:var(--accent-text)}
 .bn-icon-box{width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--line-default);border-radius:var(--radius-xs);color:var(--accent-text);font-size:17px;flex-shrink:0}

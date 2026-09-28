@@ -22,9 +22,9 @@ function HomeScreen({ go }) {
     </div></section>
     <section className="section bn-dark bn-grid"><div className="container">
       <SectionHeader eyebrow="Proces" eyebrowPrefix="01 —" title="Cztery kroki." titleMuted="Od diagnozy do procesu, który działa beze mnie." />
-      {/* Static process: each card carries its own bar; the AI step is the one signal-orange segment */}
+      {/* Static process: each card's top edge is a Segments bar; only the AI step is lit (signal orange) */}
       <ol className="bn-cols bn-cols--4" style={{ '--cols-gap': '16px', listStyle: 'none' }}>
-        {steps.map((s, i) => <li key={s.t} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}><div aria-hidden="true"><Segments count={1} current={i === AI_STEP ? 0 : -1} done={i < AI_STEP ? 1 : 0} /></div><ServiceCard number={i + 1} title={s.t} description={s.d} points={s.p} /></li>)}
+        {steps.map((s, i) => <li key={s.t} className="bn-step"><div aria-hidden="true"><Segments count={1} current={i === AI_STEP ? 0 : -1} /></div><ServiceCard number={i + 1} title={s.t} description={s.d} points={s.p} /></li>)}
       </ol>
     </div></section>
     <section className="section"><div className="container">
