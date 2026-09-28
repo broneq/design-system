@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"CaseFacts","sourcePath":"components/content/CaseFacts/CaseFacts.jsx"},{"name":"CaseSection","sourcePath":"components/content/CaseSection/CaseSection.jsx"},{"name":"ChallengeBlock","sourcePath":"components/content/ChallengeBlock/ChallengeBlock.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"PullQuote","sourcePath":"components/content/PullQuote/PullQuote.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"9330f17c3c04","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"77d78fbc1040","components/content/CaseFacts/CaseFacts.jsx":"7c36c9609f27","components/content/CaseSection/CaseSection.jsx":"bef88fb0495f","components/content/ChallengeBlock/ChallengeBlock.jsx":"5b7cce543d6a","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"7b600462d885","components/content/PullQuote/PullQuote.jsx":"85e6b3c6de24","components/content/TimelineItem/TimelineItem.jsx":"f8e1bd503d70","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"df6fd0205bf7","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"731f4d2ab810","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"fd9875f8705a","components/layout/Header/Header.jsx":"61650e789e5c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"111ed102bb0e","ui_kits/website/CaseStudyScreen.jsx":"78cd967a1e7f","ui_kits/website/ContactScreen.jsx":"0d801427d9af","ui_kits/website/HomeScreen.jsx":"a8ff03e6f167","ui_kits/website/ServiceScreen.jsx":"119fd6f2b6dd","ui_kits/website/data.js":"ee93cdc876c1"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleHeader","sourcePath":"components/content/ArticleHeader/ArticleHeader.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"ArticleToc","sourcePath":"components/content/ArticleToc/ArticleToc.jsx"},{"name":"ChallengeBlock","sourcePath":"components/content/ChallengeBlock/ChallengeBlock.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"PullQuote","sourcePath":"components/content/PullQuote/PullQuote.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"9330f17c3c04","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"5049e8d8d56b","components/content/ArticleHeader/ArticleHeader.jsx":"99ba36457b22","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"8eab0dd1f64b","components/content/ArticleToc/ArticleToc.jsx":"22b3e9924af8","components/content/ChallengeBlock/ChallengeBlock.jsx":"5b7cce543d6a","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"7b600462d885","components/content/PullQuote/PullQuote.jsx":"85e6b3c6de24","components/content/TimelineItem/TimelineItem.jsx":"f8e1bd503d70","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"68d39142e3a1","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"731f4d2ab810","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"fd9875f8705a","components/layout/Header/Header.jsx":"61650e789e5c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"111ed102bb0e","ui_kits/website/CaseStudyScreen.jsx":"ae842c3c1728","ui_kits/website/ContactScreen.jsx":"0d801427d9af","ui_kits/website/HomeScreen.jsx":"a8ff03e6f167","ui_kits/website/ServiceScreen.jsx":"119fd6f2b6dd","ui_kits/website/data.js":"790c4da6e1a0"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -26,58 +26,89 @@ function ArticleImage({
 Object.assign(__ds_scope, { ArticleImage });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/ArticleImage/ArticleImage.jsx", error: String((e && e.message) || e) }); }
 
+// components/content/ArticleToc/ArticleToc.jsx
+try { (() => {
+// Marks the last chapter whose heading has scrolled past the sticky header.
+function useCurrent(ids) {
+  const [current, setCurrent] = React.useState(ids[0]);
+  React.useEffect(() => {
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const line = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+      let next = ids[0];
+      for (const id of ids) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= line + 1) next = id;
+      }
+      setCurrent(next);
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener('scroll', onScroll, {
+      passive: true
+    });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      cancelAnimationFrame(frame);
+    };
+  }, [ids.join('|')]);
+  return current;
+}
+function ArticleToc({
+  items = [],
+  title = 'Spis treści'
+}) {
+  const current = useCurrent(items.map(it => it.id));
+  return /*#__PURE__*/React.createElement("nav", {
+    className: "bn-toc",
+    "aria-label": title
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "head"
+  }, title), /*#__PURE__*/React.createElement("ol", null, items.map((it, i) => /*#__PURE__*/React.createElement("li", {
+    key: it.id
+  }, /*#__PURE__*/React.createElement("a", {
+    href: '#' + it.id,
+    "aria-current": it.id === current ? 'true' : undefined,
+    onClick: e => {
+      const el = document.getElementById(it.id);
+      if (el) {
+        e.preventDefault();
+        el.scrollIntoView();
+      }
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "num",
+    "aria-hidden": "true"
+  }, String(i + 1).padStart(2, '0')), it.label)))));
+}
+Object.assign(__ds_scope, { ArticleToc });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/ArticleToc/ArticleToc.jsx", error: String((e && e.message) || e) }); }
+
 // components/content/ArticleLayout/ArticleLayout.jsx
 try { (() => {
 function ArticleLayout({
+  toc,
+  tocTitle,
   children
 }) {
-  return /*#__PURE__*/React.createElement("article", {
+  const article = /*#__PURE__*/React.createElement("article", {
     className: "bn-article"
   }, children);
+  if (!toc || !toc.length) return article;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "bn-article-grid"
+  }, /*#__PURE__*/React.createElement(__ds_scope.ArticleToc, {
+    items: toc,
+    title: tocTitle
+  }), article);
 }
 Object.assign(__ds_scope, { ArticleLayout });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/ArticleLayout/ArticleLayout.jsx", error: String((e && e.message) || e) }); }
-
-// components/content/CaseFacts/CaseFacts.jsx
-try { (() => {
-function CaseFacts({
-  items = []
-}) {
-  return /*#__PURE__*/React.createElement("dl", {
-    className: "bn-facts"
-  }, items.map(it => /*#__PURE__*/React.createElement("div", {
-    key: it.label,
-    className: "row"
-  }, /*#__PURE__*/React.createElement("dt", null, it.label), /*#__PURE__*/React.createElement("dd", null, it.value))));
-}
-Object.assign(__ds_scope, { CaseFacts });
-})(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/CaseFacts/CaseFacts.jsx", error: String((e && e.message) || e) }); }
-
-// components/content/CaseSection/CaseSection.jsx
-try { (() => {
-function CaseSection({
-  index,
-  title,
-  children
-}) {
-  const id = React.useId();
-  return /*#__PURE__*/React.createElement("section", {
-    className: "bn-case-section",
-    "aria-labelledby": id
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "head"
-  }, index != null && /*#__PURE__*/React.createElement("span", {
-    className: "num",
-    "aria-hidden": "true"
-  }, String(index).padStart(2, '0')), /*#__PURE__*/React.createElement("h2", {
-    className: "title",
-    id: id
-  }, title)), /*#__PURE__*/React.createElement("div", {
-    className: "bn-article body"
-  }, children));
-}
-Object.assign(__ds_scope, { CaseSection });
-})(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/CaseSection/CaseSection.jsx", error: String((e && e.message) || e) }); }
 
 // components/content/ChallengeBlock/ChallengeBlock.jsx
 try { (() => {
@@ -311,6 +342,54 @@ function Eyebrow({
 }
 Object.assign(__ds_scope, { Eyebrow });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/core/Eyebrow/Eyebrow.jsx", error: String((e && e.message) || e) }); }
+
+// components/content/ArticleHeader/ArticleHeader.jsx
+try { (() => {
+const withDot = t => typeof t === 'string' && t.endsWith('.') ? /*#__PURE__*/React.createElement(React.Fragment, null, t.slice(0, -1), /*#__PURE__*/React.createElement("span", {
+  className: "bn-dot"
+}, ".")) : t;
+function ArticleHeader({
+  back,
+  eyebrow,
+  title,
+  excerpt,
+  meta = [],
+  cover,
+  coverAlt = ''
+}) {
+  return /*#__PURE__*/React.createElement("header", {
+    className: 'bn-article-header' + (cover ? ' bn-article-header--cover' : '')
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "top bn-dark bn-grid"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container bn-article-grid"
+  }, back && /*#__PURE__*/React.createElement("a", {
+    className: "back",
+    href: back.href,
+    onClick: back.onClick
+  }, /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true"
+  }, "\u2190"), back.label), /*#__PURE__*/React.createElement("div", {
+    className: "main"
+  }, eyebrow && /*#__PURE__*/React.createElement(__ds_scope.Eyebrow, null, eyebrow), /*#__PURE__*/React.createElement("h1", {
+    className: "title"
+  }, withDot(title)), excerpt && /*#__PURE__*/React.createElement("p", {
+    className: "excerpt"
+  }, excerpt), meta.length > 0 && /*#__PURE__*/React.createElement("ul", {
+    className: "meta"
+  }, meta.map(m => /*#__PURE__*/React.createElement("li", {
+    key: m
+  }, m)))))), cover && /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("figure", {
+    className: "cover"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: cover,
+    alt: coverAlt
+  }))));
+}
+Object.assign(__ds_scope, { ArticleHeader });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/ArticleHeader/ArticleHeader.jsx", error: String((e && e.message) || e) }); }
 
 // components/core/LiveBadge/LiveBadge.jsx
 try { (() => {
@@ -581,34 +660,19 @@ function PageHeader({
   eyebrow,
   tags,
   dark = true,
-  size = 'lg',
-  back,
-  aside,
-  children
+  size = 'lg'
 }) {
   return /*#__PURE__*/React.createElement("header", {
-    className: 'bn-page-header bn-grid' + (size === 'md' ? ' bn-page-header--md' : '') + (aside ? ' bn-page-header--aside' : '') + (dark ? ' bn-dark' : '')
+    className: 'bn-page-header bn-grid' + (size === 'md' ? ' bn-page-header--md' : '') + (dark ? ' bn-dark' : '')
   }, /*#__PURE__*/React.createElement("div", {
     className: "container inner"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "main"
-  }, back && /*#__PURE__*/React.createElement("a", {
-    className: "back",
-    href: back.href,
-    onClick: back.onClick
-  }, /*#__PURE__*/React.createElement("span", {
-    "aria-hidden": "true"
-  }, "\u2190"), back.label), eyebrow && /*#__PURE__*/React.createElement(__ds_scope.Eyebrow, null, eyebrow), /*#__PURE__*/React.createElement("h1", {
+  }, eyebrow && /*#__PURE__*/React.createElement(__ds_scope.Eyebrow, null, eyebrow), /*#__PURE__*/React.createElement("h1", {
     className: "page-title"
   }, withDot(title)), subtitle && /*#__PURE__*/React.createElement("p", {
     className: "page-subtitle"
   }, subtitle), tags && tags.length > 0 && /*#__PURE__*/React.createElement(__ds_scope.TagList, {
     items: tags
-  })), aside && /*#__PURE__*/React.createElement("div", {
-    className: "aside"
-  }, aside)), children && /*#__PURE__*/React.createElement("div", {
-    className: "container extra"
-  }, children));
+  })));
 }
 Object.assign(__ds_scope, { PageHeader });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/core/PageHeader/PageHeader.jsx", error: String((e && e.message) || e) }); }
@@ -2379,16 +2443,17 @@ window.CaseStudiesScreen = CaseStudiesScreen;
 // ui_kits/website/CaseStudyScreen.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+// Heading ids for the table of contents: "Wnioski dla firm TSL" -> "wnioski-dla-firm-tsl"
+const slugify = t => t.toLowerCase().replace(/ł/g, 'l').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 function CaseStudyScreen({
   go,
   slug
 }) {
   const {
-    PageHeader,
-    CaseFacts,
+    ArticleHeader,
+    ArticleLayout,
     TagList,
     Stat,
-    CaseSection,
     ChallengeBlock,
     PullQuote,
     FinalCTA
@@ -2402,21 +2467,11 @@ function CaseStudyScreen({
     e.preventDefault();
     go('case', c.slug);
   };
-  const facts = [{
-    label: 'Klient',
-    value: post.client
-  }, {
-    label: 'Okres',
-    value: post.period
-  }, {
-    label: 'Rola',
-    value: post.role
-  }, {
-    label: 'Stack',
-    value: /*#__PURE__*/React.createElement(TagList, {
-      items: post.tags
-    })
-  }];
+  const chapters = post.body.map(c => ({
+    ...c,
+    id: slugify(c.title)
+  }));
+  const words = JSON.stringify(post.body).split(/\s+/).length;
   const block = (b, k) => b.lead ? /*#__PURE__*/React.createElement("p", {
     key: k,
     className: "lead"
@@ -2437,20 +2492,19 @@ function CaseStudyScreen({
     problem: b.problem,
     solution: b.solution,
     result: b.result
-  }) : null;
-  // Chapters run in containers; a pull quote band splits them into groups.
-  const groups = [[]];
-  let n = 0;
-  post.body.forEach(c => {
-    if (c.pullQuote) groups.push('quote', []);else groups[groups.length - 1].push({
-      ...c,
-      index: ++n
-    });
-  });
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(PageHeader, {
-    size: "md",
+  }) : b.pullQuote ? /*#__PURE__*/React.createElement(PullQuote, {
+    key: k,
+    quote: post.quote,
+    role: post.quoteAuthor
+  }) : b.stats ? /*#__PURE__*/React.createElement("div", {
+    key: k,
+    className: "bn-cols bn-cols--3"
+  }, post.stats.map(s => /*#__PURE__*/React.createElement(Stat, _extends({
+    key: s.label
+  }, s)))) : null;
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ArticleHeader, {
     back: {
-      label: 'Wszystkie case studies',
+      label: 'Case studies',
       href: '#/cases',
       onClick: e => {
         e.preventDefault();
@@ -2459,39 +2513,27 @@ function CaseStudyScreen({
     },
     eyebrow: 'Case study · ' + post.sector,
     title: post.title,
-    subtitle: post.excerpt,
-    aside: /*#__PURE__*/React.createElement(CaseFacts, {
-      items: facts
-    })
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "bn-cols bn-cols--3"
-  }, post.stats.map(s => /*#__PURE__*/React.createElement(Stat, _extends({
-    key: s.label
-  }, s))))), /*#__PURE__*/React.createElement("section", {
-    className: "section"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/React.createElement("figure", {
-    className: "bn-case-cover"
-  }, /*#__PURE__*/React.createElement("img", {
-    src: d.img + post.image,
-    alt: ""
-  })))), groups.map((g, gi) => g === 'quote' ? /*#__PURE__*/React.createElement("section", {
-    key: gi,
-    className: "section section--subtle bn-grid bn-grid--fade"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/React.createElement(PullQuote, {
-    quote: post.quote,
-    role: post.quoteAuthor
-  }))) : /*#__PURE__*/React.createElement("div", {
-    key: gi,
-    className: "container"
-  }, g.map(c => /*#__PURE__*/React.createElement(CaseSection, {
-    key: c.title,
-    index: c.index,
-    title: c.title
-  }, c.blocks.map(block))), gi === groups.length - 1 && /*#__PURE__*/React.createElement("nav", {
+    excerpt: post.excerpt,
+    meta: [post.period, post.role, Math.max(1, Math.round(words / 180)) + ' min czytania'],
+    cover: d.img + post.image
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "container bn-article-body"
+  }, /*#__PURE__*/React.createElement(ArticleLayout, {
+    toc: chapters.map(c => ({
+      id: c.id,
+      label: c.title
+    }))
+  }, chapters.map((c, ci) => [/*#__PURE__*/React.createElement("h2", {
+    key: c.id,
+    id: c.id
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "num",
+    "aria-hidden": "true"
+  }, String(ci + 1).padStart(2, '0')), c.title), ...c.blocks.map((b, bi) => block(b, c.id + bi))]), /*#__PURE__*/React.createElement(TagList, {
+    items: post.tags
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "container bn-article-grid"
+  }, /*#__PURE__*/React.createElement("nav", {
     className: "bn-post-nav",
     "aria-label": "Inne case studies"
   }, prev && /*#__PURE__*/React.createElement("a", {
@@ -2510,7 +2552,7 @@ function CaseStudyScreen({
     className: "dir"
   }, "Nast\u0119pny \u2192"), /*#__PURE__*/React.createElement("span", {
     className: "title"
-  }, next.title))))), /*#__PURE__*/React.createElement(FinalCTA, {
+  }, next.title)))), /*#__PURE__*/React.createElement(FinalCTA, {
     title: "Masz podobne wyzwanie?",
     intro: "Opowiedz, jak dzi\u015B wygl\u0105da Wasz proces. Po 30 minutach b\u0119dziesz wiedzie\u0107, od czego zacz\u0105\u0107.",
     points: ['Gdzie praca naprawdę czeka', 'Co da się zmienić w jednym sprincie', 'Czy warto iść dalej - szczerze'],
@@ -2917,15 +2959,15 @@ window.ServiceScreen = ServiceScreen;
 // ui_kits/website/data.js
 try { (() => {
 // Placeholder content for the UI kit - copy is not final.
-// A case `body` is a list of chapters ({ title, blocks }) with an optional { pullQuote: true } band between them.
-// Blocks: { lead } | { p } | { h3 } | { list: [] } | { quote, by } | { challenge, title, problem, solution, result }.
+// A post `body` is a list of chapters ({ title, blocks }); each chapter becomes an h2 and a table of contents entry.
+// Blocks: { lead } | { p } | { h3 } | { list: [] } | { quote, by } | { challenge, title, problem, solution, result }
+//   | { pullQuote: true } (the post's `quote`, once) | { stats: true } (the post's `stats` as a row).
 window.BN_DATA = {
   img: '../../assets/images/',
   cases: [{
     slug: 'od-arkuszy-do-tms',
     sector: 'Logistyka · TSL',
     image: 'tms.png',
-    client: 'Firma transportowa, flota własna i spedycja',
     period: '2015-2023, 8 lat',
     role: 'Architekt i lider projektu',
     title: 'Od arkuszy do automatyzacji.',
@@ -2939,8 +2981,7 @@ window.BN_DATA = {
       label: 'Błędy w rozliczeniach'
     }, {
       value: '3 dni → 1',
-      label: 'Czas rozliczeń',
-      note: 'Integracje w czasie rzeczywistym'
+      label: 'Czas rozliczeń'
     }],
     quote: 'Nie chcieliśmy kolejnego narzędzia. Chcieliśmy rozwiązania, które zmieni sposób, w jaki pracujemy.',
     quoteAuthor: 'Dyrektor operacyjny',
@@ -2974,6 +3015,8 @@ window.BN_DATA = {
         list: ['Czas planowania tras krótszy o co najmniej 70%', 'Wykorzystanie floty powyżej 80%', 'Raport finansowy w ciągu jednego dnia roboczego']
       }, {
         p: 'Każda grupa użytkowników miała inne priorytety. Dyspozytorzy potrzebowali przejrzystego zarządzania zleceniami, kierowcy informacji w telefonie, księgowość automatycznych dokumentów, a zarząd dashboardów. Wspólny cel był jeden: mniej ręcznej pracy.'
+      }, {
+        pullQuote: true
       }]
     }, {
       title: 'Architektura',
@@ -2990,8 +3033,6 @@ window.BN_DATA = {
       }, {
         p: 'Każdy obszar funkcjonalny był osobnym modułem, rozwijanym i testowanym niezależnie. Najlepsza architektura to ta, którą zespół klienta utrzyma po zakończeniu projektu, dlatego stawiałem na przejrzysty kod i dokumentację.'
       }]
-    }, {
-      pullQuote: true
     }, {
       title: 'Wdrożenie',
       blocks: [{
@@ -3026,6 +3067,8 @@ window.BN_DATA = {
       title: 'Rezultaty',
       blocks: [{
         lead: 'Dokumenty przewozowe, faktury i raporty, które przygotowywano przez pół dnia, powstają w kilka minut. Spedytorzy widzą każdy pojazd i status zlecenia na mapie w czasie rzeczywistym.'
+      }, {
+        stats: true
       }, {
         p: 'Kierowcy dostają zlecenia w aplikacji zamiast faksem, więc czas reakcji spadł z godzin do minut. Wizualne harmonogramy pojazdów uprościły planowanie floty własnej.'
       }, {
@@ -3082,7 +3125,6 @@ window.BN_DATA = {
     slug: 'synchronizacja-kafka',
     sector: 'Integracja danych',
     image: 'kafka.png',
-    client: 'Grupa dystrybucyjna',
     period: '2021, 9 miesięcy',
     role: 'Architekt integracji',
     title: '480 GB w czasie rzeczywistym.',
@@ -3109,9 +3151,9 @@ window.BN_DATA = {
       title: 'Problem',
       blocks: [{
         p: 'Każda nowa integracja była osobnym projektem, a awaria jednego eksportu blokowała pozostałe.'
+      }, {
+        pullQuote: true
       }]
-    }, {
-      pullQuote: true
     }, {
       title: 'Co zrobiłem',
       blocks: [{
@@ -3122,6 +3164,8 @@ window.BN_DATA = {
       blocks: [{
         lead: 'Raporty pokazują stan z bieżącej minuty, a nie sprzed doby. Nowy system podłącza się do strumienia w dni, a nie w miesiące.'
       }, {
+        stats: true
+      }, {
         p: 'Awaria jednej integracji nie zatrzymuje pozostałych, bo każda czyta strumień we własnym tempie.'
       }]
     }]
@@ -3129,7 +3173,6 @@ window.BN_DATA = {
     slug: 'wdrozenia-kubernetes',
     sector: 'DevOps · Platforma',
     image: 'kubernetes.png',
-    client: 'Software house, 60 osób',
     period: '2020, 6 miesięcy',
     role: 'Architekt platformy',
     title: 'Wdrożenie bez nocnych telefonów.',
@@ -3137,8 +3180,7 @@ window.BN_DATA = {
     tags: ['Kubernetes', 'CI/CD', 'DevOps'],
     stats: [{
       value: '30 min',
-      label: 'Czas wdrożenia',
-      note: 'Wcześniej cała noc'
+      label: 'Czas wdrożenia'
     }, {
       value: 'Codziennie',
       label: 'Częstotliwość wdrożeń'
@@ -3157,9 +3199,9 @@ window.BN_DATA = {
       title: 'Problem',
       blocks: [{
         p: 'Rzadkie wdrożenia oznaczały duże zmiany, a duże zmiany oznaczały awarie. Koło się zamykało.'
+      }, {
+        pullQuote: true
       }]
-    }, {
-      pullQuote: true
     }, {
       title: 'Co zrobiłem',
       blocks: [{
@@ -3169,6 +3211,8 @@ window.BN_DATA = {
       title: 'Efekt',
       blocks: [{
         lead: 'Zespół wdraża codziennie, w godzinach pracy i bez nocnych dyżurów. Nowe środowisko powstaje w kilka minut.'
+      }, {
+        stats: true
       }, {
         p: 'Platforma działa bez mnie: zespół sam ją rozwija i szkoli kolejne osoby.'
       }]
@@ -3183,13 +3227,13 @@ __ds_ns.CooperationCard = __ds_scope.CooperationCard;
 
 __ds_ns.ServiceCard = __ds_scope.ServiceCard;
 
+__ds_ns.ArticleHeader = __ds_scope.ArticleHeader;
+
 __ds_ns.ArticleImage = __ds_scope.ArticleImage;
 
 __ds_ns.ArticleLayout = __ds_scope.ArticleLayout;
 
-__ds_ns.CaseFacts = __ds_scope.CaseFacts;
-
-__ds_ns.CaseSection = __ds_scope.CaseSection;
+__ds_ns.ArticleToc = __ds_scope.ArticleToc;
 
 __ds_ns.ChallengeBlock = __ds_scope.ChallengeBlock;
 

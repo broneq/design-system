@@ -1,5 +1,5 @@
 /**
- * Large client quote: Archivo 800 at fluid 28-52px, balanced, Polish quotation marks added by the component; mono caption with an accent "//". Place it in its own full-width band.
+ * The one big quote of an article: Archivo 800 at fluid 28-40px under a strong rule, balanced, Polish quotation marks added by the component; mono caption with an accent "//". Place it inside ArticleLayout.
  */
 export interface PullQuoteProps {
   /** The quote without quotation marks */

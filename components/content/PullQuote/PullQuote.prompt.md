@@ -1,9 +1,11 @@
-The client's own words, set large between case study chapters. Give it a band of its own, not a place inside a text column. One per page.
+The one big quote of an article - usually the client's own words - set large in the prose column under a strong rule. One per article; shorter quotes are plain blockquotes.
 
 ```jsx
-<section className="section section--subtle bn-grid bn-grid--fade"><div className="container">
+<ArticleLayout>
+  …
   <PullQuote quote="Nie chcieliśmy kolejnego narzędzia. Chcieliśmy zmienić sposób, w jaki pracujemy." role="Dyrektor operacyjny" />
-</div></section>
+  …
+</ArticleLayout>
 ```
 
 Keep quotes to one or two sentences; pass them without quotation marks.

@@ -50,13 +50,7 @@
 .bn-section-header .subtitle{font-size:var(--fs-lead);line-height:1.55;color:var(--fg-body);max-width:640px}
 /* Page header */
 .bn-page-header{padding:var(--section-y) 0 calc(var(--section-y) * .8);border-bottom:1px solid var(--line-default)}
-.bn-page-header .main{display:flex;flex-direction:column;align-items:flex-start;gap:24px;min-width:0}
-.bn-page-header .back{display:inline-flex;align-items:center;gap:.8em;min-height:44px;margin:-10px 0 -4px;font-family:var(--font-mono);font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted);text-decoration:none;transition:color var(--dur-fast) var(--ease-out)}
-@media (hover:hover){.bn-page-header .back:hover{color:var(--fg-default)}}
-/* With an aside (case study facts) the title row splits 7/5, aside bottom-aligned with the lead */
-.bn-page-header--aside .inner{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--space-16);align-items:end}
-.bn-page-header .extra{margin-top:var(--section-head-gap)}
-@media (max-width:1024px){.bn-page-header--aside .inner{grid-template-columns:minmax(0,1fr);gap:var(--space-10)}}
+.bn-page-header .inner{display:flex;flex-direction:column;align-items:flex-start;gap:24px}
 .bn-page-header .page-title{font-family:var(--font-display);font-weight:800;font-size:var(--fs-h1);line-height:var(--lh-heading);letter-spacing:var(--ls-heading);color:var(--fg-default);max-width:1000px;margin-left:var(--display-inset)}
 .bn-page-header--md .page-title{font-size:var(--fs-h2);max-width:900px}
 .bn-page-header .page-subtitle{font-size:var(--fs-lead);line-height:1.55;color:var(--fg-body);max-width:640px}
@@ -125,9 +119,12 @@
 .bn-text-separator{margin-top:var(--section-head-gap);font-family:var(--font-display);font-weight:800;font-size:clamp(24px,1.5vw + 14px,32px);line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default);text-wrap:balance;max-width:720px}
 /* Article */
 .bn-article{max-width:var(--content-narrow);margin:0 auto;color:var(--fg-body);font-size:18px;line-height:1.75}
-.bn-article h2{font-size:clamp(30px,1.25vw + 22px,40px);line-height:1;margin:var(--section-head-gap) 0 24px}
+.bn-article h2{font-size:clamp(30px,1.25vw + 22px,40px);line-height:1;margin:var(--section-head-gap) 0 24px;padding-top:var(--space-10);border-top:1px solid var(--line-default)}
 .bn-article > :first-child{margin-top:0}
-.bn-article h3{font-size:28px;margin:48px 0 16px}
+.bn-article > h2:first-child{padding-top:0;border-top:0}
+/* Optional chapter number above an h2 */
+.bn-article h2 .num{display:block;margin-bottom:16px;font-family:var(--font-mono);font-weight:400;font-size:var(--fs-label);line-height:1.3;letter-spacing:var(--ls-label);color:var(--accent-text)}
+.bn-article h3{font-size:clamp(22px,.75vw + 17px,28px);margin:48px 0 16px}
 .bn-article h4{font-size:22px;margin:40px 0 12px}
 .bn-article p,.bn-article ul,.bn-article ol{margin-bottom:24px}
 /* Markers hang in a 1.75em gutter so their left edge lines up with the paragraphs: accent squares for ul, mono 01/02 for ol */
@@ -139,38 +136,23 @@
 .bn-article a{color:var(--accent-text);text-decoration:underline;text-underline-offset:3px}
 .bn-article p.lead{font-size:clamp(20px,.5vw + 17px,24px);line-height:1.5;color:var(--fg-default)}
 .bn-article strong{color:var(--fg-default);font-weight:600}
-/* In-text quotes stay quiet (accent rule, title size); the big client quote is PullQuote in its own band */
+/* In-text quotes stay quiet (accent rule, title size); the one big quote is PullQuote */
 .bn-article blockquote{margin:40px 0;padding:2px 0 2px 24px;border-left:2px solid var(--accent);font-family:var(--font-display);font-weight:700;font-size:clamp(20px,.4vw + 17px,22px);line-height:1.3;letter-spacing:var(--ls-title);color:var(--fg-default);text-wrap:pretty}
 .bn-article blockquote p{margin:0}
 .bn-article blockquote + blockquote{margin-top:-8px}
 .bn-article blockquote footer{margin-top:12px;font-family:var(--font-mono);font-weight:400;font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
 .bn-article hr{border:0;border-top:1px solid var(--line-default);margin:var(--section-head-gap) 0}
 .bn-article code{font-family:var(--font-mono);font-size:.85em;background:var(--bg-subtle);padding:.15em .4em;border-radius:var(--radius-xs);color:var(--fg-default)}
-/* Case study: facts list, chapter rows, pull quote */
-.bn-facts{margin:0;border-top:2px solid var(--line-strong)}
-.bn-facts .row{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line-default)}
-.bn-facts dt{font-family:var(--font-mono);font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
-.bn-facts dd{margin:0;font-size:var(--fs-small);line-height:1.5;color:var(--fg-default)}
-.bn-facts dd .bn-tag-list{gap:6px}
-.bn-case-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:var(--space-16);padding-block:var(--section-head-gap);border-top:1px solid var(--line-default)}
-/* The first chapter after a band or image needs no rule of its own */
-.bn-case-section:first-child{border-top:0}
-.bn-case-section .head{display:flex;flex-direction:column;gap:12px;align-self:start;position:sticky;top:calc(var(--header-h) + var(--space-8))}
-.bn-case-section .num{font-family:var(--font-mono);font-size:var(--fs-label);line-height:1.3;letter-spacing:var(--ls-label);color:var(--accent-text)}
-.bn-case-section .title{margin:0;font-family:var(--font-display);font-weight:800;font-size:clamp(28px,1.5vw + 20px,40px);line-height:var(--lh-heading);letter-spacing:var(--ls-heading);color:var(--fg-default)}
-/* Prose starts level with the chapter title, below its number */
-.bn-case-section .body{margin:0;padding-top:calc(var(--fs-label) * 1.3 + 12px)}
-.bn-case-section .body > :last-child{margin-bottom:0}
-@media (max-width:768px){.bn-case-section{grid-template-columns:minmax(0,1fr);gap:20px}.bn-case-section .head{position:static}.bn-case-section .body{padding-top:0}}
-.bn-pull-quote{margin:0;max-width:1040px}
-.bn-pull-quote blockquote{margin:0}
-.bn-pull-quote p{margin:0 0 0 var(--display-inset);font-family:var(--font-display);font-weight:800;font-size:clamp(28px,2.6vw + 14px,56px);line-height:1.05;letter-spacing:var(--ls-heading);color:var(--fg-default);text-wrap:balance}
-.bn-pull-quote figcaption{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4em 1em;margin-top:32px;font-family:var(--font-mono);font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
+/* Pull quote: the one big quote of an article, set off by a strong rule */
+.bn-pull-quote{margin:var(--section-head-gap) 0;padding-top:32px;border-top:2px solid var(--line-strong)}
+.bn-pull-quote blockquote{margin:0;padding:0;border:0}
+.bn-pull-quote p{margin:0 0 0 var(--display-inset);font-family:var(--font-display);font-weight:800;font-size:clamp(28px,1.2vw + 20px,40px);line-height:1.1;letter-spacing:var(--ls-heading);color:var(--fg-default);text-wrap:balance}
+.bn-pull-quote figcaption{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4em 1em;margin-top:24px;font-family:var(--font-mono);font-size:var(--fs-label);line-height:1.3;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
 .bn-pull-quote figcaption::before{content:'//';color:var(--accent-text)}
 .bn-pull-quote .author{color:var(--fg-default)}
-.bn-challenge{margin:40px 0;padding:28px 32px 16px;background:var(--bg-subtle);border-radius:var(--radius-sm)}
-/* Consecutive blocks: the negative margin collapses with the previous 40px to a 16px gap */
-.bn-challenge + .bn-challenge{margin-top:-24px}
+/* Challenge: problem / solution / result rows under a strong rule; consecutive blocks read as a list */
+.bn-challenge{margin:40px 0;padding-top:20px;border-top:2px solid var(--line-strong)}
+.bn-challenge + .bn-challenge{margin-top:48px}
 .bn-challenge .label{margin:0 0 8px;font-family:var(--font-mono);font-size:var(--fs-label);line-height:1.3;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--accent-text)}
 .bn-challenge .title{margin:0 0 16px;font-family:var(--font-display);font-weight:700;font-size:22px;line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default)}
 .bn-challenge dl{margin:0}
@@ -178,16 +160,55 @@
 .bn-challenge dt{font-family:var(--font-mono);font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
 .bn-challenge dd{margin:0;font-size:16px;line-height:1.6;color:var(--fg-body)}
 .bn-challenge .result dd{color:var(--fg-default);font-weight:500}
-@media (max-width:768px){.bn-challenge{padding:24px 20px 12px}.bn-challenge .row{grid-template-columns:minmax(0,1fr);gap:4px}}
-.bn-case-cover{margin:0}
-.bn-case-cover img{display:block;width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:var(--radius-sm);border:1px solid var(--line-default)}
-@media (max-width:768px){.bn-case-cover img{aspect-ratio:16/10}}
+@media (max-width:768px){.bn-challenge .row{grid-template-columns:minmax(0,1fr);gap:4px}}
+/* Stats inside prose: a smaller value so three fit the text column */
+.bn-article > .bn-cols{margin:40px 0}
+.bn-article .bn-stat p{margin:0}
+.bn-article .bn-stat .value{font-size:clamp(32px,1.2vw + 22px,44px)}
+/* Components inside prose opt out of the list and paragraph styles */
+.bn-article .bn-tag-list{margin-bottom:0}
+.bn-article .bn-tag-list > li{padding-left:0;margin:0}
+.bn-article .bn-tag-list > li::before{content:none}
+.bn-article > .bn-tag-list:last-child{margin-top:var(--section-head-gap)}
+/* Article page grid: TOC | 720px prose | balance column, so the prose sits centred in the container.
+   Below 1025px the TOC hides and everything stacks in the prose column. */
+.bn-article-grid{display:grid;grid-template-columns:minmax(180px,1fr) minmax(0,var(--content-narrow)) minmax(0,1fr);column-gap:var(--space-12)}
+.bn-article-grid > *{grid-column:2;min-width:0}
+.bn-article-grid > .bn-article{max-width:none;margin:0}
+.bn-article-grid > .bn-toc{grid-column:1;grid-row:1}
+@media (max-width:1024px){.bn-article-grid{grid-template-columns:minmax(0,var(--content-narrow));justify-content:center}.bn-article-grid > *{grid-column:1}.bn-article-grid > .bn-toc{display:none}}
+.bn-article-body{padding-block:var(--section-head-gap)}
+/* Article header: compact dark block; the back link sits in the TOC column on desktop, the cover overlaps the bottom edge */
+.bn-article-header{--cover-overlap:clamp(56px,9vw,160px)}
+.bn-article-header .top{padding:clamp(40px,2vw + 32px,64px) 0 var(--section-y-tight);border-bottom:1px solid var(--line-default)}
+.bn-article-header--cover .top{padding-bottom:calc(var(--section-y-tight) + var(--cover-overlap));border-bottom:0}
+.bn-article-header .back{grid-column:1;grid-row:1;align-self:start;justify-self:start;display:inline-flex;align-items:center;gap:.8em;min-height:44px;margin-top:-13px;font-family:var(--font-mono);font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted);text-decoration:none;transition:color var(--dur-fast) var(--ease-out)}
+@media (hover:hover){.bn-article-header .back:hover{color:var(--fg-default)}}
+.bn-article-header .main{grid-row:1;display:flex;flex-direction:column;align-items:flex-start;gap:20px}
+.bn-article-header .title{margin:0 0 0 var(--display-inset);font-family:var(--font-display);font-weight:800;font-size:clamp(36px,2.4vw + 22px,56px);line-height:var(--lh-heading);letter-spacing:var(--ls-heading);color:var(--fg-default);text-wrap:balance}
+.bn-article-header .excerpt{margin:0;font-size:var(--fs-lead);line-height:1.55;color:var(--fg-body)}
+.bn-article-header .meta{display:flex;flex-wrap:wrap;gap:6px 0;margin:4px 0 0;padding:0;list-style:none;font-family:var(--font-mono);font-size:var(--fs-label);line-height:1.3;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
+.bn-article-header .meta li + li::before{content:'·';margin:0 .9em;color:var(--line-strong)}
+.bn-article-header .cover{position:relative;margin:calc(-1 * var(--cover-overlap)) 0 0}
+.bn-article-header .cover img{display:block;width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:var(--radius-sm)}
+@media (max-width:1024px){.bn-article-header .back{grid-row:auto;margin:-13px 0 8px}.bn-article-header .main{grid-row:auto}}
+/* On phones the meta items stack: a wrapped row would start lines with a stray middot */
+@media (max-width:768px){.bn-article-header .meta{flex-direction:column}.bn-article-header .meta li + li::before{content:none}.bn-article-header .cover img{aspect-ratio:16/10}}
+/* Table of contents: sticky rail beside the prose, current chapter marked by the accent */
+.bn-toc{position:sticky;top:calc(var(--header-h) + var(--space-8));align-self:start;max-height:calc(100vh - var(--header-h) - var(--space-16));overflow-y:auto}
+.bn-toc .head{margin:0 0 16px;font-family:var(--font-mono);font-size:var(--fs-label);line-height:1.3;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
+.bn-toc ol{margin:0;padding:0;list-style:none;box-shadow:inset 1px 0 0 var(--line-default)}
+.bn-toc a{display:grid;grid-template-columns:2.4em minmax(0,1fr);align-items:baseline;padding:6px 0 6px 16px;border-left:2px solid transparent;font-size:14px;line-height:1.4;color:var(--fg-muted);text-decoration:none;transition:color var(--dur-fast) var(--ease-out),border-color var(--dur-fast) var(--ease-out)}
+.bn-toc .num{font-family:var(--font-mono);font-size:12px;letter-spacing:.04em}
+.bn-toc a[aria-current="true"]{border-left-color:var(--accent);color:var(--fg-default)}
+.bn-toc a[aria-current="true"] .num{color:var(--accent-text)}
+@media (hover:hover){.bn-toc a:hover{color:var(--fg-default)}}
 .bn-article pre{background:var(--bn-ink-900);color:var(--bn-ink-200);border-radius:var(--radius-sm);padding:24px;overflow-x:auto;margin-bottom:24px}
 .bn-article pre code{background:none;padding:0;color:inherit;font-size:14px}
 .bn-article-image{margin:40px 0}
 .bn-article-image img{width:100%;height:auto;display:block;border-radius:var(--radius-sm);border:1px solid var(--line-default)}
 .bn-article-image figcaption{margin-top:12px;font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-muted)}
-.bn-article-image figcaption::before{content:'Fig. — ';color:var(--accent-text)}
+.bn-article-image figcaption::before{content:'Fig. / ';color:var(--accent-text)}
 /* Pagination */
 .bn-post-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding-block:32px;border-top:1px solid var(--line-default)}
 .bn-post-nav a{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding-block:8px;text-decoration:none;color:var(--fg-default)}
