@@ -45,6 +45,7 @@ Layout: Header, Logo, Hero, FinalCTA, Footer.
 - `styles.css` → `tokens/` (fonts, colors, typography, spacing, effects, base, components)
 - `components/<group>/<Name>/` — one folder per component: `.jsx`, `.d.ts`, `.prompt.md`, `.card.html` (groups: core, cards, content, forms, layout)
 - `guidelines/` — foundation cards (colors, type, spacing, brand)
+- `assets/favicon/` - favicon set ("B." on an ink tile): `favicon.svg` and `favicon.ico` pixel-snapped for 16/32 px, `apple-touch-icon.png`, maskable `icon-192/512.png`, `site.webmanifest`. Head tags on the Favicon card in `guidelines/`.
 - `templates/` — slides, LinkedIn post/carousel/banner, PDF offer
 - `ui_kits/website/` — website screens
 - `explorations/` — archive of redesign direction boards (v1, v2); not part of the system
