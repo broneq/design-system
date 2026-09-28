@@ -36,7 +36,7 @@ Dark ink surfaces on an 80px technical grid, a heavy tight **Archivo 800** headl
 
 ## Components
 Core: Button, Eyebrow, Tag, TagList, LiveBadge, Segments, Counter, Stat, SectionHeader, PageHeader (`size` lg / md), CheckList.
-Cards: CaseStudyCard, ServiceCard, CooperationCard.
+Cards: CaseStudyCard, ServiceCard, CooperationCard (engagement formats as a ladder, one `featured`).
 Content: Timeline, TimelineItem, ProblemListItem, TextSeparator, ArticleHeader, ArticleLayout (with `toc`: sticky ArticleToc beside the prose), ArticleToc, ArticleImage, PullQuote, ChallengeBlock, Pagination, Faq.
 Forms: ContactForm.
 Layout: Header, Logo, Hero, FinalCTA, Footer.

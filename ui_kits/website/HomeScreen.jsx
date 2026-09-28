@@ -29,10 +29,10 @@ function HomeScreen({ go }) {
     </div></section>
     <section className="section"><div className="container">
       <SectionHeader eyebrow="Współpraca" eyebrowPrefix="02 /" title="Trzy formaty." />
-      <div className="bn-cols bn-cols--3" style={{ '--cols-gap': '16px' }}>
-        <CooperationCard icon="fa-magnifying-glass-chart" title="Diagnoza SDLC" subtitle="2 tygodnie" ideal="Chcesz wiedzieć, gdzie AI da Twojemu zespołowi najwięcej, zanim wydasz budżet." scope="Warsztaty, Mapa procesu, Raport z rekomendacjami" />
-        <CooperationCard icon="fa-rocket" title="Pilotaż AI w SDLC" subtitle="6–10 tygodni" ideal="Chcesz przejść od eksperymentów do procesu na jednym zespole." scope="Projekt roli AI, Coaching, Metryki przed / po, Playbook" />
-        <CooperationCard icon="fa-people-group" title="Warsztaty dla zespołu" subtitle="1–2 dni" ideal="Chcesz, żeby zespół pracował z AI świadomie i według wspólnych zasad." scope="Code review z AI, Testy, Praca z agentami" />
+      <div className="bn-cols bn-cols--3">
+        <CooperationCard duration="1–2 dni" title="Warsztaty dla zespołu" ideal="Chcesz, żeby zespół pracował z AI świadomie i według wspólnych zasad." scope={['Code review z AI', 'Testy z AI', 'Praca z agentami']} link="#/contact" linkLabel="Zapytaj" onClick={click(() => go('contact'))} />
+        <CooperationCard duration="2 tygodnie" title="Diagnoza SDLC" ideal="Chcesz wiedzieć, gdzie AI da Waszemu zespołowi najwięcej, zanim wydasz budżet." scope={['Warsztat i pomiary', 'Raport z priorytetami', 'Rekomendacja: pilotaż czy nie']} link="#/contact" linkLabel="Zapytaj" onClick={click(() => go('contact'))} />
+        <CooperationCard featured duration="6–10 tygodni" title="Pilotaż AI w SDLC" ideal="Chcesz przejść od eksperymentów do procesu na jednym zespole." scope={['Cały proces, kroki 01–04', 'Coaching w pracy zespołu', 'Metryki przed / po']} link="#/service" onClick={click(() => go('service'))} />
       </div>
     </div></section>
     <section className="section section--subtle bn-grid bn-grid--fade"><div className="container">

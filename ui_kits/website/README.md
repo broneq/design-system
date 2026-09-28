@@ -2,7 +2,7 @@
 
 Click-through of the redesigned site. Positioning: architect helping dev teams bring AI into the SDLC. Copy is placeholder - content strategy is still open.
 
-- **HomeScreen.jsx** - dark grid Hero with avatar → problems → 4-step process (each ServiceCard under its own Segments bar, AI step in signal orange) → 3 engagement formats → readable experience Timeline → case studies → blue FinalCTA
+- **HomeScreen.jsx** - dark grid Hero with avatar → problems → 4-step process (each ServiceCard under its own Segments bar, AI step in signal orange) → 3 engagement formats (CooperationCards as a ladder, pilot `featured`, each with a link) → readable experience Timeline → case studies → blue FinalCTA
 - **ServiceScreen.jsx** - PageHeader with a "Umów rozmowę" action → problems (split) → 3 deliverables (`plain` ServiceCards, `.bn-cols--fixed`) → week-by-week Timeline (no status chips, `current` on the coaching phase) → Stats + `.bn-footnote` → "Dla kogo" fit / misfit lists → Faq (split) → FinalCTA. Sections are unnumbered.
 - **CaseStudiesScreen.jsx** - PageHeader → newest post as a `featured` CaseStudyCard → the rest in `.bn-cols--3` (meta: sector + reading time) → Pagination
 - **CaseStudyScreen.jsx** - blog post layout: ArticleHeader (back link, title, excerpt, meta, cover overlapping the dark block) → ArticleLayout with a sticky table of contents; chapters from `data.js` become numbered h2s, with PullQuote, ChallengeBlock and a Stat row as blocks → tags → prev/next links → FinalCTA

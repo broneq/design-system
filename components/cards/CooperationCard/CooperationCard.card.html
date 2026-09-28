@@ -1,4 +1,4 @@
-<!-- @dsCard group="Components · Cards" viewport="560x560" name="CooperationCard" subtitle="Format współpracy" -->
+<!-- @dsCard group="Components · Cards" viewport="840x560" name="CooperationCard" subtitle="Format współpracy · zwykły / główny" -->
 <!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><link rel="stylesheet" href="../../../styles.css">
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
@@ -8,5 +8,8 @@
 </head><body><div id="root"></div><script type="text/babel">
 const NS = window.BroniszewskiDesignSystem_db82bc;
 const { CooperationCard } = NS;
-ReactDOM.createRoot(document.getElementById('root')).render(<CooperationCard icon="fa-rocket" title="Pilotaż AI w SDLC" subtitle="6–10 tygodni" ideal="Dla zespołu, który chce przejść od eksperymentów do procesu." scope="Projekt roli AI, Guardraile i prompty, Metryki, Playbook" />);
+ReactDOM.createRoot(document.getElementById('root')).render(<div className="bn-cols bn-cols--2" style={{ maxWidth: 760 }}>
+  <CooperationCard duration="2 tygodnie" title="Diagnoza SDLC" ideal="Chcesz wiedzieć, gdzie AI da Waszemu zespołowi najwięcej." scope={['Warsztat i pomiary', 'Raport z priorytetami']} link="#" linkLabel="Zapytaj" />
+  <CooperationCard featured duration="6–10 tygodni" title="Pilotaż AI w SDLC" ideal="Chcesz przejść od eksperymentów do procesu na jednym zespole." scope={['Cały proces, kroki 01–04', 'Metryki przed / po']} link="#" />
+</div>);
 </script></body></html>

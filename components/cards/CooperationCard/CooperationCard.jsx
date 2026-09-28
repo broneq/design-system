@@ -1,19 +1,14 @@
 import React from 'react';
 import { CheckList } from '../../core/CheckList/CheckList.jsx';
-import { Tag } from '../../core/Tag/Tag.jsx';
-export function CooperationCard({ icon, title, subtitle, ideal, scope = '', examples = '', scopeHeading = 'Zakres' }) {
-  const items = [...scope.split(','), ...examples.split(',')].map((i) => i.trim()).filter(Boolean);
+import { Button } from '../../core/Button/Button.jsx';
+export function CooperationCard({ title, duration, ideal, scope = [], featured = false, badge = 'Główna usługa', link, linkLabel = 'Szczegóły', onClick }) {
   return (
-    <article className="bn-coop-card">
-      <header className="head">
-        {icon && <span className="bn-icon-box"><i className={'fa ' + icon} aria-hidden="true"></i></span>}
-        <div className="title-group">
-          <h3 className="title">{title}</h3>
-          {subtitle && <Tag variant="accent">{subtitle}</Tag>}
-        </div>
-      </header>
+    <article className={'bn-coop-card' + (featured ? ' bn-coop-card--featured' : '')}>
+      <p className="duration"><span>{duration}</span>{featured && <span className="badge">{badge}</span>}</p>
+      <h3 className="title">{title}</h3>
       {ideal && <p className="description">{ideal}</p>}
-      {items.length > 0 && <><p className="scope-heading">{scopeHeading}</p><CheckList items={items} /></>}
+      {scope.length > 0 && <CheckList items={scope} />}
+      {link && <div className="link"><Button variant="link" href={link} onClick={onClick} arrow>{linkLabel}</Button></div>}
     </article>
   );
 }

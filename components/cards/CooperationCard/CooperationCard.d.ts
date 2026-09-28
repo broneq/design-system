@@ -1,15 +1,21 @@
+import type { MouseEventHandler } from 'react';
 /**
- * Subtle-grey block card (40px pad) for an engagement format: icon box, Archivo title, blue duration tag, description, scope checklist.
+ * Engagement format, no box: 2px line-strong top rule, mono duration, Archivo title, who it's for, scope checklist, mono link.
+ * `featured` turns the rule blue and adds a badge next to the duration. In a `.bn-cols` row the parts line up across cards (subgrid).
  */
 export interface CooperationCardProps {
-  icon?: string;
   title: string;
-  /** Accent tag under title, e.g. "6–10 tygodni" */
-  subtitle?: string;
+  /** Mono label above the title, e.g. "6–10 tygodni" */
+  duration: string;
+  /** Who it's for, one sentence */
   ideal?: string;
-  /** Comma-separated scope items */
-  scope?: string;
-  examples?: string;
-  scopeHeading?: string;
+  scope?: string[];
+  /** The main offer: blue top rule + badge */
+  featured?: boolean;
+  /** Badge text on a featured card */
+  badge?: string;
+  link?: string;
+  linkLabel?: string;
+  onClick?: MouseEventHandler;
 }
 export declare function CooperationCard(props: CooperationCardProps): JSX.Element;

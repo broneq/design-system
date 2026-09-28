@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleHeader","sourcePath":"components/content/ArticleHeader/ArticleHeader.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"ArticleToc","sourcePath":"components/content/ArticleToc/ArticleToc.jsx"},{"name":"ChallengeBlock","sourcePath":"components/content/ChallengeBlock/ChallengeBlock.jsx"},{"name":"Faq","sourcePath":"components/content/Faq/Faq.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"PullQuote","sourcePath":"components/content/PullQuote/PullQuote.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"689ffca15512","components/cards/CooperationCard/CooperationCard.jsx":"0c0f410c7b9f","components/cards/ServiceCard/ServiceCard.jsx":"aea63aaf1f01","components/content/ArticleHeader/ArticleHeader.jsx":"99ba36457b22","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"8d4dd2f9fa03","components/content/ArticleToc/ArticleToc.jsx":"2a3b50feaf7d","components/content/ChallengeBlock/ChallengeBlock.jsx":"5b7cce543d6a","components/content/Faq/Faq.jsx":"2f15dd3c3148","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"7b600462d885","components/content/PullQuote/PullQuote.jsx":"85e6b3c6de24","components/content/TimelineItem/TimelineItem.jsx":"1dc826ee1b5a","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"7f4f1b74b502","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"ce72289c1e4a","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"fd9875f8705a","components/layout/Header/Header.jsx":"61650e789e5c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"ab020fe4592c","ui_kits/website/CaseStudyScreen.jsx":"8db12ee18e9a","ui_kits/website/ContactScreen.jsx":"b4a22b24d2a9","ui_kits/website/HomeScreen.jsx":"deabe98411c9","ui_kits/website/ServiceScreen.jsx":"76ec2714e9e2","ui_kits/website/data.js":"d40d4f947579"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"BroniszewskiDesignSystem_db82bc","components":[{"name":"CaseStudyCard","sourcePath":"components/cards/CaseStudyCard/CaseStudyCard.jsx"},{"name":"CooperationCard","sourcePath":"components/cards/CooperationCard/CooperationCard.jsx"},{"name":"ServiceCard","sourcePath":"components/cards/ServiceCard/ServiceCard.jsx"},{"name":"ArticleHeader","sourcePath":"components/content/ArticleHeader/ArticleHeader.jsx"},{"name":"ArticleImage","sourcePath":"components/content/ArticleImage/ArticleImage.jsx"},{"name":"ArticleLayout","sourcePath":"components/content/ArticleLayout/ArticleLayout.jsx"},{"name":"ArticleToc","sourcePath":"components/content/ArticleToc/ArticleToc.jsx"},{"name":"ChallengeBlock","sourcePath":"components/content/ChallengeBlock/ChallengeBlock.jsx"},{"name":"Faq","sourcePath":"components/content/Faq/Faq.jsx"},{"name":"Pagination","sourcePath":"components/content/Pagination/Pagination.jsx"},{"name":"ProblemListItem","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"TextSeparator","sourcePath":"components/content/ProblemListItem/ProblemListItem.jsx"},{"name":"PullQuote","sourcePath":"components/content/PullQuote/PullQuote.jsx"},{"name":"TimelineItem","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Timeline","sourcePath":"components/content/TimelineItem/TimelineItem.jsx"},{"name":"Button","sourcePath":"components/core/Button/Button.jsx"},{"name":"CheckList","sourcePath":"components/core/CheckList/CheckList.jsx"},{"name":"Eyebrow","sourcePath":"components/core/Eyebrow/Eyebrow.jsx"},{"name":"LiveBadge","sourcePath":"components/core/LiveBadge/LiveBadge.jsx"},{"name":"PageHeader","sourcePath":"components/core/PageHeader/PageHeader.jsx"},{"name":"SectionHeader","sourcePath":"components/core/SectionHeader/SectionHeader.jsx"},{"name":"Segments","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Counter","sourcePath":"components/core/Segments/Segments.jsx"},{"name":"Stat","sourcePath":"components/core/Stat/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag/Tag.jsx"},{"name":"ContactForm","sourcePath":"components/forms/ContactForm/ContactForm.jsx"},{"name":"FinalCTA","sourcePath":"components/layout/FinalCTA/FinalCTA.jsx"},{"name":"Footer","sourcePath":"components/layout/Footer/Footer.jsx"},{"name":"Logo","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Header","sourcePath":"components/layout/Header/Header.jsx"},{"name":"Hero","sourcePath":"components/layout/Hero/Hero.jsx"}],"sourceHashes":{"components/cards/CaseStudyCard/CaseStudyCard.jsx":"689ffca15512","components/cards/CooperationCard/CooperationCard.jsx":"8e86f50c5b6d","components/cards/ServiceCard/ServiceCard.jsx":"aea63aaf1f01","components/content/ArticleHeader/ArticleHeader.jsx":"99ba36457b22","components/content/ArticleImage/ArticleImage.jsx":"1d36790ed362","components/content/ArticleLayout/ArticleLayout.jsx":"8d4dd2f9fa03","components/content/ArticleToc/ArticleToc.jsx":"2a3b50feaf7d","components/content/ChallengeBlock/ChallengeBlock.jsx":"5b7cce543d6a","components/content/Faq/Faq.jsx":"2f15dd3c3148","components/content/Pagination/Pagination.jsx":"b007de27b6fe","components/content/ProblemListItem/ProblemListItem.jsx":"7b600462d885","components/content/PullQuote/PullQuote.jsx":"85e6b3c6de24","components/content/TimelineItem/TimelineItem.jsx":"1dc826ee1b5a","components/core/Button/Button.jsx":"a8ef412238b2","components/core/CheckList/CheckList.jsx":"2fe1eea8d852","components/core/Eyebrow/Eyebrow.jsx":"be11d8da1607","components/core/LiveBadge/LiveBadge.jsx":"cd5b0ea8abb0","components/core/PageHeader/PageHeader.jsx":"7f4f1b74b502","components/core/SectionHeader/SectionHeader.jsx":"2b70d4176675","components/core/Segments/Segments.jsx":"b8c7c25b73bc","components/core/Stat/Stat.jsx":"8355c3d12afe","components/core/Tag/Tag.jsx":"93687b7bd5aa","components/forms/ContactForm/ContactForm.jsx":"ce72289c1e4a","components/layout/FinalCTA/FinalCTA.jsx":"084326b7e5fe","components/layout/Footer/Footer.jsx":"fd9875f8705a","components/layout/Header/Header.jsx":"61650e789e5c","components/layout/Hero/Hero.jsx":"cecb9393afd4","explorations/image-slot.js":"fff26d081c8d","ui_kits/website/CaseStudiesScreen.jsx":"ab020fe4592c","ui_kits/website/CaseStudyScreen.jsx":"8db12ee18e9a","ui_kits/website/ContactScreen.jsx":"b4a22b24d2a9","ui_kits/website/HomeScreen.jsx":"82bcb0eb326c","ui_kits/website/ServiceScreen.jsx":"76ec2714e9e2","ui_kits/website/data.js":"d40d4f947579"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -362,6 +362,43 @@ function CheckList({
 Object.assign(__ds_scope, { CheckList });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/core/CheckList/CheckList.jsx", error: String((e && e.message) || e) }); }
 
+// components/cards/CooperationCard/CooperationCard.jsx
+try { (() => {
+function CooperationCard({
+  title,
+  duration,
+  ideal,
+  scope = [],
+  featured = false,
+  badge = 'Główna usługa',
+  link,
+  linkLabel = 'Szczegóły',
+  onClick
+}) {
+  return /*#__PURE__*/React.createElement("article", {
+    className: 'bn-coop-card' + (featured ? ' bn-coop-card--featured' : '')
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "duration"
+  }, /*#__PURE__*/React.createElement("span", null, duration), featured && /*#__PURE__*/React.createElement("span", {
+    className: "badge"
+  }, badge)), /*#__PURE__*/React.createElement("h3", {
+    className: "title"
+  }, title), ideal && /*#__PURE__*/React.createElement("p", {
+    className: "description"
+  }, ideal), scope.length > 0 && /*#__PURE__*/React.createElement(__ds_scope.CheckList, {
+    items: scope
+  }), link && /*#__PURE__*/React.createElement("div", {
+    className: "link"
+  }, /*#__PURE__*/React.createElement(__ds_scope.Button, {
+    variant: "link",
+    href: link,
+    onClick: onClick,
+    arrow: true
+  }, linkLabel)));
+}
+Object.assign(__ds_scope, { CooperationCard });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/cards/CooperationCard/CooperationCard.jsx", error: String((e && e.message) || e) }); }
+
 // components/cards/ServiceCard/ServiceCard.jsx
 try { (() => {
 function ServiceCard({
@@ -605,44 +642,6 @@ function TagList({
 }
 Object.assign(__ds_scope, { Tag, TagList });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/core/Tag/Tag.jsx", error: String((e && e.message) || e) }); }
-
-// components/cards/CooperationCard/CooperationCard.jsx
-try { (() => {
-function CooperationCard({
-  icon,
-  title,
-  subtitle,
-  ideal,
-  scope = '',
-  examples = '',
-  scopeHeading = 'Zakres'
-}) {
-  const items = [...scope.split(','), ...examples.split(',')].map(i => i.trim()).filter(Boolean);
-  return /*#__PURE__*/React.createElement("article", {
-    className: "bn-coop-card"
-  }, /*#__PURE__*/React.createElement("header", {
-    className: "head"
-  }, icon && /*#__PURE__*/React.createElement("span", {
-    className: "bn-icon-box"
-  }, /*#__PURE__*/React.createElement("i", {
-    className: 'fa ' + icon,
-    "aria-hidden": "true"
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "title-group"
-  }, /*#__PURE__*/React.createElement("h3", {
-    className: "title"
-  }, title), subtitle && /*#__PURE__*/React.createElement(__ds_scope.Tag, {
-    variant: "accent"
-  }, subtitle))), ideal && /*#__PURE__*/React.createElement("p", {
-    className: "description"
-  }, ideal), items.length > 0 && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("p", {
-    className: "scope-heading"
-  }, scopeHeading), /*#__PURE__*/React.createElement(__ds_scope.CheckList, {
-    items: items
-  })));
-}
-Object.assign(__ds_scope, { CooperationCard });
-})(); } catch (e) { __ds_ns.__errors.push({ path: "components/cards/CooperationCard/CooperationCard.jsx", error: String((e && e.message) || e) }); }
 
 // components/content/TimelineItem/TimelineItem.jsx
 try { (() => {
@@ -2805,28 +2804,31 @@ function HomeScreen({
     eyebrowPrefix: "02 /",
     title: "Trzy formaty."
   }), /*#__PURE__*/React.createElement("div", {
-    className: "bn-cols bn-cols--3",
-    style: {
-      '--cols-gap': '16px'
-    }
+    className: "bn-cols bn-cols--3"
   }, /*#__PURE__*/React.createElement(CooperationCard, {
-    icon: "fa-magnifying-glass-chart",
-    title: "Diagnoza SDLC",
-    subtitle: "2 tygodnie",
-    ideal: "Chcesz wiedzie\u0107, gdzie AI da Twojemu zespo\u0142owi najwi\u0119cej, zanim wydasz bud\u017Cet.",
-    scope: "Warsztaty, Mapa procesu, Raport z rekomendacjami"
-  }), /*#__PURE__*/React.createElement(CooperationCard, {
-    icon: "fa-rocket",
-    title: "Pilota\u017C AI w SDLC",
-    subtitle: "6\u201310 tygodni",
-    ideal: "Chcesz przej\u015B\u0107 od eksperyment\xF3w do procesu na jednym zespole.",
-    scope: "Projekt roli AI, Coaching, Metryki przed / po, Playbook"
-  }), /*#__PURE__*/React.createElement(CooperationCard, {
-    icon: "fa-people-group",
+    duration: "1\u20132 dni",
     title: "Warsztaty dla zespo\u0142u",
-    subtitle: "1\u20132 dni",
     ideal: "Chcesz, \u017Ceby zesp\xF3\u0142 pracowa\u0142 z AI \u015Bwiadomie i wed\u0142ug wsp\xF3lnych zasad.",
-    scope: "Code review z AI, Testy, Praca z agentami"
+    scope: ['Code review z AI', 'Testy z AI', 'Praca z agentami'],
+    link: "#/contact",
+    linkLabel: "Zapytaj",
+    onClick: click(() => go('contact'))
+  }), /*#__PURE__*/React.createElement(CooperationCard, {
+    duration: "2 tygodnie",
+    title: "Diagnoza SDLC",
+    ideal: "Chcesz wiedzie\u0107, gdzie AI da Waszemu zespo\u0142owi najwi\u0119cej, zanim wydasz bud\u017Cet.",
+    scope: ['Warsztat i pomiary', 'Raport z priorytetami', 'Rekomendacja: pilotaż czy nie'],
+    link: "#/contact",
+    linkLabel: "Zapytaj",
+    onClick: click(() => go('contact'))
+  }), /*#__PURE__*/React.createElement(CooperationCard, {
+    featured: true,
+    duration: "6\u201310 tygodni",
+    title: "Pilota\u017C AI w SDLC",
+    ideal: "Chcesz przej\u015B\u0107 od eksperyment\xF3w do procesu na jednym zespole.",
+    scope: ['Cały proces, kroki 01–04', 'Coaching w pracy zespołu', 'Metryki przed / po'],
+    link: "#/service",
+    onClick: click(() => go('service'))
   })))), /*#__PURE__*/React.createElement("section", {
     className: "section section--subtle bn-grid bn-grid--fade"
   }, /*#__PURE__*/React.createElement("div", {

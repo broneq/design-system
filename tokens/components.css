@@ -112,15 +112,17 @@
 .bn-service-card .body{flex:1}
 .bn-service-card .link{font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)}
 .bn-service-card .link:hover{color:var(--fg-default)}
-/* Cooperation card */
-.bn-coop-card{display:flex;flex-direction:column;gap:20px;padding:clamp(24px,3vw,40px);background:var(--bg-subtle);border-radius:var(--radius-sm);height:100%;min-width:0;overflow-wrap:anywhere}
-/* In a row of cards, share rows via subgrid so descriptions, scope headings and lists line up across cards */
-.bn-cols > .bn-coop-card{display:grid;grid-template-rows:subgrid;grid-row:span 4;row-gap:20px;align-content:start}
-.bn-coop-card .head{display:flex;gap:16px;align-items:flex-start}
-.bn-coop-card .title-group{display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-width:0}
-.bn-coop-card .title{font-family:var(--font-display);font-weight:700;font-size:clamp(22px,2.2vw,30px);line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default)}
+/* Cooperation card - no box, 2px top rule like Stat; featured = blue rule */
+.bn-coop-card{display:flex;flex-direction:column;gap:20px;padding-top:24px;border-top:2px solid var(--line-strong);min-width:0}
+.bn-coop-card--featured{border-top-color:var(--accent)}
+/* In a row of cards, share rows via subgrid so titles, descriptions, lists and links line up across cards */
+.bn-cols > .bn-coop-card{display:grid;grid-template-rows:subgrid;grid-row:span 5;row-gap:20px;align-content:start}
+.bn-cols > .bn-coop-card:not(:has(> .link)){grid-row:span 4}
+.bn-coop-card .duration{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;font-family:var(--font-mono);font-size:var(--fs-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted)}
+.bn-coop-card .badge{color:var(--accent-text)}
+.bn-coop-card .title{font-family:var(--font-display);font-weight:700;font-size:clamp(24px,1vw + 18px,30px);line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default);text-wrap:balance}
 .bn-coop-card .description{color:var(--fg-body)}
-.bn-coop-card .scope-heading{font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--fg-muted)}
+.bn-coop-card .link{align-self:end}
 /* Timeline — readable rows */
 .bn-timeline{border-top:2px solid var(--line-strong);list-style:none;margin:0;padding:0}
 .bn-timeline-item{display:grid;grid-template-columns:180px minmax(0,1fr) minmax(0,1.3fr) 120px;grid-template-areas:"label head desc status";gap:32px;padding:32px 0;border-bottom:1px solid var(--line-default);align-items:baseline}
