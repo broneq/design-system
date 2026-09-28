@@ -7,34 +7,412 @@
 </head>
 <body>
 <x-dc>
-<!-- @template name="LinkedIn — pojedyncza grafika 1:1" description="Post 1080×1080 w 3 wariantach: niebieski, ciemny z siatką, jasny" -->
-<helmet><script src="./ds-base.js"></script></helmet>
-<div style="min-height:100vh;background:#E7E8EB;padding:64px;display:flex;flex-wrap:wrap;gap:64px;align-items:flex-start;font-family:'Geist',sans-serif">
-<div data-screen-label="Post niebieski" style="width:1080px;height:1080px;background:#3D6BFF;color:#fff;padding:88px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden">
-<sc-if value="{{ showGrid }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:90px 90px"></div></sc-if>
-<p style="position:relative;font-family:'JetBrains Mono';font-size:30px;letter-spacing:.14em;text-transform:uppercase">// Notatka #14</p>
-<p style="position:relative;font-family:'Archivo';font-weight:800;font-size:104px;line-height:.96;letter-spacing:-.05em">AI nie przyspieszy zespołu, który nie wie, gdzie traci czas<span style="color:#0F1115">.</span></p>
-<div style="position:relative;display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Archivo';font-weight:800;font-size:40px;letter-spacing:-.02em">Broniszewski<span style="color:#0F1115">.</span></span><i style="width:18px;height:18px;border-radius:50%;background:#FF6B3D;box-shadow:0 0 0 9px rgba(255,107,61,.3)"></i></div>
+<!-- @template name="LinkedIn - post 4:5" description="20 układów 1080×1350 pod różne treści: teza, portret, cytat, liczba, przed/po, prompt, proces, checklista, case study, diagram, ankieta, mit/fakt, wydarzenie, oś czasu, słownik, okładka, notatka, wykres, duotone" -->
+<helmet><script src="./ds-base.js"></script><style>
+/* LinkedIn post kit - 1080x1350 (4:5); .lp--sq = 1080x1080 (1:1). Tokens come from ds-base.js. */
+.lp-board{min-height:100vh;background:#E7E8EB;padding:64px;display:flex;flex-wrap:wrap;gap:64px;align-items:flex-start;font-family:var(--font-sans)}
+.lp{--k:1;position:relative;flex:none;width:1080px;height:1350px;overflow:hidden;padding:88px;display:flex;flex-direction:column;font-family:var(--font-sans);font-size:36px;line-height:1.4;text-align:left;-webkit-font-smoothing:antialiased}
+.lp *{margin:0;padding:0;box-sizing:border-box}
+.lp ul,.lp ol{list-style:none}
+.lp img{display:block;max-width:none}
+.lp--sq{--k:.8;height:1080px;padding:72px}
+
+/* Surfaces */
+.lp--ink{background:var(--bn-ink-900);color:#F2F3F5;--lp-gl:rgba(255,255,255,.05);--lp-mut:var(--bn-ink-400);--lp-body:var(--bn-ink-300);--lp-sl:var(--bn-blue-400);--lp-pd:var(--bn-blue-500);--lp-line:rgba(255,255,255,.14);--lp-seg-off:rgba(255,255,255,.16);--lp-seg-done:#F2F3F5}
+.lp--blue{background:var(--bn-blue-600);color:#fff;--lp-gl:rgba(255,255,255,.09);--lp-mut:rgba(255,255,255,.78);--lp-body:rgba(255,255,255,.9);--lp-sl:rgba(255,255,255,.78);--lp-pd:var(--bn-ink-900);--lp-line:rgba(255,255,255,.35);--lp-seg-off:rgba(255,255,255,.3);--lp-seg-done:var(--bn-white)}
+.lp--paper,.lp--mist{background:var(--bn-white);color:var(--bn-ink-900);--lp-gl:rgba(15,17,21,.06);--lp-mut:var(--bn-ink-500);--lp-body:var(--bn-ink-600);--lp-sl:var(--bn-blue-600);--lp-pd:var(--bn-blue-500);--lp-line:var(--bn-ink-100);--lp-seg-off:var(--bn-ink-100);--lp-seg-done:var(--bn-ink-900)}
+.lp--mist{background:var(--bn-ink-50)}
+.lp--flush{padding:0}
+
+/* Shared pieces */
+.lp-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--lp-gl) 1px,transparent 1px),linear-gradient(90deg,var(--lp-gl) 1px,transparent 1px);background-size:90px 90px}
+.lp-grid--fine{--lp-gl:rgba(45,91,255,.05);background-size:30px 30px}
+.lp-grid--blue{--lp-gl:rgba(45,91,255,.12)}
+.lp-rel{position:relative}
+.lp-row{display:flex;justify-content:space-between;align-items:baseline;gap:24px}
+.lp-row--mid{align-items:center}
+.lp-lbl{font-family:var(--font-mono);font-size:26px;letter-spacing:.14em;text-transform:uppercase;line-height:1.3;color:var(--lp-mut)}
+.lp-lbl--sm{font-size:22px}
+.lp-sl{color:var(--lp-sl)}
+.lp-h{font-family:var(--font-display);font-weight:800;font-size:calc(var(--h,96px) * var(--k));letter-spacing:-.05em;line-height:.92;color:inherit;text-wrap:balance}
+.lp-h--tight{letter-spacing:-.065em;line-height:.84}
+.lp-pd{color:var(--lp-pd)}
+.lp-lead{font-size:calc(var(--t,40px) * (var(--k) + (1 - var(--k)) / 2));line-height:1.38;color:var(--lp-body);max-width:840px}
+.lp-t{font-family:var(--font-display);font-weight:700;letter-spacing:-.02em;line-height:1.2}
+.lp-wm{font-family:var(--font-display);font-weight:800;font-size:38px;letter-spacing:-.02em;line-height:1;white-space:nowrap}
+.lp-foot{position:relative;display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:64px}
+.lp-foot--rule{padding-top:36px;border-top:1px solid var(--lp-line)}
+.lp-mono{font-family:var(--font-mono)}
+.lp-face{object-fit:cover;object-position:54% 30%;border-radius:4px;background:var(--bn-blue-600)}
+.lp-count{font-family:var(--font-mono);font-size:30px;color:var(--lp-mut)}
+.lp-count b{font-weight:500;color:var(--lp-count-on,currentColor)}
+.lp-list{border-top:1px solid var(--lp-line)}
+.lp-list>li{padding:calc(24px * var(--k)) 0;border-bottom:1px solid var(--lp-line)}
+.lp-dot{width:18px;height:18px;border-radius:50%;background:var(--bn-signal-500);box-shadow:0 0 0 8px var(--bn-signal-a22);flex:none}
+
+/* Push to the bottom of a flex column; wins over component margins */
+.lp .lp-push{margin-top:auto}
+
+/* 01 Manifest */
+.lp-bar{display:block;width:120px;height:12px;background:var(--bn-blue-500);margin-bottom:calc(56px * var(--k))}
+
+/* 02 Portret na blekicie */
+.lp-02 .lp-head{position:relative;z-index:2;padding:88px 88px 0}
+.lp-02 .lp-photo{position:absolute;left:0;bottom:112px;width:1080px;height:885px;object-fit:cover;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 7%);mask-image:linear-gradient(to bottom,transparent 0,#000 7%)}
+.lp-strip{position:absolute;left:0;right:0;bottom:0;height:112px;background:var(--bn-ink-900);color:#F2F3F5;display:flex;justify-content:space-between;align-items:center;padding:0 88px;--lp-pd:var(--bn-blue-500);--lp-mut:var(--bn-ink-400)}
+.lp--sq.lp-02 .lp-head{padding:72px 72px 0}
+.lp--sq.lp-02 .lp-photo{left:auto;right:-160px;bottom:96px;width:760px;height:623px}
+.lp--sq .lp-strip{height:96px;padding:0 72px}
+
+/* 03 Cytat */
+.lp-quote-mark{font-family:var(--font-display);font-weight:800;font-size:calc(280px * var(--k));line-height:1;color:var(--bn-blue-500);height:calc(150px * var(--k));overflow:hidden;margin-bottom:24px}
+.lp-quote{font-family:var(--font-display);font-weight:700;font-size:calc(70px * var(--k));line-height:1.08;letter-spacing:-.03em;text-wrap:balance}
+.lp-sign{display:flex;gap:28px;align-items:center}
+.lp-sign .lp-face{width:128px;height:128px;flex:none}
+.lp-sign small{display:block;font-size:28px;color:var(--lp-mut);margin-top:6px}
+.lp-03 .lp-foot{border-top:2px solid var(--bn-ink-900);padding-top:40px;margin-top:88px}
+
+/* 04 Pas portretowy */
+.lp-04{flex-direction:row}
+.lp-04 .lp-side{width:440px;height:100%;flex:none;background:var(--bn-blue-600)}
+.lp-04 .lp-side img{width:100%;height:100%;object-fit:cover;object-position:54% 50%}
+.lp-04 .lp-main{flex:1;min-width:0;padding:88px 72px;display:flex;flex-direction:column}
+.lp-04 .lp-list{margin-top:48px}
+.lp-04 .lp-list li{display:flex;gap:24px;align-items:center;font-size:34px}
+.lp-sq-bullet{width:14px;height:14px;background:var(--bn-blue-500);flex:none}
+.lp--sq.lp-04 .lp-side{width:380px}
+.lp--sq.lp-04 .lp-main{padding:72px 64px}
+.lp--sq.lp-04 .lp-list{margin-top:32px}
+
+/* 05 Jedna liczba */
+.lp-bars{display:grid;gap:28px;margin-top:calc(72px * var(--k))}
+.lp-bars .lp-t{font-size:34px}
+.lp-bars i{display:block;height:28px;margin-top:12px;background:var(--bn-ink-900)}
+.lp-bars .lp-on{color:var(--bn-blue-600)}
+.lp-bars .lp-on+i,.lp-bars i.lp-on{background:var(--bn-blue-500)}
+
+/* 06 Przed / po */
+.lp-half{height:50%;padding:80px 88px;display:flex;flex-direction:column}
+.lp-half--blue{background:var(--bn-blue-600);color:#fff;--lp-pd:var(--bn-ink-900);--lp-mut:rgba(255,255,255,.78);--lp-line:rgba(255,255,255,.35)}
+.lp-half .lp-list li{font-size:38px;padding:22px 0}
+.lp-half .lp-list--muted li{color:var(--bn-ink-400)}
+.lp-half--blue .lp-list li{font-weight:500}
+.lp--sq .lp-half{padding:56px 72px}
+.lp--sq .lp-half .lp-list li{font-size:32px;padding:14px 0}
+
+/* 07 Terminal */
+.lp-term{background:var(--bn-ink-950);border:1px solid rgba(255,255,255,.12);border-radius:12px;overflow:hidden}
+.lp-term-bar{padding:22px 32px;border-bottom:1px solid rgba(255,255,255,.12);font-family:var(--font-mono);font-size:24px;color:var(--bn-ink-400)}
+.lp-code{padding:32px;font-family:var(--font-mono);font-size:27px;line-height:1.62;color:var(--bn-ink-200)}
+.lp-code p{white-space:pre-wrap}
+.lp-term .k{color:var(--bn-blue-400)}
+.lp-term .c{color:var(--bn-ink-500)}
+.lp--sq .lp-code{font-size:24px;line-height:1.5;padding:24px 32px}
+
+/* 08 Mapa procesu */
+.lp-steps{display:grid;gap:calc(18px * var(--k))}
+.lp-steps li{display:grid;grid-template-columns:84px 1fr;align-items:center}
+.lp-steps .lp-box{display:flex;justify-content:space-between;align-items:center;gap:24px;background:var(--bn-white);border:1px solid var(--bn-ink-200);border-radius:4px;padding:calc(22px * var(--k)) 28px}
+.lp-steps .lp-t{font-size:38px}
+.lp-steps .lp-on .lp-box{border:3px solid var(--bn-signal-500);padding:calc(22px * var(--k) - 2px) 26px}
+.lp-steps .lp-on>.lp-lbl,.lp-steps .lp-on .lp-lbl{color:var(--bn-signal-600)}
+.lp-steps .lp-dot{width:14px;height:14px;box-shadow:0 0 0 6px var(--bn-signal-a22)}
+.lp--sq .lp-steps .lp-t{font-size:32px}
+
+/* 09 Checklista */
+.lp-checks li{display:flex;gap:32px;align-items:center;font-size:38px;padding:calc(28px * var(--k)) 0}
+.lp-checks li.lp-done{color:var(--bn-ink-400)}
+.lp-box-check{width:48px;height:48px;flex:none;border-radius:2px;border:3px solid var(--bn-ink-500);display:grid;place-items:center}
+.lp-done .lp-box-check{border:0;background:var(--bn-blue-500)}
+.lp-box-check svg{width:28px;height:28px;fill:none;stroke:#fff;stroke-width:3.2}
+.lp-checks{border-top:2px solid rgba(255,255,255,.32)}
+.lp--sq .lp-checks li{font-size:32px}
+
+/* 10 Case study ze zdjeciem */
+.lp-cover{position:relative;height:620px;flex:none}
+.lp-cover img{width:100%;height:100%;object-fit:cover}
+.lp-cover .lp-lbl{position:absolute;left:88px;top:88px;background:var(--bn-ink-900);color:#F2F3F5;padding:14px 20px;border-radius:2px}
+.lp-body{flex:1;min-height:0;padding:64px 88px 88px;display:flex;flex-direction:column}
+.lp-tags{display:flex;gap:12px}
+.lp-tag{font-family:var(--font-mono);font-size:22px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--lp-line);border-radius:2px;padding:10px 16px;color:var(--bn-ink-200)}
+.lp-stats{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--lp-line)}
+.lp-stats>div{padding-top:28px}
+.lp-stats>div+div{padding-left:40px;border-left:1px solid var(--lp-line)}
+.lp-stats p+p{font-size:28px;color:var(--lp-mut);margin-top:10px}
+.lp--sq .lp-cover{height:420px}
+.lp--sq .lp-cover .lp-lbl{left:72px;top:72px}
+.lp--sq .lp-body{padding:48px 72px 72px}
+
+/* 11 Rysunek techniczny */
+.lp-svg{display:block;width:100%;height:auto;overflow:visible;font-family:var(--font-mono)}
+.lp-svg .ln{stroke:var(--bn-ink-900);stroke-width:2;fill:none}
+.lp-svg .ar{fill:var(--bn-ink-900)}
+.lp-svg .box{fill:var(--bn-white);stroke:var(--bn-ink-900);stroke-width:2}
+.lp-svg .box--on{stroke:var(--bn-blue-600);stroke-width:4}
+.lp-svg .bg{fill:var(--bn-white)}
+.lp-svg .lk{stroke:var(--bn-blue-600);stroke-width:2;stroke-dasharray:6 6}
+.lp-svg .pin{fill:var(--bn-blue-600)}
+.lp-svg .note{fill:var(--bn-blue-100)}
+.lp-svg .dim{font-size:22px;fill:var(--bn-ink-900);letter-spacing:2px;text-anchor:middle}
+.lp-svg .nm{font-family:var(--font-display);font-weight:700;font-size:32px;fill:var(--bn-ink-900);text-anchor:middle;letter-spacing:-.6px}
+.lp-svg .cap{font-size:22px;fill:var(--bn-blue-700);letter-spacing:2px}
+.lp-svg .tx{font-family:var(--font-sans);font-size:30px;fill:var(--bn-ink-900)}
+.lp--sq .lp-11 .lp-svg,.lp--sq.lp-11 .lp-svg{width:86%}
+
+/* 12 Ankieta */
+.lp-opts{display:grid;gap:calc(18px * var(--k))}
+.lp-opts li{display:flex;gap:28px;align-items:center;border:2px solid rgba(255,255,255,.4);border-radius:4px;padding:calc(22px * var(--k)) 26px;font-size:38px;font-weight:500}
+.lp-opts b{width:64px;height:64px;flex:none;background:var(--bn-white);color:var(--bn-blue-600);border-radius:2px;display:grid;place-items:center;font-family:var(--font-display);font-weight:800;font-size:36px}
+.lp--sq .lp-opts li{font-size:32px}
+.lp--sq .lp-opts b{width:52px;height:52px;font-size:30px}
+
+/* 13 Mit i fakt */
+.lp-myth{color:var(--bn-ink-300);text-decoration:line-through;text-decoration-thickness:10px;text-decoration-color:var(--bn-ink-900)}
+.lp-split{display:block;height:2px;background:var(--bn-ink-900);margin:calc(72px * var(--k)) 0}
+.lp-fact{color:var(--bn-blue-600)}
+
+/* 14 Wydarzenie */
+.lp-live{display:flex;gap:20px;align-items:center;color:#F2F3F5}
+.lp-when{font-family:var(--font-mono);font-size:32px;letter-spacing:.08em;color:var(--lp-body);margin-top:28px;text-transform:uppercase}
+.lp-facts{border-top:1px solid var(--lp-line);font-size:32px}
+.lp-facts>div{display:grid;grid-template-columns:220px 1fr;padding:calc(20px * var(--k)) 0;border-bottom:1px solid var(--lp-line)}
+.lp-facts dt{padding-top:6px}
+
+/* 15 Os czasu */
+.lp-seg{display:grid;grid-template-columns:repeat(var(--n,6),1fr);gap:10px;margin-top:28px}
+.lp-seg i{height:10px;border-radius:3px;background:var(--lp-seg-off)}
+.lp-seg i.lp-done{background:var(--lp-seg-done)}
+.lp-seg i.lp-on{background:var(--bn-signal-500)}
+.lp-weeks{border-top:2px solid var(--bn-ink-900)}
+.lp-weeks li{display:grid;grid-template-columns:230px 1fr;padding:calc(22px * var(--k)) 0;border-bottom:1px solid var(--bn-ink-100);font-size:34px}
+.lp-weeks .lp-lbl{padding-top:8px}
+.lp-weeks .lp-on{font-weight:600}
+.lp-weeks .lp-on .lp-lbl{color:var(--bn-signal-600)}
+.lp-weeks .lp-next{color:var(--bn-ink-500)}
+.lp--sq .lp-weeks li{font-size:30px;padding:12px 0}
+
+/* 16 Slownik */
+.lp-gram{font-family:var(--font-mono);font-size:28px;color:var(--lp-mut);margin-top:32px}
+.lp-defs{border-top:2px solid var(--bn-ink-900);display:grid;gap:calc(32px * var(--k));padding-top:calc(40px * var(--k));margin-top:calc(56px * var(--k))}
+.lp-defs li{display:grid;grid-template-columns:72px 1fr;font-size:calc(40px * (var(--k) + (1 - var(--k)) / 2));line-height:1.35}
+.lp-defs span{font-family:var(--font-mono);font-size:30px;color:var(--bn-blue-600);padding-top:6px}
+.lp-see{font-size:30px;color:var(--bn-ink-600);margin-top:calc(40px * var(--k))}
+.lp-see .lp-lbl{margin-right:16px}
+
+/* 17 Okladka notatki */
+.lp-17{flex-direction:row}
+.lp-17 .lp-main{width:620px;flex:none;padding:88px 64px 88px 88px;display:flex;flex-direction:column}
+.lp-17 .lp-side{width:460px;height:100%;object-fit:cover;object-position:60% 50%}
+.lp-17 .lp-lead{font-size:34px;line-height:1.45}
+.lp-17 .lp-foot{flex-direction:column;align-items:flex-start;gap:18px;margin-top:72px;padding-top:32px;border-top:2px solid var(--bn-ink-900)}
+.lp-17 .lp-cta{color:var(--bn-blue-600)}
+.lp--sq.lp-17 .lp-main{width:600px;padding:72px 56px 72px 72px}
+.lp--sq.lp-17 .lp-side{width:480px}
+.lp--sq.lp-17 .lp-lead{font-size:30px}
+.lp--sq.lp-17 .lp-foot{margin-top:48px}
+
+/* 18 Notatka tekstowa */
+.lp-author{display:flex;gap:28px;align-items:center;padding-bottom:48px;border-bottom:1px solid var(--lp-line)}
+.lp-author .lp-face{width:112px;height:112px;flex:none}
+.lp-author small{display:block;font-size:28px;color:var(--lp-mut);margin-top:6px}
+.lp-story{display:grid;gap:calc(40px * var(--k));font-size:calc(46px * (var(--k) + (1 - var(--k)) / 2));line-height:1.4;color:var(--bn-ink-200)}
+.lp-story mark{background:rgba(61,107,255,.32);color:#fff;padding:0 8px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.lp--sq .lp-author{padding-bottom:32px}
+
+/* 19 Wykres */
+.lp-chart .grid{stroke:var(--bn-ink-100);stroke-width:2}
+.lp-chart .axis{stroke:var(--bn-ink-900);stroke-width:2}
+.lp-chart .yl{font-size:22px;fill:var(--bn-ink-500);text-anchor:end}
+.lp-chart .bar{fill:var(--bn-ink-200)}
+.lp-chart .bar--on{fill:var(--bn-blue-500)}
+.lp-chart .val{font-family:var(--font-display);font-weight:700;font-size:34px;fill:var(--bn-ink-900);text-anchor:middle}
+.lp-chart .val--on{fill:var(--bn-blue-600)}
+.lp-chart .xl{font-size:24px;fill:var(--bn-ink-900);text-anchor:middle}
+.lp-chart .ttl{font-size:20px;fill:var(--bn-ink-500);letter-spacing:2px}
+.lp-src{font-size:24px;color:var(--lp-mut)}
+.lp--sq .lp-chart{width:86%}
+
+/* 20 Duotone */
+.lp-duo{position:absolute;left:0;top:0;width:100%;height:900px;object-fit:cover;object-position:50% 30%;filter:grayscale(1) contrast(1.15);mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(to bottom,#000 55%,transparent);mask-image:linear-gradient(to bottom,#000 55%,transparent)}
+.lp--sq .lp-duo{height:720px}
+</style></helmet>
+<div class="lp-board">
+<div data-screen-label="01 Manifest" class="lp lp--ink lp-01"><div class="lp-grid"></div>
+<div class="lp-rel lp-row"><p class="lp-lbl"><span class="lp-sl">//</span> Teza tygodnia</p><p class="lp-lbl">Nr 14</p></div>
+<div class="lp-rel lp-push"><i class="lp-bar"></i><h2 class="lp-h" style="--h:184px">AI nie naprawi procesu<span class="lp-pd">.</span></h2><p class="lp-lead" style="--t:42px;margin-top:48px">Najpierw zobacz, gdzie czeka praca. Potem automatyzuj.</p></div>
+<div class="lp-foot lp-foot--rule"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl">broniszewski.net</span></div>
 </div>
-<div data-screen-label="Post ciemny" style="width:1080px;height:1080px;background:#0F1115;color:#F2F3F5;padding:88px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden">
-<sc-if value="{{ showGrid }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:90px 90px"></div></sc-if>
-<p style="position:relative;font-family:'JetBrains Mono';font-size:30px;letter-spacing:.14em;text-transform:uppercase;color:#8B919C"><span style="color:#6A8DFF">//</span> Case study</p>
-<div style="position:relative"><p style="font-family:'Archivo';font-weight:800;font-size:220px;line-height:.85;letter-spacing:-.06em">−48%<span style="color:#3D6BFF">.</span></p><p style="font-size:44px;line-height:1.3;color:#AEB3BD;margin-top:36px;max-width:820px">Czas od otwarcia PR do merge po 6 tygodniach pilotażu.</p></div>
-<div style="position:relative;display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Archivo';font-weight:800;font-size:40px;letter-spacing:-.02em">Broniszewski<span style="color:#3D6BFF">.</span></span><span style="font-family:'JetBrains Mono';font-size:26px;letter-spacing:.12em;text-transform:uppercase;color:#8B919C">broniszewski.net</span></div>
+<div data-screen-label="02 Portret na błękicie" class="lp lp--blue lp--flush lp-02">
+<div class="lp-head"><p class="lp-lbl"><span class="lp-sl">//</span> Przemysław Broniszewski</p><h2 class="lp-h" style="--h:88px;margin-top:36px;max-width:880px">Zaczynam od pytania, nie od narzędzia<span class="lp-pd">.</span></h2></div>
+<img class="lp-photo" src="img/profile.jpg" alt="">
+<div class="lp-strip"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl">Architekt procesów · AI w SDLC</span></div>
 </div>
-<div data-screen-label="Post jasny" style="width:1080px;height:1080px;background:#fff;color:#0F1115;padding:88px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden">
-<sc-if value="{{ showGrid }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:linear-gradient(rgba(15,17,21,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(15,17,21,.06) 1px,transparent 1px);background-size:90px 90px"></div></sc-if>
-<p style="position:relative;font-family:'JetBrains Mono';font-size:30px;letter-spacing:.14em;text-transform:uppercase;color:#676D78"><span style="color:#2D5BFF">//</span> Checklista</p>
-<div style="position:relative"><p style="font-family:'Archivo';font-weight:800;font-size:96px;line-height:.95;letter-spacing:-.05em">3 pytania przed wdrożeniem AI<span style="color:#3D6BFF">.</span></p>
-<div style="margin-top:56px;border-top:3px solid #0F1115"><p style="display:grid;grid-template-columns:80px 1fr;padding:26px 0;border-bottom:1px solid #E4E6EA;font-size:38px;font-weight:500"><span style="font-family:'JetBrains Mono';color:#2D5BFF;font-size:30px;padding-top:6px">01</span>Gdzie czeka praca?</p><p style="display:grid;grid-template-columns:80px 1fr;padding:26px 0;border-bottom:1px solid #E4E6EA;font-size:38px;font-weight:500"><span style="font-family:'JetBrains Mono';color:#2D5BFF;font-size:30px;padding-top:6px">02</span>Kto odpowiada za jakość?</p><p style="display:grid;grid-template-columns:80px 1fr;padding:26px 0;border-bottom:1px solid #E4E6EA;font-size:38px;font-weight:500"><span style="font-family:'JetBrains Mono';color:#C4441A;font-size:30px;padding-top:6px">03</span>Jak zmierzycie efekt?</p></div></div>
-<div style="position:relative;display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Archivo';font-weight:800;font-size:40px;letter-spacing:-.02em">Broniszewski<span style="color:#3D6BFF">.</span></span><span style="font-family:'JetBrains Mono';font-size:26px;letter-spacing:.12em;text-transform:uppercase;color:#676D78">broniszewski.net</span></div>
+<div data-screen-label="03 Cytat" class="lp lp--mist lp-03">
+<p class="lp-lbl"><span class="lp-sl">//</span> Z warsztatu</p>
+<div class="lp-push"><p class="lp-quote-mark" aria-hidden="true">”</p><p class="lp-quote">Zespół nie potrzebował nowego narzędzia. Potrzebował zgody, kto decyduje o jakości.</p></div>
+<div class="lp-foot"><div class="lp-sign"><img class="lp-face" src="img/profile.jpg" alt=""><div><p class="lp-t" style="font-size:36px">Przemysław Broniszewski</p><small>Architekt procesów · broniszewski.net</small></div></div></div>
+</div>
+<div data-screen-label="04 Pas portretowy" class="lp lp--ink lp--flush lp-04">
+<div class="lp-side"><img src="img/profile.jpg" alt=""></div>
+<div class="lp-main">
+<p class="lp-lbl"><span class="lp-sl">//</span> O mnie</p>
+<h2 class="lp-h" style="--h:84px;margin-top:40px">Architekt, nie sprzedawca narzędzi<span class="lp-pd">.</span></h2>
+<p class="lp-lead" style="--t:34px;margin-top:40px">Pomagam zespołom wpiąć AI w proces, który już działa.</p>
+<ul class="lp-list"><li><i class="lp-sq-bullet"></i>Diagnoza procesu</li><li><i class="lp-sq-bullet"></i>Pilotaż z zespołem</li><li><i class="lp-sq-bullet"></i>Wdrożenie i pomiar</li></ul>
+<div class="lp-foot lp-push"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span></div>
+</div>
+</div>
+<div data-screen-label="05 Jedna liczba" class="lp lp--paper lp-05">
+<p class="lp-lbl"><span class="lp-sl">//</span> Case study · logistyka</p>
+<p class="lp-h lp-h--tight lp-push" style="--h:340px">−48%</p>
+<p class="lp-lead" style="--t:42px;margin-top:40px">Tyle krócej czeka pull request na merge po 6 tygodniach pilotażu.</p>
+<div class="lp-bars">
+<div><div class="lp-row"><span class="lp-lbl">Przed</span><span class="lp-t">9,2 dnia</span></div><i></i></div>
+<div><div class="lp-row" style="width:52%"><span class="lp-lbl">Po</span><span class="lp-t lp-on">4,8 dnia</span></div><i class="lp-on" style="width:52%"></i></div>
+</div>
+<div class="lp-foot"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl">broniszewski.net</span></div>
+</div>
+<div data-screen-label="06 Przed i po" class="lp lp--ink lp--flush lp-06">
+<div class="lp-half"><div class="lp-row"><h2 class="lp-h" style="--h:132px">Przed<span class="lp-pd">.</span></h2><span class="lp-wm" style="font-size:32px">Broniszewski<span class="lp-pd">.</span></span></div>
+<ul class="lp-list lp-list--muted lp-push"><li>Review czeka trzy dni</li><li>Testy ręczne przed każdym wydaniem</li><li>Wiedza w głowie jednej osoby</li></ul></div>
+<div class="lp-half lp-half--blue"><div class="lp-row"><h2 class="lp-h" style="--h:132px">Po<span class="lp-pd">.</span></h2><span class="lp-lbl">Tydzień 06</span></div>
+<ul class="lp-list lp-push"><li>Review w cztery godziny</li><li>Testy w pipeline, przy każdym PR</li><li>Decyzje zapisane w ADR</li></ul></div>
+</div>
+<div data-screen-label="07 Terminal" class="lp lp--ink lp-07">
+<p class="lp-lbl"><span class="lp-sl">//</span> Warsztat · prompt</p>
+<h2 class="lp-h" style="--h:88px;margin-top:40px">Prompt, od którego zaczynam każde review<span class="lp-pd">.</span></h2>
+<div class="lp-term lp-push"><div class="lp-term-bar lp-row"><span>review-prompt.md</span><span>markdown</span></div>
+<div class="lp-code"><p class="k"># Kontekst</p><p>Diff dotyczy modułu płatności.</p><p class="k"># Sprawdź</p><p><span class="c">-</span> czy zmiana ma test</p><p><span class="c">-</span> czy nazwy mówią, co robią</p><p><span class="c">-</span> czy błąd da się odtworzyć</p><p class="k"># Format</p><p>Maksymalnie 5 uwag, od najważniejszej.</p></div></div>
+<div class="lp-foot" style="margin-top:56px"><span class="lp-lbl">Pełna wersja w komentarzu</span><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span></div>
+</div>
+<div data-screen-label="08 Mapa procesu" class="lp lp--mist lp-08"><div class="lp-grid"></div>
+<p class="lp-lbl lp-rel"><span class="lp-sl">//</span> Mapa procesu</p>
+<h2 class="lp-h lp-rel" style="--h:96px;margin-top:40px">Gdzie AI naprawdę pomaga<span class="lp-pd">.</span></h2>
+<ol class="lp-steps lp-rel lp-push">
+<li><span class="lp-lbl">01</span><div class="lp-box"><span class="lp-t">Pomysł</span><span class="lp-lbl lp-lbl--sm">Człowiek</span></div></li>
+<li><span class="lp-lbl">02</span><div class="lp-box"><span class="lp-t">Specyfikacja</span><span class="lp-lbl lp-lbl--sm">Człowiek</span></div></li>
+<li><span class="lp-lbl">03</span><div class="lp-box"><span class="lp-t">Kod</span><span class="lp-lbl lp-lbl--sm">Człowiek + AI</span></div></li>
+<li class="lp-on"><span class="lp-lbl">04</span><div class="lp-box"><span class="lp-t">Review</span><span class="lp-lbl lp-lbl--sm lp-row lp-row--mid" style="gap:14px"><i class="lp-dot"></i>Tu jest zysk</span></div></li>
+<li><span class="lp-lbl">05</span><div class="lp-box"><span class="lp-t">Testy</span><span class="lp-lbl lp-lbl--sm">Człowiek + AI</span></div></li>
+<li><span class="lp-lbl">06</span><div class="lp-box"><span class="lp-t">Wdrożenie</span><span class="lp-lbl lp-lbl--sm">Pipeline</span></div></li>
+</ol>
+<div class="lp-foot"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl">broniszewski.net</span></div>
+</div>
+<div data-screen-label="09 Checklista" class="lp lp--ink lp-09">
+<div class="lp-row"><p class="lp-lbl"><span class="lp-sl">//</span> Zanim kupisz licencje</p><p class="lp-count" style="--lp-count-on:#F2F3F5"><b>2</b> / 5</p></div>
+<h2 class="lp-h" style="--h:104px;margin-top:40px">5 pytań przed wdrożeniem AI<span class="lp-pd">.</span></h2>
+<ul class="lp-list lp-checks lp-push">
+<li class="lp-done"><span class="lp-box-check"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Wiemy, gdzie czeka praca</li>
+<li class="lp-done"><span class="lp-box-check"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Mierzymy lead time</li>
+<li><span class="lp-box-check"></span>Jakość ma jednego właściciela</li>
+<li><span class="lp-box-check"></span>PR ma limit rozmiaru</li>
+<li><span class="lp-box-check"></span>Zespół zna zasady użycia AI</li>
+</ul>
+<div class="lp-foot"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl">broniszewski.net</span></div>
+</div>
+<div data-screen-label="10 Case study ze zdjęciem" class="lp lp--ink lp--flush lp-10">
+<div class="lp-cover"><img src="img/kafka.jpg" alt=""><p class="lp-lbl"><span class="lp-sl">//</span> Case study</p></div>
+<div class="lp-body">
+<div class="lp-row lp-row--mid"><div class="lp-tags"><span class="lp-tag">Kafka</span><span class="lp-tag">Logistyka</span><span class="lp-tag">12 tygodni</span></div><span class="lp-wm" style="font-size:32px">Broniszewski<span class="lp-pd">.</span></span></div>
+<h2 class="lp-h" style="--h:84px;margin-top:44px">Statusy przesyłek w sekundy, nie w godziny<span class="lp-pd">.</span></h2>
+<div class="lp-stats lp-push"><div><p class="lp-h" style="--h:76px">3 s</p><p>aktualizacja statusu, było 15 min</p></div><div><p class="lp-h" style="--h:76px">0</p><p>utraconych zdarzeń od startu</p></div></div>
+</div>
+</div>
+<div data-screen-label="11 Rysunek techniczny" class="lp lp--paper lp-11"><div class="lp-grid lp-grid--fine"></div><div class="lp-grid lp-grid--blue"></div>
+<div class="lp-rel lp-row"><p class="lp-lbl"><span class="lp-sl">//</span> Rysunek 01</p><p class="lp-lbl">ADR-014</p></div>
+<h2 class="lp-h lp-rel" style="--h:96px;margin-top:40px">Architektura to decyzje, nie diagramy<span class="lp-pd">.</span></h2>
+<svg class="lp-svg lp-rel lp-push" viewBox="0 0 904 520">
+<line class="ln" x1="0" y1="40" x2="904" y2="40"/><line class="ln" x1="0" y1="24" x2="0" y2="56"/><line class="ln" x1="904" y1="24" x2="904" y2="56"/>
+<rect class="bg" x="330" y="22" width="244" height="36"/><text class="dim" x="452" y="48">3 S END-TO-END</text>
+<rect class="box" x="0" y="110" width="250" height="150" rx="4"/><rect class="box box--on" x="327" y="110" width="250" height="150" rx="4"/><rect class="box" x="654" y="110" width="250" height="150" rx="4"/>
+<text class="nm" x="125" y="180">API</text><text class="nm" x="125" y="218">zamówień</text>
+<text class="nm" x="452" y="180">Kolejka</text><text class="nm" x="452" y="218">zdarzeń</text>
+<text class="nm" x="779" y="180">Serwis</text><text class="nm" x="779" y="218">statusów</text>
+<line class="ln" x1="252" y1="185" x2="312" y2="185"/><path class="ar" d="M325 185l-14-8v16z"/>
+<line class="ln" x1="579" y1="185" x2="639" y2="185"/><path class="ar" d="M652 185l-14-8v16z"/>
+<line class="lk" x1="452" y1="262" x2="452" y2="350"/><circle class="pin" cx="452" cy="262" r="7"/>
+<rect class="note" x="200" y="350" width="704" height="160" rx="4"/>
+<text class="cap" x="232" y="398">DECYZJA</text>
+<text class="tx" x="232" y="446">Kolejka, bo statusy mogą przyjść</text>
+<text class="tx" x="232" y="484">z opóźnieniem i nie mogą zginąć.</text>
+</svg>
+<div class="lp-foot"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl">broniszewski.net</span></div>
+</div>
+<div data-screen-label="12 Ankieta" class="lp lp--blue lp-12"><div class="lp-grid"></div>
+<p class="lp-lbl lp-rel"><span class="lp-sl">//</span> Pytanie do Ciebie</p>
+<h2 class="lp-h lp-rel" style="--h:104px;margin-top:40px">Co najbardziej spowalnia Twój zespół<span class="lp-pd">?</span></h2>
+<ul class="lp-opts lp-rel lp-push"><li><b>A</b>Czekanie na review</li><li><b>B</b>Niejasne wymagania</li><li><b>C</b>Ręczne testy</li><li><b>D</b>Wdrożenia po godzinach</li></ul>
+<div class="lp-foot"><span class="lp-lbl">Odpowiedz literą w komentarzu</span><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span></div>
+</div>
+<div data-screen-label="13 Mit i fakt" class="lp lp--paper lp-13">
+<p class="lp-lbl"><span class="lp-sl">//</span> Mit kontra fakt</p>
+<div class="lp-push"><p class="lp-lbl">Mit</p><p class="lp-h lp-myth" style="--h:96px;margin-top:24px">AI zastąpi juniorów.</p></div>
+<i class="lp-split"></i>
+<div><p class="lp-lbl lp-fact">Fakt</p><h2 class="lp-h" style="--h:96px;margin-top:24px">AI potrzebuje ludzi, którzy umieją robić review<span class="lp-pd">.</span></h2></div>
+<div class="lp-foot" style="margin-top:88px"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl">broniszewski.net</span></div>
+</div>
+<div data-screen-label="14 Wydarzenie" class="lp lp--ink lp-14"><div class="lp-grid"></div>
+<div class="lp-rel lp-row lp-row--mid"><p class="lp-lbl lp-live"><i class="lp-dot"></i>Zapisy otwarte</p><p class="lp-lbl">Warsztat online</p></div>
+<div class="lp-rel lp-push"><p class="lp-h lp-h--tight" style="--h:280px">14.11</p><p class="lp-when">Czwartek · 18:00-20:00</p><h2 class="lp-h" style="--h:84px;margin-top:56px">AI w code review, na Waszym repo<span class="lp-pd">.</span></h2></div>
+<dl class="lp-facts lp-rel" style="margin-top:48px"><div><dt class="lp-lbl lp-lbl--sm">Dla kogo</dt><dd>Tech leadzi i seniorzy</dd></div><div><dt class="lp-lbl lp-lbl--sm">Miejsca</dt><dd>20 osób</dd></div></dl>
+<div class="lp-foot" style="margin-top:56px"><span class="lp-lbl">Link w komentarzu</span><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span></div>
+</div>
+<div data-screen-label="15 Oś czasu" class="lp lp--paper lp-15">
+<div class="lp-row"><p class="lp-lbl"><span class="lp-sl">//</span> Pilotaż krok po kroku</p><p class="lp-count" style="--lp-count-on:var(--bn-ink-900)"><b>04</b> / 06</p></div>
+<div class="lp-seg"><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-on"></i><i></i><i></i></div>
+<h2 class="lp-h" style="--h:104px;margin-top:64px">6 tygodni do pierwszego efektu<span class="lp-pd">.</span></h2>
+<ol class="lp-weeks lp-push">
+<li><span class="lp-lbl lp-lbl--sm">Tydzień 01</span>Diagnoza procesu</li>
+<li><span class="lp-lbl lp-lbl--sm">Tydzień 02</span>Mapa kolejek i strat</li>
+<li><span class="lp-lbl lp-lbl--sm">Tydzień 03</span>Wybór jednego eksperymentu</li>
+<li class="lp-on"><span class="lp-lbl lp-lbl--sm">Tydzień 04</span>Pilotaż z zespołem</li>
+<li class="lp-next"><span class="lp-lbl lp-lbl--sm">Tydzień 05</span>Pomiar efektu</li>
+<li class="lp-next"><span class="lp-lbl lp-lbl--sm">Tydzień 06</span>Decyzja: skalować czy nie</li>
+</ol>
+<div class="lp-foot" style="margin-top:56px"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl">broniszewski.net</span></div>
+</div>
+<div data-screen-label="16 Słownik" class="lp lp--mist lp-16">
+<div class="lp-row"><p class="lp-lbl"><span class="lp-sl">//</span> Słownik zespołu</p><p class="lp-lbl">Hasło 07</p></div>
+<div class="lp-push"><h2 class="lp-h" style="--h:150px;line-height:.88">dług procesowy</h2><p class="lp-gram">rzecz. m. · lm. długi procesowe</p></div>
+<ol class="lp-defs"><li><span>1.</span>Koszt decyzji, których zespół nie podjął, więc podejmuje je codziennie od nowa.</li><li><span>2.</span>Rośnie po cichu. Spłaca się na retro albo na incydencie.</li></ol>
+<p class="lp-see"><span class="lp-lbl lp-lbl--sm">Zob. też</span>dług techniczny, ADR</p>
+<div class="lp-foot"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl">broniszewski.net</span></div>
+</div>
+<div data-screen-label="17 Okładka notatki" class="lp lp--paper lp--flush lp-17">
+<div class="lp-main">
+<p class="lp-lbl"><span class="lp-sl">//</span> Notatka nr 14</p><p class="lp-lbl" style="margin-top:8px">Wrzesień 2026</p>
+<h2 class="lp-h lp-push" style="--h:94px">Cisza przy biurku to też metryka<span class="lp-pd">.</span></h2>
+<p class="lp-lead" style="margin-top:44px">Gdy zespół przestaje pytać, rzadko znaczy to, że wszystko jest jasne. Częściej pytanie stało się za drogie.</p>
+<div class="lp-foot"><span class="lp-lbl lp-cta">Cały tekst na blogu</span><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span></div>
+</div>
+<img class="lp-side" src="img/desk.jpg" alt="">
+</div>
+<div data-screen-label="18 Notatka tekstowa" class="lp lp--ink lp-18">
+<div class="lp-author"><img class="lp-face" src="img/profile.jpg" alt=""><div><p class="lp-t" style="font-size:38px">Przemysław Broniszewski</p><small>Architekt procesów · AI w SDLC</small></div></div>
+<div class="lp-story lp-push"><p>W zeszłym tygodniu zespół zapytał mnie, jakie narzędzie AI kupić.</p><p>Zapytałem, ile trwa ich review. Nikt nie wiedział.</p><p><mark>Nie przyspieszysz czegoś, czego nie mierzysz.</mark></p><p>Zaproponowałem start od arkusza, nie od licencji.</p></div>
+<div class="lp-foot" style="margin-top:72px"><span class="lp-lbl">Notatka · 1 min</span><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span></div>
+</div>
+<div data-screen-label="19 Wykres" class="lp lp--paper lp-19">
+<p class="lp-lbl"><span class="lp-sl">//</span> Dane z pilotażu</p>
+<h2 class="lp-h" style="--h:92px;margin-top:40px">Małe PR przechodzą review 20× szybciej<span class="lp-pd">.</span></h2>
+<svg class="lp-svg lp-chart lp-push" viewBox="0 0 904 560">
+<line class="grid" x1="80" y1="86.7" x2="904" y2="86.7"/><line class="grid" x1="80" y1="180" x2="904" y2="180"/><line class="grid" x1="80" y1="273.3" x2="904" y2="273.3"/><line class="grid" x1="80" y1="366.7" x2="904" y2="366.7"/>
+<line class="axis" x1="80" y1="460" x2="904" y2="460"/>
+<text class="yl" x="60" y="468">0</text><text class="yl" x="60" y="374.7">10</text><text class="yl" x="60" y="281.3">20</text><text class="yl" x="60" y="188">30</text><text class="yl" x="60" y="94.7">40</text>
+<rect class="bar bar--on" x="123" y="441.3" width="120" height="18.7"/><rect class="bar" x="329" y="404" width="120" height="56"/><rect class="bar" x="535" y="282.7" width="120" height="177.3"/><rect class="bar" x="741" y="77.3" width="120" height="382.7"/>
+<text class="val val--on" x="183" y="425">2 h</text><text class="val" x="389" y="388">6 h</text><text class="val" x="595" y="266">19 h</text><text class="val" x="801" y="61">41 h</text>
+<text class="xl" x="183" y="500">&lt;100</text><text class="xl" x="389" y="500">100-300</text><text class="xl" x="595" y="500">300-800</text><text class="xl" x="801" y="500">&gt;800</text>
+<text class="ttl" x="80" y="548">LINIE ZMIAN W PR · MEDIANA GODZIN DO MERGE</text>
+</svg>
+<div class="lp-foot" style="margin-top:56px"><span class="lp-src">Dane przykładowe, n = 412 PR</span><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span></div>
+</div>
+<div data-screen-label="20 Duotone" class="lp lp--blue lp-20">
+<img class="lp-duo" src="img/datacenter.jpg" alt="">
+<div class="lp-rel lp-row"><p class="lp-lbl"><span class="lp-sl">//</span> Architektura</p><p class="lp-lbl">Case study</p></div>
+<div class="lp-rel lp-push"><h2 class="lp-h" style="--h:124px">Dwa centra danych, jeden stan<span class="lp-pd">.</span></h2><p class="lp-lead" style="margin-top:40px">Jak zaprojektowałem replikację bez okna serwisowego.</p></div>
+<div class="lp-foot lp-foot--rule" style="margin-top:72px"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl">broniszewski.net</span></div>
 </div>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;showGrid&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motywy&quot;}}">
-class Component extends DCLogic {
-  renderVals() { return { showGrid: this.props.showGrid ?? true }; }
-}
-</script>
 </body>
 </html>

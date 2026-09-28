@@ -1,0 +1,65 @@
+<!-- @dsCard group="Brand" viewport="900x720" name="LinkedIn · karuzela" subtitle="Rytm teł, stała rama, pomarańcz tylko w pasku" -->
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css"><style>
+body{padding:0}
+.lbl{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--fg-muted)}
+.v{font-family:var(--font-mono);font-size:10px;line-height:1.5;color:var(--fg-muted)}
+.v b{display:block;font-weight:400;color:var(--fg-default)}
+.strip{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:10px;padding:24px 28px 28px;border-bottom:1px solid var(--line-default)}
+.strip .lbl{grid-column:1/-1;margin-bottom:6px}
+.sl{display:flex;flex-direction:column;gap:8px}
+.mini{position:relative;aspect-ratio:4/5;border-radius:2px;background:var(--bn-ink-900);--d:rgba(255,255,255,.7);--o:rgba(255,255,255,.2);--t:rgba(255,255,255,.85)}
+.mini.blue{background:var(--bn-blue-600);--d:rgba(255,255,255,.85);--o:rgba(255,255,255,.3);--t:#fff}
+.mini.paper{background:#fff;box-shadow:0 0 0 1px var(--line-default);--d:rgba(15,17,21,.6);--o:rgba(15,17,21,.12);--t:var(--bn-ink-900)}
+.mini.mist{background:var(--bn-ink-50);box-shadow:0 0 0 1px var(--line-default);--d:rgba(15,17,21,.6);--o:rgba(15,17,21,.12);--t:var(--bn-ink-900)}
+.mini s{position:absolute;left:6px;right:6px;top:7px;display:grid;grid-template-columns:repeat(10,1fr);gap:1px}
+.mini u{height:2px;background:var(--o)}
+.mini u.done{background:var(--d)}
+.mini u.on{background:var(--bn-signal-500)}
+.mini em{position:absolute;left:6px;bottom:22px;width:62%;height:5px;background:var(--t);border-radius:1px}
+.mini em.short{bottom:14px;width:38%}
+.roles{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line-default)}
+.roles>div{padding:20px 22px;border-right:1px solid var(--line-default);display:grid;grid-template-columns:28px 1fr;gap:4px 12px;align-items:start}
+.roles>div:last-child{border-right:0}
+.sw{grid-row:span 2;width:28px;height:35px;border-radius:2px}
+.roles b{font-size:14px;font-weight:600;color:var(--fg-default)}
+.roles p{font-size:13px;color:var(--fg-body);line-height:1.5}
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:24px 28px}
+.rules ul{font-size:14px}
+.no li::before{background:var(--bn-ink-300)}
+code{font-family:var(--font-mono);font-size:12px;color:var(--fg-default)}
+</style></head><body>
+<div class="strip">
+  <p class="lbl">Rytm · przykład z szablonu, 10 slajdów</p>
+  <div class="sl"><div class="mini blue"><s><u class="on"></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u></s><em></em><em class="short"></em></div><span class="v"><b>01</b>Okładka</span></div>
+  <div class="sl"><div class="mini ink"><s><u class="done"></u><u class="on"></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u></s><em></em><em class="short"></em></div><span class="v"><b>02</b>Problem</span></div>
+  <div class="sl"><div class="mini paper"><s><u class="done"></u><u class="done"></u><u class="on"></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u></s><em></em><em class="short"></em></div><span class="v"><b>03</b>Liczba</span></div>
+  <div class="sl"><div class="mini ink"><s><u class="done"></u><u class="done"></u><u class="done"></u><u class="on"></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u></s><em></em><em class="short"></em></div><span class="v"><b>04</b>Krok</span></div>
+  <div class="sl"><div class="mini ink"><s><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="on"></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u></s><em></em><em class="short"></em></div><span class="v"><b>05</b>Prompt</span></div>
+  <div class="sl"><div class="mini mist"><s><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="on"></u><u class=""></u><u class=""></u><u class=""></u><u class=""></u></s><em></em><em class="short"></em></div><span class="v"><b>06</b>Proces</span></div>
+  <div class="sl"><div class="mini ink"><s><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="on"></u><u class=""></u><u class=""></u><u class=""></u></s><em></em><em class="short"></em></div><span class="v"><b>07</b>Metryki</span></div>
+  <div class="sl"><div class="mini ink"><s><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="on"></u><u class=""></u><u class=""></u></s><em></em><em class="short"></em></div><span class="v"><b>08</b>Przed i po</span></div>
+  <div class="sl"><div class="mini mist"><s><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="on"></u><u class=""></u></s><em></em><em class="short"></em></div><span class="v"><b>09</b>Cytat</span></div>
+  <div class="sl"><div class="mini blue"><s><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="done"></u><u class="on"></u></s><em></em><em class="short"></em></div><span class="v"><b>10</b>CTA</span></div>
+</div>
+<div class="roles">
+  <div><span class="sw" style="background:var(--bn-blue-600)"></span><b>Niebieski · rama</b><p>Tylko okładka i CTA. Otwiera i zamyka, nigdy w środku.</p></div>
+  <div><span class="sw" style="background:var(--bn-ink-900)"></span><b>Ciemny · treść</b><p>Domyślne tło, około 2/3 slajdów: problem, kroki, prompt, lista.</p></div>
+  <div><span class="sw" style="background:linear-gradient(90deg,#fff 50%,var(--bn-ink-50) 50%);box-shadow:0 0 0 1px var(--line-default)"></span><b>Jasny · pauza</b><p><code>paper</code> dla liczb i wykresów, <code>mist</code> dla procesu i cytatu.</p></div>
+</div>
+<div class="rules">
+  <div><p class="lbl" style="margin-bottom:12px">Wolno</p><ul class="list-check">
+    <li><span>Mieszać ciemne i jasne tła; rama zostaje ta sama: etykieta, licznik, paski, margines 88</span></li>
+    <li><span>Jeden jasny slajd na trzy, zawsze między ciemnymi</span></li>
+    <li><span>Przenieść środek posta (wykres, checklistę, terminal) do ramy slajdu</span></li>
+    <li><span>Wybrać okładkę niebieską albo z portretem</span></li>
+    <li><span>6 do 10 slajdów; licznik <code>/ NN</code> i <code>--n</code> równe liczbie slajdów</span></li>
+  </ul></div>
+  <div><p class="lbl" style="margin-bottom:12px">Nie wolno</p><ul class="list-check no">
+    <li><span>Pomarańczu w treści slajdu; należy tylko do bieżącego segmentu, wyróżnienia są niebieskie</span></li>
+    <li><span>Niebieskiego tła w środku karuzeli ani dwóch jasnych slajdów obok siebie</span></li>
+    <li><span>Wklejać całego posta jako slajdu; post ma własną stopkę i nie ma paska</span></li>
+    <li><span>Zdjęć na slajdach z treścią; portret tylko na okładce i jako awatar w CTA</span></li>
+    <li><span><code>//</code> poza okładką; w środku zwykłe etykiety, np. „Krok&nbsp;02&nbsp;z&nbsp;05”</span></li>
+  </ul></div>
+</div>
+</body></html>

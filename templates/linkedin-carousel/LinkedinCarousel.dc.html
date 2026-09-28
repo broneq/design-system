@@ -7,33 +7,348 @@
 </head>
 <body>
 <x-dc>
-<!-- @template name="LinkedIn — karuzela 4:5" description="5 slajdów 1080×1350 z paskami postępu i licznikiem: okładka, 3 treści, CTA" -->
-<helmet><script src="./ds-base.js"></script></helmet>
-<div style="min-height:100vh;background:#E7E8EB;padding:64px;display:flex;gap:48px;align-items:flex-start;overflow-x:auto;font-family:'Geist',sans-serif">
-<div data-screen-label="Karuzela 1" style="flex:none;width:1080px;height:1350px;background:#3D6BFF;color:#fff;padding:88px;display:flex;flex-direction:column;justify-content:space-between">
-<div><div style="display:flex;justify-content:space-between;font-family:'JetBrains Mono';font-size:28px;letter-spacing:.12em;text-transform:uppercase"><span>Notatka #14</span><span><b style="font-weight:500">01</b> / 05</span></div><div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:32px"><i style="height:5px;border-radius:3px;background:#fff"></i><i style="height:5px;border-radius:3px;background:rgba(255,255,255,.3)"></i><i style="height:5px;border-radius:3px;background:rgba(255,255,255,.3)"></i><i style="height:5px;border-radius:3px;background:rgba(255,255,255,.3)"></i><i style="height:5px;border-radius:3px;background:rgba(255,255,255,.3)"></i></div></div>
-<p style="font-family:'Archivo';font-weight:800;font-size:132px;line-height:.92;letter-spacing:-.055em">3 powody, dla których Copilot nie przyspieszył Twojego zespołu<span style="color:#0F1115">.</span></p>
-<div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Archivo';font-weight:800;font-size:40px;letter-spacing:-.02em">Broniszewski<span style="color:#0F1115">.</span></span><span style="font-family:'JetBrains Mono';font-size:28px;letter-spacing:.12em;text-transform:uppercase">Przesuń →</span></div>
+<!-- @template name="LinkedIn - karuzela 4:5" description="10 slajdów 1080×1350 z paskiem postępu: okładka (dwa warianty), problem, liczba, kroki, prompt, proces, metryki, przed/po, cytat, CTA" -->
+<helmet><script src="./ds-base.js"></script><style>
+/* LinkedIn post kit - 1080x1350 (4:5); .lp--sq = 1080x1080 (1:1). Tokens come from ds-base.js. */
+.lp-board{min-height:100vh;background:#E7E8EB;padding:64px;display:flex;flex-wrap:wrap;gap:64px;align-items:flex-start;font-family:var(--font-sans)}
+.lp{--k:1;position:relative;flex:none;width:1080px;height:1350px;overflow:hidden;padding:88px;display:flex;flex-direction:column;font-family:var(--font-sans);font-size:36px;line-height:1.4;text-align:left;-webkit-font-smoothing:antialiased}
+.lp *{margin:0;padding:0;box-sizing:border-box}
+.lp ul,.lp ol{list-style:none}
+.lp img{display:block;max-width:none}
+.lp--sq{--k:.8;height:1080px;padding:72px}
+
+/* Surfaces */
+.lp--ink{background:var(--bn-ink-900);color:#F2F3F5;--lp-gl:rgba(255,255,255,.05);--lp-mut:var(--bn-ink-400);--lp-body:var(--bn-ink-300);--lp-sl:var(--bn-blue-400);--lp-pd:var(--bn-blue-500);--lp-line:rgba(255,255,255,.14);--lp-seg-off:rgba(255,255,255,.16);--lp-seg-done:#F2F3F5}
+.lp--blue{background:var(--bn-blue-600);color:#fff;--lp-gl:rgba(255,255,255,.09);--lp-mut:rgba(255,255,255,.78);--lp-body:rgba(255,255,255,.9);--lp-sl:rgba(255,255,255,.78);--lp-pd:var(--bn-ink-900);--lp-line:rgba(255,255,255,.35);--lp-seg-off:rgba(255,255,255,.3);--lp-seg-done:var(--bn-white)}
+.lp--paper,.lp--mist{background:var(--bn-white);color:var(--bn-ink-900);--lp-gl:rgba(15,17,21,.06);--lp-mut:var(--bn-ink-500);--lp-body:var(--bn-ink-600);--lp-sl:var(--bn-blue-600);--lp-pd:var(--bn-blue-500);--lp-line:var(--bn-ink-100);--lp-seg-off:var(--bn-ink-100);--lp-seg-done:var(--bn-ink-900)}
+.lp--mist{background:var(--bn-ink-50)}
+.lp--flush{padding:0}
+
+/* Shared pieces */
+.lp-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--lp-gl) 1px,transparent 1px),linear-gradient(90deg,var(--lp-gl) 1px,transparent 1px);background-size:90px 90px}
+.lp-grid--fine{--lp-gl:rgba(45,91,255,.05);background-size:30px 30px}
+.lp-grid--blue{--lp-gl:rgba(45,91,255,.12)}
+.lp-rel{position:relative}
+.lp-row{display:flex;justify-content:space-between;align-items:baseline;gap:24px}
+.lp-row--mid{align-items:center}
+.lp-lbl{font-family:var(--font-mono);font-size:26px;letter-spacing:.14em;text-transform:uppercase;line-height:1.3;color:var(--lp-mut)}
+.lp-lbl--sm{font-size:22px}
+.lp-sl{color:var(--lp-sl)}
+.lp-h{font-family:var(--font-display);font-weight:800;font-size:calc(var(--h,96px) * var(--k));letter-spacing:-.05em;line-height:.92;color:inherit;text-wrap:balance}
+.lp-h--tight{letter-spacing:-.065em;line-height:.84}
+.lp-pd{color:var(--lp-pd)}
+.lp-lead{font-size:calc(var(--t,40px) * (var(--k) + (1 - var(--k)) / 2));line-height:1.38;color:var(--lp-body);max-width:840px}
+.lp-t{font-family:var(--font-display);font-weight:700;letter-spacing:-.02em;line-height:1.2}
+.lp-wm{font-family:var(--font-display);font-weight:800;font-size:38px;letter-spacing:-.02em;line-height:1;white-space:nowrap}
+.lp-foot{position:relative;display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:64px}
+.lp-foot--rule{padding-top:36px;border-top:1px solid var(--lp-line)}
+.lp-mono{font-family:var(--font-mono)}
+.lp-face{object-fit:cover;object-position:54% 30%;border-radius:4px;background:var(--bn-blue-600)}
+.lp-count{font-family:var(--font-mono);font-size:30px;color:var(--lp-mut)}
+.lp-count b{font-weight:500;color:var(--lp-count-on,currentColor)}
+.lp-list{border-top:1px solid var(--lp-line)}
+.lp-list>li{padding:calc(24px * var(--k)) 0;border-bottom:1px solid var(--lp-line)}
+.lp-dot{width:18px;height:18px;border-radius:50%;background:var(--bn-signal-500);box-shadow:0 0 0 8px var(--bn-signal-a22);flex:none}
+
+/* Push to the bottom of a flex column; wins over component margins */
+.lp .lp-push{margin-top:auto}
+
+/* 01 Manifest */
+.lp-bar{display:block;width:120px;height:12px;background:var(--bn-blue-500);margin-bottom:calc(56px * var(--k))}
+
+/* 02 Portret na blekicie */
+.lp-02 .lp-head{position:relative;z-index:2;padding:88px 88px 0}
+.lp-02 .lp-photo{position:absolute;left:0;bottom:112px;width:1080px;height:885px;object-fit:cover;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 7%);mask-image:linear-gradient(to bottom,transparent 0,#000 7%)}
+.lp-strip{position:absolute;left:0;right:0;bottom:0;height:112px;background:var(--bn-ink-900);color:#F2F3F5;display:flex;justify-content:space-between;align-items:center;padding:0 88px;--lp-pd:var(--bn-blue-500);--lp-mut:var(--bn-ink-400)}
+.lp--sq.lp-02 .lp-head{padding:72px 72px 0}
+.lp--sq.lp-02 .lp-photo{left:auto;right:-160px;bottom:96px;width:760px;height:623px}
+.lp--sq .lp-strip{height:96px;padding:0 72px}
+
+/* 03 Cytat */
+.lp-quote-mark{font-family:var(--font-display);font-weight:800;font-size:calc(280px * var(--k));line-height:1;color:var(--bn-blue-500);height:calc(150px * var(--k));overflow:hidden;margin-bottom:24px}
+.lp-quote{font-family:var(--font-display);font-weight:700;font-size:calc(70px * var(--k));line-height:1.08;letter-spacing:-.03em;text-wrap:balance}
+.lp-sign{display:flex;gap:28px;align-items:center}
+.lp-sign .lp-face{width:128px;height:128px;flex:none}
+.lp-sign small{display:block;font-size:28px;color:var(--lp-mut);margin-top:6px}
+.lp-03 .lp-foot{border-top:2px solid var(--bn-ink-900);padding-top:40px;margin-top:88px}
+
+/* 04 Pas portretowy */
+.lp-04{flex-direction:row}
+.lp-04 .lp-side{width:440px;height:100%;flex:none;background:var(--bn-blue-600)}
+.lp-04 .lp-side img{width:100%;height:100%;object-fit:cover;object-position:54% 50%}
+.lp-04 .lp-main{flex:1;min-width:0;padding:88px 72px;display:flex;flex-direction:column}
+.lp-04 .lp-list{margin-top:48px}
+.lp-04 .lp-list li{display:flex;gap:24px;align-items:center;font-size:34px}
+.lp-sq-bullet{width:14px;height:14px;background:var(--bn-blue-500);flex:none}
+.lp--sq.lp-04 .lp-side{width:380px}
+.lp--sq.lp-04 .lp-main{padding:72px 64px}
+.lp--sq.lp-04 .lp-list{margin-top:32px}
+
+/* 05 Jedna liczba */
+.lp-bars{display:grid;gap:28px;margin-top:calc(72px * var(--k))}
+.lp-bars .lp-t{font-size:34px}
+.lp-bars i{display:block;height:28px;margin-top:12px;background:var(--bn-ink-900)}
+.lp-bars .lp-on{color:var(--bn-blue-600)}
+.lp-bars .lp-on+i,.lp-bars i.lp-on{background:var(--bn-blue-500)}
+
+/* 06 Przed / po */
+.lp-half{height:50%;padding:80px 88px;display:flex;flex-direction:column}
+.lp-half--blue{background:var(--bn-blue-600);color:#fff;--lp-pd:var(--bn-ink-900);--lp-mut:rgba(255,255,255,.78);--lp-line:rgba(255,255,255,.35)}
+.lp-half .lp-list li{font-size:38px;padding:22px 0}
+.lp-half .lp-list--muted li{color:var(--bn-ink-400)}
+.lp-half--blue .lp-list li{font-weight:500}
+.lp--sq .lp-half{padding:56px 72px}
+.lp--sq .lp-half .lp-list li{font-size:32px;padding:14px 0}
+
+/* 07 Terminal */
+.lp-term{background:var(--bn-ink-950);border:1px solid rgba(255,255,255,.12);border-radius:12px;overflow:hidden}
+.lp-term-bar{padding:22px 32px;border-bottom:1px solid rgba(255,255,255,.12);font-family:var(--font-mono);font-size:24px;color:var(--bn-ink-400)}
+.lp-code{padding:32px;font-family:var(--font-mono);font-size:27px;line-height:1.62;color:var(--bn-ink-200)}
+.lp-code p{white-space:pre-wrap}
+.lp-term .k{color:var(--bn-blue-400)}
+.lp-term .c{color:var(--bn-ink-500)}
+.lp--sq .lp-code{font-size:24px;line-height:1.5;padding:24px 32px}
+
+/* 08 Mapa procesu */
+.lp-steps{display:grid;gap:calc(18px * var(--k))}
+.lp-steps li{display:grid;grid-template-columns:84px 1fr;align-items:center}
+.lp-steps .lp-box{display:flex;justify-content:space-between;align-items:center;gap:24px;background:var(--bn-white);border:1px solid var(--bn-ink-200);border-radius:4px;padding:calc(22px * var(--k)) 28px}
+.lp-steps .lp-t{font-size:38px}
+.lp-steps .lp-on .lp-box{border:3px solid var(--bn-signal-500);padding:calc(22px * var(--k) - 2px) 26px}
+.lp-steps .lp-on>.lp-lbl,.lp-steps .lp-on .lp-lbl{color:var(--bn-signal-600)}
+.lp-steps .lp-dot{width:14px;height:14px;box-shadow:0 0 0 6px var(--bn-signal-a22)}
+.lp--sq .lp-steps .lp-t{font-size:32px}
+
+/* 09 Checklista */
+.lp-checks li{display:flex;gap:32px;align-items:center;font-size:38px;padding:calc(28px * var(--k)) 0}
+.lp-checks li.lp-done{color:var(--bn-ink-400)}
+.lp-box-check{width:48px;height:48px;flex:none;border-radius:2px;border:3px solid var(--bn-ink-500);display:grid;place-items:center}
+.lp-done .lp-box-check{border:0;background:var(--bn-blue-500)}
+.lp-box-check svg{width:28px;height:28px;fill:none;stroke:#fff;stroke-width:3.2}
+.lp-checks{border-top:2px solid rgba(255,255,255,.32)}
+.lp--sq .lp-checks li{font-size:32px}
+
+/* 10 Case study ze zdjeciem */
+.lp-cover{position:relative;height:620px;flex:none}
+.lp-cover img{width:100%;height:100%;object-fit:cover}
+.lp-cover .lp-lbl{position:absolute;left:88px;top:88px;background:var(--bn-ink-900);color:#F2F3F5;padding:14px 20px;border-radius:2px}
+.lp-body{flex:1;min-height:0;padding:64px 88px 88px;display:flex;flex-direction:column}
+.lp-tags{display:flex;gap:12px}
+.lp-tag{font-family:var(--font-mono);font-size:22px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--lp-line);border-radius:2px;padding:10px 16px;color:var(--bn-ink-200)}
+.lp-stats{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--lp-line)}
+.lp-stats>div{padding-top:28px}
+.lp-stats>div+div{padding-left:40px;border-left:1px solid var(--lp-line)}
+.lp-stats p+p{font-size:28px;color:var(--lp-mut);margin-top:10px}
+.lp--sq .lp-cover{height:420px}
+.lp--sq .lp-cover .lp-lbl{left:72px;top:72px}
+.lp--sq .lp-body{padding:48px 72px 72px}
+
+/* 11 Rysunek techniczny */
+.lp-svg{display:block;width:100%;height:auto;overflow:visible;font-family:var(--font-mono)}
+.lp-svg .ln{stroke:var(--bn-ink-900);stroke-width:2;fill:none}
+.lp-svg .ar{fill:var(--bn-ink-900)}
+.lp-svg .box{fill:var(--bn-white);stroke:var(--bn-ink-900);stroke-width:2}
+.lp-svg .box--on{stroke:var(--bn-blue-600);stroke-width:4}
+.lp-svg .bg{fill:var(--bn-white)}
+.lp-svg .lk{stroke:var(--bn-blue-600);stroke-width:2;stroke-dasharray:6 6}
+.lp-svg .pin{fill:var(--bn-blue-600)}
+.lp-svg .note{fill:var(--bn-blue-100)}
+.lp-svg .dim{font-size:22px;fill:var(--bn-ink-900);letter-spacing:2px;text-anchor:middle}
+.lp-svg .nm{font-family:var(--font-display);font-weight:700;font-size:32px;fill:var(--bn-ink-900);text-anchor:middle;letter-spacing:-.6px}
+.lp-svg .cap{font-size:22px;fill:var(--bn-blue-700);letter-spacing:2px}
+.lp-svg .tx{font-family:var(--font-sans);font-size:30px;fill:var(--bn-ink-900)}
+.lp--sq .lp-11 .lp-svg,.lp--sq.lp-11 .lp-svg{width:86%}
+
+/* 12 Ankieta */
+.lp-opts{display:grid;gap:calc(18px * var(--k))}
+.lp-opts li{display:flex;gap:28px;align-items:center;border:2px solid rgba(255,255,255,.4);border-radius:4px;padding:calc(22px * var(--k)) 26px;font-size:38px;font-weight:500}
+.lp-opts b{width:64px;height:64px;flex:none;background:var(--bn-white);color:var(--bn-blue-600);border-radius:2px;display:grid;place-items:center;font-family:var(--font-display);font-weight:800;font-size:36px}
+.lp--sq .lp-opts li{font-size:32px}
+.lp--sq .lp-opts b{width:52px;height:52px;font-size:30px}
+
+/* 13 Mit i fakt */
+.lp-myth{color:var(--bn-ink-300);text-decoration:line-through;text-decoration-thickness:10px;text-decoration-color:var(--bn-ink-900)}
+.lp-split{display:block;height:2px;background:var(--bn-ink-900);margin:calc(72px * var(--k)) 0}
+.lp-fact{color:var(--bn-blue-600)}
+
+/* 14 Wydarzenie */
+.lp-live{display:flex;gap:20px;align-items:center;color:#F2F3F5}
+.lp-when{font-family:var(--font-mono);font-size:32px;letter-spacing:.08em;color:var(--lp-body);margin-top:28px;text-transform:uppercase}
+.lp-facts{border-top:1px solid var(--lp-line);font-size:32px}
+.lp-facts>div{display:grid;grid-template-columns:220px 1fr;padding:calc(20px * var(--k)) 0;border-bottom:1px solid var(--lp-line)}
+.lp-facts dt{padding-top:6px}
+
+/* 15 Os czasu */
+.lp-seg{display:grid;grid-template-columns:repeat(var(--n,6),1fr);gap:10px;margin-top:28px}
+.lp-seg i{height:10px;border-radius:3px;background:var(--lp-seg-off)}
+.lp-seg i.lp-done{background:var(--lp-seg-done)}
+.lp-seg i.lp-on{background:var(--bn-signal-500)}
+.lp-weeks{border-top:2px solid var(--bn-ink-900)}
+.lp-weeks li{display:grid;grid-template-columns:230px 1fr;padding:calc(22px * var(--k)) 0;border-bottom:1px solid var(--bn-ink-100);font-size:34px}
+.lp-weeks .lp-lbl{padding-top:8px}
+.lp-weeks .lp-on{font-weight:600}
+.lp-weeks .lp-on .lp-lbl{color:var(--bn-signal-600)}
+.lp-weeks .lp-next{color:var(--bn-ink-500)}
+.lp--sq .lp-weeks li{font-size:30px;padding:12px 0}
+
+/* 16 Slownik */
+.lp-gram{font-family:var(--font-mono);font-size:28px;color:var(--lp-mut);margin-top:32px}
+.lp-defs{border-top:2px solid var(--bn-ink-900);display:grid;gap:calc(32px * var(--k));padding-top:calc(40px * var(--k));margin-top:calc(56px * var(--k))}
+.lp-defs li{display:grid;grid-template-columns:72px 1fr;font-size:calc(40px * (var(--k) + (1 - var(--k)) / 2));line-height:1.35}
+.lp-defs span{font-family:var(--font-mono);font-size:30px;color:var(--bn-blue-600);padding-top:6px}
+.lp-see{font-size:30px;color:var(--bn-ink-600);margin-top:calc(40px * var(--k))}
+.lp-see .lp-lbl{margin-right:16px}
+
+/* 17 Okladka notatki */
+.lp-17{flex-direction:row}
+.lp-17 .lp-main{width:620px;flex:none;padding:88px 64px 88px 88px;display:flex;flex-direction:column}
+.lp-17 .lp-side{width:460px;height:100%;object-fit:cover;object-position:60% 50%}
+.lp-17 .lp-lead{font-size:34px;line-height:1.45}
+.lp-17 .lp-foot{flex-direction:column;align-items:flex-start;gap:18px;margin-top:72px;padding-top:32px;border-top:2px solid var(--bn-ink-900)}
+.lp-17 .lp-cta{color:var(--bn-blue-600)}
+.lp--sq.lp-17 .lp-main{width:600px;padding:72px 56px 72px 72px}
+.lp--sq.lp-17 .lp-side{width:480px}
+.lp--sq.lp-17 .lp-lead{font-size:30px}
+.lp--sq.lp-17 .lp-foot{margin-top:48px}
+
+/* 18 Notatka tekstowa */
+.lp-author{display:flex;gap:28px;align-items:center;padding-bottom:48px;border-bottom:1px solid var(--lp-line)}
+.lp-author .lp-face{width:112px;height:112px;flex:none}
+.lp-author small{display:block;font-size:28px;color:var(--lp-mut);margin-top:6px}
+.lp-story{display:grid;gap:calc(40px * var(--k));font-size:calc(46px * (var(--k) + (1 - var(--k)) / 2));line-height:1.4;color:var(--bn-ink-200)}
+.lp-story mark{background:rgba(61,107,255,.32);color:#fff;padding:0 8px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.lp--sq .lp-author{padding-bottom:32px}
+
+/* 19 Wykres */
+.lp-chart .grid{stroke:var(--bn-ink-100);stroke-width:2}
+.lp-chart .axis{stroke:var(--bn-ink-900);stroke-width:2}
+.lp-chart .yl{font-size:22px;fill:var(--bn-ink-500);text-anchor:end}
+.lp-chart .bar{fill:var(--bn-ink-200)}
+.lp-chart .bar--on{fill:var(--bn-blue-500)}
+.lp-chart .val{font-family:var(--font-display);font-weight:700;font-size:34px;fill:var(--bn-ink-900);text-anchor:middle}
+.lp-chart .val--on{fill:var(--bn-blue-600)}
+.lp-chart .xl{font-size:24px;fill:var(--bn-ink-900);text-anchor:middle}
+.lp-chart .ttl{font-size:20px;fill:var(--bn-ink-500);letter-spacing:2px}
+.lp-src{font-size:24px;color:var(--lp-mut)}
+.lp--sq .lp-chart{width:86%}
+
+/* 20 Duotone */
+.lp-duo{position:absolute;left:0;top:0;width:100%;height:900px;object-fit:cover;object-position:50% 30%;filter:grayscale(1) contrast(1.15);mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(to bottom,#000 55%,transparent);mask-image:linear-gradient(to bottom,#000 55%,transparent)}
+.lp--sq .lp-duo{height:720px}
+/* Carousel slides - same kit, plus a progress header (label, counter, segments) and a swipe footer.
+   Orange belongs to the current segment on every slide, so slide content never uses --bn-signal. */
+.lp-board--row{flex-wrap:nowrap;overflow-x:auto;gap:48px}
+.lp-car-top{position:relative}
+.lp-swipe{display:flex;gap:14px;align-items:center}
+.lp-big-n{font-family:var(--font-mono);font-size:30px;color:var(--lp-sl);letter-spacing:.08em}
+.lp-note{border-left:4px solid var(--bn-blue-500);padding:8px 0 8px 32px;font-size:34px;line-height:1.4;color:var(--lp-body)}
+.lp-note b{display:block;font-family:var(--font-mono);font-weight:400;font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:var(--lp-mut);margin-bottom:10px}
+
+/* Cover B - portrait on a blue panel */
+.lp-cover-b .lp-panel{position:absolute;left:0;right:0;bottom:0;height:640px;background:var(--bn-blue-600);overflow:hidden}
+.lp-cover-b .lp-panel img{position:absolute;right:-40px;bottom:0;width:760px;height:623px;object-fit:cover}
+.lp-cover-b .lp-foot{position:absolute;left:88px;bottom:88px;flex-direction:column;align-items:flex-start;gap:20px;--lp-pd:var(--bn-ink-900);--lp-mut:rgba(255,255,255,.85);color:#fff}
+
+/* Two-stage review - steps with a blue highlight instead of orange */
+.lp-steps--blue .lp-on .lp-box{border-color:var(--bn-blue-500)}
+.lp-steps--blue .lp-on .lp-lbl,.lp-steps--blue .lp-on>.lp-lbl{color:var(--bn-blue-600)}
+.lp-steps .lp-box small{display:block;font-size:28px;color:var(--bn-ink-500);margin-top:6px;font-family:var(--font-sans);letter-spacing:0}
+
+/* Three numbers to track */
+.lp-kpis li{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:24px;padding:30px 0;border-bottom:1px solid var(--lp-line);font-size:38px}
+.lp-kpis{border-top:2px solid rgba(255,255,255,.32)}
+.lp-kpis .lp-h{font-size:64px;color:var(--bn-blue-400)}
+.lp-kpis small{display:block;font-size:28px;color:var(--lp-mut);margin-top:6px}
+
+/* Before / after cards */
+.lp-ba{display:grid;gap:24px}
+.lp-ba>div{border-radius:4px;padding:40px 44px}
+.lp-ba .lp-was{background:var(--bn-ink-800)}
+.lp-ba .lp-now{background:var(--bn-blue-600);color:#fff}
+.lp-ba ul{margin-top:18px}
+.lp-ba li{font-size:34px;padding:10px 0}
+.lp-ba .lp-was li{color:var(--bn-ink-400)}
+.lp-ba .lp-now li{font-weight:500}
+.lp-ba .lp-now .lp-lbl{color:rgba(255,255,255,.8)}
+</style></helmet>
+<div class="lp-board lp-board--row">
+<div data-screen-label="01 Okładka" class="lp lp--blue"><div class="lp-grid"></div>
+<div class="lp-car-top"><div class="lp-row"><p class="lp-lbl"><span class="lp-sl">//</span> Code review + AI</p><p class="lp-count"><b>01</b> / 10</p></div><div class="lp-seg" style="--n:10"><i class="lp-on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+<div class="lp-rel lp-push"><h2 class="lp-h" style="--h:150px">AI w code review bez chaosu<span class="lp-pd">.</span></h2><p class="lp-lead" style="margin-top:48px">5 kroków, od których zaczynam z każdym zespołem.</p></div>
+<div class="lp-foot" style="margin-top:88px"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl lp-swipe">Przesuń →</span></div>
 </div>
-<div data-screen-label="Karuzela 2" style="flex:none;width:1080px;height:1350px;background:#0F1115;color:#F2F3F5;padding:88px;display:flex;flex-direction:column;justify-content:space-between">
-<div><div style="display:flex;justify-content:space-between;font-family:'JetBrains Mono';font-size:28px;letter-spacing:.12em;text-transform:uppercase;color:#8B919C"><span>Powód 01</span><span><b style="color:#fff;font-weight:500">02</b> / 05</span></div><div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:32px"><i style="height:5px;border-radius:3px;background:#fff"></i><i style="height:5px;border-radius:3px;background:#FF6B3D"></i><i style="height:5px;border-radius:3px;background:rgba(255,255,255,.2)"></i><i style="height:5px;border-radius:3px;background:rgba(255,255,255,.2)"></i><i style="height:5px;border-radius:3px;background:rgba(255,255,255,.2)"></i></div></div>
-<div><p style="font-family:'Archivo';font-weight:800;font-size:112px;line-height:.93;letter-spacing:-.05em">Kod powstaje szybciej. Review — nie<span style="color:#3D6BFF">.</span></p><p style="font-size:44px;line-height:1.4;color:#AEB3BD;margin-top:48px">Wąskie gardło przesunęło się z pisania na czytanie. Kolejka PR rośnie.</p></div>
-<span style="font-family:'Archivo';font-weight:800;font-size:40px;letter-spacing:-.02em">Broniszewski<span style="color:#3D6BFF">.</span></span>
+<div data-screen-label="01 Okładka z portretem (wariant)" class="lp lp--ink lp-cover-b">
+<div class="lp-car-top"><div class="lp-row"><p class="lp-lbl"><span class="lp-sl">//</span> Code review + AI</p><p class="lp-count" style="--lp-count-on:#F2F3F5"><b>01</b> / 10</p></div><div class="lp-seg" style="--n:10"><i class="lp-on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+<h2 class="lp-h lp-rel" style="--h:124px;margin-top:64px">AI w code review bez chaosu<span class="lp-pd">.</span></h2>
+<div class="lp-panel"><img src="img/profile.jpg" alt=""></div>
+<div class="lp-foot"><span class="lp-lbl lp-swipe">Przesuń →</span><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span></div>
 </div>
-<div data-screen-label="Karuzela 3" style="flex:none;width:1080px;height:1350px;background:#0F1115;color:#F2F3F5;padding:88px;display:flex;flex-direction:column;justify-content:space-between">
-<div><div style="display:flex;justify-content:space-between;font-family:'JetBrains Mono';font-size:28px;letter-spacing:.12em;text-transform:uppercase;color:#8B919C"><span>Powód 02</span><span><b style="color:#fff;font-weight:500">03</b> / 05</span></div><div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:32px"><i style="height:5px;border-radius:3px;background:#fff"></i><i style="height:5px;border-radius:3px;background:#fff"></i><i style="height:5px;border-radius:3px;background:#FF6B3D"></i><i style="height:5px;border-radius:3px;background:rgba(255,255,255,.2)"></i><i style="height:5px;border-radius:3px;background:rgba(255,255,255,.2)"></i></div></div>
-<div><p style="font-family:'Archivo';font-weight:800;font-size:112px;line-height:.93;letter-spacing:-.05em">Każdy używa AI po swojemu<span style="color:#3D6BFF">.</span></p><p style="font-size:44px;line-height:1.4;color:#AEB3BD;margin-top:48px">Bez wspólnych zasad nie da się zmierzyć, co działa — ani tego powtórzyć.</p></div>
-<span style="font-family:'Archivo';font-weight:800;font-size:40px;letter-spacing:-.02em">Broniszewski<span style="color:#3D6BFF">.</span></span>
+<div data-screen-label="02 Problem" class="lp lp--ink">
+<div class="lp-car-top"><div class="lp-row"><p class="lp-lbl">Problem</p><p class="lp-count" style="--lp-count-on:#F2F3F5"><b>02</b> / 10</p></div><div class="lp-seg" style="--n:10"><i class="lp-done"></i><i class="lp-on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+<div class="lp-push"><h2 class="lp-h" style="--h:124px">Kod powstaje szybciej. Review nie<span class="lp-pd">.</span></h2><p class="lp-lead" style="--t:44px;margin-top:48px">Wąskie gardło przesunęło się z pisania na czytanie. Kolejka PR rośnie, a razem z nią czas do wdrożenia.</p></div>
+<div class="lp-foot" style="margin-top:88px"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl lp-swipe">Przesuń →</span></div>
 </div>
-<div data-screen-label="Karuzela 4" style="flex:none;width:1080px;height:1350px;background:#0F1115;color:#F2F3F5;padding:88px;display:flex;flex-direction:column;justify-content:space-between">
-<div><div style="display:flex;justify-content:space-between;font-family:'JetBrains Mono';font-size:28px;letter-spacing:.12em;text-transform:uppercase;color:#8B919C"><span>Powód 03</span><span><b style="color:#fff;font-weight:500">04</b> / 05</span></div><div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:32px"><i style="height:5px;border-radius:3px;background:#fff"></i><i style="height:5px;border-radius:3px;background:#fff"></i><i style="height:5px;border-radius:3px;background:#fff"></i><i style="height:5px;border-radius:3px;background:#FF6B3D"></i><i style="height:5px;border-radius:3px;background:rgba(255,255,255,.2)"></i></div></div>
-<div><p style="font-family:'Archivo';font-weight:800;font-size:112px;line-height:.93;letter-spacing:-.05em">Nikt nie zmienił procesu<span style="color:#3D6BFF">.</span></p><p style="font-size:44px;line-height:1.4;color:#AEB3BD;margin-top:48px">Nowe narzędzie w starym procesie daje stary wynik — tylko szybciej.</p></div>
-<span style="font-family:'Archivo';font-weight:800;font-size:40px;letter-spacing:-.02em">Broniszewski<span style="color:#3D6BFF">.</span></span>
+<div data-screen-label="03 Liczba" class="lp lp--paper">
+<div class="lp-car-top"><div class="lp-row"><p class="lp-lbl">Skala</p><p class="lp-count" style="--lp-count-on:var(--bn-ink-900)"><b>03</b> / 10</p></div><div class="lp-seg" style="--n:10"><i class="lp-done"></i><i class="lp-done"></i><i class="lp-on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+<p class="lp-h lp-h--tight lp-push" style="--h:320px">3,4×</p>
+<p class="lp-lead" style="--t:42px;margin-top:40px">Tyle więcej pull requestów otwiera zespół po wdrożeniu asystenta kodu. Liczba reviewerów się nie zmienia.</p>
+<div class="lp-bars"><div><div class="lp-row" style="width:29%"><span class="lp-lbl">Przed</span><span class="lp-t">14 / tydz.</span></div><i style="width:29%"></i></div><div><div class="lp-row"><span class="lp-lbl">Po</span><span class="lp-t lp-on">48 / tydz.</span></div><i class="lp-on"></i></div></div>
+<div class="lp-foot"><span class="lp-src">Dane przykładowe</span><span class="lp-lbl lp-swipe">Przesuń →</span></div>
 </div>
-<div data-screen-label="Karuzela 5" style="flex:none;width:1080px;height:1350px;background:#3D6BFF;color:#fff;padding:88px;display:flex;flex-direction:column;justify-content:space-between">
-<div><div style="display:flex;justify-content:space-between;font-family:'JetBrains Mono';font-size:28px;letter-spacing:.12em;text-transform:uppercase"><span>Co dalej</span><span><b style="font-weight:500">05</b> / 05</span></div><div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:32px"><i style="height:5px;border-radius:3px;background:#fff"></i><i style="height:5px;border-radius:3px;background:#fff"></i><i style="height:5px;border-radius:3px;background:#fff"></i><i style="height:5px;border-radius:3px;background:#fff"></i><i style="height:5px;border-radius:3px;background:#0F1115"></i></div></div>
-<div><p style="font-family:'Archivo';font-weight:800;font-size:132px;line-height:.92;letter-spacing:-.055em">Zacznij od mapy procesu<span style="color:#0F1115">.</span></p><p style="font-size:44px;line-height:1.4;margin-top:48px">Napisz „MAPA” w komentarzu — wyślę szablon, którego używam na warsztatach.</p></div>
-<div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Archivo';font-weight:800;font-size:40px;letter-spacing:-.02em">Broniszewski<span style="color:#0F1115">.</span></span><span style="font-family:'JetBrains Mono';font-size:28px;letter-spacing:.12em;text-transform:uppercase">broniszewski.net</span></div>
+<div data-screen-label="04 Krok" class="lp lp--ink">
+<div class="lp-car-top"><div class="lp-row"><p class="lp-lbl">Krok 01 z 05</p><p class="lp-count" style="--lp-count-on:#F2F3F5"><b>04</b> / 10</p></div><div class="lp-seg" style="--n:10"><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-on"></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+<div class="lp-push"><p class="lp-big-n">01</p><h2 class="lp-h" style="--h:124px;margin-top:24px">Ustal limit rozmiaru PR<span class="lp-pd">.</span></h2><p class="lp-lead" style="--t:42px;margin-top:44px">400 linii to dobra granica na start. Większy PR dzielisz, zanim ktokolwiek go otworzy.</p></div>
+<p class="lp-note" style="margin-top:64px"><b>Dlaczego</b>AI generuje duże diffy. Człowiek i tak czyta je jako ostatni.</p>
+<div class="lp-foot"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl lp-swipe">Przesuń →</span></div>
+</div>
+<div data-screen-label="05 Prompt" class="lp lp--ink">
+<div class="lp-car-top"><div class="lp-row"><p class="lp-lbl">Krok 02 z 05</p><p class="lp-count" style="--lp-count-on:#F2F3F5"><b>05</b> / 10</p></div><div class="lp-seg" style="--n:10"><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-on"></i><i></i><i></i><i></i><i></i><i></i></div></div>
+<p class="lp-big-n" style="margin-top:64px">02</p>
+<h2 class="lp-h" style="--h:96px;margin-top:24px">Jeden prompt dla całego zespołu<span class="lp-pd">.</span></h2>
+<div class="lp-term lp-push"><div class="lp-term-bar lp-row"><span>.github/review-prompt.md</span><span>markdown</span></div><div class="lp-code"><p class="k"># Sprawdź</p><p><span class="c">-</span> czy zmiana ma test</p><p><span class="c">-</span> czy nazwy mówią, co robią</p><p><span class="c">-</span> czy błąd da się odtworzyć</p><p class="k"># Format</p><p>Maksymalnie 5 uwag, od najważniejszej.</p></div></div>
+<div class="lp-foot" style="margin-top:56px"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl lp-swipe">Przesuń →</span></div>
+</div>
+<div data-screen-label="06 Proces" class="lp lp--mist"><div class="lp-grid"></div>
+<div class="lp-car-top"><div class="lp-row"><p class="lp-lbl">Krok 03 z 05</p><p class="lp-count" style="--lp-count-on:var(--bn-ink-900)"><b>06</b> / 10</p></div><div class="lp-seg" style="--n:10"><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-on"></i><i></i><i></i><i></i><i></i></div></div>
+<p class="lp-big-n lp-rel" style="margin-top:64px">03</p>
+<h2 class="lp-h lp-rel" style="--h:104px;margin-top:24px">Review ma dwa czytania<span class="lp-pd">.</span></h2>
+<ol class="lp-steps lp-steps--blue lp-rel lp-push">
+<li><span class="lp-lbl">01</span><div class="lp-box"><div><span class="lp-t">AI czyta pierwsze</span><small>Styl, testy, oczywiste błędy</small></div><span class="lp-lbl lp-lbl--sm">5 min</span></div></li>
+<li class="lp-on"><span class="lp-lbl">02</span><div class="lp-box"><div><span class="lp-t">Człowiek decyduje</span><small>Architektura, ryzyko, sens zmiany</small></div><span class="lp-lbl lp-lbl--sm">20 min</span></div></li>
+<li><span class="lp-lbl">03</span><div class="lp-box"><div><span class="lp-t">Autor poprawia</span><small>Jedna runda, nie pięć</small></div><span class="lp-lbl lp-lbl--sm">1 runda</span></div></li>
+</ol>
+<div class="lp-foot"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl lp-swipe">Przesuń →</span></div>
+</div>
+<div data-screen-label="07 Metryki" class="lp lp--ink">
+<div class="lp-car-top"><div class="lp-row"><p class="lp-lbl">Krok 04 z 05</p><p class="lp-count" style="--lp-count-on:#F2F3F5"><b>07</b> / 10</p></div><div class="lp-seg" style="--n:10"><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-on"></i><i></i><i></i><i></i></div></div>
+<p class="lp-big-n" style="margin-top:64px">04</p>
+<h2 class="lp-h" style="--h:112px;margin-top:24px">Mierz trzy liczby<span class="lp-pd">.</span></h2>
+<ul class="lp-kpis lp-push">
+<li><div>Czas do pierwszej uwagi<small>od otwarcia PR</small></div><span class="lp-h">4 h</span></li>
+<li><div>Czas do merge<small>mediana z tygodnia</small></div><span class="lp-h">1,5 d</span></li>
+<li><div>Rundy poprawek<small>na jeden PR</small></div><span class="lp-h">1,2</span></li>
+</ul>
+<div class="lp-foot"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl lp-swipe">Przesuń →</span></div>
+</div>
+<div data-screen-label="08 Przed i po" class="lp lp--ink">
+<div class="lp-car-top"><div class="lp-row"><p class="lp-lbl">Krok 05 z 05</p><p class="lp-count" style="--lp-count-on:#F2F3F5"><b>08</b> / 10</p></div><div class="lp-seg" style="--n:10"><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-on"></i><i></i><i></i></div></div>
+<p class="lp-big-n" style="margin-top:64px">05</p>
+<h2 class="lp-h" style="--h:104px;margin-top:24px">Pokaż zespołowi różnicę<span class="lp-pd">.</span></h2>
+<div class="lp-ba lp-push">
+<div class="lp-was"><p class="lp-lbl">Przed</p><ul><li>Review czeka trzy dni</li><li>Pięć rund poprawek</li></ul></div>
+<div class="lp-now"><p class="lp-lbl">Po 6 tygodniach</p><ul><li>Pierwsza uwaga w cztery godziny</li><li>Jedna runda poprawek</li></ul></div>
+</div>
+<div class="lp-foot"><span class="lp-wm">Broniszewski<span class="lp-pd">.</span></span><span class="lp-lbl lp-swipe">Przesuń →</span></div>
+</div>
+<div data-screen-label="09 Cytat" class="lp lp--mist">
+<div class="lp-car-top"><div class="lp-row"><p class="lp-lbl">Z pilotażu</p><p class="lp-count" style="--lp-count-on:var(--bn-ink-900)"><b>09</b> / 10</p></div><div class="lp-seg" style="--n:10"><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-on"></i><i></i></div></div>
+<div class="lp-push"><p class="lp-quote-mark" aria-hidden="true">”</p><p class="lp-quote">Najwięcej dało nie narzędzie, tylko limit rozmiaru PR. AI po prostu go pilnuje.</p></div>
+<div class="lp-foot" style="margin-top:88px;padding-top:40px;border-top:2px solid var(--bn-ink-900)"><div><p class="lp-t" style="font-size:36px">Tech lead, zespół płatności</p><p style="font-size:28px;color:var(--lp-mut);margin-top:6px">Firma logistyczna, 40 osób w IT</p></div><span class="lp-lbl lp-swipe">Przesuń →</span></div>
+</div>
+<div data-screen-label="10 CTA" class="lp lp--blue"><div class="lp-grid"></div>
+<div class="lp-car-top"><div class="lp-row"><p class="lp-lbl">Co dalej</p><p class="lp-count"><b>10</b> / 10</p></div><div class="lp-seg" style="--n:10"><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-done"></i><i class="lp-on"></i></div></div>
+<div class="lp-rel lp-push"><h2 class="lp-h" style="--h:132px">Zacznij od jednego zespołu<span class="lp-pd">.</span></h2><p class="lp-lead" style="--t:44px;margin-top:48px">Napisz „REVIEW” w komentarzu. Wyślę checklistę, której używam na warsztatach.</p></div>
+<div class="lp-foot lp-foot--rule" style="margin-top:88px"><div class="lp-sign"><img class="lp-face" src="img/profile.jpg" alt="" style="width:112px;height:112px;background:var(--bn-ink-900)"><div><p class="lp-t" style="font-size:36px">Przemysław Broniszewski</p><small>Architekt procesów · broniszewski.net</small></div></div><span class="lp-lbl">Obserwuj</span></div>
 </div>
 </div>
 </x-dc>

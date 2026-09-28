@@ -1,0 +1,73 @@
+<!-- @dsCard group="Brand" viewport="900x760" name="LinkedIn" subtitle="Formaty, marginesy, 20 układów postów, pomarańcz raz" -->
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css"><style>
+body{padding:0}
+.lbl{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--fg-muted)}
+.v{font-family:var(--font-mono);font-size:11px;color:var(--fg-muted)}
+.row{display:flex;align-items:flex-start;gap:40px;padding:28px;border-bottom:1px solid var(--line-default)}
+.fmt{display:flex;flex-direction:column;gap:10px}
+.stage{height:135px;display:flex;align-items:flex-end;margin-bottom:6px}
+.fmt b{font-family:var(--font-sans);font-size:13px;font-weight:600;color:var(--fg-default)}
+.tile{position:relative;width:108px;height:135px;border-radius:2px;background:var(--bn-ink-900)}
+.tile.sq{height:108px}
+.tile.blue{background:var(--bn-blue-600)}
+.tile.paper{background:#fff;box-shadow:0 0 0 1px var(--line-default)}
+.tile i{position:absolute;inset:8.8px;border:1px dashed rgba(255,255,255,.35)}
+.tile.sq i{inset:7.2px}
+.tile.paper i{border-color:rgba(15,17,21,.25)}
+.tile s{position:absolute;left:8.8px;right:8.8px;top:8.8px;display:grid;grid-template-columns:repeat(5,1fr);gap:2px}
+.tile s u{height:2px;background:rgba(255,255,255,.25)}
+.tile s u.on{background:var(--bn-signal-500)}
+.tile s u.done{background:rgba(255,255,255,.7)}
+.car{display:flex;gap:6px}
+.car .tile{width:72px;height:90px}
+.car .tile s{left:6px;right:6px;top:6px}
+.note{font-size:13px;color:var(--fg-body);max-width:220px;line-height:1.5;align-self:flex-end}
+.map{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-bottom:1px solid var(--line-default)}
+.map>div{padding:20px 22px;border-right:1px solid var(--line-default)}
+.map>div:last-child{border-right:0}
+.map ul{margin-top:12px;display:grid;gap:7px;font-size:13px;color:var(--fg-body)}
+.map li{display:grid;grid-template-columns:22px 1fr;gap:6px}
+.map li code{font-family:var(--font-mono);font-size:11px;color:var(--accent-text);padding-top:2px}
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:24px 28px}
+.rules ul{font-size:14px}
+code{font-family:var(--font-mono);font-size:12px;color:var(--fg-default)}
+</style></head><body>
+<div class="row">
+  <div class="fmt"><div class="stage"><div class="tile"><i></i></div></div><b>Post 4:5</b><span class="v">1080 × 1350<br>margines 88</span></div>
+  <div class="fmt"><div class="stage"><div class="tile sq paper"><i></i></div></div><b>Post 1:1</b><span class="v">1080 × 1080<br>margines 72</span></div>
+  <div class="fmt"><div class="stage"><div class="car">
+    <div class="tile blue"><s><u class="on"></u><u></u><u></u><u></u><u></u></s></div>
+    <div class="tile paper"><s><u class="done" style="background:rgba(15,17,21,.6)"></u><u class="on"></u><u style="background:rgba(15,17,21,.15)"></u><u style="background:rgba(15,17,21,.15)"></u><u style="background:rgba(15,17,21,.15)"></u></s></div>
+    <div class="tile"><s><u class="done"></u><u class="done"></u><u class="on"></u><u></u><u></u></s></div>
+  </div></div><b>Karuzela 4:5</b><span class="v">1080 × 1350<br>eksport PDF</span></div>
+  <p class="note">4:5 to domyślny format: najwyższa proporcja, którą LinkedIn pokazuje w feedzie bez przycinania. 1:1 tylko przy postach z kilkoma grafikami. Karuzelę wgrywaj jako dokument PDF.</p>
+</div>
+<div class="map">
+  <div><p class="lbl">Teza i opinia</p><ul>
+    <li><code>01</code>Manifest</li><li><code>03</code>Cytat</li><li><code>13</code>Mit i fakt</li><li><code>18</code>Notatka tekstowa</li><li><code>12</code>Ankieta</li>
+  </ul></div>
+  <div><p class="lbl">Dane i wynik</p><ul>
+    <li><code>05</code>Jedna liczba</li><li><code>06</code>Przed i po</li><li><code>19</code>Wykres</li><li><code>09</code>Checklista</li><li><code>16</code>Słownik</li>
+  </ul></div>
+  <div><p class="lbl">Proces i wydarzenia</p><ul>
+    <li><code>07</code>Terminal</li><li><code>08</code>Mapa procesu</li><li><code>11</code>Rysunek techniczny</li><li><code>15</code>Oś czasu</li><li><code>14</code>Wydarzenie</li>
+  </ul></div>
+  <div><p class="lbl">Ze zdjęciem</p><ul>
+    <li><code>02</code>Portret na błękicie</li><li><code>04</code>Pas portretowy</li><li><code>10</code>Case study</li><li><code>17</code>Okładka notatki</li><li><code>20</code>Duotone</li>
+  </ul></div>
+</div>
+<div class="rules">
+  <div><p class="lbl" style="margin-bottom:12px">Zasady</p><ul class="list-check">
+    <li><span>Nagłówek Archivo 800 z niebieską kropką, treść Geist, etykiety <code>//</code> w JetBrains Mono</span></li>
+    <li><span>Pomarańcz najwyżej raz na grafikę; w karuzeli należy tylko do bieżącego segmentu</span></li>
+    <li><span>Tekst i logotyp nie wychodzą poza margines bezpieczny</span></li>
+    <li><span>Jedna myśl na grafikę; szczegóły idą do treści posta</span></li>
+  </ul></div>
+  <div><p class="lbl" style="margin-bottom:12px">Zdjęcia i dane</p><ul class="list-check">
+    <li><span>Portret ma niebieskie tło, więc zlewa się z <code>--bn-blue-600</code>; nie wycinaj go</span></li>
+    <li><span>Zdjęcia projektów tylko w układach 10, 17 i 20; duotone wymaga jednolitego kadru</span></li>
+    <li><span>Liczby przykładowe podpisuj „Dane przykładowe”; nigdy nie publikuj ich jako wyników</span></li>
+    <li><span>Pierwsza osoba liczby pojedynczej, nigdy „my”</span></li>
+  </ul></div>
+</div>
+</body></html>
