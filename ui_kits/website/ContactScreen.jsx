@@ -3,7 +3,7 @@ function ContactScreen() {
   const next = ['Odpisuję w ciągu 24 godzin z propozycją terminu.', 'Rozmawiamy 30 minut o Waszym procesie i celach.', 'Dostajesz notatkę z 2–3 miejscami, gdzie AI da najwięcej.'];
   return (<>
     <PageHeader eyebrow="Kontakt" title="Porozmawiajmy." subtitle="30 minut o tym, jak dziś wygląda Wasz proces. Bez prezentacji sprzedażowej." />
-    <section className="section"><div className="container bn-cols bn-cols--split" style={{ '--cols-gap': '64px' }}>
+    <section className="section"><div className="container bn-cols bn-cols--split">
       <div>
         <SectionHeader eyebrow="Co dalej" title="Trzy kroki." />
         <ul>{next.map((t, i) => <ProblemListItem key={t} marker={String(i + 1).padStart(2, '0')} text={t} />)}</ul>

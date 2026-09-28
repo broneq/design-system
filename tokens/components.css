@@ -98,10 +98,10 @@
 @media (max-width:1024px){.bn-timeline-item{grid-template-columns:1fr;gap:10px}.bn-timeline-item .status{justify-self:start}}
 /* Problem list item */
 .bn-problem-item{list-style:none;display:flex;gap:14px;align-items:baseline;padding:20px 0;border-top:1px solid var(--line-default);font-size:20px;font-weight:500;line-height:1.45;color:var(--fg-default)}
+.bn-problem-item:last-child{border-bottom:1px solid var(--line-default)}
+.bn-problem-item .txt{text-wrap:pretty}
 .bn-problem-item .mk{min-width:1.4em;font-size:.9em;font-weight:400;font-variant-numeric:tabular-nums;color:var(--accent-text);flex-shrink:0}
-.bn-text-separator{display:flex;align-items:center;gap:24px;margin-top:var(--section-head-gap)}
-.bn-text-separator::before,.bn-text-separator::after{content:'';flex:1;height:1px;background:var(--line-default)}
-.bn-text-separator p{font-family:var(--font-display);font-weight:700;font-size:24px;letter-spacing:var(--ls-title);color:var(--fg-default);text-align:center;max-width:720px}
+.bn-text-separator{margin-top:var(--section-head-gap);font-family:var(--font-display);font-weight:800;font-size:clamp(24px,1.5vw + 14px,32px);line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default);text-wrap:balance;max-width:720px}
 /* Article */
 .bn-article{max-width:var(--content-narrow);margin:0 auto;color:var(--fg-body);font-size:18px;line-height:1.75}
 .bn-article h2{font-size:40px;line-height:1;margin:var(--section-head-gap) 0 24px}

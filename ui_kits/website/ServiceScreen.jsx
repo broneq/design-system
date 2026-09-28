@@ -4,8 +4,8 @@ function ServiceScreen({ go }) {
   const toContact = (e) => { e.preventDefault(); go('contact'); };
   return (<>
     <PageHeader eyebrow="Usługa" title="Pilotaż AI w SDLC." subtitle="6–10 tygodni na jednym zespole. Od eksperymentów z narzędziami do wspólnego procesu z mierzalnym efektem." tags={['6–10 tygodni', '1 zespół', 'Metryki przed / po']} />
-    <section className="section"><div className="container bn-cols bn-cols--split" style={{ '--cols-gap': '64px' }}>
-      <SectionHeader eyebrow="Punkt wyjścia" title="Narzędzia są. Procesu nie ma." />
+    <section className="section"><div className="container bn-cols bn-cols--split">
+      <SectionHeader eyebrow="Punkt wyjścia" title="Narzędzia są." titleMuted="Procesu nie ma." />
       <div><ul>{['Każdy programista używa AI po swojemu.', 'Pull requesty rosną szybciej niż przepustowość review.', 'Nikt nie wie, czy AI skraca lead time, czy tylko przesuwa pracę.', 'Zasady bezpieczeństwa kończą się na „nie wklejaj kodu klienta”.'].map((p) => <ProblemListItem key={p} text={p} />)}</ul>
       <TextSeparator>Pilotaż zamienia eksperymenty w proces.</TextSeparator></div>
     </div></section>

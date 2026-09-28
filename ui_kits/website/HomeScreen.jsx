@@ -15,8 +15,8 @@ function HomeScreen({ go }) {
       primaryCta={{ label: 'Umów rozmowę', href: '#', onClick: click(() => go('contact')) }}
       secondaryCta={{ label: 'Case studies', href: '#', onClick: click(() => go('cases')) }}
       status="Wolne terminy od listopada" image={d.img + 'profile.png'} imageAlt="Przemysław Broniszewski" />
-    <section className="section"><div className="container bn-cols bn-cols--split" style={{ '--cols-gap': '64px' }}>
-      <SectionHeader eyebrow="Rozpoznajesz to?" title="AI jest. Efektu nie ma." />
+    <section className="section"><div className="container bn-cols bn-cols--split">
+      <SectionHeader eyebrow="Rozpoznajesz to?" title="AI jest." titleMuted="Efektu nie ma." />
       <div><ul>{['Każdy w zespole używa AI inaczej i nikt nie wie, co działa.', 'Kod powstaje szybciej, ale kolejka do review rośnie.', 'Licencje kosztują, a lead time się nie zmienił.', 'Nikt nie odpowiada za to, jak AI wpływa na jakość.'].map((p) => <ProblemListItem key={p} text={p} />)}</ul>
       <TextSeparator>Problemem nie jest narzędzie. Jest nim proces.</TextSeparator></div>
     </div></section>
