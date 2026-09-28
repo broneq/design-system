@@ -38,7 +38,7 @@ function HomeScreen({ go }) {
     <section className="section section--subtle bn-grid bn-grid--fade"><div className="container">
       <SectionHeader eyebrow="Doświadczenie" eyebrowPrefix="03 —" title="20 lat w software." titleMuted="Od kodu do architektury procesu." />
       <Timeline>
-        <TimelineItem label="2024 — teraz" title="Architekt / konsultant AI w SDLC" meta="Niezależnie" description="Wdrożenia AI w procesie wytwarzania dla zespołów 10–80 osób." status="Teraz" current />
+        <TimelineItem label="2024 — teraz" title="Architekt / konsultant AI w SDLC" meta="Niezależnie" description={'Wdrożenia AI w procesie wytwarzania dla zespołów 10–\u206080 osób.'} status="Teraz" current />
         <TimelineItem label="2016 — 2024" title="CTO / Head of Engineering" meta="TSL · e-commerce" description="Transformacja cyfrowa, platforma CI/CD, skalowanie zespołu z 6 do 40 osób." status="8 lat" />
         <TimelineItem label="2006 — 2016" title="Software Architect" meta="Software house" description="Architektura systemów integracyjnych, Kafka, Kubernetes." status="10 lat" />
       </Timeline>

@@ -98,15 +98,17 @@
 .bn-coop-card .description{color:var(--fg-body)}
 .bn-coop-card .scope-heading{font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--fg-muted)}
 /* Timeline — readable rows */
-.bn-timeline{border-top:2px solid var(--line-strong)}
-.bn-timeline-item{display:grid;grid-template-columns:180px minmax(0,1fr) minmax(0,1.3fr) 120px;gap:32px;padding:32px 0;border-bottom:1px solid var(--line-default);align-items:baseline}
-.bn-timeline-item .label{font-family:var(--font-mono);font-size:14px;color:var(--fg-muted)}
-.bn-timeline-item .title{font-family:var(--font-display);font-weight:700;font-size:26px;line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default)}
+.bn-timeline{border-top:2px solid var(--line-strong);list-style:none;margin:0;padding:0}
+.bn-timeline-item{display:grid;grid-template-columns:180px minmax(0,1fr) minmax(0,1.3fr) 120px;grid-template-areas:"label head desc status";gap:32px;padding:32px 0;border-bottom:1px solid var(--line-default);align-items:baseline}
+.bn-timeline-item .label{grid-area:label;font-family:var(--font-mono);font-size:14px;color:var(--fg-muted)}
+.bn-timeline-item .head{grid-area:head}
+.bn-timeline-item .title{font-family:var(--font-display);font-weight:700;font-size:26px;line-height:var(--lh-title);letter-spacing:var(--ls-title);color:var(--fg-default);text-wrap:balance}
 .bn-timeline-item .meta{font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-muted);margin-top:8px}
-.bn-timeline-item .desc{color:var(--fg-body);font-size:16px}
-.bn-timeline-item .status{justify-self:end}
-.bn-timeline-item .status.now{background:var(--fg-default);color:var(--bg-page);border-color:var(--fg-default)}
-@media (max-width:1024px){.bn-timeline-item{grid-template-columns:1fr;gap:10px}.bn-timeline-item .status{justify-self:start}}
+.bn-timeline-item .desc{grid-area:desc;color:var(--fg-body);font-size:16px;text-wrap:pretty}
+.bn-timeline-item .status{grid-area:status;justify-self:end}
+.bn-timeline-item .bn-tag.now{background:var(--fg-default);color:var(--bg-page);border-color:var(--fg-default)}
+/* Stacked: the status chip sits on the period line instead of trailing the description */
+@media (max-width:1024px){.bn-timeline-item{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"label status" "head head" "desc desc";gap:12px 16px;align-items:center}.bn-timeline-item .head{margin-bottom:4px}}
 /* Problem list item */
 .bn-problem-item{list-style:none;display:flex;gap:14px;align-items:baseline;padding:20px 0;border-top:1px solid var(--line-default);font-size:20px;font-weight:500;line-height:1.45;color:var(--fg-default)}
 .bn-problem-item:last-child{border-bottom:1px solid var(--line-default)}

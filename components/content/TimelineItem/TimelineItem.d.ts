@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 /**
- * One readable timeline row: mono period | Archivo title + mono org | description or list | status chip. Stacks at ≤1024px. Use for experience and process steps.
+ * One readable timeline row: mono period | Archivo title + mono org | description or list | status chip. Renders an <li>; stacks at ≤1024px with the status chip on the period line. Use for experience and process phases.
  */
 export interface TimelineItemProps {
   /** Period or step label, e.g. "2019 — 2024" */
@@ -19,6 +19,6 @@ export interface TimelineItemProps {
   current?: boolean;
 }
 export declare function TimelineItem(props: TimelineItemProps): JSX.Element;
-/** Wrapper: 2px top rule in line-strong. */
+/** Ordered list wrapper: 2px top rule in line-strong. */
 export interface TimelineProps { children?: ReactNode }
 export declare function Timeline(props: TimelineProps): JSX.Element;
