@@ -208,11 +208,14 @@ select.bn-input{appearance:none;-webkit-appearance:none;padding-right:48px;backg
 .bn-footer{padding:calc(var(--section-y) * .8) 0 40px;overflow:hidden}
 .bn-footer .grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px}
 .bn-footer .tagline{color:var(--fg-body);max-width:380px;margin:16px 0 24px}
-.bn-footer h4{font-family:var(--font-mono);font-weight:400;font-size:12px;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted);margin-bottom:16px}
+/* Column heads share one row height with the logo so their centres line up (44px with the touch-size logo) */
+.bn-footer{--footer-head-h:24px}
+.bn-footer .head{display:flex;align-items:center;height:var(--footer-head-h);font-family:var(--font-mono);font-weight:400;font-size:12px;line-height:1;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--fg-muted);margin-bottom:12px}
 .bn-footer ul{list-style:none;display:flex;flex-direction:column;gap:10px}
 .bn-footer a{color:var(--fg-body);text-decoration:none;font-size:15px;cursor:pointer}
 .bn-footer a:hover{color:var(--fg-default)}
 .bn-footer a.bn-logo,.bn-footer a.bn-logo:hover{font-size:21px;color:var(--fg-default)}
+.bn-footer .grid > :first-child > .bn-logo{display:flex;align-items:center;width:fit-content;height:var(--footer-head-h)}
 .bn-footer .social a{display:inline-flex;align-items:center;gap:10px}
 .bn-footer > .container{container-type:inline-size}
 /* Ink of "Broniszewski." in Archivo 800 at -.025em is 6.609em wide and starts .075em after the origin: size and shift it so the glyphs sit flush with both container edges */
@@ -220,7 +223,7 @@ select.bn-input{appearance:none;-webkit-appearance:none;padding-right:48px;backg
 .bn-footer .mega .dot{color:var(--accent)}
 .bn-footer .bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line-default);font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;color:var(--fg-muted)}
 .bn-footer .bottom a{font-size:12px;color:var(--fg-muted)}
-@media (max-width:768px){.bn-footer .grid{grid-template-columns:1fr}}
+@media (max-width:768px){.bn-footer .grid{grid-template-columns:1fr}.bn-footer .head{height:auto}}
 /* Hero */
 .bn-hero{container-type:inline-size;position:relative;min-height:min(880px,calc(100svh - var(--header-h)));display:flex;align-items:center;padding:calc(var(--section-y) * .8) 0;overflow:hidden}
 /* Photo bleeds into the side gutter by up to 160px. Up to 64px of gutter it runs flush to the viewport edge; wider gutters fade it out (smoothstep) so the portrait stays in the container column instead of drifting right and zooming in */
@@ -256,4 +259,4 @@ select.bn-input{appearance:none;-webkit-appearance:none;padding-right:48px;backg
 @media (max-width:1024px){.bn-final-cta .grid{grid-template-columns:minmax(0,1fr);gap:40px}.bn-final-cta .card{max-width:560px}}
 @media (max-width:768px){.bn-final-cta .card{padding:24px}}
 /* Touch targets - 44px rows on coarse pointers */
-@media (pointer:coarse){.bn-footer ul{gap:0}.bn-logo,.bn-footer ul a,.bn-footer .bottom a,.bn-pagination .nav-link,.bn-btn--link{display:inline-flex;align-items:center;min-height:44px}.bn-pagination .page-num{min-width:44px;height:44px}}
+@media (pointer:coarse){.bn-footer{--footer-head-h:44px}.bn-footer ul{gap:0}.bn-logo,.bn-footer ul a,.bn-footer .bottom a,.bn-pagination .nav-link,.bn-btn--link{display:inline-flex;align-items:center;min-height:44px}.bn-pagination .page-num{min-width:44px;height:44px}}
