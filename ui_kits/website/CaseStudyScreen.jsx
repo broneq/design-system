@@ -21,10 +21,10 @@ function CaseStudyScreen({ go, slug }) {
         <ol>{post.approach.map((a) => <li key={a}>{a}</li>)}</ol>
       </ArticleLayout>
     </div></section>
-    <nav className="container bn-post-nav" aria-label="Inne case studies">
+    <div className="container"><nav className="bn-post-nav" aria-label="Inne case studies">
       {prev && <a className="prev" href={'#/case/' + prev.slug} onClick={open(prev)}><span className="dir">← Poprzedni</span><span className="title">{prev.title}</span></a>}
       {next && <a className="next" href={'#/case/' + next.slug} onClick={open(next)}><span className="dir">Następny →</span><span className="title">{next.title}</span></a>}
-    </nav>
+    </nav></div>
     <FinalCTA title="Masz podobny problem?" intro="Opowiedz, jak dziś wygląda Wasz proces. Po 30 minutach będziesz wiedzieć, od czego zacząć." points={['Gdzie praca naprawdę czeka', 'Co da się zmienić w jednym sprincie', 'Czy warto iść dalej - szczerze']} avatar={d.img + 'profile.png'} onCta={(e) => { e.preventDefault(); go('contact'); }} />
   </>);
 }
