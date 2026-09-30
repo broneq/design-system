@@ -11,13 +11,17 @@
   and no image broken. Check cards at their `@dsCard` viewport (`chrome-devtools-axi emulate --viewport "WxHx1"`; `resize` does not change `innerWidth`) - ArticleToc's collapsible variant
   only shows at <=1024px.
 - Never upload local tooling: `package.json`, `package-lock.json`, `scripts/`, `.githooks/`,
-  `.claude/`, `.design-sync/`, `DEVELOPMENT.md`, `.gitignore`, `node_modules/`, and the Claude Code
-  plugin: `.claude-plugin/`, `skills/`.
-- Deletes: remote paths absent from `git ls-files` (except app-owned `.thumbnail` files and
-  `_ds_needs_recompile`). Write the `_ds_needs_recompile` sentinel before and after uploading.
-- Binaries (`uploads/`, `assets/images/`, `templates/*/.thumbnail`) can be skipped when
+  `.claude/`, `.design-sync/`, `DEVELOPMENT.md`, `.gitignore`, `node_modules/`, the Claude Code
+  plugin (`.claude-plugin/`, `skills/`) and the GitHub Pages book (`index.html`, `.nojekyll`,
+  `LICENSE`).
+- Deletes: remote paths absent from `git ls-files` (except app-owned `.thumbnail` files,
+  `_ds_needs_recompile` and `uploads/`). Write the `_ds_needs_recompile` sentinel before and after uploading.
+- `uploads/` (inspiration screenshots of other sites) lives only in Claude Design and in
+  `../design_system-uploads/`. It was removed from git history before the repo went public, so
+  never upload, delete or re-add it.
+- Binaries (`assets/images/`, `templates/*/.thumbnail`) can be skipped when
   `git diff` since the last sync shows no change.
 - No `_ds_sync.json` anchor: this layout has no converter hashes, so each sync re-diffs by git.
 - No `readmeHeader`/conventions.md: README.md is hand-authored and already carries the
   conventions the design agent reads.
-- Last sync: 2026-09-28 from commit 49d353f.
+- Last sync: 2026-09-28 from commit 02cda43 (49d353f before the history rewrite that dropped `uploads/`).

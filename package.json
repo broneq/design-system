@@ -4,12 +4,13 @@
   "type": "module",
   "scripts": {
     "prepare": "git config core.hooksPath .githooks",
-    "build": "node scripts/build-ds-bundle.mjs",
-    "check": "node scripts/build-ds-bundle.mjs --check",
+    "build": "node scripts/build-ds-bundle.mjs && node scripts/build-book.mjs",
+    "check": "node scripts/build-ds-bundle.mjs --check && node scripts/build-book.mjs --check",
     "serve": "python3 -m http.server 4321 --bind 127.0.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",
-    "@babel/preset-react": "^7.29.7"
+    "@babel/preset-react": "^7.29.7",
+    "marked": "^18.0.14"
   }
 }
