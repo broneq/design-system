@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "broniszewski",
+  "owner": {
+    "name": "Przemysław Broniszewski",
+    "url": "https://broniszewski.net"
+  },
+  "metadata": {
+    "description": "Broniszewski. brand tools for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "broniszewski-design",
+      "description": "Renders on-brand LinkedIn posts, carousels and banners from the Broniszewski. design system templates.",
+      "source": "./"
+    }
+  ]
+}

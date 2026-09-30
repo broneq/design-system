@@ -11,7 +11,8 @@
   and no image broken. Check cards at their `@dsCard` viewport (`chrome-devtools-axi emulate --viewport "WxHx1"`; `resize` does not change `innerWidth`) - ArticleToc's collapsible variant
   only shows at <=1024px.
 - Never upload local tooling: `package.json`, `package-lock.json`, `scripts/`, `.githooks/`,
-  `.claude/`, `.design-sync/`, `DEVELOPMENT.md`, `.gitignore`, `node_modules/`.
+  `.claude/`, `.design-sync/`, `DEVELOPMENT.md`, `.gitignore`, `node_modules/`, and the Claude Code
+  plugin: `.claude-plugin/`, `skills/`.
 - Deletes: remote paths absent from `git ls-files` (except app-owned `.thumbnail` files and
   `_ds_needs_recompile`). Write the `_ds_needs_recompile` sentinel before and after uploading.
 - Binaries (`uploads/`, `assets/images/`, `templates/*/.thumbnail`) can be skipped when

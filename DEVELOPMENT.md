@@ -21,4 +21,25 @@ Open `ui_kits/website/index.html`, `components/**/*.card.html`, `guidelines/*.ht
 
 ## Syncing to Claude Design
 
-Run `/design-sync` in Claude Code. Do not upload local-only tooling: `package.json`, `package-lock.json`, `scripts/`, `.githooks/`, `node_modules/`, `DEVELOPMENT.md`.
+Run `/design-sync` in Claude Code. Do not upload local-only tooling: `package.json`, `package-lock.json`, `scripts/`, `.githooks/`, `node_modules/`, `DEVELOPMENT.md`, `.claude-plugin/`, `skills/`.
+
+## Claude Code plugin
+
+The repo is also a Claude Code plugin marketplace (`.claude-plugin/`). The `linkedin-graphics` skill renders LinkedIn posts, carousels and the banner from `templates/` to PNG and PDF with headless Chrome (`skills/linkedin-graphics/scripts/render.mjs`, no npm dependencies).
+
+Install it once, then use it from any project:
+
+```
+/plugin marketplace add <github-owner>/<repo>
+/plugin install broniszewski-design@broniszewski
+```
+
+`plugin.json` has no `version` on purpose, so every pushed commit is a new version and `/plugin marketplace update broniszewski` picks it up.
+
+Try local changes without installing: `claude --plugin-dir <path to this repo>`. Render every stock layout to check the templates still work:
+
+```sh
+R=skills/linkedin-graphics/scripts/render.mjs
+node $R layouts linkedin-post
+node $R layout linkedin-post 5 > /tmp/slide.html && node $R render linkedin-post /tmp/slide.html
+```
