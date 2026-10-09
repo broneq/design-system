@@ -3,7 +3,7 @@ Opens every content section: `//` eyebrow, Archivo 800 title ending in a blue pe
 ```jsx
 <SectionHeader eyebrow="Proces" title="Cztery kroki." titleMuted="Od diagnozy do procesu, który działa beze mnie." />
 <SectionHeader eyebrow="Co dostajesz" title="Trzy rezultaty." subtitle="Zostają w zespole po moim wyjściu." />
-<SectionHeader eyebrow="Proces" eyebrowPrefix="01 —" title="Cztery kroki." />
+<SectionHeader eyebrow="Proces" eyebrowPrefix="01 /" title="Cztery kroki." />
 ```
 
 - Sentence case, 2-5 words per line, never Title Case.

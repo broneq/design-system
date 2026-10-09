@@ -13,7 +13,7 @@ Dark ink surfaces on an 80px technical grid, a heavy tight **Archivo 800** headl
 - **Casing:** sentence case for headlines and body; mono labels & CTAs are uppercase via CSS — write them in sentence case in source.
 - **Headlines:** 2–5 words per line, max 2–3 lines. Optional grey second line (`titleMuted`) for the "so what".
 - **CTAs:** verb-first, 1–3 words: "Umów rozmowę", "Case studies", "Zobacz program".
-- **Numbers:** only when they carry proof (weeks, team size). Numbered sections use "01 —".
+- **Numbers:** only when they carry proof (weeks, team size). Numbered sections put the number in the eyebrow prefix: "01 /" instead of "//".
 
 ## Visual foundations
 - **Themes:** light (default) and `.bn-dark` — same semantic tokens flip. Hero, page headers, footer, slides and banner are dark; content sections are light; one blue band (FinalCTA) per page.
