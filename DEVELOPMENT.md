@@ -31,7 +31,7 @@ Run `/design-sync` in Claude Code. Do not upload local-only tooling: `package.js
 
 ## Claude Code plugin
 
-The repo is also a Claude Code plugin marketplace (`.claude-plugin/`). The `linkedin-graphics` skill renders LinkedIn posts, carousels and the banner from `templates/` to PNG and PDF with headless Chrome (`skills/linkedin-graphics/scripts/render.mjs`, no npm dependencies).
+The repo is also a Claude Code plugin marketplace (`.claude-plugin/`) with two skills. `design-system` applies the system in another project: it reads README.md and the sources from the plugin and copies tokens and components into that project. `linkedin-graphics` renders LinkedIn posts, carousels and the banner from `templates/` to PNG and PDF with headless Chrome (`skills/linkedin-graphics/scripts/render.mjs`, no npm dependencies).
 
 Install it once, then use it from any project:
 

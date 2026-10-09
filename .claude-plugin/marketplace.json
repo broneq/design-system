@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "broniszewski-design",
-      "description": "Renders on-brand LinkedIn posts, carousels and banners from the Broniszewski. design system templates.",
+      "description": "Applies the Broniszewski. design system in any project and renders on-brand LinkedIn posts, carousels and banners from its templates.",
       "source": "./"
     }
   ]
